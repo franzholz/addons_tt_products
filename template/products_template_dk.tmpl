@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>Danish products example template</title>
+<!-- $Id$ -->
 </head>
 
 <body>
@@ -46,7 +47,7 @@ It's also used by search-results.
 			<tr>
 				<td colspan=4><img src="clear.gif" width=1 height=6></td>
 			</tr>
-          			
+
 			<tr>
 			<td>
 			<form method="post" action="###FORM_URL###"  name="###FORM_NAME###">
@@ -73,7 +74,7 @@ It's also used by search-results.
 				</tr>
 				<tr>
 					<td valign=top>###GW2B######PRODUCT_NOTE######GW2E###<br>###BULKILY_WARNING###
-						###GW1B###<b>price:</b> <font color=red><strong>###PRICE_TAX### ¤</strong></font>###GW1E###<br>
+						###GW1B###<b>price:</b> <font color=red><strong>###PRICE_TAX### â‚¬</strong></font>###GW1E###<br>
 						###GW2B###(excl. tax: ###PRICE_NO_TAX###)###GW2E###<br>
 						  <!-- ###display_variant2### -->
 						  ###GW2B### Size: ###GW2E### <SELECT style="font-size: 10px"
@@ -146,7 +147,7 @@ This subpart is used to display the regular list of gift products.
 			<tr>
 				<td colspan=4><img src="clear.gif" width=1 height=6></td>
 			</tr>
-          			
+
 			<!-- ###ITEM_SINGLE### begin-->
 			<tr>
           	<td>
@@ -169,7 +170,7 @@ This subpart is used to display the regular list of gift products.
 				</tr>
 				<tr>
 					<td valign=top>###GW2B######PRODUCT_NOTE######GW2E###<br>
-						###GW1B###<b>price:</b><br /> 10 ... 10¤<br /> 20 ... 20¤<br /> 50 ... 50¤<br /> 100 ... 100¤<br />###GW1E###
+						###GW1B###<b>price:</b><br /> 10 ... 10â‚¬<br /> 20 ... 20â‚¬<br /> 50 ... 50â‚¬<br /> 100 ... 100â‚¬<br />###GW1E###
 						  <!-- ###display_variant2### -->
 						  ###GW2B### Size: ###GW2E### <SELECT style="font-size: 10px"
 						  name="###FIELD_SIZE_NAME###" rows="1">###PRODUCT_SIZE###</SELECT><br>
@@ -178,7 +179,7 @@ This subpart is used to display the regular list of gift products.
 				<tr>
 					<td valign=top nowrap align=right>###GW2B### quantity: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"><br>
 					</td>
-				</tr>			
+				</tr>
 				</tr>
 				</table>
 			</td>
@@ -200,7 +201,7 @@ This subpart is used to display the regular list of gift products.
 				<tr>
 					<td>###GW1B###<strong>receiver email:</strong>###GW1E###</td>
 					<td><input type="text" name="###FIELD_NAME_DELIVERY_EMAIL###" size="30" value="###GIFT_DELIVERY_EMAIL###"'></td>
-				</tr> 
+				</tr>
 				<tr>
 					<td>###GW1B###<strong>message: </strong>###GW1E###</td>
 					<td><textarea cols=30 rows=5 name="###FIELD_NAME_GIFT_NOTE###" wrap="off">###GIFT_NOTE###</textarea></td>
@@ -261,7 +262,7 @@ This subpart is used to display single products.
 			<tr>
 				<td colspan=3><img src="clear.gif" width=1 height=6></td>
 			</tr>
-			<tr> 
+			<tr>
 				<td colspan=3 bgcolor="###GC1###"><!-- ###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###<!-- ###LINK_ITEM###--></td>
   				<td>
   				<!-- ###display_variant2### -->
@@ -276,14 +277,14 @@ This subpart is used to display single products.
 					###GW1B###
 						<b>category:</b> ###CATEGORY_TITLE### <br>
 						<b>product:</b> ###PRODUCT_ITEMNUMBER###<br>
-						<b>price:</b> <font color=red><strong>###PRICE_TAX### ¤</strong></font>###GW2B### &nbsp; (excl. tax ###PRICE_NO_TAX###)###GW2E###<br>
-						
+						<b>price:</b> <font color=red><strong>###PRICE_TAX### â‚¬</strong></font>###GW2B### &nbsp; (excl. tax ###PRICE_NO_TAX###)###GW2E###<br>
+
 						<B>Link to manufacturer:</B> <A href="###PRODUCT_WWW###" target="_blank">###PRODUCT_WWW###</A><BR>
 						###BULKILY_WARNING###
 						<b>info:</b><br>
 						###PRODUCT_NOTE###<br>
 					###GW1E###	<br>
-						<nobr>###GW2B### quantity: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"> &nbsp; 
+						<nobr>###GW2B### quantity: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"> &nbsp;
 						<input type="Submit" name="order" value="put in basket"
 onClick="if(!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
 						</nobr>
@@ -326,7 +327,7 @@ This subpart is used to display single gift products.
 				<td align="right"><!--###LINK_NEXT_SINGLE### begin-->###GW2B###next article &gt;&gt;###GW2E###<!--###LINK_NEXT_SINGLE### end--></td>
 			</tr>
 		</table>
-		
+
 		<H2>gift item</H2>
 
 		<table border="0" cellspacing="0" cellpadding="1" width=1>
@@ -339,7 +340,7 @@ This subpart is used to display single gift products.
 				<td colspan=2><img src="clear.gif" width=1 height=6></td>
 			</tr>
 			<!-- ###PRODUCT_DATA### begin-->
-			<tr> 
+			<tr>
 				<td colspan=2 bgcolor="###GC1###"><!-- ###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###<!-- ###display_variant2### --> (Size
   ###FIELD_SIZE_VALUE###)<!-- ###display_variant2### --></b>###GW1E###<!-- ###LINK_ITEM###--></td>
 			</tr>
@@ -349,12 +350,12 @@ This subpart is used to display single gift products.
 					###GW1B###
 						<b>category:</b> ###CATEGORY_TITLE### <br>
 						<b>product:</b> ###PRODUCT_ITEMNUMBER###<br>
-						<b>price:</b> <font color=red><strong>###PRICE_TAX### ¤</strong></font>###GW2B### &nbsp; (excl. tax ###PRICE_NO_TAX###)###GW2E###<br>
+						<b>price:</b> <font color=red><strong>###PRICE_TAX### â‚¬</strong></font>###GW2B### &nbsp; (excl. tax ###PRICE_NO_TAX###)###GW2E###<br>
 
 						<b>info:</b><br>
 						###PRODUCT_NOTE###<br>
 					###GW1E###	<br>
-				</td>				
+				</td>
 			</tr>
 			<!-- ###PRODUCT_DATA### end-->
 			<!-- ###PERSON_DATA### begin-->
@@ -373,13 +374,13 @@ This subpart is used to display single gift products.
 			<tr>
 				<td>###GW1B###<strong>receiver email:</strong>###GW1E###</td>
 				<td><input type="text" name="###FIELD_NAME_DELIVERY_EMAIL###" size="30" value="###GIFT_DELIVERY_EMAIL###"></td>
-			</tr> 
+			</tr>
 			<tr>
 				<td>###GW1B###<strong>message: </strong>###GW1E###</td>
 				<td><textarea cols=30 rows=5 name="###FIELD_NAME_GIFT_NOTE###" wrap="off">###GIFT_NOTE###</textarea></td>
 			</tr>
 			<tr> <td>
-			<nobr>###GW2B### quantity: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"> &nbsp; 
+			<nobr>###GW2B### quantity: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"> &nbsp;
 						<input type="hidden" name="giftnumber" value="###GIFTNO###">
 						<input type="hidden" name="mode_update" value="1">
 						<input type="Submit" name="order" value="put in basket"
@@ -434,7 +435,7 @@ Subpart for the search-form
 Subpart displayed if the search was empty. If the search was successfull, the ITEM_LIST_TEMPLATE in the top is used.
 
 -->
-###GW1B###<b>Søgningen var tom.</b>###GW1E###
+###GW1B###<b>SÃ¸gningen var tom.</b>###GW1E###
 <!-- ###ITEM_SEARCH_EMPTY### end -->
 
 
@@ -541,15 +542,15 @@ In addition there's a number of fields used for delivery and payment information
 				This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 			-->
 				<!-- ###MESSAGE_PAYMENT_11### begin -->
-				<br><b>Du kan kun bruge udenlandske Mastercard i vores butik. Desuden tager MasterCard 5,75% af transaktionsbeløbet i gebyr. Derfor bliver der kompenseret for dette beløb her.</b><br>
+				<br><b>Du kan kun bruge udenlandske Mastercard i vores butik. Desuden tager MasterCard 5,75% af transaktionsbelÃ¸bet i gebyr. Derfor bliver der kompenseret for dette belÃ¸b her.</b><br>
 				<!-- ###MESSAGE_PAYMENT_11### end -->
 				<!-- ###MESSAGE_PAYMENT_12### begin -->
 				<br>
-				<b>Du kan kun bruge udenlandske VISA-kort i vores butik. Desuden tager VISA 5,75% af transaktionsbeløbet i gebyr. Derfor bliver der kompenseret for dette beløb her.</b><br>
+				<b>Du kan kun bruge udenlandske VISA-kort i vores butik. Desuden tager VISA 5,75% af transaktionsbelÃ¸bet i gebyr. Derfor bliver der kompenseret for dette belÃ¸b her.</b><br>
 				<!-- ###MESSAGE_PAYMENT_12### end -->
 				<!-- ###MESSAGE_PAYMENT_13### begin -->
 				<br>
-				<b>Du kan kun bruge udenlandske Diners-kort i vores butik. Desuden tager Diners Club 5,75% af transaktionsbeløbet i gebyr. Derfor bliver der kompenseret for dette beløb her.</b><br>
+				<b>Du kan kun bruge udenlandske Diners-kort i vores butik. Desuden tager Diners Club 5,75% af transaktionsbelÃ¸bet i gebyr. Derfor bliver der kompenseret for dette belÃ¸b her.</b><br>
 				<!-- ###MESSAGE_PAYMENT_13### end -->
 			<!-- ###MESSAGE_PAYMENT### end -->
 ###GW2E###
@@ -565,7 +566,7 @@ In addition there's a number of fields used for delivery and payment information
 		</tr>
 		<tr>
 			<td valign=top colspan=5></td>
-			<td valign=top align=right nowrap>###GW1B### <b>¤ ###PRICE_TOTAL_TAX###</b><br>
+			<td valign=top align=right nowrap>###GW1B### <b>â‚¬ ###PRICE_TOTAL_TAX###</b><br>
 			(excl. tax: ###PRICE_TOTAL_NO_TAX###) ###GW1E###</td>
 		</tr>
 	</table>
@@ -586,8 +587,8 @@ In addition there's a number of fields used for delivery and payment information
 
 <h3>BASKET_OVERVIEW_TEMPLATE</h3>
 <em>The basket overview</em>
- 
- 
+
+
 <!-- ###BASKET_OVERVIEW_TEMPLATE### begin -->
 <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
 <!-- ###ITEM_LIST### begin -->
@@ -598,7 +599,7 @@ In addition there's a number of fields used for delivery and payment information
 <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
 <div style="text-align:right;">
   <hr style="border: 1px solid #901118; width: 100%; text-align:center;" />
-  <strong>total sum: ###PRICE_TOTAL_TAX### ¤</strong></div>
+  <strong>total sum: ###PRICE_TOTAL_TAX### â‚¬</strong></div>
 <div style="text-align:center; ">
     <a href="index.php?id=###PID_BASKET###"><< jump into basket >> </a >   </div>
 <!-- ###BASKET_OVERVIEW_TEMPLATE### end -->
@@ -635,9 +636,9 @@ Exact same features as BASKET_TEMPLATE
 			<!-- ###BILLING_ADDRESS### start -->
 
 			###GW1B###
-				Indtast din address her. Dette navn og denne adresse vil stå på regningen som den, der køber varerne. <br>
-				Normalt vil vi sende varerne til denne adresse, men hvis du angiver en alternativ adresse i felterne nedenfor, så vil vi sende dine varer derhen i stedet.<br>
-				Hvis du har valgt "Afhentning" som delivery form, så sendes varerne naturligvis ikke - heller ikke selvom du angiver en leveringsadresse nedenfor. Men det er dog stadig påkrævet, at du angiver en korrekt faktura adresse.
+				Indtast din address her. Dette navn og denne adresse vil stÃ¥ pÃ¥ regningen som den, der kÃ¸ber varerne. <br>
+				Normalt vil vi sende varerne til denne adresse, men hvis du angiver en alternativ adresse i felterne nedenfor, sÃ¥ vil vi sende dine varer derhen i stedet.<br>
+				Hvis du har valgt "Afhentning" som delivery form, sÃ¥ sendes varerne naturligvis ikke - heller ikke selvom du angiver en leveringsadresse nedenfor. Men det er dog stadig pÃ¥krÃ¦vet, at du angiver en korrekt faktura adresse.
 			###GW1E###
 				<br>
 				<br>
@@ -661,7 +662,7 @@ Exact same features as BASKET_TEMPLATE
 				</table><br>
 
 				###GW1B###
-				<em>Bemærk: Felter med * skal udfyldes!</em>
+				<em>BemÃ¦rk: Felter med * skal udfyldes!</em>
 				###GW1E###
 
 			<!-- ###BILLING_ADDRESS### end-->
@@ -704,7 +705,7 @@ Exact same features as BASKET_TEMPLATE
 			<td colspan=3>
 			<!-- ###DELIVERY_ADDRESS### begin -->
 			###GW1B###
-				Hvis du ønsker levering til en anden adresse end fakturaadressen ovenfor, så indtast den fulde adresse her. Du kan også angive en contact person/email i forbindelse med dette leveringssted.
+				Hvis du Ã¸nsker levering til en anden adresse end fakturaadressen ovenfor, sÃ¥ indtast den fulde adresse her. Du kan ogsÃ¥ angive en contact person/email i forbindelse med dette leveringssted.
 			###GW1E###
 				<br>
 				<br>
@@ -743,7 +744,7 @@ Exact same features as BASKET_TEMPLATE
 		<tr>
 			<td colspan=3>
 				###GW1B###
-					Hvis du har nogle kommentarer til din ordre eller leveringen, så benyt dette felt til disse.
+					Hvis du har nogle kommentarer til din ordre eller leveringen, sÃ¥ benyt dette felt til disse.
 				###GW1E###
 				<br>
 				<br>
@@ -761,7 +762,7 @@ Exact same features as BASKET_TEMPLATE
 	<br>
   <fieldset>
   <legend>Videre</legend>
-	<input type="Submit" name="products_update" value="back to basket">&nbsp;&nbsp;	
+	<input type="Submit" name="products_update" value="back to basket">&nbsp;&nbsp;
 	<input type="Submit" name="products_payment" value="pay / order" onClick="document.forms['###FORM_NAME###'].action='###FORM_URL_FINALIZE###';">
 	<input type="hidden" name="products_cmd" value="cardno" />
   </fieldset>
@@ -886,7 +887,7 @@ Exact same features as BASKET_TEMPLATE
 				<tr>
 					<td>###GW1B###email:###GW1E###</td>
 					<td>###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E###
-					###GW2B###<br>(Denne adresse modtager ordre bekræftelsen!)###GW2E###<br>
+					###GW2B###<br>(Denne adresse modtager ordre bekrÃ¦ftelsen!)###GW2E###<br>
 					</td>
 				</tr>
 				</table>
@@ -946,15 +947,15 @@ Exact same features as BASKET_TEMPLATE
 				This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 			-->
 				<!-- ###MESSAGE_PAYMENT_11### begin -->
-				<br><b>Du kan kun bruge udenlandske Mastercard i vores butik. Desuden tager MasterCard 5,75% af transaktionsbeløbet i gebyr. Derfor bliver der kompenseret for dette beløb her.</b><br>
+				<br><b>Du kan kun bruge udenlandske Mastercard i vores butik. Desuden tager MasterCard 5,75% af transaktionsbelÃ¸bet i gebyr. Derfor bliver der kompenseret for dette belÃ¸b her.</b><br>
 				<!-- ###MESSAGE_PAYMENT_11### end -->
 				<!-- ###MESSAGE_PAYMENT_12### begin -->
 				<br>
-				<b>Du kan kun bruge udenlandske VISA-kort i vores butik. Desuden tager VISA 5,75% af transaktionsbeløbet i gebyr. Derfor bliver der kompenseret for dette beløb her.</b><br>
+				<b>Du kan kun bruge udenlandske VISA-kort i vores butik. Desuden tager VISA 5,75% af transaktionsbelÃ¸bet i gebyr. Derfor bliver der kompenseret for dette belÃ¸b her.</b><br>
 				<!-- ###MESSAGE_PAYMENT_12### end -->
 				<!-- ###MESSAGE_PAYMENT_13### begin -->
 				<br>
-				<b>Du kan kun bruge udenlandske Diners-kort i vores butik. Desuden tager Diners Club 5,75% af transaktionsbeløbet i gebyr. Derfor bliver der kompenseret for dette beløb her.</b><br>
+				<b>Du kan kun bruge udenlandske Diners-kort i vores butik. Desuden tager Diners Club 5,75% af transaktionsbelÃ¸bet i gebyr. Derfor bliver der kompenseret for dette belÃ¸b her.</b><br>
 				<!-- ###MESSAGE_PAYMENT_13### end -->
 			<!-- ###MESSAGE_PAYMENT### end -->
 ###GW2E###
@@ -974,11 +975,11 @@ Exact same features as BASKET_TEMPLATE
 		</tr>
 		<tr>
 			<td valign=top colspan=3>###GW1B###
-				<strong>total beløb i DKR:</strong>
+				<strong>total belÃ¸b i DKR:</strong>
 			###GW1E###</td>
 
 			<td valign=top align=right colspan=3 nowrap>###GW1B###
-			<b>¤ ###PRICE_TOTAL_TAX###</b><br>
+			<b>â‚¬ ###PRICE_TOTAL_TAX###</b><br>
 			(excl. tax: ###PRICE_TOTAL_NO_TAX###)<br>
 
 			###GW1E###</td>
@@ -987,8 +988,8 @@ Exact same features as BASKET_TEMPLATE
 	<br>
 
 	<form method="post" action="###FORM_URL###" name="paymentform">
-	<input type="Submit" name="products_update" value="back to shopping">&nbsp;&nbsp;	
-	<input type="Submit" name="products_finalize" value="Udfør ordre" onclick="document.getElementsByName('paymentform')[0].action='###FORM_URL_THANKS###'; document.getElementsByName('paymentform')[0].target='###FORM_URL_TARGET###';">
+	<input type="Submit" name="products_update" value="back to shopping">&nbsp;&nbsp;
+	<input type="Submit" name="products_finalize" value="UdfÃ¸r ordre" onclick="document.getElementsByName('paymentform')[0].action='###FORM_URL_THANKS###'; document.getElementsByName('paymentform')[0].target='###FORM_URL_TARGET###';">
 	</form>
 
 <br>
@@ -1030,13 +1031,13 @@ Subpart used if the order is finalized and this is thus the confirmation shown.
 			<tr>
 				<td colspan=6>
 				###GW1B###
-					<b>Ordre bekræftelse:</b><br>
+					<b>Ordre bekrÃ¦ftelse:</b><br>
 					Mange tak fordi du handlede med os.<br>
-					Din ordre er gennemført og har nummer:<br><br>
+					Din ordre er gennemfÃ¸rt og har nummer:<br><br>
 										&nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_UID###</b> <br>
 										<br>
 										Brug dette nummer som reference ved henvendelse til Inter-Photo.<br>
-					Ordrebekræftelsen er også sendt til email-adressen under "Levering" (###DELIVERY_EMAIL###) såfremt denne er angivet. Du bør dog under alle omstændigheder printe denne page ud som bevis på din bestilling.<br>
+					OrdrebekrÃ¦ftelsen er ogsÃ¥ sendt til email-adressen under "Levering" (###DELIVERY_EMAIL###) sÃ¥fremt denne er angivet. Du bÃ¸r dog under alle omstÃ¦ndigheder printe denne page ud som bevis pÃ¥ din bestilling.<br>
 					<br>
 
 					<!-- ###MESSAGE_PAYMENT### begin
@@ -1063,17 +1064,17 @@ Subpart used if the order is finalized and this is thus the confirmation shown.
 						<br>
 						<!-- ###MESSAGE_PAYMENT_20### end -->
 						<!-- ###MESSAGE_PAYMENT_40### begin -->
-						<b>VIGTIGT! Dit næste skridt:</b><br>
-						Da du har valgt at betale for varerne forud skal du overføre pengene til Inter-Photo's bank- eller GIROkonto. <br>
+						<b>VIGTIGT! Dit nÃ¦ste skridt:</b><br>
+						Da du har valgt at betale for varerne forud skal du overfÃ¸re pengene til Inter-Photo's bank- eller GIROkonto. <br>
 						- Bank: Unibank. Reg: <strong>1938</strong> Konto: <strong>0381576000</strong><br>
 						- GIRO: 1160036<br>
-						- Check: Send til butikkens address. Ses nederst på denne page.<br>
-						Husk at anfør ordre-nummeret, ###ORDER_UID###, på overførslen.<br>
+						- Check: Send til butikkens address. Ses nederst pÃ¥ denne page.<br>
+						Husk at anfÃ¸r ordre-nummeret, ###ORDER_UID###, pÃ¥ overfÃ¸rslen.<br>
 						<br>
 						<!-- ###MESSAGE_PAYMENT_40### end -->
 						<!-- ###MESSAGE_PAYMENT_50### begin -->
-						<b>Køb på kredit</b><br>
-						Du har det privilegie at være kontokunde hos os, så beløbet bliver ganske enkelt skrevet på din regning i butikken - sådan som du er vant til!<br>
+						<b>KÃ¸b pÃ¥ kredit</b><br>
+						Du har det privilegie at vÃ¦re kontokunde hos os, sÃ¥ belÃ¸bet bliver ganske enkelt skrevet pÃ¥ din regning i butikken - sÃ¥dan som du er vant til!<br>
 						<br>
 						<!-- ###MESSAGE_PAYMENT_50### end -->
 					<!-- ###MESSAGE_PAYMENT### end -->
@@ -1081,10 +1082,10 @@ Subpart used if the order is finalized and this is thus the confirmation shown.
 					<b>Levering og ordrestatus:</b><br>
 					Levering sker iflg. vores salgs- og leveringsbetingelser inden for 3 dage fra ordreafgivelsen, som er dateret til ###ORDER_DATE###.<br>
 					<br>
-					Du kan følge status med din ordre ved at bruge dit trackingnummer, som er <br>
+					Du kan fÃ¸lge status med din ordre ved at bruge dit trackingnummer, som er <br>
 					<strong>###ORDER_TRACKING_NO###</strong>. Klik her for at <a href="index.php?id=###PID_TRACKING###&type=0&tracking=###ORDER_TRACKING_NO###">se status nu.</a><br><br>
 
-					Vi håber, at du har følt dig lige så godt betjent i vores Internet-butik, som i vores virkelige forretninger. Hvis du har forslag til forbedringer eller andre kommentarer, så skriv til <a href="mailto:butik@inter-photo.dk">butik@inter-photo.dk</a>.<br>
+					Vi hÃ¥ber, at du har fÃ¸lt dig lige sÃ¥ godt betjent i vores Internet-butik, som i vores virkelige forretninger. Hvis du har forslag til forbedringer eller andre kommentarer, sÃ¥ skriv til <a href="mailto:butik@inter-photo.dk">butik@inter-photo.dk</a>.<br>
 					<br>
 
 				###GW1E###
@@ -1271,11 +1272,11 @@ Subpart used if the order is finalized and this is thus the confirmation shown.
 		</tr>
 		<tr>
 			<td valign=top colspan=3>###GW1B###
-				<strong>total beløb i DKR:</strong>
+				<strong>total belÃ¸b i DKR:</strong>
 			###GW1E###</td>
 
 			<td valign=top align=right colspan=3>###GW1B###
-			<b>¤ ###PRICE_TOTAL_TAX###</b><br>
+			<b>â‚¬ ###PRICE_TOTAL_TAX###</b><br>
 			(excl. tax: ###PRICE_TOTAL_NO_TAX###)<br>
 
 			###GW1E###</td>
@@ -1328,7 +1329,7 @@ If the basket is empty this subpart is displayed
 If payment is initiated but the required information fields are not filled in correctly, this happens
 
 -->
-###GW1B###<b>Du har ikke udfyldt alle påkrævede felter med adresse information. ###ERROR_DETAILS### Gå venligst tilbage og gør det.</b>###GW1E###
+###GW1B###<b>Du har ikke udfyldt alle pÃ¥krÃ¦vede felter med adresse information. ###ERROR_DETAILS### GÃ¥ venligst tilbage og gÃ¸r det.</b>###GW1E###
 
 	<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
 	<input type="Submit" name="products_info" value="input address information" onClick="document.forms['###FORM_NAME###'].action='###FORM_URL_INFO###';">
@@ -1385,7 +1386,7 @@ Displays the view of the order status by tracking codes.
 -->
 ###GW1B###
 <b>your order (###ORDER_UID###) has this status:</b><br>
-(Nederste linie er seneste ændring)<br>
+(Nederste linie er seneste Ã¦ndring)<br>
 <br>
 
 <table border=1 cellpadding=0 cellspacing=4>
@@ -1438,7 +1439,7 @@ Displays the view of the order status by tracking codes.
 				###OTHER_ORDERS_OPTIONS###
 			</select><br><br>
 
-			<input type="Submit" name="submit" value="Vælg">
+			<input type="Submit" name="submit" value="VÃ¦lg">
 			<input type="hidden" name="update_code" value="###UPDATE_CODE###"><br>
 		</form>
 	<!-- ###ADMIN_CONTROL_OK### begin -->
@@ -1460,10 +1461,10 @@ Displays the view of the order status by tracking codes.
 
 
 <strong>email besked:</strong><br>
-Hvis du ønsker at modtage en besked til ordrens contactemail, ###FIELD_EMAIL###, hver gang status opdateres, så afkryds dette felt herunder.<br>
+Hvis du Ã¸nsker at modtage en besked til ordrens contactemail, ###FIELD_EMAIL###, hver gang status opdateres, sÃ¥ afkryds dette felt herunder.<br>
 	<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
 
-	<input type="checkbox" name="orderRecord[email_notify]" ###FIELD_EMAIL_NOTIFY###>Modtag besked ved status ændringer<br>
+	<input type="checkbox" name="orderRecord[email_notify]" ###FIELD_EMAIL_NOTIFY###>Modtag besked ved status Ã¦ndringer<br>
 	<input type="text" size=40 name="orderRecord[email]" value="###FIELD_EMAIL###">
 	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
 
@@ -1471,10 +1472,10 @@ Hvis du ønsker at modtage en besked til ordrens contactemail, ###FIELD_EMAIL###,
 	</form>
 <br><br>
 <strong>Besked til butikken:</strong><br>
-Du kan indsende en besked til butikken angående denne ordre.<br>
+Du kan indsende en besked til butikken angÃ¥ende denne ordre.<br>
 	<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
 	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
-	###GW1B###Vælg emne:###GW1B###<br>
+	###GW1B###VÃ¦lg emne:###GW1B###<br>
 	<select name="orderRecord[status][]" size="1">
 		<option value=51>Besked fra kunden til butikken</option>
 		<option value=50>Kunden anmoder om annullering</option>
@@ -1487,7 +1488,7 @@ Du kan indsende en besked til butikken angående denne ordre.<br>
 	</form>
 <br>
 <br>
-<b>Dette er din oprindelige ordre bekræftelse:</b><br><br>
+<b>Dette er din oprindelige ordre bekrÃ¦ftelse:</b><br><br>
 ###GW1E###
 <HR>
 <br>
@@ -1534,7 +1535,7 @@ Displays form for entering the tracking number.
 <!-- ###TRACKING_WRONG_NUMBER### begin
 Displays error message if no tracking code.
 -->
-###GW1B###<b>Den indtastede kode fandtes ikke! Prøv venligst igen!</b>###GW1E###<br>
+###GW1B###<b>Den indtastede kode fandtes ikke! PrÃ¸v venligst igen!</b>###GW1E###<br>
 
 
 	<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
@@ -1554,7 +1555,7 @@ First line is used as subject for the mail.
 Inter-Photo ordre status (###ORDER_UID###)
 
 ORDRE INFORMATION (###ORDER_UID###):
-Status på din ordre er blevet ændret:
+Status pÃ¥ din ordre er blevet Ã¦ndret:
 
 Tid: ###ORDER_STATUS_TIME###
 Status: ###ORDER_STATUS_INFO###
@@ -1564,8 +1565,8 @@ Kommentar:
 
 
 TRACKING:
-Du får denne email, fordi du har valgt at modtage information om din ordre ved at opgive din email adresse.
-Du kan følge status med din ordre samt ændre indstillinger for ordre information ved at bruge dit trackingnummer, som er
+Du fÃ¥r denne email, fordi du har valgt at modtage information om din ordre ved at opgive din email adresse.
+Du kan fÃ¸lge status med din ordre samt Ã¦ndre indstillinger for ordre information ved at bruge dit trackingnummer, som er
         ###ORDER_TRACKING_NO###
 
 <a href="http://###DOMAIN###/index.php?id=###PID_TRACKING###&type=0&tracking=###ORDER_TRACKING_NO###">Klik her for at se information nu:</a>
@@ -1592,7 +1593,7 @@ You have received a certificate
 Sender:     ###PERSON_NAME###
 Receiver:   ###DELIVERY_NAME###
 
-Comment:  
+Comment:
 ###ORDER_STATUS_COMMENT###
 
 value certificate in Euros:
@@ -1627,15 +1628,15 @@ Inter-Photo ordre ####ORDER_UID###
 
 Inter-Photo ordre ####ORDER_UID###
 
-ORDRE BEKRÆFTELSE:
-Din ordre er gennemført og har nummer ###ORDER_UID###.
+ORDRE BEKRÃ†FTELSE:
+Din ordre er gennemfÃ¸rt og har nummer ###ORDER_UID###.
 Brug dette nummer som reference ved henvendelse til Inter-Photo.
-Vi håber, at du har følt dig lige så godt betjent i
+Vi hÃ¥ber, at du har fÃ¸lt dig lige sÃ¥ godt betjent i
 vores Internet-butik, som i vores virkelige forretninger.
 
 
 TRACKING:
-Du kan følge status med din ordre ved at bruge dit trackingnummer, som er
+Du kan fÃ¸lge status med din ordre ved at bruge dit trackingnummer, som er
         http://###DOMAIN###/index.php?id=###PID_TRACKING###&type=0&tracking=###ORDER_TRACKING_NO###
 
 
@@ -1648,8 +1649,8 @@ ORDER:
 producttitel: ###PRODUCT_TITLE###<!-- ###display_variant2### --> (Size
   ###FIELD_SIZE_VALUE###)<!-- ###display_variant2### -->
 productnummer: ###PRODUCT_ITEMNUMBER###
-price: ###PRICE_TAX### ¤
-quantity: ###FIELD_QTY###        = ###PRICE_TOTAL_TAX### ¤
+price: ###PRICE_TAX### â‚¬
+quantity: ###FIELD_QTY###        = ###PRICE_TOTAL_TAX### â‚¬
 			<!-- ###ITEM_SINGLE### end -->
 		<!-- ###ITEM_LIST### end -->
 	<!-- ###ITEM_CATEGORY_AND_ITEMS###  end -->
@@ -1675,15 +1676,15 @@ email: ###DELIVERY_EMAIL###
 
 5) Forsendelse:
 ###SHIPPING_TITLE###
-price: ###PRICE_SHIPPING_TAX### ¤ (###PRICE_SHIPPING_NO_TAX### excl. tax)
+price: ###PRICE_SHIPPING_TAX### â‚¬ (###PRICE_SHIPPING_NO_TAX### excl. tax)
 
 
 6) payment form:
 ###PAYMENT_TITLE###
-price: ###PRICE_PAYMENT_TAX### ¤ (###PRICE_PAYMENT_NO_TAX### excl. tax)
+price: ###PRICE_PAYMENT_TAX### â‚¬ (###PRICE_PAYMENT_NO_TAX### excl. tax)
 
 
-TOTAL: ________________________ ¤ ###PRICE_TOTAL_TAX###
+TOTAL: ________________________ â‚¬ ###PRICE_TOTAL_TAX###
 (excl. tax: ###PRICE_TOTAL_NO_TAX###)
 
 Med venlig hilsen, Inter-Photo
@@ -1695,7 +1696,7 @@ Med venlig hilsen, Inter-Photo
 <!-- ###EMAIL_PLAINTEXT_TEMPLATE### end -->
 
 
- 	
+
 
 
 
@@ -1751,7 +1752,7 @@ Best Regards,
 
 -->
 </STYLE>
-<title>Inter-Photo: Betaling / Indkøbskurv</title>
+<title>Inter-Photo: Betaling / IndkÃ¸bskurv</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <meta name="generator" content="Typo 3.1 CMS">
 
@@ -1786,4 +1787,4 @@ Best Regards,
 <!-- ###EMAIL_HTML_SHELL### end -->
 
 
- 
+

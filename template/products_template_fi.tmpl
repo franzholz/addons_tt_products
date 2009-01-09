@@ -3,6 +3,7 @@
 <html>
 <head>
 	<TITLE>Products example template</TITLE>
+<!-- $Id$ -->
 </head>
 
 <body>
@@ -45,18 +46,18 @@
 		<td><img src="clear.gif" width=100 height=1></td>
 	</tr>
 	<!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
-		<!-- ###ITEM_CATEGORY### begin -->		
+		<!-- ###ITEM_CATEGORY### begin -->
 			<tr>
 				<td colspan=4 class="categoryname"><br>###GW1B###<strong>###CATEGORY_TITLE###</strong>###GW1E###
 				<br>
-				
+
 				</td>
 			</tr>
 		<!-- ###ITEM_CATEGORY### end -->
 		<!-- ###ITEM_LIST### begin -->
 			<tr>
 				<td colspan=3 bgcolor="###GC2###">###GW2B###<b>Tuote:</b>###GW2E###</td>
-				<td bgcolor="###GC2###">###GW2B###<b>Anna lukum‰‰r‰:</b>###GW2E###</td>
+				<td bgcolor="###GC2###">###GW2B###<b>Anna lukum√§√§r√§:</b>###GW2E###</td>
 			</tr>
 			<tr>
 				<td colspan=4><img src="clear.gif" width=1 height=6></td>
@@ -84,9 +85,9 @@
 					<td></td>
 					<TD valign=top>###GW2B######PRODUCT_NOTE######GW2E###<br />
 						###GW1B###<B>Hinta:</b> <strong class="red">###PRICE_TAX### EUR</strong>###GW1E###<br />
-						###GW2B###(ilman ALV:t‰: ###PRICE_NO_TAX###)###GW2E###
+						###GW2B###(ilman ALV:t√§: ###PRICE_NO_TAX###)###GW2E###
 					</TD>
-					<TD valign=top nowrap align=right>###GW2B### Lukum‰‰r‰: ###GW2E###<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"><BR><input class="submit submitAddToBasket" type="Submit" name="order" value="Laita ostoskoriin" onClick="if (!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
+					<TD valign=top nowrap align=right>###GW2B### Lukum√§√§r√§: ###GW2E###<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"><BR><input class="submit submitAddToBasket" type="Submit" name="order" value="Laita ostoskoriin" onClick="if (!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
 					</TD>
 				</TR>
 			</TABLE>
@@ -152,12 +153,12 @@
 			###GW1B###
 				<B>Luokka:</B> ###CATEGORY_TITLE### <br>
 				<B>Tuotenumero:</B> ###PRODUCT_ITEMNUMBER###<br>
-				<B>Hinta:</B> <strong class="red">###PRICE_TAX### EUR</strong>###GW2B### &nbsp; (ilman ALV:t‰ ###PRICE_NO_TAX###)###GW2E###<br>
-				
+				<B>Hinta:</B> <strong class="red">###PRICE_TAX### EUR</strong>###GW2B### &nbsp; (ilman ALV:t√§ ###PRICE_NO_TAX###)###GW2E###<br>
+
 				<B>Info:</B><br>
 				###PRODUCT_NOTE###<br>
 			###GW1E###	<br>
-				<nobr>###GW2B### Lukum‰‰r‰: ###GW2E###<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"> &nbsp; <input class="submit submitAddToBasket"type="Submit" name="order" value="Laita ostoskoriin" onClick="if (!document.forms[0]['###FIELD_NAME###'].value!=''){document.forms[0]['###FIELD_NAME###'].value=1;};"></nobr>
+				<nobr>###GW2B### Lukum√§√§r√§: ###GW2E###<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"> &nbsp; <input class="submit submitAddToBasket"type="Submit" name="order" value="Laita ostoskoriin" onClick="if (!document.forms[0]['###FIELD_NAME###'].value!=''){document.forms[0]['###FIELD_NAME###'].value=1;};"></nobr>
 		</TD>
 	</TR>
 </form>
@@ -165,12 +166,12 @@
 <br>
 <br>
 
-###GW2B###	
+###GW2B###
 <!--###LINK_ITEM###-->
 <b><- Back to the list</b>
 <!--###LINK_ITEM###-->
-###GW2E###						
-	
+###GW2E###
+
 <!-- ###ITEM_SINGLE_DISPLAY### end -->
 
 
@@ -218,7 +219,7 @@
 <!-- ###ITEM_SEARCH_EMPTY### begin
 	Subpart displayed if the search was empty. If the search was successfull, the ITEM_LIST_TEMPLATE in the top is used.
 -->
-###GW1B###<B>Etsint‰ ei tuottanut yht‰‰ hakutulosta.</B>###GW1E###
+###GW1B###<B>Etsint√§ ei tuottanut yht√§√§ hakutulosta.</B>###GW1E###
 <!-- ###ITEM_SEARCH_EMPTY### end -->
 
 
@@ -258,11 +259,11 @@ In addition there's a number of fields used for delivery and payment information
 	<tr>
 		<td colspan=3 bgcolor="###GC2###">###GW2B###<b>Tuote:</b>###GW2E###</td>
 		<td bgcolor="###GC2###">###GW2B###<b>Hinta:</b>###GW2E###</td>
-		<td bgcolor="###GC2###">###GW2B###<b>Lukum‰‰r‰:</b>###GW2E###</td>
+		<td bgcolor="###GC2###">###GW2B###<b>Lukum√§√§r√§:</b>###GW2E###</td>
 		<td align=center bgcolor="###GC2###">###GW2B###<b>Kokonaissumma:</b>###GW2E###</td>
 	</tr>
 	<!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
-		<!-- ###ITEM_CATEGORY### begin -->		
+		<!-- ###ITEM_CATEGORY### begin -->
 			<tr>
 				<td colspan=6><br>###CATEGORY_TITLE###<br>
 				</td>
@@ -278,7 +279,7 @@ In addition there's a number of fields used for delivery and payment information
 					<td></td>
 					<TD valign=top>
 						<!--###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###<!--###LINK_ITEM###-->
-						
+
 					</TD>
 					<td valign=top>###GW1B### ###PRICE_TAX### ###GW1E###</td>
 					<TD valign=top>&nbsp;<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME_BASKET###" value="###FIELD_QTY###">&nbsp;</TD>
@@ -300,7 +301,7 @@ In addition there's a number of fields used for delivery and payment information
 	<TR>
 		<td colspan=5>
 		###GW1B###Kuljetus: <b>###SHIPPING_TITLE###</B>###GW1E###<br><br>
-							
+
 		###SHIPPING_SELECTOR###
 
 		###SHIPPING_IMAGE###
@@ -320,21 +321,21 @@ In addition there's a number of fields used for delivery and payment information
 	<TR>
 		<td colspan=5>
 		###GW1B###
-		
+
 		###PAYMENT_SELECTOR###
 
 		###GW1E###
-		
+
 ###GW2B###
 		<!-- ###MESSAGE_PAYMENT### begin
 			This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 		-->
 			<!-- ###MESSAGE_PAYMENT_10### begin -->
-			<BR><B class="paymentCard">Voit k‰ytt‰‰ kaupassamme vain kansainv‰list‰ maksukorttia!</b><br>
+			<BR><B class="paymentCard">Voit k√§ytt√§√§ kaupassamme vain kansainv√§list√§ maksukorttia!</b><br>
 			<!-- ###MESSAGE_PAYMENT_10### end -->
 		<!-- ###MESSAGE_PAYMENT### end -->
 ###GW2E###
-		
+
 		</td>
 		<td valign=top align=right>###GW1B### <b>###PRICE_PAYMENT_TAX###</b> <BR>(###PRICE_PAYMENT_NO_TAX###) ###GW1E###</td>
 	</TR>
@@ -351,7 +352,7 @@ In addition there's a number of fields used for delivery and payment information
 	</TR>
 </TABLE>
 <input type="hidden" name="mode_update" value="1">
-<input type="Submit" class="submit resetBasket" name="products_update" value="P‰ivit‰ ostoskori">&nbsp;&nbsp;	
+<input type="Submit" class="submit resetBasket" name="products_update" value="P√§ivit√§ ostoskori">&nbsp;&nbsp;
 <input type="Submit" class="submit productInfo" name="products_info" value="Maksa/tilaa" onClick="document.forms[0].action='###FORM_URL_INFO###';">
 </FORM>
 <BR>
@@ -393,14 +394,14 @@ Exact same features as BASKET_TEMPLATE<BR>
 		<!-- ###BILLING_ADDRESS### start -->
 		###GW1B###
 			Anna osoitteese. Nimi ja osoitet tulostetaan laskussa sille, joka ostaa tavarat.<br>
-			Tavallisesti tavarat myˆs toimitetaan t‰h‰n osoitteeseen, mutta voi antaa myˆs vaihtoehtoisen osoitteen. Jos haluat niin tehd‰, t‰yt‰ alla olevat kent‰t ja me l‰het‰mme tavarat t‰h‰n osoitteeseen.<br>
-			<span class="pickup">Jos valitse jakelutavaksi noutamisen, tavaroita ei tietenk‰‰n l‰hetet‰.</span> 
+			Tavallisesti tavarat my√∂s toimitetaan t√§h√§n osoitteeseen, mutta voi antaa my√∂s vaihtoehtoisen osoitteen. Jos haluat niin tehd√§, t√§yt√§ alla olevat kent√§t ja me l√§het√§mme tavarat t√§h√§n osoitteeseen.<br>
+			<span class="pickup">Jos valitse jakelutavaksi noutamisen, tavaroita ei tietenk√§√§n l√§hetet√§.</span>
 		###GW1E###
 			<br>
 			<br>
 			<table>
 			<tr>
-				<td>###GW1B###<strong>Nimi/yhtiˆ: </strong>*###GW1E###</td>
+				<td>###GW1B###<strong>Nimi/yhti√∂: </strong>*###GW1E###</td>
 				<td><input type="text" name="recs[personinfo][name]" size="30" value="###PERSON_NAME###"></td>
 			</tr>
 			<tr>
@@ -412,24 +413,24 @@ Exact same features as BASKET_TEMPLATE<BR>
 				<td><input type="text" name="recs[personinfo][telephone]" size="30" value="###PERSON_TELEPHONE###"></td>
 			</tr>
 			<tr>
-				<td>###GW1B###<strong>S‰hkˆposti:</strong>###GW1E###</td>
+				<td>###GW1B###<strong>S√§hk√∂posti:</strong>###GW1E###</td>
 				<td><input type="text" name="recs[personinfo][email]" size="30" value="###PERSON_EMAIL###"></td>
 			</tr>
 			</table><br>
-			
+
 			###GW1B###
-			<em>Huomaa: Kent‰t joissa on * on pakko t‰ytt‰‰!</em>
+			<em>Huomaa: Kent√§t joissa on * on pakko t√§ytt√§√§!</em>
 			###GW1E###
 		<!-- ###BILLING_ADDRESS### end-->
 
-		
+
 		<!-- ###BILLING_ADDRESS_LOGIN### start
 			If this part is not empty then this will be used instead of BILLING_ADDRESS if there is a FE-login user.
 		 -->
 			<br>
 			<table>
 			<tr>
-				<td>###GW1B###<strong>Nimi/yhtiˆ:</strong>###GW1E###</td>
+				<td>###GW1B###<strong>Nimi/yhti√∂:</strong>###GW1E###</td>
 				<td>###GW1B######PERSON_NAME######GW1E###</td>
 			</tr>
 			<tr>
@@ -441,7 +442,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 				<td>###GW1B######PERSON_TELEPHONE######GW1E###</td>
 			</tr>
 			<tr>
-				<td>###GW1B###<strong>S‰hkˆposti:</strong>###GW1E###</td>
+				<td>###GW1B###<strong>S√§hk√∂posti:</strong>###GW1E###</td>
 				<td>###GW1B######PERSON_EMAIL######GW1E###</td>
 			</tr>
 			</table>
@@ -458,14 +459,14 @@ Exact same features as BASKET_TEMPLATE<BR>
 	<tr>
 		<td colspan=3>
 		###GW1B###
-			Jos haluat ett‰ tavarat l‰hetet‰‰n eri osoitteeseen kuin mik‰ on yll‰ oleva laskutusosoite, t‰yt‰ koko osoite t‰ss‰. Voit myˆs antaa eri kontaktihenkilˆn/s‰hkˆpostiosoitteen.
+			Jos haluat ett√§ tavarat l√§hetet√§√§n eri osoitteeseen kuin mik√§ on yll√§ oleva laskutusosoite, t√§yt√§ koko osoite t√§ss√§. Voit my√∂s antaa eri kontaktihenkil√∂n/s√§hk√∂postiosoitteen.
 		###GW1E###
 			<br>
 			<br>
 
 			<table>
 			<tr>
-				<td>###GW1B###<strong>Kontaktihenkilˆ:</strong>###GW1E###</td>
+				<td>###GW1B###<strong>Kontaktihenkil√∂:</strong>###GW1E###</td>
 				<td><input type="text" name="recs[delivery][name]" size="30" value="###DELIVERY_NAME###"></td>
 			</tr>
 			<tr>
@@ -477,7 +478,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 				<td><input type="text" name="recs[delivery][telephone]" size="30" value="###DELIVERY_TELEPHONE###"></td>
 			</tr>
 			<tr>
-				<td>###GW1B###<strong>S‰hkˆposti:</strong>###GW1E###</td>
+				<td>###GW1B###<strong>S√§hk√∂posti:</strong>###GW1E###</td>
 				<td><input type="text" name="recs[delivery][email]" size="30" value="###DELIVERY_EMAIL###"></td>
 			</tr>
 			</table>
@@ -494,7 +495,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 	<tr>
 		<td colspan=3>
 			###GW1B###
-				Jos sinulla on jotain lis‰kommentiia, t‰yt‰ alla oleva lomake:
+				Jos sinulla on jotain lis√§kommentiia, t√§yt√§ alla oleva lomake:
 			###GW1E###
 			<br>
 			<br>
@@ -546,11 +547,11 @@ Exact same features as BASKET_TEMPLATE<BR>
 		<tr>
 			<td colspan=3 bgcolor="###GC2###">###GW2B###<b>Tuote:</b>###GW2E###</td>
 			<td bgcolor="###GC2###">###GW2B###<b>Hinta:</b>###GW2E###</td>
-			<td bgcolor="###GC2###">###GW2B###<b>M‰‰r‰:</b>###GW2E###</td>
+			<td bgcolor="###GC2###">###GW2B###<b>M√§√§r√§:</b>###GW2E###</td>
 			<td bgcolor="###GC2###">###GW2B###<b>Kokonaissumma:</b>###GW2E###</td>
 		</tr>
 		<!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
-			<!-- ###ITEM_CATEGORY### begin -->		
+			<!-- ###ITEM_CATEGORY### begin -->
 				<tr>
 					<td colspan=6><br>###CATEGORY_TITLE###<br>
 					</td>
@@ -566,7 +567,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 						<td></td>
 						<TD valign=top>
 							###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
-							
+
 						</TD>
 						<td valign=top>###GW1B### ###PRICE_TAX### ###GW1E###</td>
 						<TD valign=top>###GW1B### ###FIELD_QTY### ###GW1E###</TD>
@@ -586,7 +587,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 		<td colspan=3>
 			<table cellspacing=3>
 			<tr>
-				<td>###GW1B###Nimi/yhtiˆ:###GW1E###</td>
+				<td>###GW1B###Nimi/yhti√∂:###GW1E###</td>
 				<td>###GW1B###<strong>###PERSON_NAME###</strong>###GW1E###</td>
 			</tr>
 			<tr>
@@ -598,7 +599,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 				<td>###GW1B###<strong>###PERSON_TELEPHONE###</strong>###GW1E###</td>
 			</tr>
 			<tr>
-				<td>###GW1B###S‰hkˆposti:###GW1E###</td>
+				<td>###GW1B###S√§hk√∂posti:###GW1E###</td>
 				<td>###GW1B###<strong>###PERSON_EMAIL###</strong>###GW1E###</td>
 			</tr>
 			</table>
@@ -623,7 +624,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 				<td>###GW1B###<strong>###DELIVERY_ADDRESS_DISPLAY###</strong>###GW1E###</td>
 			</tr>
 			<tr>
-				<td>###GW1B###Kontaktihenkilˆ:###GW1E###</td>
+				<td>###GW1B###Kontaktihenkil√∂:###GW1E###</td>
 				<td>###GW1B###<strong>###DELIVERY_NAME###</strong>###GW1E###</td>
 			</tr>
 			<tr>
@@ -631,9 +632,9 @@ Exact same features as BASKET_TEMPLATE<BR>
 				<td>###GW1B###<strong>###DELIVERY_TELEPHONE###</strong>###GW1E###</td>
 			</tr>
 			<tr>
-				<td>###GW1B###S‰hkˆposti:###GW1E###</td>
+				<td>###GW1B###S√§hk√∂posti:###GW1E###</td>
 				<td>###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E###
-				###GW2B###<BR>(Tilausvahvistus tulee ‰h‰n osoitteeseen!)###GW2E###<BR>
+				###GW2B###<BR>(Tilausvahvistus tulee √§h√§n osoitteeseen!)###GW2E###<BR>
 				</td>
 			</tr>
 			</table>
@@ -672,15 +673,15 @@ Exact same features as BASKET_TEMPLATE<BR>
 
 	<TR>
 		<td valign=top colspan=3>###GW1B###
-			<strong>L‰hetystapa:</strong><br>
-			###SHIPPING_IMAGE### ###SHIPPING_TITLE###				
-			
+			<strong>L√§hetystapa:</strong><br>
+			###SHIPPING_IMAGE### ###SHIPPING_TITLE###
+
 		###GW1E###</td>
-		
+
 		<td valign=top align=right colspan=3>###GW1B###
 		<b>###PRICE_SHIPPING_TAX###</b><br>
 		(###PRICE_SHIPPING_NO_TAX###)<br>
-						
+
 		###GW1E###</td>
 	</TR>
 	<TR>
@@ -689,12 +690,12 @@ Exact same features as BASKET_TEMPLATE<BR>
 			###PAYMENT_IMAGE### ###PAYMENT_TITLE###
 		###GW1E###
 ###GW2B###
-		<!-- ###MESSAGE_PAYMENT### 
+		<!-- ###MESSAGE_PAYMENT###
 			This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 		-->
 			<!-- ###MESSAGE_PAYMENT_10### begin -->
-			
-			<B class="paymentCard">Voit k‰ytt‰‰ kaupassamme vain kansainv‰list‰ maksukorttia!</b><br>
+
+			<B class="paymentCard">Voit k√§ytt√§√§ kaupassamme vain kansainv√§list√§ maksukorttia!</b><br>
 			<!-- ###MESSAGE_PAYMENT_10### end -->
 		<!-- ###MESSAGE_PAYMENT### -->
 ###GW2E###
@@ -702,7 +703,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 		<td valign=top align=right colspan=3>###GW1B###
 		<b>###PRICE_PAYMENT_TAX###</b><br>
 		(###PRICE_PAYMENT_NO_TAX###)<br>
-						
+
 		###GW1E###</td>
 	</TR>
 	<tr>
@@ -713,19 +714,19 @@ Exact same features as BASKET_TEMPLATE<BR>
 	</tr>
 	<TR>
 		<td valign=top colspan=3>###GW1B###
-			<strong>Kokonaissumma euroina:</strong>				
+			<strong>Kokonaissumma euroina:</strong>
 		###GW1E###</td>
-		
+
 		<td valign=top align=right colspan=3 nowrap>###GW1B###
 		<b>EUR ###PRICE_TOTAL_TAX###</b><br>
-		(ilman ALV:t‰: ###PRICE_TOTAL_NO_TAX###)<br>
-						
+		(ilman ALV:t√§: ###PRICE_TOTAL_NO_TAX###)<br>
+
 		###GW1E###</td>
 	</TR>
 </TABLE>
 <br>
 <FORM method="post" action="###FORM_URL###">
-<input type="Submit" name="products_update" class="submit submitBackToBasket"value="Takaisin ostoskoriin">&nbsp;&nbsp;	<input type="Submit" class="submit finalize"name="products_finalize" value="P‰‰t‰ tilaus!" onClick="document.forms[0].action='###FORM_URL_THANKS###'; document.forms[0].target='###FORM_URL_TARGET###';">
+<input type="Submit" name="products_update" class="submit submitBackToBasket"value="Takaisin ostoskoriin">&nbsp;&nbsp;	<input type="Submit" class="submit finalize"name="products_finalize" value="P√§√§t√§ tilaus!" onClick="document.forms[0].action='###FORM_URL_THANKS###'; document.forms[0].target='###FORM_URL_TARGET###';">
 </FORM>
 <BR>
 <!-- ###BASKET_PAYMENT_TEMPLATE### end -->
@@ -762,36 +763,36 @@ Exact same features as BASKET_TEMPLATE<BR>
 		<td colspan=3><img src="clear.gif" width=200 height=1></td>
 	</tr>
 
-	
-	<!-- p‰‰sty t‰h‰n -->
+
+	<!-- p√§√§sty t√§h√§n -->
 	<tr>
 		<td colspan=6>
 		###GW1B###
 			<b>Tilausvahvistus:</b><br>
 			Kiitos asioinnista kanssamme!<br>
-			Tilauksesi on k‰sitelty ja sen numero on:<br><br>
+			Tilauksesi on k√§sitelty ja sen numero on:<br><br>
 								&nbsp;&nbsp;&nbsp;&nbsp;<B>###ORDER_UID###</B> <br>
 								<br>
-								K‰yt‰ t‰t‰ numeroa viittauksena kun otat meihin yhteytt‰.<br>
-			Tilausvahvisitus on l‰hetetty s‰hkˆpostilla ilmoittamaasi jakeluosoitteeseen (###DELIVERY_EMAIL###). Mutta sinun tulee joka tapauksessa tulostaa t‰m‰ sivu sivu todisteena tilauksestasi.<br>
+								K√§yt√§ t√§t√§ numeroa viittauksena kun otat meihin yhteytt√§.<br>
+			Tilausvahvisitus on l√§hetetty s√§hk√∂postilla ilmoittamaasi jakeluosoitteeseen (###DELIVERY_EMAIL###). Mutta sinun tulee joka tapauksessa tulostaa t√§m√§ sivu sivu todisteena tilauksestasi.<br>
 			<br>
-		
-			<!-- ###MESSAGE_PAYMENT### 
+
+			<!-- ###MESSAGE_PAYMENT###
 				This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 			-->
 				<!-- ###MESSAGE_PAYMENT_10### begin
 					Message for payment method 10
 				-->
-				<B>Mastercard-toimenpide hyv‰ksyttiin</B> ja siirrolla on numero, ###TRANSACT_CODE###.<br>
+				<B>Mastercard-toimenpide hyv√§ksyttiin</B> ja siirrolla on numero, ###TRANSACT_CODE###.<br>
 				<br>
 				<!-- ###MESSAGE_PAYMENT_10### end -->
 				<!-- ###MESSAGE_PAYMENT_40### begin
 					Message for payment method 40, in this case not a credit card but plain ordering
 				-->
-				<B>T‰rke‰‰! Seuraava vaihe:</B><br>
+				<B>T√§rke√§√§! Seuraava vaihe:</B><br>
 				Olet valinnut tavaroittesi maksutavaksi tilisiiirron. Siihen tarvitaan seuraavia tietoja:<br>
 				- Pankki: <strong>xxxx</strong> Tili: <strong>xxxxxxxx</strong><br>
-				- Shekki: l‰het‰ shekki postiosoitteeseeemme (katso sivun alalaita).<br>
+				- Shekki: l√§het√§ shekki postiosoitteeseeemme (katso sivun alalaita).<br>
 				Muista antaa tilausnumero, ###ORDER_UID###!<br>
 				<br>
 				<!-- ###MESSAGE_PAYMENT_40### -->
@@ -799,28 +800,28 @@ Exact same features as BASKET_TEMPLATE<BR>
 					Message for payment method 50, in this case the customer has chosed to by on credit.
 				-->
 				<B>Luotto</B><br>
-				Sin‰ olet etuasiakas (olet kirjautunut...), joten annamme luottoa<br>				
+				Sin√§ olet etuasiakas (olet kirjautunut...), joten annamme luottoa<br>
 				<!-- ###MESSAGE_PAYMENT_50### -->
 			<!-- ###MESSAGE_PAYMENT### -->
 
 			<b>Jakelu- ja tilaustilanne.</b><br>
-			Jakelu tehd‰‰n myyntipolitiikkamme mukaisesti. Tilauksesi on p‰iv‰tty ###ORDER_DATE###.<br>
+			Jakelu tehd√§√§n myyntipolitiikkamme mukaisesti. Tilauksesi on p√§iv√§tty ###ORDER_DATE###.<br>
 			<br>
-			Voit seurata tilauksesi k‰sittely‰ k‰ytt‰en seuraavaa seurantanumeroa: <br>
-			<strong>###ORDER_TRACKING_NO###</strong>. Klikkaa <a href="index.php?id=###PID_TRACKING###&type=0&tracking=###ORDER_TRACKING_NO###">t‰st‰</a> n‰hd‰ksesi nykyisen tilanteen.<br><br>
+			Voit seurata tilauksesi k√§sittely√§ k√§ytt√§en seuraavaa seurantanumeroa: <br>
+			<strong>###ORDER_TRACKING_NO###</strong>. Klikkaa <a href="index.php?id=###PID_TRACKING###&type=0&tracking=###ORDER_TRACKING_NO###">t√§st√§</a> n√§hd√§ksesi nykyisen tilanteen.<br><br>
 			<br>
 		###GW1E###
-		###EXTERNAL_COBJECT###				
+		###EXTERNAL_COBJECT###
 		</td>
 	</tr>
 	<tr>
 		<td colspan=3 bgcolor="###GC2###">###GW2B###<b>Tuote:</b>###GW2E###</td>
 		<td bgcolor="###GC2###">###GW2B###<b>Hinta:</b>###GW2E###</td>
-		<td bgcolor="###GC2###">###GW2B###<b>M‰‰r‰:</b>###GW2E###</td>
+		<td bgcolor="###GC2###">###GW2B###<b>M√§√§r√§:</b>###GW2E###</td>
 		<td bgcolor="###GC2###">###GW2B###<b>Kokonaissumma:</b>###GW2E###</td>
 	</tr>
 	<!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
-		<!-- ###ITEM_CATEGORY### begin -->		
+		<!-- ###ITEM_CATEGORY### begin -->
 			<tr>
 				<td colspan=6><br>###CATEGORY_TITLE###<br>
 				</td>
@@ -836,7 +837,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 					<td></td>
 					<TD valign=top>
 						###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
-						
+
 					</TD>
 					<td valign=top>###GW1B### ###PRICE_TAX### ###GW1E###</td>
 					<TD valign=top>###GW1B### ###FIELD_QTY### ###GW1E###</TD>
@@ -856,7 +857,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 		<td colspan=3>
 			<table cellspacing=3>
 			<tr>
-				<td>###GW1B###Nimi/yhtiˆ:###GW1E###</td>
+				<td>###GW1B###Nimi/yhti√∂:###GW1E###</td>
 				<td>###GW1B###<strong>###PERSON_NAME###</strong>###GW1E###</td>
 			</tr>
 			<tr>
@@ -868,21 +869,21 @@ Exact same features as BASKET_TEMPLATE<BR>
 				<td>###GW1B###<strong>###PERSON_TELEPHONE###</strong>###GW1E###</td>
 			</tr>
 			<tr>
-				<td>###GW1B###S‰hkˆposti:###GW1E###</td>
+				<td>###GW1B###S√§hk√∂posti:###GW1E###</td>
 				<td>###GW1B###<strong>###PERSON_EMAIL###</strong>###GW1E###</td>
 			</tr>
-	
+
 				<!-- ###FE_USER_SECTION###  begin -->
 			<tr>
-				<td>###GW1B###K‰ytt‰j‰nimi:###GW1E###</td>
+				<td>###GW1B###K√§ytt√§j√§nimi:###GW1E###</td>
 				<td>###GW1B###<strong>###FE_USER_USERNAME###</strong>###GW1E###</td>
 			</tr>
 			<tr>
-				<td>###GW1B###K‰ytt‰j‰tunnus (ID):###GW1E###</td>
+				<td>###GW1B###K√§ytt√§j√§tunnus (ID):###GW1E###</td>
 				<td>###GW1B###<strong>###FE_USER_UID###</strong>###GW1E###</td>
 			</tr>
 				<!-- ###FE_USER_SECTION###  end -->
-	
+
 			</table>
 		</td>
 		<td colspan=3></td>
@@ -902,7 +903,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 				<td>###GW1B###<strong>###DELIVERY_ADDRESS_DISPLAY###</strong>###GW1E###</td>
 			</tr>
 			<tr>
-				<td>###GW1B###Kontaktihenkilˆ:###GW1E###</td>
+				<td>###GW1B###Kontaktihenkil√∂:###GW1E###</td>
 				<td>###GW1B###<strong>###DELIVERY_NAME###</strong>###GW1E###</td>
 			</tr>
 			<tr>
@@ -910,7 +911,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 				<td>###GW1B###<strong>###DELIVERY_TELEPHONE###</strong>###GW1E###</td>
 			</tr>
 			<tr>
-				<td>###GW1B###S‰hkˆposti:###GW1E###</td>
+				<td>###GW1B###S√§hk√∂posti:###GW1E###</td>
 				<td>###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E###</td>
 			</tr>
 			</table>
@@ -945,14 +946,14 @@ Exact same features as BASKET_TEMPLATE<BR>
 	<TR>
 		<td valign=top colspan=3>###GW1B###
 			<strong>Jakelutapa:</strong><br>
-			###SHIPPING_IMAGE### ###SHIPPING_TITLE###				
-			
+			###SHIPPING_IMAGE### ###SHIPPING_TITLE###
+
 		###GW1E###</td>
-		
+
 		<td valign=top align=right colspan=3>###GW1B###
 		<b>###PRICE_SHIPPING_TAX###</b><br>
 		(###PRICE_SHIPPING_NO_TAX###)<br>
-						
+
 		###GW1E###</td>
 	</TR>
 	<TR>
@@ -960,11 +961,11 @@ Exact same features as BASKET_TEMPLATE<BR>
 			<strong>Maksutapa:</strong><br>
 			###PAYMENT_IMAGE### ###PAYMENT_TITLE###
 		###GW1E###</td>
-		
+
 		<td valign=top align=right colspan=3>###GW1B###
 		<b>###PRICE_PAYMENT_TAX###</b><br>
 		(###PRICE_PAYMENT_NO_TAX###)<br>
-						
+
 		###GW1E###</td>
 	</TR>
 	<tr>
@@ -975,26 +976,26 @@ Exact same features as BASKET_TEMPLATE<BR>
 	</tr>
 	<TR>
 		<td valign=top colspan=3>###GW1B###
-			<strong>Kokonaissumma euroina:</strong>				
+			<strong>Kokonaissumma euroina:</strong>
 		###GW1E###</td>
-		
+
 		<td valign=top align=right colspan=3>###GW1B###
 		<b>USD ###PRICE_TOTAL_TAX###</b><br>
 		(w/o VAT: ###PRICE_TOTAL_NO_TAX###)<br>
-						
+
 		###GW1E###</td>
 	</TR>
 		<tr>
 			<td colspan=6>
 			###GW1B###
-	
+
 	<br>
 	<br>
 	Best regards:
 	<br>
 	<br>
-	
-	&nbsp;&nbsp;&nbsp;<strong>Yhtiˆni</strong><br>
+
+	&nbsp;&nbsp;&nbsp;<strong>Yhti√∂ni</strong><br>
 	&nbsp;&nbsp;&nbsp;Katuosoitteeni<br>
 	&nbsp;&nbsp;&nbsp;1234 Kaupunkini<br>
 	<br>
@@ -1031,7 +1032,7 @@ If the basket is empty this subpart is displayed<br>
 <!-- ###BASKET_TEMPLATE_EMPTY### begin
 	If the basket is empty this subpart is displayed
 -->
-###GW1B###<B>Ostoskori on tyhj‰.</B>###GW1E###
+###GW1B###<B>Ostoskori on tyhj√§.</B>###GW1E###
 <!-- ###BASKET_TEMPLATE_EMPTY### end -->
 
 
@@ -1080,7 +1081,7 @@ Displays the view of the order status by tracking codes.<br>
 -->
 ###GW1B###
 <B>Tilauksesi (###ORDER_UID###) tila:</B><br>
-(viimeisell‰ rivill‰ on viimeisin muutos)<br>
+(viimeisell√§ rivill√§ on viimeisin muutos)<br>
 <br>
 
 <table border=1 cellpadding=0 cellspacing=4>
@@ -1090,20 +1091,20 @@ Displays the view of the order status by tracking codes.<br>
 		<td>###GW2B### <strong>Tapahtuma:</strong> ###GW2E###</td>
 		<td>###GW2B### <strong>Kommentti:</strong> ###GW2E###</td>
 	</tr>
-	<!-- ###STATUS_ITEM### begin 
+	<!-- ###STATUS_ITEM### begin
 		This part is repeated for each order status item and finally this part in the template code is substituted with the accumulated code for all order status actions.
-	-->		
+	-->
 	<tr>
 		<td nowrap valign=top>###GW2B### ###ORDER_STATUS_TIME### &nbsp;###GW2E###</td>
 		<td valign=top>###GW2B### ###ORDER_STATUS### &nbsp;###GW2E###</td>
 		<td nowrap valign=top>###GW2B### ###ORDER_STATUS_INFO### &nbsp;###GW2E###</td>
 		<td valign=top>###GW2B### ###ORDER_STATUS_COMMENT### &nbsp;###GW2E###</td>
 	</tr>
-	<!-- ###STATUS_ITEM### end -->		
+	<!-- ###STATUS_ITEM### end -->
 </table>
 <br>
 
-<!-- ###ADMIN_CONTROL### begin -->		
+<!-- ###ADMIN_CONTROL### begin -->
 <table border=0 cellpadding=1 cellspacing=0 bgcolor="black"><tr><td>
 	<table border=0 cellpadding=10 cellspacing=0 bgcolor="#92AFCB"><tr><td>
 		###GW1B### <strong>Shop ADMIN:</strong><br>
@@ -1111,18 +1112,18 @@ Displays the view of the order status by tracking codes.<br>
 		<br>
 		###GW1B###
 
-		<!-- ###ADMIN_CONTROL_OK### begin -->		
+		<!-- ###ADMIN_CONTROL_OK### begin -->
 		<FORM method="post" action="###FORM_URL###">
 		<select name="orderRecord[status][]" size="9" multiple>
 			###STATUS_OPTIONS###
-		</select>	
+		</select>
 			<br>
 			###GW1B###Uuden tilaustilanteen kommentti:###GW1B###<br>
 			<textarea cols="40" rows="5" name="orderRecord[status_comment]"></textarea><br>
-	
+
 			<input type="hidden" name="tracking" value="###TRACKING_NUMBER###"><br>
 			<input type="hidden" name="update_code" value="###UPDATE_CODE###"><br>
-			<input type="Submit" class="submit addStatus"name="submit" value="Lis‰‰ tilaustilanne">
+			<input type="Submit" class="submit addStatus"name="submit" value="Lis√§√§ tilaustilanne">
 			</FORM>
 			<hr>
 			Vaihda toiseen tilaukseen:
@@ -1133,50 +1134,50 @@ Displays the view of the order status by tracking codes.<br>
 				<input type="Submit" name="submit" value="Select">
 				<input type="hidden" name="update_code" value="###UPDATE_CODE###"><br>
 			</FORM>
-		<!-- ###ADMIN_CONTROL_OK### begin -->		
-		<!-- ###ADMIN_CONTROL_DENY### begin -->		
+		<!-- ###ADMIN_CONTROL_OK### begin -->
+		<!-- ###ADMIN_CONTROL_DENY### begin -->
 			<FORM method="post" action="###FORM_URL###">
 			<input type="hidden" name="tracking" value="###TRACKING_NUMBER###"><br>
 			###GW1B###Koodi:###GW1B###<br>
 			<input type="password" size=40 name="update_code" value="###UPDATE_CODE###">
 			<input type="Submit" class="submit enterCode" name="submit" value="Anna koodi">
 			</FORM>
-		<!-- ###ADMIN_CONTROL_DENY### begin -->		
+		<!-- ###ADMIN_CONTROL_DENY### begin -->
 		</td></tr></table>
 	</td></tr>
 </table><br>
 <!-- ###ADMIN_CONTROL### end -->
 
 
-<strong>S‰hkˆpostiviesti:</strong><br>
-Jos haluat tilauksesi kontaktihenkilˆn  (###FIELD_EMAIL###) vastaanottavan s‰hkˆpostiviestin joka kerran kun tilaustila muuttuu, ole hyv‰ ja laita ruksi seuraavaan kohtaan:<br>
-	<FORM method="post" action="###FORM_URL###">	
+<strong>S√§hk√∂postiviesti:</strong><br>
+Jos haluat tilauksesi kontaktihenkil√∂n  (###FIELD_EMAIL###) vastaanottavan s√§hk√∂postiviestin joka kerran kun tilaustila muuttuu, ole hyv√§ ja laita ruksi seuraavaan kohtaan:<br>
+	<FORM method="post" action="###FORM_URL###">
 	<input type="hidden" name="orderRecord[email_notify]" value="0">
 	<input class="check checkbox" type="checkbox" name="orderRecord[email_notify]" value="1"###FIELD_EMAIL_NOTIFY###>Vastanota viesti tilaustilan muuttuessa.<br>
 	<input type="text" size=40 name="orderRecord[email]" value="###FIELD_EMAIL###">
-	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">	
-	<input type="Submit" name="submit" class="submit update" value="P‰ivit‰">
+	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
+	<input type="Submit" name="submit" class="submit update" value="P√§ivit√§">
 	</FORM>
 <br><br>
 
 <strong>Viesti verkkokauppaan:</strong><br>
-Voit l‰hett‰‰ tilausta koskevan viestin verkkokauppaan.<br>
+Voit l√§hett√§√§ tilausta koskevan viestin verkkokauppaan.<br>
 	<FORM method="post" action="###FORM_URL###">
 	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
 	###GW1B###Select topic:###GW1B###<br>
 	<select name="orderRecord[status][]" size="1">
 		<!-- HUOMAA: The values/topics MUST correspond with those setup in the TypoScript of the shop! -->
 		<option value=51>Viesti asiakkaalta</option>
-		<option value=50>Pyyntˆ tilauksen mit‰tˆimiseksi</option>
-	</select>	
+		<option value=50>Pyynt√∂ tilauksen mit√§t√∂imiseksi</option>
+	</select>
 	<br>
 	###GW1B###Kommentit:###GW1B###<br>
 	<textarea cols="40" rows="5" name="orderRecord[status_comment]"></textarea><br>
-	<input type="Submit" class="submit sendMessage" name="submit" value="L‰het‰ viesti">
+	<input type="Submit" class="submit sendMessage" name="submit" value="L√§het√§ viesti">
 	</FORM>
 <br>
 <br>
-<B>T‰m‰ on alkuper‰inen tilausvahvistus:</B><br><br>
+<B>T√§m√§ on alkuper√§inen tilausvahvistus:</B><br><br>
 ###GW1E###
 <HR>
 <br>
@@ -1214,24 +1215,24 @@ Displays form for entering the tracking number.<br>
 	<input type="Submit" class="submit seeStatus" name="submit" value="Katso tilauksen tila">
 	</FORM>
 
-<!-- ###ADMIN_CONTROL### begin -->		
+<!-- ###ADMIN_CONTROL### begin -->
 <table border=0 cellpadding=1 cellspacing=0 bgcolor="black"><tr><td>
 	<table border=0 cellpadding=10 cellspacing=0 bgcolor="#92AFCB"><tr><td>
-		###GW1B### <strong>Verkkokaupan j‰rjestelm‰nvalvoja (admin):</strong><br>
-		<!-- ###ADMIN_CONTROL_DENY### begin -->		
+		###GW1B### <strong>Verkkokaupan j√§rjestelm√§nvalvoja (admin):</strong><br>
+		<!-- ###ADMIN_CONTROL_DENY### begin -->
 			<FORM method="post" action="###FORM_URL###">
 			###GW1B###Kokodi:###GW1B###<br>
 			<input type="password" size=40 name="update_code" value="">
 			<input type="Submit" name="submit" class="submit enterCode" value="Anna koodi">
 			</FORM>
-		<!-- ###ADMIN_CONTROL_DENY### begin -->		
+		<!-- ###ADMIN_CONTROL_DENY### begin -->
 		</td></tr></table>
 	</td></tr>
 </table><br>
 <!-- ###ADMIN_CONTROL### end -->
 
-	
-	
+
+
 <!-- ###TRACKING_ENTER_NUMBER### end -->
 
 
@@ -1249,7 +1250,7 @@ Displays error message if no tracking code.<br>
 <!-- ###TRACKING_WRONG_NUMBER### begin
 	Displays error message if no tracking code.
 -->
-###GW1B###<B>Seurantakoodia ei ole! Varmista, ett‰ annoit oikean koodin ja yrit‰ uudelleen!</B>###GW1E###<br>
+###GW1B###<B>Seurantakoodia ei ole! Varmista, ett√§ annoit oikean koodin ja yrit√§ uudelleen!</B>###GW1E###<br>
 
 	<FORM method="post" action="###FORM_URL###">
 	<input type="text" name="tracking"><br>
@@ -1286,20 +1287,20 @@ First line is used as subject for the mail.
 
 Tilauksen tila (####ORDER_UID###)
 
-ORDER INFORMATION (####ORDER_UID###): 
+ORDER INFORMATION (####ORDER_UID###):
 Tilauksesi tila on muuttunut:
 
 Aika: ###ORDER_STATUS_TIME###
 Tila: ###ORDER_STATUS_INFO###
 
-Kommentit: 
+Kommentit:
 ###ORDER_STATUS_COMMENT###
 
 
 SEURANTA:
-Sait t‰m‰n s‰hkˆpostiviestin, koska olet valinnut, ett‰ saat tietoa tilauksestasi. Voit seurat tilaustilaasi ja muuttaa tilausinformaation asetuksia seuraavaa seurantanumeroa k‰ytt‰en:
+Sait t√§m√§n s√§hk√∂postiviestin, koska olet valinnut, ett√§ saat tietoa tilauksestasi. Voit seurat tilaustilaasi ja muuttaa tilausinformaation asetuksia seuraavaa seurantanumeroa k√§ytt√§en:
         ###ORDER_TRACKING_NO###
-		
+
 Katso nykyinen tila:
         http://###DOMAIN###/index.php?id=###PID_TRACKING###&type=0&tracking=###ORDER_TRACKING_NO###
 
@@ -1312,7 +1313,7 @@ Parhain terveisin
 	1234 My City
 
 	Phone: +x xxx xxx-xxxx
-	
+
 <!-- ###TRACKING_EMAILNOTIFY_TEMPLATE### end -->
 </pre>
 
@@ -1348,12 +1349,12 @@ First line is used as subject for the mail.<br>
 Tilaus ####ORDER_UID###
 
 
-TILAUSVAHVISTUS: 
-Tilaus on suoritettu ja sill‰ on numero ###ORDER_UID###.
-K‰yt‰ t‰t‰ numeroa kun otat meihin yhteytt‰.
+TILAUSVAHVISTUS:
+Tilaus on suoritettu ja sill√§ on numero ###ORDER_UID###.
+K√§yt√§ t√§t√§ numeroa kun otat meihin yhteytt√§.
 
 SEURANTA:
-Voit seuranta tilauksesi tilaa seuravaa seurantanumeroa k‰ytt‰en: 
+Voit seuranta tilauksesi tilaa seuravaa seurantanumeroa k√§ytt√§en:
         http://###DOMAIN###/index.php?id=###PID_TRACKING###&type=0&tracking=###ORDER_TRACKING_NO###
 
 
@@ -1366,7 +1367,7 @@ TILAUS:
 Nimike: ###PRODUCT_TITLE###
 Tavaran numerokoodi: ###PRODUCT_ITEMNUMBER###
 Hinta: ###PRICE_TAX### USD
-M‰‰r‰: ###FIELD_QTY###        = ###PRICE_TOTAL_TAX### EUR
+M√§√§r√§: ###FIELD_QTY###        = ###PRICE_TOTAL_TAX### EUR
 			<!-- ###ITEM_SINGLE### end -->
 		<!-- ###ITEM_LIST### end -->
 	<!-- ###ITEM_CATEGORY_AND_ITEMS###  end -->
@@ -1375,14 +1376,14 @@ M‰‰r‰: ###FIELD_QTY###        = ###PRICE_TOTAL_TAX### EUR
 ###PERSON_NAME###
 ###PERSON_ADDRESS###
 Puhelinnumero: ###PERSON_TELEPHONE###
-S‰hkˆposti: ###PERSON_EMAIL###
+S√§hk√∂posti: ###PERSON_EMAIL###
 
 
 3) Jakeluosoite:
 ###DELIVERY_ADDRESS###
 ###DELIVERY_NAME###
 Puhelinnumero: ###DELIVERY_TELEPHONE###
-S‰hkˆposti: ###DELIVERY_EMAIL###
+S√§hk√∂posti: ###DELIVERY_EMAIL###
 
 
 4) Muistutukset:
@@ -1391,16 +1392,16 @@ S‰hkˆposti: ###DELIVERY_EMAIL###
 
 5) Kuljetus:
 ###SHIPPING_TITLE###
-Hinta: ###PRICE_SHIPPING_TAX### EUR (###PRICE_SHIPPING_NO_TAX### ilman ALV:t‰)
+Hinta: ###PRICE_SHIPPING_TAX### EUR (###PRICE_SHIPPING_NO_TAX### ilman ALV:t√§)
 
 
 6) Maksutapa:
 ###PAYMENT_TITLE###
-Hinta: ###PRICE_PAYMENT_TAX### EUR (###PRICE_PAYMENT_NO_TAX### ilman ALV:t‰)
+Hinta: ###PRICE_PAYMENT_TAX### EUR (###PRICE_PAYMENT_NO_TAX### ilman ALV:t√§)
 
 
 KOKONAISSUMMA: ________________________ EUR ###PRICE_TOTAL_TAX###
-(ilman ALV:t‰: ###PRICE_TOTAL_NO_TAX###)
+(ilman ALV:t√§: ###PRICE_TOTAL_NO_TAX###)
 
 Parhain terveisin
 
@@ -1412,7 +1413,7 @@ Parhain terveisin
 
 
 
- 	
+
 
 
 
