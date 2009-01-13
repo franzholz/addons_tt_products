@@ -4,7 +4,7 @@
 		<description>texts for the markers, originally created by POB EDV-Systeme, (c) 2009, usable with the ttp.htm Template</description>
 		<type>module</type>
 		<csh_table></csh_table>
-		<fileId>EXT:tt_products/marker/locallang.xml</fileId>
+		<fileId>EXT:addons_tt_products/nl.locallang.xml</fileId>
 		<labelContext type="array">
 		</labelContext>
 	</meta>
