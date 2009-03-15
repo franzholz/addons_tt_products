@@ -47,6 +47,7 @@
             <label index="basket_header_price">Ár</label>
             <label index="basket_header_total">Összeg</label>
             <label index="basket_shipping_handling">Elküldés és csomagolás:</label>
+			<label index="basket_payment_checkout">A pénztárhoz</label>
             <label index="basket_payment_select">Fizetési mód:</label>
             <label index="basket_payment">Fizetési mód:</label>
             <label index="basket_payment_total">Végösszeg:</label>
@@ -93,6 +94,7 @@
             <label index="p_email_subject">e-Mail kérdés a cikkhez:</label>
             <label index="p_email_question">Kérdéseim:</label>
             <label index="p_is_single">Egyes termék, amit csak egyszer lehet választani.</label>
+			<label index="p_related">Related products</label>
             <label index="list_buy_now">a bevásárlókosárba</label>
             <label index="list_detail">Termékrészletek</label>
             <label index="list_next_page">következö oldal</label>

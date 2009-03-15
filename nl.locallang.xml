@@ -47,6 +47,7 @@
 			<label index="basket_header_price">Prijs</label>
 			<label index="basket_header_total">Totaal</label>
 			<label index="basket_shipping_handling">Bezorging en afhandeling:</label>
+			<label index="basket_payment_checkout">Bestelling afronden</label>
 			<label index="basket_payment_select">Selecteer betaalmethode:</label>
 			<label index="basket_payment">Betaling:</label>
 			<label index="basket_payment_total">Totaal:</label>
@@ -95,7 +96,7 @@
 			<label index="p_email_subject">E-mail vraag over artikel:</label>
 			<label index="p_email_question">mijn vraag:</label>
 			<label index="p_is_single">alleen 1 item is mogelijk</label>
-
+			<label index="p_related">Related products</label>
 			<label index="list_buy_now">BESTEL NU</label>
 			<label index="list_detail">details</label>
 			<label index="list_next_page">volgende pagina</label>

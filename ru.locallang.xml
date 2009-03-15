@@ -47,6 +47,7 @@
 			<label index="basket_header_price">Цена</label>
 			<label index="basket_header_total">Всего</label>
 			<label index="basket_shipping_handling">Доставка и упаковка:</label>
+			<label index="basket_payment_checkout">Пройти к расчету</label>
 			<label index="basket_payment_select">Выбрать платеж:</label>
 			<label index="basket_payment">Платеж:</label>
 			<label index="basket_payment_total">Всего:</label>
