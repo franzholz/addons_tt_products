@@ -20,7 +20,7 @@ If a general internal error has occurred<br>
 If the basket is empty this subpart is displayed
 -->
 <br>
-###GW1B###<B>Es ist ein interner Fehler aufgetreten. &Uuml;berpr&uuml;fen Sie die Einstellungen.</B>###GW1E###
+###GW1B###<b>Es ist ein interner Fehler aufgetreten. &Uuml;berpr&uuml;fen Sie die Einstellungen.</B>###GW1E###
 <!-- ###ERROR_TEMPLATE### end -->
 
 
@@ -36,7 +36,8 @@ If the basket is empty this subpart is displayed
 <br>
 <h1>Shop System f&uuml;r TYPO3</h1>
 <p> Willkommen bei der Verwendung des tt_products Shop Systems f&uuml;r TYPO3. Bevor Sie damit starten, sollten Sie das Tutorial
-auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop System</a> durchgearbeitet haben. Es gibt dort auch ein Forum, um Fragen zu stellen.
+auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop System</a> durchgearbeitet haben. Es gibt dort auch ein Forum, um Fragen zu stellen.<br>
+Weiterentwicklungen zum Shop k&ouml;nnen Sie unter <a href="http://ttproducts.de">tt_products.de</a> erwerben.
 </p>
 <br>
 <h1>bananaGUARD Shop-Template</h1>
@@ -109,7 +110,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
             <!-- ###display_variant5_isNotSingle### -->
             ###PRODUCT_DELIVERY###
             ###GW1B### St&uuml;ckzahl: ###GW1E### <input size="8" maxlength="10" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
-            <input type="image" name="addtomemo" src="###PATH_FE_REL###/res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tx_ttproducts_pi1[addmemo]=###PRODUCT_UID###';" title="Add to memo">
+            <!-- ###FE_GROUP_1_TEMPLATE### begin --><input type="image" name="addtomemo" src="###PATH_FE_REL###/res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products[addmemo]=###PRODUCT_UID###';" title="Add to memo"><!-- ###FE_GROUP_1_TEMPLATE### end -->
             <!-- ###display_variant5_isNotSingle### --></td>
           ###ITEM_SINGLE_POST_HTML###
           <!-- ###ITEM_SINGLE### end -->
@@ -294,7 +295,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
             <!-- ###display_variant5_isNotSingle### -->
             ###PRODUCT_DELIVERY###
             ###GW1B### St&uuml;ckzahl: ###GW1E### <input size="8" maxlength="10" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
-            <input type="image" name="addtomemo" src="###PATH_FE_REL###/res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tx_ttproducts_pi1[addmemo]=###PRODUCT_UID###';" title="Add to memo">
+            <!-- ###FE_GROUP_1_TEMPLATE### begin --><input type="image" name="addtomemo" src="###PATH_FE_REL###/res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products[addmemo]=###PRODUCT_UID###';" title="Add to memo"><!-- ###FE_GROUP_1_TEMPLATE### end -->
             <!-- ###display_variant5_isNotSingle### --> <p> </td>
           ###ITEM_SINGLE_POST_HTML###
           <!-- ###ITEM_SINGLE### end -->
@@ -368,7 +369,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 		<td valign=top>
 			###GW1B###
 
-				<B>Info:</B><br>
+				<b>Info:</B><br>
 				###PRODUCT_NOTE###<br>
 				###PRODUCT_NOTE_UID_1_title###:
 			 	###PRODUCT_NOTE_UID_1_1_TEXT_bodytext###<br>
@@ -377,7 +378,9 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 		<!-- ###PRODUCT_OFFER_EQ_1### begin -->
 		###PRODUCT_TEXT_TEXT1###
 		<!-- ###PRODUCT_OFFER_EQ_1### end -->
-		<!-- ###LINK_DATASHEET### begin -->Datenblatt f&uuml;r das Produkt<!-- ###LINK_DATASHEET### end --> <br>
+		<!-- ###PRODUCT_LINK_DATASHEET### begin -->
+		###GW1B######P_DATASHEET######GW1E### <font size="1"><b><i>###PRODUCT_DATASHEET###</i></b></font>###ICON_DATASHEET###</p>
+		<!-- ###PRODUCT_LINK_DATASHEET### end -->
 
 		  <!-- ###display_variant1### -->
 		  ###GW2B### Size: ###GW2E### <select id="###PRODUCT_COLOR_ID###" onchange=" ###PRODUCT_COLOR_FUNCTION1###" style="font-size: 10px"
@@ -408,7 +411,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 
 ###GW2B###
 <!--###LINK_ITEM###-->
-<b><- zur&uuml;ck zur Liste</b>
+<b>&lt;- zur&uuml;ck zur Liste</b>
 <!--###LINK_ITEM###-->
 ###GW2E###
 
@@ -556,7 +559,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
                                         ###GW2B### Anzahl: ###GW2E###<br><input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
                                 </td>
                                 <td style="padding: 2px 2px 2px 2px; border-top: 1px dotted #3F4F73;"><input type="image" name="order" src="typo3/ext/tt_products/res/icons/fe/minibasket1.gif" value="###BASKET_INTO###" onClick="if (!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};"></td>
-				<td style="padding: 2px 2px 2px 2px; border-top: 1px dotted #3F4F73;"><input type="image" name="remove" src="typo3/ext/tt_products/res/icons/fe/delmemo.png" value="von der Merkliste streichen" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tx_ttproducts_pi1[delmemo]=###PRODUCT_UID###';"></td>
+				<td style="padding: 2px 2px 2px 2px; border-top: 1px dotted #3F4F73;"><input type="image" name="remove" src="typo3/ext/tt_products/res/icons/fe/delmemo.png" value="von der Merkliste streichen" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products[delmemo]=###PRODUCT_UID###';"></td>
                         </tr>
                         </form>
                         <!-- ###ITEM_SINGLE### end -->
@@ -585,7 +588,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 <br>
 
 <!-- ###MEMO_NOT_LOGGED_IN### begin -->
-###GW1B###<B>Sie sind nicht am System angemeldet.</B>###GW1E###
+###GW1B###<b>Sie sind nicht am System angemeldet.</B>###GW1E###
 <!-- ###MEMO_NOT_LOGGED_IN### end -->
 
 
@@ -598,7 +601,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 <br>
 
 <!-- ###MEMO_EMPTY### begin -->
-###GW1B###<B>Sie haben keine Produkte vorgemerkt.</B>###GW1E###
+###GW1B###<b>Sie haben keine Produkte vorgemerkt.</B>###GW1E###
 <!-- ###MEMO_EMPTY### end -->
 
 
@@ -633,7 +636,7 @@ Subpart for the search-form
 <!-- ###ITEM_SEARCH_EMPTY### begin
 Subpart displayed if the search was empty. If the search was successfull, the ITEM_LIST_TEMPLATE in the top is used.
 -->
-###GW1B###<B>Es wurden keine Artikel gefunden.</B>###GW1E###
+###GW1B###<b>Es wurden keine Artikel gefunden.</B>###GW1E###
 <!-- ###ITEM_SEARCH_EMPTY### end -->
 
 
@@ -648,7 +651,7 @@ Subpart displayed if the search was empty. If the search was successfull, the IT
 <!-- ###ITEM_LIST_EMPTY### begin
 Subpart displayed if the list under the selected category was empty. If the sql query was successfull, the ITEM_LIST_TEMPLATE in the top is used.
 -->
-###GW1B###<B>Direkt in dieser Kategorie sind keine Produkte. Bitte w&auml;hlen Sie eine Unterkategorie.</B>###GW1E###
+###GW1B###<b>Direkt in dieser Kategorie sind keine Produkte. Bitte w&auml;hlen Sie eine Unterkategorie.</B>###GW1E###
 <!-- ###ITEM_LIST_EMPTY### end -->
 
 
@@ -705,7 +708,7 @@ In addition there's a number of fields used for delivery and payment information
 <td>	  <!-- ###display_variant2### -->
 		  ###PRODUCT_SIZE###
 		  <!-- ###display_variant2### --></td>
-<td></td>
+<td>Bild: ###PRODUCT_IMAGE### </td>
 <td valign=top>###GW1B### ###PRICE_TAX### (Steuer: ###PRICE_ONLY_TAX###) EUR ###GW1E###</td>
 <td valign=top> <input size="2" maxlength="4" type="text" name="###FIELD_NAME_BASKET###" value="###FIELD_QTY###"> </td>
 <td valign=top align=right>###GW1B### <b>###TAX_INCL_EXCL### ###PRICE_TOTAL_TAX###</b> <br>(exkl. MwSt.: EUR ###PRICE_TOTAL_NO_TAX###)###GW1E###</td>
@@ -768,41 +771,43 @@ In addition there's a number of fields used for delivery and payment information
 <!-- ###MESSAGE_SHIPPING###
 This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 -->
-<!-- ###MESSAGE_SHIPPING_10### -->
-<br><B>Versand erfolgt nach Deutschland</b><br>
-<!-- ###MESSAGE_SHIPPING_10### -->
-<!-- ###MESSAGE_SHIPPING_20### -->
-<br><B>Versand erfolgt in die EU</b><br>
+<!-- ###MESSAGE_SHIPPING_30### -->
+<br><b>Versand erfolgt nach Deutschland</b><br>
+<!-- ###MESSAGE_SHIPPING_30### -->
+<!-- ###MESSAGE_SHIPPING_40### -->
+<br><b>Versand erfolgt in die EU</b><br>
 <br /><b>Lieferung EU mit g&uuml;ltiger VAT Reg. No.</b><br />
 Lieferung ab Werk. Lieferkosten berechnen wir Ihnen g&uuml;nstigst nach
 Aufwand analog unserer <a
 href="http://www.bananaguard.de/index.php?id=9737">Transportkosten&uuml;bersicht
 </a>.<br />
 Ihre g&uuml;ltige VAT Reg. No. Hier eingeben: <input type="text" name="recs[personinfo][tt_products_vat]" size="30" value="###PERSON_TT_PRODUCTS_VAT###"><br />
-<!-- ###MESSAGE_SHIPPING_20### -->
-<!-- ###MESSAGE_SHIPPING_20_20### -->
-<br><B>Versand erfolgt nach &Ouml;sterreich</b><br>
-<!-- ###MESSAGE_SHIPPING_20_20### -->
+<!-- ###MESSAGE_SHIPPING_40### -->
+<!-- ###MESSAGE_SHIPPING_40_10### -->
+<br /><b>Versand erfolgt nach &Ouml;sterreich</b><br />
+<!-- ###MESSAGE_SHIPPING_40_10### -->
+<!-- ###MESSAGE_SHIPPING_50### -->
+<br><b>Griatzi in di Schwiz</b><br>
+<!-- ###MESSAGE_SHIPPING_50### -->
 <!-- ###MESSAGE_SHIPPING### -->
 
 <!-- ###MESSAGE_PAYMENT###
 This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 -->
 <!-- ###MESSAGE_PAYMENT_10### -->
-<br><B>Sie haben die erste Bezahlmethode ausgew&auml;hlt.</b><br>
+<br><b>Sie haben die erste Bezahlmethode ausgew&auml;hlt.</b><br>
 <!-- ###MESSAGE_PAYMENT_10### -->
 <!-- ###MESSAGE_PAYMENT_30### -->
-<br><B>Nachnahme EU-Land.</b><br>
+<br><b>Nachnahme EU-Land.</b><br>
 <!-- ###MESSAGE_PAYMENT_30### -->
 <!-- ###MESSAGE_PAYMENT_40### -->
-<br><B>Paypal Bezahlung.</b><br>
+<br><b>Paypal Bezahlung.</b><br>
 <!-- ###MESSAGE_PAYMENT_40### -->
 <!-- ###MESSAGE_PAYMENT_50### -->
 <br>
-<B>Bezahlung bei Abholung im Gesch&auml;ft.</b><br>
+<b>Bezahlung bei Abholung im Gesch&auml;ft.</b><br>
 <!-- ###MESSAGE_PAYMENT_50### -->
 <!-- ###MESSAGE_PAYMENT### -->
-
 ###GW2E###
 
 </td>
@@ -1006,6 +1011,15 @@ Wenn Ihre Bestellung zu einer anderen Anschrift geliefert werden soll, so geben 
 <br>
 <br>
 
+<!-- ###MESSAGE_SHIPPING###
+This whole subpart, message_shipping is substituted with the subpart 'message_shipping_[number-of-method-in-typoscript]'
+begin -->
+<!-- ###MESSAGE_SHIPPING_20### begin -->
+<br>###DELIVERY_STORE_SELECT###<br>
+<!-- ###MESSAGE_SHIPPING_20### end -->
+
+<!-- ###MESSAGE_SHIPPING_NE_20### begin -->
+
 <table>
 <tr>
 <td>###GW1B###<strong>Anrede:</strong>###GW1E###</td>
@@ -1079,6 +1093,8 @@ Hier k&ouml;nnen Sie Ihrer Bestellung einen Kommentar hinzufgen:
 <br>
 
 <table>
+<!-- ###MESSAGE_SHIPPING_NE_20### end -->
+<!-- ###MESSAGE_SHIPPING### end -->
 <tr>
 <td>###GW1B###Kommentar:###GW1E###</td>
 <td><textarea cols=30 rows=5 name="recs[delivery][note]">###DELIVERY_NOTE###</textarea></td>
@@ -1401,7 +1417,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.
         Vielen Dank f&uuml;r Ihre Bestellung!<br>
         Ihre Test-Bestellung ist nun abgeschlossen und hat folgende Nummer:<br>
         <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<B>###ORDER_UID###</B> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_UID###</B> <br>
         <br>
 		<font color=red><strong>Es handelt sich hierbei nur um einen Test.</strong></font><br>
         Die Bestellbest&auml;tigung wird auch an die Emailadresse ###CUSTOMER_RECIPIENTS_EMAIL###
@@ -1708,7 +1724,7 @@ If the basket is empty this subpart is displayed<br>
 If the basket is empty this subpart is displayed
 -->
 <br>
-###GW1B###<B>Ihr Warenkorb ist noch leer.</B>###GW1E###
+###GW1B###<b>Ihr Warenkorb ist noch leer.</B>###GW1E###
 <!-- ###BASKET_TEMPLATE_EMPTY### end -->
 
 
@@ -1727,7 +1743,7 @@ If the minimum price in basket has not been reached this subpart is displayed on
 If the basket is empty this subpart is displayed
 -->
 <br>
-###GW1B###<B>Es m&uuml;ssen mindestens Waren f&uuml;r 250 Euro gekauft werden.</B>###GW1E###
+###GW1B###<b>Es m&uuml;ssen mindestens Waren f&uuml;r 250 Euro gekauft werden.</B>###GW1E###
 <!-- ###BASKET_TEMPLATE_MINPRICE_ERROR### end -->
 
 
@@ -1744,7 +1760,7 @@ If payment is initiated but the required information fields are not filled in co
 If payment is initiated but the required information fields are not filled in correctly, this happens
 -->
 ###GW1B###Fehler bei der Eingabe###GW1E###<br>
-###GW1B###<B>Sie haben nicht alle erforderlichen Felder mit Ihren Adressinformationen ausgef&uuml;llt. ###ERROR_DETAILS### Bitte gehen Sie zur&uuml;ck zum Aktualisieren!</B>###GW1E###
+###GW1B###<b>Sie haben nicht alle erforderlichen Felder mit Ihren Adressinformationen ausgef&uuml;llt. ###ERROR_DETAILS### Bitte gehen Sie zur&uuml;ck zum Aktualisieren!</B>###GW1E###
 <form method="post" action="###FORM_URL###">
 <input type="Submit" name="products_info" value="Adressdaten eingeben" onclick="document.forms[0].action='###FORM_URL_INFO###';">
 </form>
@@ -1767,7 +1783,7 @@ Displays the view of the order status by tracking codes.<br>
 Displays the view of the order status by tracking codes.
 -->
 ###GW1B###
-<B>Ihre Bestellung (###ORDER_UID###) hat folgenden Status:</B><br>
+<b>Ihre Bestellung (###ORDER_UID###) hat folgenden Status:</B><br>
 (siehe letzte Zeile f&uuml;r aktuellsten Stand)<br>
 <br>
 
@@ -1843,7 +1859,7 @@ Zu einer anderen Bestellung wechseln:
 
 
 <strong>Email-Benachrichtigung:</strong><br>
-Wenn Sie sich ber den Status Ihrer Bestellung informieren lassen wollen (###FIELD_EMAIL###) sobald sich der Status ge&auml;ndert hat, dann &uuml;berprfen Sie bitte folgendes:<br>
+Wenn Sie sich &uuml;ber den Status Ihrer Bestellung informieren lassen wollen (###FIELD_EMAIL###) sobald sich der Status ge&auml;ndert hat, dann &uuml;berpr&uuml;fen Sie bitte Folgendes:<br>
 <form method="post" action="###FORM_URL###" name="statusInform">
 
 <input type="hidden" name="orderRecord[email_notify]" value="0">
@@ -1874,7 +1890,7 @@ Hier k&ouml;nnen Sie uns eine Nachricht bezglich Ihrer Bestellung schicken.<br>
 
 <br>
 <br>
-<B>Bestellbest&auml;tigung - Original:</B><br><br>
+<b>Bestellbest&auml;tigung - Original:</B><br><br>
 ###GW1E###
 <hr>
 <br>
@@ -1900,7 +1916,7 @@ Displays form for entering the tracking number.<br>
 <!-- ###TRACKING_ENTER_NUMBER### begin
 Displays form for entering the tracking number.
 -->
-###GW1B###<B>Bestellstatus-Code eingeben:</B>###GW1E###<br>
+###GW1B###<b>Bestellstatus-Code eingeben:</B>###GW1E###<br>
 <form method="post" action="###FORM_URL###">
 <input type="text" name="tracking"><br>
 <input type="Submit" name="submit" value="Status sehen">
@@ -1941,7 +1957,7 @@ Displays error message if no tracking code.<br>
 <!-- ###TRACKING_WRONG_NUMBER### begin
 Displays error message if no tracking code.
 -->
-###GW1B###<B>Der Bestellstatus-Code existiert nicht! Bitte stellen Sie die Richtigkeit sicher und versuchen es noch einmal!</B>###GW1E###<br>
+###GW1B###<b>Der Bestellstatus-Code existiert nicht! Bitte stellen Sie die Richtigkeit sicher und versuchen es noch einmal!</B>###GW1E###<br>
 
 <form method="post" action="###FORM_URL###">
 <input type="text" name="tracking"><br>

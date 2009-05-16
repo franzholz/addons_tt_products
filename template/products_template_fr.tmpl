@@ -169,7 +169,7 @@
 					<TD valign=top>###GW2B######PRODUCT_NOTE######GW2E###<br />
 						###GW1B###<B>Prix TTC:</b> <font color=red><strong>###PRICE_TAX### EUR</strong></font>###GW1E###<br />
 						###GW2B###(Prix HT: ###PRICE_NO_TAX###)###GW2E###<br />
-						###GW2B###(dont TVA ###PRICE_VAT###)###GW2E###
+						###GW2B###(dont TVA ###PRICE_TAX###)###GW2E###
 					</TD>
 					<TD valign=top nowrap align=right>###GW2B### Qté: ###GW2E###<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"><BR><input type="Submit" name="order" value="Ajouter au panier" onClick="if (!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
 					</TD>
@@ -433,7 +433,7 @@ In addition there's a number of fields used for delivery and payment information
 		<td valign=top colspan=5></td>
 		<td valign=top align=right nowrap>###GW1B### <b>EUR###PRICE_TOTAL_TAX###</b><br>
 		(Prix HT ###PRICE_TOTAL_NO_TAX###) ###GW1E###<br>
-		(dont TVA ###PRICE_VAT###)
+		(dont TVA ###PRICE_TAX###)
 					</TD>
 </td>
 	</TR>

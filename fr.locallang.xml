@@ -9,7 +9,7 @@
 		</labelContext>
 	</meta>
 	<data type="array">
-		<languageKey index="de" type="array">
+		<languageKey index="fr" type="array">
 			<label index="memo_dam_goto">Aller à la liste mémo DAM.</label>
 			<label index="basket_goto">Aller au panier.</label>
 			<label index="basket_into">Dans le panier.</label>

@@ -1,4 +1,8 @@
 (add new changes on top of this file)
+2009-05-16 Franz Holzinger  <franz@ttproducts.de>
+	* fix bug to translations
+	* slight improvements of the template files
+
 2009-03-31 Franz Holzinger  <franz@ttproducts.de>
 	* Add languages for Brittish English, French and Spanish
 
