@@ -20,7 +20,7 @@ If a general internal error has occurred<br>
 If the basket is empty this subpart is displayed
 -->
 <br>
-###GW1B###<b>Es ist ein interner Fehler aufgetreten. &Uuml;berpr&uuml;fen Sie die Einstellungen.</B>###GW1E###
+###GW1B###<b>Es ist ein interner Fehler aufgetreten. &Uuml;berpr&uuml;fen Sie die Einstellungen.</b>###GW1E###
 <!-- ###ERROR_TEMPLATE### end -->
 
 
@@ -44,6 +44,7 @@ Weiterentwicklungen zum Shop k&ouml;nnen Sie unter <a href="http://ttproducts.de
 <p> Dieses Template entspricht dem fr&uuml;heren Shop von <A href="http://www.bananaguard.de">bananaguard.de</A> und ist noch erweitert worden.
 </p>
 
+<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
 <table border="0" cellspacing="0" cellpadding="1" width=1>
 	<tr>
 		<!-- ###FE_GROUP_1_TEMPLATE### begin -->
@@ -69,7 +70,6 @@ Weiterentwicklungen zum Shop k&ouml;nnen Sie unter <a href="http://ttproducts.de
 		<!-- ###ITEM_CATEGORY### end -->
 		<!-- ###ITEM_LIST### begin -->
 			<tr><td colspan="3">
-			<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
 
         <table bordercolor="#003399" cellspacing="1" border="1">
           <tr>
@@ -110,7 +110,7 @@ Weiterentwicklungen zum Shop k&ouml;nnen Sie unter <a href="http://ttproducts.de
             <!-- ###display_variant5_isNotSingle### -->
             ###PRODUCT_DELIVERY###
             ###GW1B### St&uuml;ckzahl: ###GW1E### <input size="8" maxlength="10" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
-            <!-- ###FE_GROUP_1_TEMPLATE### begin --><input type="image" name="addtomemo" src="###PATH_FE_REL###/res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products[addmemo]=###PRODUCT_UID###';" title="Add to memo"><!-- ###FE_GROUP_1_TEMPLATE### end -->
+            <!-- ###FE_GROUP_1_TEMPLATE### begin --><input type="image" name="addtomemo" src="###PATH_FE_REL###res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products[addmemo]=###PRODUCT_UID###';" title="Add to memo"><!-- ###FE_GROUP_1_TEMPLATE### end -->
             <!-- ###display_variant5_isNotSingle### --></td>
           ###ITEM_SINGLE_POST_HTML###
           <!-- ###ITEM_SINGLE### end -->
@@ -122,7 +122,6 @@ Weiterentwicklungen zum Shop k&ouml;nnen Sie unter <a href="http://ttproducts.de
             <input type="button" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'"></td>
           </tr>
         </table>
-			</form>
 			</td></tr>
 		<!-- ###ITEM_LIST### end -->
 	<!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
@@ -133,6 +132,7 @@ Weiterentwicklungen zum Shop k&ouml;nnen Sie unter <a href="http://ttproducts.de
 		<td><!--###LINK_NEXT###-->###GW2B###<div align="right"><b>n&auml;chste Seite</b></div>###GW2E###<!--###LINK_NEXT###--></td>
 	</tr>
 </table>
+</form>
 ###GW1B###In Ihrem Browser sollten Cookies zugelassen sein.<br>Sollte die Bef&uuml;llung des Warenkorbs nach mehreren Versuchen nicht funktionieren, bestellen Sie bitte &uuml;ber den Link Kontakt/Bestellung per Email. Viel Spa&szlig; beim Einkaufen! ###GW1E###
 
 <br>
@@ -369,7 +369,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 		<td valign=top>
 			###GW1B###
 
-				<b>Info:</B><br>
+				<b>Info:</b><br>
 				###PRODUCT_NOTE###<br>
 				###PRODUCT_NOTE_UID_1_title###:
 			 	###PRODUCT_NOTE_UID_1_1_TEXT_bodytext###<br>
@@ -581,27 +581,27 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 
 
 
-<br><br><br><br><HR><br><br><br>
+<br><br><br><br><hr><br><br><br>
 <h3>MEMO_NOT_LOGGED_IN</h3>
 <em>Subpart displayed when trying to view the memo without being logged in as frontend user.</em><br>
 <br>
 <br>
 
 <!-- ###MEMO_NOT_LOGGED_IN### begin -->
-###GW1B###<b>Sie sind nicht am System angemeldet.</B>###GW1E###
+###GW1B###<b>Sie sind nicht am System angemeldet.</b>###GW1E###
 <!-- ###MEMO_NOT_LOGGED_IN### end -->
 
 
 
 
-<br><br><br><br><HR><br><br><br>
+<br><br><br><br><hr><br><br><br>
 <h3>MEMO_EMPTY</h3>
 <em>Subpart displayed when trying to view the memo but the logged in frontend user hasn't stored any memo yet.</em><br>
 <br>
 <br>
 
 <!-- ###MEMO_EMPTY### begin -->
-###GW1B###<b>Sie haben keine Produkte vorgemerkt.</B>###GW1E###
+###GW1B###<b>Sie haben keine Produkte vorgemerkt.</b>###GW1E###
 <!-- ###MEMO_EMPTY### end -->
 
 
@@ -636,7 +636,7 @@ Subpart for the search-form
 <!-- ###ITEM_SEARCH_EMPTY### begin
 Subpart displayed if the search was empty. If the search was successfull, the ITEM_LIST_TEMPLATE in the top is used.
 -->
-###GW1B###<b>Es wurden keine Artikel gefunden.</B>###GW1E###
+###GW1B###<b>Es wurden keine Artikel gefunden.</b>###GW1E###
 <!-- ###ITEM_SEARCH_EMPTY### end -->
 
 
@@ -651,7 +651,7 @@ Subpart displayed if the search was empty. If the search was successfull, the IT
 <!-- ###ITEM_LIST_EMPTY### begin
 Subpart displayed if the list under the selected category was empty. If the sql query was successfull, the ITEM_LIST_TEMPLATE in the top is used.
 -->
-###GW1B###<b>Direkt in dieser Kategorie sind keine Produkte. Bitte w&auml;hlen Sie eine Unterkategorie.</B>###GW1E###
+###GW1B###<b>Direkt in dieser Kategorie sind keine Produkte. Bitte w&auml;hlen Sie eine Unterkategorie.</b>###GW1E###
 <!-- ###ITEM_LIST_EMPTY### end -->
 
 
@@ -734,7 +734,7 @@ In addition there's a number of fields used for delivery and payment information
 
 <tr>
 <td colspan=5>
-###GW1B###Pauschale: <b>###SHIPPING_TITLE###</B>###GW1E###<br><br>
+###GW1B###Pauschale: <b>###SHIPPING_TITLE###</b>###GW1E###<br><br>
 
 <table><tr>
             <td valign="middle">###GW1B######SHIPPING_SELECTOR######GW1E###</td>
@@ -1336,7 +1336,7 @@ Exact same features as BASKET_TEMPLATE
     <td colspan=3 bgcolor="###GC2###">###GW2B###<b>Versand und Verpackung:</b>###GW2E###</td>
     <td colspan=2></td>
   </tr>
-    <td colspan=3>###GW1B###Pauschale: <b>###SHIPPING_TITLE###</B>###GW1E###<br></td>
+    <td colspan=3>###GW1B###Pauschale: <b>###SHIPPING_TITLE###</b>###GW1E###<br></td>
     <td valign=top align=right colspan=2>###GW1B###<b>###PRICE_SHIPPING_TAX### (###PRICE_SHIPPING_NO_TAX###)</b>###GW1E###</td>
   </tr>
   <tr>
@@ -1385,7 +1385,7 @@ Exact same features as BASKET_TEMPLATE
 
 
 
-<br><br><br><br><HR><br><br><br>
+<br><br><br><br><hr><br><br><br>
 <h3>BASKET_ORDERCONFIRMATION_NOSAVE_TEMPLATE</h3>
 <em>
 Wie BASKET_ORDERCONFIRMATION_TEMPLATE, aber wird nicht in der Datenbank gespeichert. Hier kann Code f&uuml;r externe Systeme eingef&uuml;gt werden, der nicht mit angezeigt werden darf, wenn die Seite im Trackingmodus nochmal dargestellt wird.
@@ -1417,7 +1417,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.
         Vielen Dank f&uuml;r Ihre Bestellung!<br>
         Ihre Test-Bestellung ist nun abgeschlossen und hat folgende Nummer:<br>
         <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_UID###</B> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_UID###</b> <br>
         <br>
 		<font color=red><strong>Es handelt sich hierbei nur um einen Test.</strong></font><br>
         Die Bestellbest&auml;tigung wird auch an die Emailadresse ###CUSTOMER_RECIPIENTS_EMAIL###
@@ -1724,7 +1724,7 @@ If the basket is empty this subpart is displayed<br>
 If the basket is empty this subpart is displayed
 -->
 <br>
-###GW1B###<b>Ihr Warenkorb ist noch leer.</B>###GW1E###
+###GW1B###<b>Ihr Warenkorb ist noch leer.</b>###GW1E###
 <!-- ###BASKET_TEMPLATE_EMPTY### end -->
 
 
@@ -1743,7 +1743,7 @@ If the minimum price in basket has not been reached this subpart is displayed on
 If the basket is empty this subpart is displayed
 -->
 <br>
-###GW1B###<b>Es m&uuml;ssen mindestens Waren f&uuml;r 250 Euro gekauft werden.</B>###GW1E###
+###GW1B###<b>Es m&uuml;ssen mindestens Waren f&uuml;r 250 Euro gekauft werden.</b>###GW1E###
 <!-- ###BASKET_TEMPLATE_MINPRICE_ERROR### end -->
 
 
@@ -1760,7 +1760,7 @@ If payment is initiated but the required information fields are not filled in co
 If payment is initiated but the required information fields are not filled in correctly, this happens
 -->
 ###GW1B###Fehler bei der Eingabe###GW1E###<br>
-###GW1B###<b>Sie haben nicht alle erforderlichen Felder mit Ihren Adressinformationen ausgef&uuml;llt. ###ERROR_DETAILS### Bitte gehen Sie zur&uuml;ck zum Aktualisieren!</B>###GW1E###
+###GW1B###<b>Sie haben nicht alle erforderlichen Felder mit Ihren Adressinformationen ausgef&uuml;llt. ###ERROR_DETAILS### Bitte gehen Sie zur&uuml;ck zum Aktualisieren!</b>###GW1E###
 <form method="post" action="###FORM_URL###">
 <input type="Submit" name="products_info" value="Adressdaten eingeben" onclick="document.forms[0].action='###FORM_URL_INFO###';">
 </form>
@@ -1783,7 +1783,7 @@ Displays the view of the order status by tracking codes.<br>
 Displays the view of the order status by tracking codes.
 -->
 ###GW1B###
-<b>Ihre Bestellung (###ORDER_UID###) hat folgenden Status:</B><br>
+<b>Ihre Bestellung (###ORDER_UID###) hat folgenden Status:</b><br>
 (siehe letzte Zeile f&uuml;r aktuellsten Stand)<br>
 <br>
 
@@ -1890,7 +1890,7 @@ Hier k&ouml;nnen Sie uns eine Nachricht bezglich Ihrer Bestellung schicken.<br>
 
 <br>
 <br>
-<b>Bestellbest&auml;tigung - Original:</B><br><br>
+<b>Bestellbest&auml;tigung - Original:</b><br><br>
 ###GW1E###
 <hr>
 <br>
@@ -1916,7 +1916,7 @@ Displays form for entering the tracking number.<br>
 <!-- ###TRACKING_ENTER_NUMBER### begin
 Displays form for entering the tracking number.
 -->
-###GW1B###<b>Bestellstatus-Code eingeben:</B>###GW1E###<br>
+###GW1B###<b>Bestellstatus-Code eingeben:</b>###GW1E###<br>
 <form method="post" action="###FORM_URL###">
 <input type="text" name="tracking"><br>
 <input type="Submit" name="submit" value="Status sehen">
@@ -1957,7 +1957,7 @@ Displays error message if no tracking code.<br>
 <!-- ###TRACKING_WRONG_NUMBER### begin
 Displays error message if no tracking code.
 -->
-###GW1B###<b>Der Bestellstatus-Code existiert nicht! Bitte stellen Sie die Richtigkeit sicher und versuchen es noch einmal!</B>###GW1E###<br>
+###GW1B###<b>Der Bestellstatus-Code existiert nicht! Bitte stellen Sie die Richtigkeit sicher und versuchen es noch einmal!</b>###GW1E###<br>
 
 <form method="post" action="###FORM_URL###">
 <input type="text" name="tracking"><br>

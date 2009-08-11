@@ -27,7 +27,7 @@ This subpart is used to display the card number information dialog before the tr
 	<tr>
 		<td colspan=6 bgcolor="###GC2###">###GW2B###<b>TOTAL:</b>###GW2E###</td>
 	</tr>
-	<TR>
+	<tr>
 		<td valign=top colspan=3>###GW1B###
 			<strong>Total amount in EURO:</strong>
 		###GW1E###</td>
@@ -35,7 +35,7 @@ This subpart is used to display the card number information dialog before the tr
 		<td valign=top align=right colspan=3 nowrap>###GW1B###
 		<b>€ ###PRICE_TOTAL_TAX###</b><br>
 		###GW1E###</td>
-	</TR>
+	</tr>
 </table>
 
 ###GW1B###
@@ -45,16 +45,17 @@ This is some text here.
 
 
 <form action="###REDIRECT_URL###" method="post" autocomplete="off" name="connectForm">
-<input type="submit" name="pay" value="Connect to the ###PAYMENTLIB_TITLE### server">&nbsp;&nbsp;<img src="###PAYMENTLIB_IMAGE###" width="53" height="33" hspace=10 border="0" alt="" align=absmiddle>
+<input type="submit" name="pay" value="Connect to the ###PAYMENTLIB_TITLE### server" />&nbsp;&nbsp;
+###PAYMENTLIB_IMAGE###
 	###HIDDENFIELDS###
 </form>
 
 
 <table BORDER="0" CELLPADDING="0" CELLSPACING="5">
-<TR>
-<TD><A HREF="http://primerchants.com/" TARGET="_blank"><IMG SRC="###PAYMENTLIB_IMAGE###" BORDER="0"></A></TD>
-<TD><FONT FACE="Verdana, Arial, Helvetica" SIZE=1>###PAYMENTLIB_INFO###</FONT></TD>
-</TR>
+<tr>
+<td><a href="http://###PAYMENTLIB_WWW###" target="_blank">###PAYMENTLIB_IMAGE###</a></td>
+<td><font FACE="Verdana, Arial, Helvetica" SIZE=1>###PAYMENTLIB_INFO###</font></td>
+</tr>
 </table>
 
 <!-- ###PAYMENTLIB_FORM_TEMPLATE###	 end -->

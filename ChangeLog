@@ -1,4 +1,8 @@
 (add new changes on top of this file)
+2009-08-11 Franz Holzinger  <franz@ttproducts.de>
+	* fix bugs in templates
+	* change paramter tx_ttproducts_pi1 to tt_products
+
 2009-05-16 Franz Holzinger  <franz@ttproducts.de>
 	* fix bug to translations
 	* slight improvements of the template files
