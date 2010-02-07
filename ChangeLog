@@ -1,4 +1,7 @@
 (add new changes on top of this file)
+2010-02-07 Franz Holzinger  <franz@ttproducts.de>
+	* change in image marker for paymentlib
+
 2009-08-11 Franz Holzinger  <franz@ttproducts.de>
 	* fix bugs in templates
 	* change paramter tx_ttproducts_pi1 to tt_products

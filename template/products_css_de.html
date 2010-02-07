@@ -930,6 +930,12 @@ Sie k&ouml;en ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TRAC
 	            <!-- ###ADMIN_CONTROL_OK### begin -->
                 	<div class="admin_control_ok">
 	                    <form method="post" action="###FORM_URL###">
+	                        <div class="form_control">
+	                            <input type="hidden" name="tracking" value="###TRACKING_NUMBER###" />
+	                            <input type="hidden" name="update_code" value="###UPDATE_CODE###" />
+	                            <input type="submit" name="submit" value="Bestellstatus hinzuf&uuml;gen" />
+	                        </div>
+
 	                        <fieldset>
 	                            <legend>Bestellstatus &auml;ndern</legend>
 	                            <select name="orderRecord[status][]" id="orderRecord_status" size="9" multiple="multiple">
@@ -938,12 +944,6 @@ Sie k&ouml;en ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TRAC
 	                            <label for="orderRecord_status_comment">Kommentar zum neuen Bestellstatus: </label>
 	                                <textarea cols="40" rows="5" name="orderRecord[status_comment]" id="orderRecord_status_comment"></textarea>
 	                        </fieldset>
-
-	                        <div class="form_control">
-	                            <input type="hidden" name="tracking" value="###TRACKING_NUMBER###" />
-	                            <input type="hidden" name="update_code" value="###UPDATE_CODE###" />
-	                            <input type="submit" name="submit" value="Bestellstatus hinzuf&uuml;gen" />
-	                        </div>
 	                    </form>
                     </div>
 
