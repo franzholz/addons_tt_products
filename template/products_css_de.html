@@ -41,8 +41,11 @@ This subpart is used to display the regular list of products. It's also used by 
 	          <p class="listitem_subheader"><em>###PRODUCT_SUBTITLE###</em></p>
 	                    ###PRODUCT_IMAGE###
 	           <div class="product_note">###PRODUCT_NOTE###</div>
-	           <p class="price"> Preis : <strong>###PRICE_TAX### EUR</strong><br/>
-	           <!--<em>(enthaltene MwSt: ###PRICE_ONLY_TAX###.- EUR)</em> -->
+				<p class="price"> Preis : <strong>###PRICE_TAX### EUR</strong><br/>
+	           (enthaltene MwSt: ###PRICE_ONLY_TAX###.- EUR)
+	           </p>
+				<p class="price"> Punkte : ###PRODUCT_CREDITPOINTS### </p>
+				<p class="price"> Preis ohne Punkte : <strong>###PRICE_IF_DISCOUNTED_BY_CREDITPOINTS_TAX### EUR</strong>
 	           </p>
 	      <div class="order_form">
     	<label for="###FIELD_ID###">Anzahl: </label><input size="3" maxlength="4" type="text"  id="###FIELD_ID###" name="###FIELD_NAME###" value="###FIELD_QTY###" />  					</div>
@@ -124,10 +127,10 @@ This subpart is used to display the regular list of products. It's also used by 
 		###ITEM_SINGLE_POST_HTML###
         <!-- ###CATEGORY_SINGLE### end-->
 
-       </br> <!-- ###CATEGORY_SINGLE_2### begin-->
+       <br/> <!-- ###CATEGORY_SINGLE_2### begin-->
         <!-- ###CATEGORY_SINGLE_2### end-->
 
-        </br><!-- ###CATEGORY_SINGLE_3### begin-->
+        <br/><!-- ###CATEGORY_SINGLE_3### begin-->
         <!-- ###CATEGORY_SINGLE_3### end-->
     </div>
 
@@ -153,13 +156,17 @@ This subpart is used to display the regular list of products. It's also used by 
 	        <dt>Artikelnr.:</dt>
             	<dd>###PRODUCT_ITEMNUMBER###</dd>
 	        <dt>Preis:</dt>
-            	<dd><strong>###PRICE_TAX### EUR </strong><br />
+          <dd><strong>###PRICE_TAX### EUR </strong><br />
 	        <ul><li>(ohne MwSt: ###PRICE_NO_TAX### EUR)</li>
-		<li>(enthaltene MwSt: ###PRICE_ONLY_TAX### EUR)</li>
-		</ul>
-		<div class="product_datasheet">###PRODUCT_LINK_DATASHEET### als PDF-Datei zum freien Download ###PRODUCT_LINK_DATASHEET###</div>
-		</dd>
-
+				<li>(enthaltene MwSt: ###PRICE_ONLY_TAX### EUR)</li>
+			</ul>
+		  </dd>
+	        <dt>Punkte:</dt>
+            	<dd>###PRODUCT_CREDITPOINTS###</dd>
+	        <dt>Preis ohne Punkte:</dt>
+            	<dd><strong>###PRICE_IF_DISCOUNTED_BY_CREDITPOINTS_TAX### EUR</strong></dd>
+	        <dt>Datenblatt:</dt>
+		<dd class="product_datasheet">###PRODUCT_LINK_DATASHEET### als PDF-Datei zum freien Download ###PRODUCT_LINK_DATASHEET###</dd>
 
 	    </dl>
 	    <div class="order_form">
@@ -257,7 +264,7 @@ In addition there's a number of fields used for delivery and payment information
 	-->
     ###EXTERNAL_COBJECT###
     <div class="tt_products_basket">
-    	<form method="post" action="###FORM_URL###">
+    	<form method="post" name="###FORM_NAME###" action="###FORM_URL###">
         	<div>
 	            <table summary="Items in basket" class="basket_items">
 	                <caption>folgenden Artikel befinden sich im Warenkorb:</caption>
@@ -265,8 +272,8 @@ In addition there's a number of fields used for delivery and payment information
 	                    <tr>
 	                        <th id="quantity" abbr="Quantity">Anzahl</th>
 	                        <th id="image">&nbsp;</th>
-	                        <th id="product">Artikel</th>
-	                        <th id="product_number" abbr="Itemnumber">Artikelnr.</th>
+	                        <th id="product">Artikel / <br />Artikelnr.</th>
+	                        <th id="creditpoints">Punkte</th>
 	                        <th id="price">Preis</th>
 	                        <th id="total">Gesamt</th>
 	                    </tr>
@@ -284,8 +291,8 @@ In addition there's a number of fields used for delivery and payment information
 	                                <tr class="listitem">
 	                                    <td headers="quantity" class="quantity"><input size="3" maxlength="4" type="text" name="###FIELD_NAME_BASKET###" value="###FIELD_QTY###" /></td>
 	                                    <td headers="image" class="image">###PRODUCT_IMAGE###</td>
-	                                    <td headers="product" class="product"><!--###LINK_ITEM###-->###PRODUCT_TITLE###<!--###LINK_ITEM###--></td>
-	                                    <td headers="product_number" class="product_number">###PRODUCT_ITEMNUMBER###</td>
+	                                    <td headers="product" class="product"><!--###LINK_ITEM###-->###PRODUCT_TITLE###<!--###LINK_ITEM###--> <br /> ###PRODUCT_ITEMNUMBER###</td>
+	                                    <td headers="creditpoints" class="price">###PRODUCT_CREDITPOINTS###</td>
 	                                    <td headers="price" class="price">###PRICE_TAX### EUR</td>
 	                                    <td headers="total" class="total"> ###PRICE_TOTAL_TAX### EUR</td>
 	                                </tr>
@@ -339,18 +346,39 @@ In addition there's a number of fields used for delivery and payment information
             <div class="price_summary">
                 <h2>Gesamtpreis </h2>
 
-                    <strong>Insgesamt: ###PRICE_TOTAL_TAX### EUR</strong></div> </br>
+                    <strong>Insgesamt: ###PRICE_TOTAL_TAX### EUR</strong><br/>
+    <!-- ###SUB_CREDITPOINTS_AMOUNT### begin -->
+                    <strong>Rabatt: ###USERCREDITPOINTS_PRICE_TOTAL_TAX### EUR</strong><br/>
+                    <strong>Zahlungsbetrag: ###PRICE_VOUCHERTOTAL_TAX### EUR</strong><br/>
+					<p>m&ouml;glicher Rabatt: ###AUTOCREDITPOINTS_PRICE_TOTAL_TAX###</p>
+
+    <!-- ###SUB_CREDITPOINTS_AMOUNT### end -->
+			</div> <br/>
 		   <ul><li> (Insgesamt ohne MwSt: ###PRICE_TOTAL_NO_TAX### EUR)</li>
                     <li>(enthaltene MwSt: ###PRICE_TOTAL_ONLY_TAX### EUR)</li></ul>
 
+    <!-- ###SUB_CREDITPOINTS_AMOUNT_EMPTY### begin -->
+    <!-- ###SUB_CREDITPOINTS_AMOUNT_EMPTY### end -->
 
+    <!-- ###SUB_CREDITPOINTS_AMOUNT### begin -->
+			<div class="creditpoints_summary">
+				<h2>eingel&ouml;ste Kontopunkte </h2>
+					###CREDITPOINTS_SAVED###
+			</div>
 
-
+			<div class="creditpoints_available">
+				<h2>verf&uuml;gbare Kontopunkte </h2>
+					###CREDITPOINTS_AVAILABLE###
+			</div>
+    <!-- ###SUB_CREDITPOINTS_AMOUNT### end -->
 
             <div class="form_control">
-                <input type="hidden" name="mode_update" value="1" />
-                <input type="submit" name="products_update" value="Warenkorb aktualisieren" />
-                <input type="submit" name="products_info" value="Gehe zur Kasse/Bestellung" />
+				<input type="hidden" name="mode_update" value="1" />
+				<input type="submit" id="basketbutton1" name="products_update" value="Warenkorb aktualisieren" />
+				<input type="submit" id="basketbutton2" name="products_clear_basket" value="Warenkorb l&ouml;schen">
+				<input type="submit" id="basketbutton3" name="products_info" value="Gehe zur Kasse/Bestellung" />
+				<input type="hidden" name="creditpoints_saved" value="###CREDITPOINTS_SAVED###">
+				<input type="hidden" name="creditpoints_spended" value="###CREDITPOINTS_SPENDED###">
             </div>
         </form>
     </div>
@@ -408,6 +436,8 @@ an diese Adresse schicken.
 	                    <dd>###PERSON_EMAIL###</dd>
 	                <dt>Telefon: </dt>
 	                    <dd>###PERSON_TELEPHONE###</dd>
+	                <dt>Kundennummer: </dt>
+	                    <dd>###PERSON_CNUM###</dd>
 	            </dl>
             <!-- ###BILLING_ADDRESS_LOGIN### end-->
 
@@ -418,12 +448,12 @@ an diese Adresse schicken.
 	                    This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 	                    -->
 	                    <!-- ###MESSAGE_SHIPPING_10### begin -->
-Wenn sie wollen,da&szlig; ihre Ware an eine andere Adresse als die obere Rechnungsadresse geschickt wird, dann geben sie hier die alternative Adresse ein.<br />
+Wenn Sie wollen,da&szlig; ihre Ware an eine andere Adresse als die obere Rechnungsadresse geschickt wird, dann geben sie hier die alternative Adresse ein.<br />
 	                    <!-- ###MESSAGE_SHIPPING_10### end -->
-	                    <!-- ###MESSAGE_SHIPPING_90### begin -->Wenn sie die Ware selbstabholen gew&auml; haben, brauchen sie hier keine Adresse einzugeben.
+	                    <!-- ###MESSAGE_SHIPPING_90### begin -->Wenn sie die Ware selbstabholen gew&auml;htl haben, brauchen sie hier keine Adresse einzugeben.
 	                <!-- ###MESSAGE_SHIPPING_90### end -->
 	                <!-- ###MESSAGE_SHIPPING### -->
-Sie k&ouml;en auch die Kontaktperson/Email an diesem Ort eingeben?
+Sie k&ouml;nnen auch die Kontaktperson/Email an diesem Ort eingeben?
                 </p>
 	            <div class="delivery_address">
 	                <label for="delivery_name">Kontaktperson: </label>
@@ -534,7 +564,7 @@ Exact same features as BASKET_TEMPLATE.</em></p>
             <!-- ###MESSAGE_SHIPPING### end -->
 
             <dl>
-	            <dt>Bezahlungsart: </dt> </br>
+	            <dt>Bezahlungsart: </dt> <br/>
 	                <dd>###PAYMENT_IMAGE### ###PAYMENT_TITLE###</dd>
 	            <!-- <dt>Bezahlungskosten: </dt>
 	                <dd><strong>EUR ###PRICE_PAYMENT_TAX###.-</strong>&nbsp;<em>(ohne MWSt: EUR ###PRICE_PAYMENT_NO_TAX###.-)</em></dd> -->
@@ -561,6 +591,8 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	                <dd><strong>###PERSON_EMAIL###</strong>&nbsp;<em>(Diese Adresse wird die Bestellbest&auml;tigung erhalten!) </em></dd>
 	            <dt>Telefon: </dt>
 	                <dd>###PERSON_TELEPHONE###</dd>
+	            <dt>Kundennummer: </dt>
+	                <dd>###PERSON_CNUM###</dd>
 	        </dl>
 	    </div>
 
@@ -589,13 +621,17 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	           <dd class="delivery_date"><strong>###DELIVERY_DESIRED_DATE###</strong></dd> -->
 	        </dl>
 	    </div>
-           </br>
+           <br/>
 	    <div class="price_summary">
         	<h2>Insgesamt</h2>
 
             <ul><li>(ohne MwSt:  ###PRICE_TOTAL_NO_TAX### EUR)</li>
 		<li>(enthaltene MwSt: ###PRICE_TOTAL_ONLY_TAX### EUR)</li></ul>
-                <strong>Insgesamt: ###PRICE_TOTAL_TAX### EUR</strong></br>
+                <strong>Insgesamt: ###PRICE_TOTAL_TAX### EUR</strong><br/>
+    <!-- ###SUB_CREDITPOINTS_AMOUNT### begin -->
+                <strong>Rabatt: ###PRICE_TOTUNITS_DISCOUNT### EUR</strong><br/>
+                <strong>Zahlungsbetrag: ###PRICE_VOUCHERTOTAL_TAX### EUR</strong><br/>
+    <!-- ###SUB_CREDITPOINTS_AMOUNT### end -->
 
 	    </div>
 
@@ -621,12 +657,12 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	-->
     <div class="tt_products_order_confirmation">
 
-        <p><strong>Vielen Dank f&uuml;r Ihre Bestellung bei der Dunia Foundation</br>
+        <p><strong>Vielen Dank f&uuml;r Ihre Bestellung bei der Dunia Foundation<br/>
 	Die Einzelheiten dazu sind unten aufgef&uuml;hrt.</strong> </p>
 
         <div class="order_data">
 	        <dl>
-	            <dt>Ihre Bestellung ist abgeschlo&szlig;en und hat die Nummer:</dt>
+	            <dt>Ihre Bestellung ist abgeschlossen und hat die Nummer:</dt>
 	                <dd><strong>###ORDER_UID###</strong></dd>
 	            <dt>Bestelldatum: </dt>
 	                <dd><strong>###ORDER_DATE###</strong></dd>
@@ -643,7 +679,7 @@ Drucken Sie diese Seite am besten aus.</em>
 	    <h2>Bestellinformationen</h2>
         <p>
     Ihre Bestellung ist vom  ###ORDER_DATE###.<br />
-Sie k&ouml;en ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TRACKING_NO###</strong> verfolgen.Klicken sie hier  <a href="index.php?id=###PID_TRACKING###&type=0&tracking=###ORDER_TRACKING_NO##">um den Status zum jetzigen Zeitpunkt zu sehen.</a><br /></br>
+Sie k&ouml;en ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TRACKING_NO###</strong> verfolgen.Klicken sie hier  <a href="index.php?id=###PID_TRACKING###&type=0&tracking=###ORDER_TRACKING_NO##">um den Status zum jetzigen Zeitpunkt zu sehen.</a><br /><br/>
 </p>
 
         <div class="payment_message">
@@ -732,6 +768,8 @@ Sie k&ouml;en ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TRAC
 	                <dd>###PERSON_EMAIL###&nbsp;<em>(Diese Email-Adresse wird 				die Empfangsbest&auml;tigung erhalten.)</em></dd>
 	            <dt>Telefon: </dt>
 	                <dd>###PERSON_TELEPHONE###</dd>
+	            <dt>Kundennummer: </dt>
+	                <dd>###PERSON_CNUM###</dd>
 	        </dl>
 	<!-- ###FE_USER_SECTION### begin --><!--
             	<dl>
@@ -768,9 +806,16 @@ Sie k&ouml;en ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TRAC
 
 	    <div class="price_summary">
 
-            	<strong>Insgesamt: ###PRICE_TOTAL_TAX### EUR</strong></br>
+            	<strong>Insgesamt: ###PRICE_TOTAL_TAX### EUR</strong><br/>
 	        <ul><li>(ohne MwSt: ###PRICE_TOTAL_NO_TAX### EUR)</li>
-		<li>(enthaltene MwSt:###PRICE_TOTAL_ONLY_TAX### EUR)</li></ul>
+		<li>(enthaltene MwSt:###PRICE_TOTAL_ONLY_TAX### EUR)</li>
+
+    <!-- ###SUB_CREDITPOINTS_AMOUNT### begin -->
+          <li><strong>Rabatt: ###PRICE_TOTUNITS_DISCOUNT### EUR</strong></li>
+         <li><strong>Zahlungsbetrag: ###PRICE_VOUCHERTOTAL_TAX### EUR</strong></li>
+    <!-- ###SUB_CREDITPOINTS_AMOUNT### end -->
+
+</ul>
 
 <!--########################################################################################-->
 
@@ -840,7 +885,7 @@ Sie k&ouml;en ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TRAC
 	Displays form for entering the tracking number.
 	-->
     <div class="tt_products_tracking_enter_number">
-    	<h1>Bestellverfolgung</h1> </br> </br>
+    	<h1>Bestellverfolgung</h1> <br/> <br/>
 	    <form method="post" action="###FORM_URL###">
 	        <div>
 	            <label for="tracking">Geben Sie Ihre Auftragsstatusnummer ein: </label>
@@ -850,7 +895,7 @@ Sie k&ouml;en ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TRAC
 	    </form>
 
 	    <!-- ###ADMIN_CONTROL### begin -->
-        	<div class="admin_control"> </br></br></br></</br>
+        	<div class="admin_control"> <br/><br/><br/></<br/>
 	            <h1>Shop-Administrator(Bestellung/Versand)</h1>
 	            <!-- ###ADMIN_CONTROL_DENY### begin -->
 	                <form method="post" action="###FORM_URL###">
@@ -1129,6 +1174,7 @@ Rechnungsadresse:
 
 Email: ###PERSON_EMAIL###
 Telefon: ###PERSON_TELEPHONE###
+Kundennummer: ###PERSON_CNUM###
 
 Lieferadresse:
 ###DELIVERY_NAME###
@@ -1145,6 +1191,10 @@ Versandkosten: ###PRICE_SHIPPING_TAX### EUR
 Summe ohne MwSt: 	       ###PRICE_TOTAL_NO_TAX### EUR
 Enthaltene MwSt:	       ###PRICE_TOTAL_ONLY_TAX### EUR
 Gesamtsumme dieser Bestellung: ###PRICE_TOTAL_TAX### EUR
+<!-- ###SUB_CREDITPOINTS_AMOUNT### begin -->
+Rabatt: ###PRICE_TOTUNITS_DISCOUNT### EUR
+Zahlungsbetrag: ###PRICE_VOUCHERTOTAL_TAX### EUR
+<!-- ###SUB_CREDITPOINTS_AMOUNT### end -->
 
 Bitte bezahlen Sie den Betrag erst nach Erhalt der Rechnung.
 ***************************************************************************
@@ -1320,8 +1370,17 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 			<td colspan="4" style="text-align:right;border-top:2px solid #000"><strong>Insgesamt: </strong></td>
 			<td style="border-top:2px solid #000"><strong>EUR ###PRICE_TOTAL_TAX###</strong></td>
         </tr>
+        <tr>
+			<td colspan="4" style="text-align:right;border-top:2px solid #000"><strong>Rabatt:</strong></td>
+			<td style="border-top:2px solid #000"><strong>EUR ###PRICE_TOTUNITS_DISCOUNT###</strong></td>
+        </tr>
+        <tr>
+			<td colspan="4" style="text-align:right;border-top:2px solid #000"><strong>Zahlungsbetrag: </strong></td>
+			<td style="border-top:2px solid #000"><strong>EUR ###PRICE_VOUCHERTOTAL_TAX###</strong></td>
+        </tr>
     </tbody>
 </table>
+
 
 <h2>Bezahlhinweis</h2>
 

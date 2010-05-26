@@ -1,4 +1,10 @@
 (add new changes on top of this file)
+
+2010-05-26 Franz Holzinger  <franz@ttproducts.de>
+	* remove en.locallang.xml, because the file marker/locallang.xml is part of tt_products
+	* add markers for the creditpoint system to the template products_css_de.html
+	* add the Meerwijn icons
+
 2010-02-07 Franz Holzinger  <franz@ttproducts.de>
 	* change in image marker for paymentlib
 
