@@ -2,8 +2,8 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <!-- translated by Masod Mohmand / nicht alles ist uebersetzt worden /
-     ist unseren Anforderungen angepasst(z.B.kein frontend user registration , kein Memo
-	u. w. ..).-->
+     ist unseren Anforderungen angepasst(z.B.keine Front End User Registration, kein Memo
+	u.s.w. ..).-->
 
 <!-- $Id$ -->
 
@@ -376,7 +376,7 @@ In addition there's a number of fields used for delivery and payment information
 				<input type="hidden" name="mode_update" value="1" />
 				<input type="submit" id="basketbutton1" name="products_update" value="Warenkorb aktualisieren" />
 				<input type="submit" id="basketbutton2" name="products_clear_basket" value="Warenkorb l&ouml;schen">
-				<input type="submit" id="basketbutton3" name="products_info" value="Gehe zur Kasse/Bestellung" />
+				<input type="submit" id="basketbutton3" name="products_info" onclick="this.form.action='###FORM_URL_INFO###';" value="Gehe zur Kasse/Bestellung" />
 				<input type="hidden" name="creditpoints_saved" value="###CREDITPOINTS_SAVED###">
 				<input type="hidden" name="creditpoints_spended" value="###CREDITPOINTS_SPENDED###">
             </div>
@@ -396,7 +396,7 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	Exact same features as BASKET_TEMPLATE.
 	-->
     <div class="tt_products_basket_info">
-    	<form method="post" action="###FORM_URL###">
+    	<form method="post" name="###FORM_NAME###" action="###FORM_URL###">
         	<!-- ###BILLING_ADDRESS### start -->
 	            <fieldset>
 	                <legend>Rechnungsadresse<!--Invoice address--></legend>
@@ -485,8 +485,7 @@ Sie k&ouml;nnen auch die Kontaktperson/Email an diesem Ort eingeben?
 	            <div class="trading_conditions">
 	             <p>Hiermit best&auml;tige ich, dass ich die <!--###LINK_AGB### -->Allgemeine Gesch&auml;tsbedingungen(AGB)<!--###LINK_AGB###--> und die <a href="http://###DOMAIN###/index.php?id=188">Datenschutzbestimmungen</a> gelesen und akzeptiert habe:</p>
 	                <input type="checkbox" name="recs[personinfo][agb]" id="delivery_agb" class="checkbox" ###PERSON_AGB### />&nbsp;
-	                    <label for="delivery_agb" class="checkbox"><strong>Ich bin mit den Allgemeinen Gesch&auml;tsbedingungen und den Datenschutzbedingungen einverstanden*
-</strong></label>
+	                    <label for="delivery_agb" class="checkbox"><strong>Ich bin mit den Allgemeinen Gesch&auml;tsbedingungen und den Datenschutzbedingungen einverstanden*</strong></label>
 	            </div>
 	        </fieldset>
 
@@ -494,7 +493,7 @@ Sie k&ouml;nnen auch die Kontaktperson/Email an diesem Ort eingeben?
 
 			<div class="form_control">
 	        <input type="submit" name="products_update" value="zur&uuml;ck zum Warenkorb" />
-	        <input type="submit" name="products_payment" value="zur Kasse/Bestellung" />
+	        <input type="submit" name="products_payment" onclick="this.form.action='###FORM_URL_PAYMENT###';" value="zur Kasse/Bestellung" />
 	        </div>
         </form>
     </div>

@@ -959,7 +959,7 @@ Exact same features as BASKET_TEMPLATE
       ###GW1B### Sie best&#65533;igen hiermit, dass Sie
       die AGB des Testshop - Online Vertrieb gelesen haben und diese akzeptieren.<br /><br />
       ###GW1E###
-      <input type="checkbox" name="recs[personinfo][agb]" value="###PERSON_AGB###" />
+      <input type="checkbox" name="recs[personinfo][agb]" ###PERSON_AGB### />
        ###GW1B###<!--###LINK_AGB###-->Die Allgemeinen Gesch&auml;ftsbedingungen <!--###LINK_AGB###--> erkenne ich hiermit an.
     </div>
     <!--<div align="center">-->
@@ -1582,7 +1582,7 @@ If payment is initiated but the required information fields are not filled in co
 
 <div class="BASKET_REQUIRED_INFO_MISSING">
   Fehler bei der Eingabe<br />
-  <B>Sie haben nicht alle erforderlichen Felder mit Ihren Adressinformationen ausgefllt. Bitte gehen Sie zurck und aktualisieren Ihre Eingaben.</B>
+  <B>Sie haben nicht alle erforderlichen Felder mit Ihren Adressinformationen ausge&uuml;fllt. ###ERROR_DETAILS### Bitte gehen Sie zur&uuml;ck und aktualisieren Ihre Eingaben.</B>
   <form method="post" action="###FORM_URL###">
   <input type="submit" id="button2" name="products_info" value="Adressdaten eingeben" onclick="document.forms[0].action='###FORM_URL_INFO###';"/>
   </form>
