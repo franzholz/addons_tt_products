@@ -810,6 +810,9 @@ This whole subpart, message_payment is substituted with the subpart 'message_pay
 <br>
 <b>Bezahlung bei Abholung im Gesch&auml;ft.</b><br>
 <!-- ###MESSAGE_PAYMENT_50### -->
+<!-- ###MESSAGE_PAYMENT_130### -->
+<br /><b>Bezahlung &uuml;ber ConCardis.</b><br />
+<!-- ###MESSAGE_PAYMENT_130### -->
 <!-- ###MESSAGE_PAYMENT### -->
 ###GW2E###
 
@@ -1366,8 +1369,9 @@ Exact same features as BASKET_TEMPLATE
     <td valign=top align=right colspan=2 nowrap>###GW1B### <b>EUR ###PRICE_TOTAL_TAX###</b>
       <br>
       (exkl. MwSt.: EUR ###PRICE_TOTAL_NO_TAX###)<br>
-      ###GW1E###</td>
+      ###GW1E###
 	###MESSAGE_PAYMENT_SCRIPT###  <!--  bei Bezahlskripten das verwenden -->
+	</td>
   </tr>
 </table>
 <br>
@@ -1833,7 +1837,8 @@ Zu einer anderen Bestellung wechseln:
 <form method="post" action="###FORM_URL###"  name="orderChange">
 <select name="tracking" size="9">
 ###OTHER_ORDERS_OPTIONS###
-</select><br><br>
+</select>
+<br><br>
 <input type="Submit" name="submit" value="Select">
 <input type="hidden" name="update_code" value="###UPDATE_CODE###"><br>
 </form>
@@ -1889,7 +1894,7 @@ Hier k&ouml;nnen Sie uns eine Nachricht bezglich Ihrer Bestellung schicken.<br>
 
 <br>
 <br>
-<b>Bestellbest&auml;tigung - Original:</b><br><br>
+<b>Bestelldaten:</b><br><br>
 ###GW1E###
 <hr>
 <br>
@@ -2185,6 +2190,336 @@ Mein TYPO3 Shop
 <!-- ###EMAIL_HTML_SHELL### end -->
 
 
+
+
+
+<br><br><br><br><hr><br><br><br>
+<h3>TRACKING_TEMPLATE</h3>
+<em>
+Subpart used to display the content of the shopping basket for the tracking after the order has been checked out.<br>
+This corresponds to the BASKET_TEMPLATE.<br>
+</em><br>
+
+
+<!-- ###TRACKING_TEMPLATE### begin -->
+<table border="0" cellspacing="0" cellpadding="1" width=1>
+<tr>
+<td><img src="clear.gif" width="100" height="1"></td>
+<td><img src="clear.gif" width="5" height="1"></td>
+<td><img src="clear.gif" width="165" height="1"></td>
+<td colspan=3><img src="clear.gif" width="200" height="1"></td>
+</tr>
+
+<tr>
+    <td colspan=6> <p>###GW1B###<b>Bestellbest&auml;tigung:</b><br>
+        Vielen Dank f&uuml;r Ihre Bestellung!<br>
+        Ihre Test-Bestellung ist nun abgeschlossen und hat folgende Nummer:<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_UID###</b> <br>
+        <br>
+		<font color=red><strong>Es handelt sich hierbei nur um einen Test.</strong></font><br>
+	</p>
+	<p><font color=red><em><strong>Zahlungsart:</strong></em></font></p>
+        <!-- ###MESSAGE_PAYMENT###
+	This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
+-->
+        <!-- ###MESSAGE_PAYMENT_10### begin
+Message for payment method 10, Vorkasse
+-->
+      <p><font color=red><strong>Vorkasse:</strong><br>
+        Bitte &uuml;berweisen Sie den Rechnungsbetrag auf folgendes Konto:<br>
+        Bank: Postbank Teststadt <br>
+        Bankleitzahl: 76010815<br>
+        Kontonummer: 1708150815<br>
+        IBAN: DE46 7601 0015 1708 1508 15<br>
+        BIC: PBNKTEST<br>
+        Betreff: Ihre Bestellnummer ###ORDER_UID### unbedingt angeben! </font></p>
+	<!-- ###MESSAGE_PAYMENT_10### end -->
+        <!-- ###MESSAGE_PAYMENT_20### begin
+Message for payment method 10, Paypal
+-->
+      <p><font color=red><strong>PayPal:</strong><br>
+        Sie haben als Zahlungsart PayPal gew&auml;hlt. Bezahlen Sie ber diesen Link direkt Online per Kreditkarte via PayPal.
+
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="info@ttproducts.de">
+<input type="hidden" name="item_name" value="###ORDER_UID###">
+<input type="hidden" name="amount" value="###PRICE_TOTAL_TAX###">
+<input type="hidden" name="no_note" value="1">
+<input type="hidden" name="currency_code" value="EUR">
+<input type="hidden" name="lc" value="DE">
+<input type="hidden" name="tax" value="0,00">
+<input type="submit" name="submit" value="Bezahlung mit Kreditkarte via Paypal" alt="Protect Your Banana!">
+</form>	</font></p>
+	<!-- ###MESSAGE_PAYMENT_20### end -->
+
+        <!-- ###MESSAGE_PAYMENT_30### begin -->
+      <p><font color=red><strong>Nachnahme:</strong><br>
+        Die bananaGUARDs werden Ihnen direkt zugesandt.<br>
+        Sie bezahlen die Ware bei Erhalt.
+      </font>
+        <br></p>
+        <!-- ###MESSAGE_PAYMENT_30### end -->
+        <!-- ###MESSAGE_PAYMENT_40### begin -->
+      <p><font color=red><strong>PAYPAL:</strong><br>
+        F&uuml;hren Sie hier die Bezahlung &uuml;ber Paypal durch.<br>
+        Erst nach der Bezahlung werden die Waren an Sie verschickt.
+      </font>
+        ###MESSAGE_PAYMENT_SCRIPT###
+        <br></p>
+        <!-- ###MESSAGE_PAYMENT_40### end -->
+	<!-- ###MESSAGE_PAYMENT### -->
+   <br>
+        <b>Liefer- und Bestellstatus</b><br>
+        Die Ware bleibt bis zur vollst&auml;ndigen Bezahlung unser Eigentum.<br>
+        Ihr Bestelldatum: ###ORDER_DATE###.<br>
+        <br>
+        Sie k&ouml;nnen Ihren Bestellstatus jederzeit mittels Ihres Bestellstatus-Codes<br>
+        <strong>###ORDER_TRACKING_NO###</strong> nachvollziehen. <br>
+        Klicken Sie hier <a href="index.php?id=###PID_TRACKING###&amp;type=0&amp;tracking=###ORDER_TRACKING_NO###"><strong>
+        um den Status jetzt zu sehen.</strong></a> <br>
+        Klicken Sie hier <a href="index.php?id=###PID_BILLING###&amp;type=0&amp;tracking=###ORDER_TRACKING_NO###"><strong>
+        um die Rechnung jetzt zu sehen.</strong></a><br>
+        Klicken Sie hier <a href="index.php?id=###PID_DELIVERY###&amp;type=0&amp;tracking=###ORDER_TRACKING_NO###"><strong>
+	        um den Lieferschein jetzt zu sehen.</strong></a><br>
+      </td>
+</tr>
+<tr>
+<td colspan=3 bgcolor="###GC2###">###GW2B###<b>bananaGUARDs:</b>###GW2E###</td>
+<td bgcolor="###GC2###">###GW2B###<b>Preis:</b>###GW2E###</td>
+<td bgcolor="###GC2###">###GW2B###<b>Menge:</b>###GW2E###</td>
+<td bgcolor="###GC2###">###GW2B###<b>Gesamt:</b>###GW2E###</td>
+</tr>
+<!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
+<!-- ###ITEM_CATEGORY### begin -->
+<tr>
+<td colspan=6><br>###CATEGORY_TITLE###<br>
+</td>
+</tr>
+<!-- ###ITEM_CATEGORY### end -->
+<!-- ###ITEM_LIST### begin -->
+<!-- ###ITEM_SINGLE### begin-->
+<tr>
+<td colspan=6><img src="clear.gif" width="1" height="6"></td>
+</tr>
+<tr>
+<td valign=top>###PRODUCT_IMAGE###</td>
+<td></td>
+<td valign=top>
+###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
+
+</td>
+<td valign=top>###GW1B### ###PRICE_TAX### ###GW1E###</td>
+<td valign=top>###GW1B### ###FIELD_QTY### ###GW1E###</td>
+<td valign=top align=right>###GW1B### <b>###PRICE_TOTAL_TAX###</b><br>(###PRICE_TOTAL_NO_TAX###) ###GW1E###</td>
+</tr>
+<!-- ###ITEM_SINGLE### end -->
+<!-- ###ITEM_LIST### end -->
+<!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
+<tr>
+<td colspan=6><img src="clear.gif" width="1" height="10"></td>
+</tr>
+<tr>
+<td colspan=3 bgcolor="###GC2###">###GW2B###<b>Rechnungsanschrift:</b>###GW2E###</td>
+<td colspan=3></td>
+</tr>
+<tr>
+<td colspan=3>
+<table cellspacing=3>
+<tr>
+  <td>###GW1B###Anrede:###GW1E###</td>
+  <td>###GW1B###<strong>###PERSON_SALUTATION###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###Name/Firma:###GW1E###</td>
+<td>###GW1B###<strong>###PERSON_NAME###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###Postadresse:###GW1E###</td>
+<td>###GW1B###<strong>###PERSON_ADDRESS_DISPLAY###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###PLZ Stadt:###GW1E###</td>
+<td>###GW1B###<strong>###PERSON_ZIP### ###PERSON_CITY###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###Land:###GW1E###</td>
+<td>###GW1B###<strong>###PERSON_COUNTRY###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###Telefon:###GW1E###</td>
+<td>###GW1B###<strong>###PERSON_TELEPHONE###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###Email:###GW1E###</td>
+<td>###GW1B###<strong>###PERSON_EMAIL###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###VAT-Id:###GW1E###</td>
+<td>###GW1B###<strong>###PERSON_TT_PRODUCTS_VAT###</strong>###GW1E###</td>
+</tr>
+
+<!-- ###FE_USER_SECTION### begin -->
+<tr>
+<td>###GW1B###Username:###GW1E###</td>
+<td>###GW1B###<strong>###FE_USER_USERNAME###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###User ID:###GW1E###</td>
+<td>###GW1B###<strong>###FE_USER_UID###</strong>###GW1E###</td>
+</tr>
+<!-- ###FE_USER_SECTION### end -->
+
+</table>
+</td>
+<td colspan=3></td>
+</tr>
+<tr>
+<td colspan=6><img src="clear.gif" width="1" height="10"></td>
+</tr>
+<tr>
+<td colspan=3 bgcolor="###GC2###">###GW2B###<b>Lieferadresse:</b>###GW2E###</td>
+<td colspan=3></td>
+</tr>
+<tr>
+<td colspan=3>
+<table>
+<tr>
+<td>###GW1B###Postadresse:###GW1E###</td>
+<td>###GW1B###<strong>###DELIVERY_ADDRESS_DISPLAY###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###Kontaktperson:###GW1E###</td>
+<td>###GW1B###<strong>###DELIVERY_NAME###</strong>###GW1E###</td>
+</tr>
+<tr>
+  <td>###GW1B###Anrede:###GW1E###</td>
+  <td>###GW1B###<strong>###DELIVERY_SALUTATION###</strong>###GW1E###</td>
+</tr>
+<tr>
+  <td>###GW1B###PLZ Stadt:###GW1E###</td>
+  <td>###GW1B###<strong>###DELIVERY_ZIP### ###DELIVERY_CITY###</strong>###GW1E###</td>
+</tr>
+<tr>
+  <td>###GW1B###Land:###GW1E###</td>
+  <td>###GW1B###<strong>###DELIVERY_COUNTRY###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###Telefon:###GW1E###</td>
+<td>###GW1B###<strong>###DELIVERY_TELEPHONE###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###Email:###GW1E###</td>
+<td>###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E###</td>
+</tr>
+</table>
+</td>
+<td colspan=3></td>
+</tr>
+<tr>
+<td colspan=6><img src="clear.gif" width="1" height="10"></td>
+</tr>
+<tr>
+<td colspan=3 bgcolor="###GC2###">###GW2B###<b>Nachricht:</b>###GW2E###</td>
+<td colspan=3></td>
+</tr>
+<tr>
+<td colspan=3>
+<table>
+<tr>
+<td>###GW1B###gew&uuml;nschtes Lieferdatum:###GW1E###</td>
+<td>###GW1B###<strong>###DELIVERY_DESIRED_DATE###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###Kommentar:###GW1E###</td>
+<td>###GW1B###<strong>###DELIVERY_NOTE_DISPLAY###</strong>###GW1E###</td>
+</tr>
+</table>
+</td>
+<td colspan=3></td>
+</tr>
+<tr>
+<td colspan=6><img src="clear.gif" width="1" height="10"></td>
+</tr>
+<tr>
+<td colspan=3 bgcolor="###GC2###">###GW2B###<b>Versand und Verpackung:</b>###GW2E###</td>
+    <td valign=top align=right colspan=3>###GW1B###<b>###PRICE_SHIPPING_TAX### (###PRICE_SHIPPING_NO_TAX###)</b>###GW1E###</td>
+</tr>
+<tr>
+<td valign=top colspan=3>###GW1B###
+<strong>Zahlungsweise:</strong><br>
+###PAYMENT_IMAGE### ###PAYMENT_TITLE###
+###GW1E###</td>
+
+<td valign=top align=right colspan=3>###GW1B###
+<b>###PRICE_PAYMENT_TAX###</b><br>
+ (###PRICE_PAYMENT_NO_TAX###)<br>
+
+
+###GW1E###</td>
+</tr>
+<tr>
+<td colspan=6><img src="clear.gif" width="1" height="10"></td>
+</tr>
+<tr>
+<td colspan=6 bgcolor="###GC2###">###GW2B###<b>Gesamt:</b>###GW2E###</td>
+</tr>
+<tr>
+<td valign=top colspan=3>###GW1B###
+<strong>Gesamtpreis in EUR:</strong>
+###GW1E###</td>
+
+<td valign=top align=right colspan=3>###GW1B###
+<b>EUR ###PRICE_TOTAL_TAX###</b><br>
+ (exkl. MwSt.: ###PRICE_TOTAL_NO_TAX###)<br>
+
+###GW1E###</td>
+</tr>
+
+<tr>
+<td>
+	###GW1B###verwendeter Bestell Code:###GW1E### ###VALUE_GIFTCODE###
+</td>
+</tr>
+
+<tr>
+    <td colspan=6> <p>###GW1B### <br>
+    <font color=red><strong>Es handelt sich hierbei nur um einen Test.</strong></font>
+        <br>
+        Mit freundlichen Gr&uuml;&szlig;en: <br>
+        <br>
+        <strong>ttproducts.de</strong><br>
+        Testshop<br>
+        Testshopstr. 4<br>
+        D- 71364 Teststadt<br>
+        Tel.: +49 (0)7195 4545454<br>
+        Email: info@ttproducts.de<br>
+        ###GW1E### </p>
+      </td>
+</tr>
+</table>
+<br>
+<br>
+<!-- ###TRACKING_TEMPLATE### end -->
+
+
+
+
+
+<br><br><br><br><hr><br><br><br>
+<h3>BASKET_TEMPLATE_EMPTY</h3>
+<em><br>
+<br>
+<br>
+If the basket is empty this subpart is displayed<br>
+</em>
+<!-- ###BASKET_TEMPLATE_EMPTY### begin
+If the basket is empty this subpart is displayed
+-->
+<br>
+###GW1B###<b>Ihr Warenkorb ist noch leer.</b>###GW1E###
+<!-- ###BASKET_TEMPLATE_EMPTY### end -->
 
 
 

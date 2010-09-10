@@ -114,6 +114,7 @@
 			<label index="list_item_number">Référence</label>
 			<label index="list_item_price">Prix :</label>
 			<label index="list_item_quantity">Quantité :</label>
+			<label index="list_item_notfound">Cette catégorie ne contient pas de produits, veuillez choisir une autre catégorie.</label>
 
 			<label index="search_item_notfound">Aucun article correspondant.</label>
 			<label index="search_button">Recherche</label>

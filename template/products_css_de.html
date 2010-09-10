@@ -197,7 +197,7 @@ This subpart is used to display the regular list of products. It's also used by 
         </p>
 		<p class="basket">
         	<a href="http://###DOMAIN###/index.php?id=###PID_BASKET###"><img src="fileadmin/Templates/shop/wk.gif" height="70" width ="100"
-	" alt="Warenkorb" /></a>&nbsp;
+	alt="Warenkorb" /></a>&nbsp;
             <a href="http://###DOMAIN###/index.php?id=###PID_BASKET###">###NUMBER_GOODSTOTAL### Artikel (###PRICE_GOODSTOTAL_TAX### EUR)</a>
         </p>
 	</div>
@@ -253,6 +253,21 @@ This subpart is used to display the regular list of products. It's also used by 
 <br /><br />
 
 
+
+<br><br><br><br><hr><br><br><br>
+<h3>ITEM_LIST_EMPTY</h3>
+<em>Subpart displayed if the list was empty and another category must be chosen.</em><br>
+<br>
+<br>
+
+<!-- ###ITEM_LIST_EMPTY### begin
+Subpart displayed if the list under the selected category was empty. If the sql query was successfull, the ITEM_LIST_TEMPLATE in the top is used.
+-->
+###GW1B###<b>Direkt in dieser Kategorie sind keine Produkte. Bitte w&auml;hlen Sie eine Unterkategorie.</b>###GW1E###
+<!-- ###ITEM_LIST_EMPTY### end -->
+
+
+
 <h2>BASKET_TEMPLATE</h2>
 <p><em>Subpart used to display the content of the shopping basket.<br />
 The product list part has the exact same features as the regular LIST_ITEM_TEMPLATE subpart.<br />
@@ -267,7 +282,7 @@ In addition there's a number of fields used for delivery and payment information
     	<form method="post" name="###FORM_NAME###" action="###FORM_URL###">
         	<div>
 	            <table summary="Items in basket" class="basket_items">
-	                <caption>folgenden Artikel befinden sich im Warenkorb:</caption>
+	                <caption>folgende Artikel befinden sich im Warenkorb:</caption>
 	                <thead>
 	                    <tr>
 	                        <th id="quantity" abbr="Quantity">Anzahl</th>
