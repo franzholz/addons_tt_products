@@ -2272,11 +2272,10 @@ Message for payment method 10, Paypal
 	<!-- ###MESSAGE_PAYMENT### -->
    <br>
         <b>Liefer- und Bestellstatus</b><br>
-        Die Ware bleibt bis zur vollst&auml;ndigen Bezahlung unser Eigentum.<br>
         Ihr Bestelldatum: ###ORDER_DATE###.<br>
         <br>
-        Sie k&ouml;nnen Ihren Bestellstatus jederzeit mittels Ihres Bestellstatus-Codes<br>
-        <strong>###ORDER_TRACKING_NO###</strong> nachvollziehen. <br>
+        Bestellstatus-Code<br>
+        <strong>###ORDER_TRACKING_NO###</strong><br>
         Klicken Sie hier <a href="index.php?id=###PID_TRACKING###&amp;type=0&amp;tracking=###ORDER_TRACKING_NO###"><strong>
         um den Status jetzt zu sehen.</strong></a> <br>
         Klicken Sie hier <a href="index.php?id=###PID_BILLING###&amp;type=0&amp;tracking=###ORDER_TRACKING_NO###"><strong>
@@ -2285,6 +2284,15 @@ Message for payment method 10, Paypal
 	        um den Lieferschein jetzt zu sehen.</strong></a><br>
       </td>
 </tr>
+<tr>
+<td>###GW1B###<strong>Kreditkarte:</strong>###GW1E###</td>
+<td>###PERSON_CARDS_OWNER_NAME###   ###PERSON_CARDS_CC_TYPE_SELECTED### ###PERSON_CARDS_CC_NUMBER###</td>
+
+<td>###GW1B###<strong>Konto:</strong>###GW1E###
+###PERSON_ACCOUNTS_OWNER_NAME###  ###PERSON_ACCOUNTS_AC_NUMBER###  ###PERSON_ACCOUNTS_BIC###
+</td>
+</tr>
+
 <tr>
 <td colspan=3 bgcolor="###GC2###">###GW2B###<b>bananaGUARDs:</b>###GW2E###</td>
 <td bgcolor="###GC2###">###GW2B###<b>Preis:</b>###GW2E###</td>
