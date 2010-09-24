@@ -29,7 +29,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
 	'author_company' => 'demo.ttproducts.de',
-	'version' => '0.2.5',
+	'version' => '0.2.8',
 	'constraints' => array(
 		'depends' => array(
 		),
