@@ -1,5 +1,10 @@
 (add new changes on top of this file)
 
+2011-05-24 Franz Holzinger  <franz@ttproducts.de>
+	* make use of new FORM_URL markers because they keep all parameters
+	* add the DIBS payment script as an example
+	* add more icons
+
 2010-09-24 Franz Holzinger  <franz@ttproducts.de>
 	* example template for the Payment Transactor API
 

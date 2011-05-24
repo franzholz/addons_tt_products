@@ -119,7 +119,7 @@ Weiterentwicklungen zum Shop k&ouml;nnen Sie unter <a href="http://ttproducts.de
           </tr>
           <tr>
             <td colspan="3" align="CENTER">
-            <input type="button" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'"></td>
+            <input type="button" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='###FORM_URL_BASKET###'"></td>
           </tr>
         </table>
 			</td></tr>
@@ -305,7 +305,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
           </tr>
           <tr>
             <td colspan="3" align="CENTER">
-            <input type="button" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'"></td>
+            <input type="button" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='###FORM_URL_BASKET###'"></td>
           </tr>
         </table>
 			</form>
@@ -379,9 +379,14 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 		<!-- ###PRODUCT_OFFER_EQ_1### begin -->
 		###PRODUCT_TEXT_TEXT1###
 		<!-- ###PRODUCT_OFFER_EQ_1### end -->
+
+		<!-- ###PRODUCT_DATASHEET_LIST### begin -->
+		<!-- ###PRODUCT_DATASHEET_SINGLE### begin -->
 		<!-- ###PRODUCT_LINK_DATASHEET### begin -->
-		###GW1B######P_DATASHEET######GW1E### <font size="1"><b><i>###PRODUCT_DATASHEET###</i></b></font>###ICON_DATASHEET###</p>
+		###GW1B######P_DATASHEET### ###GW1E### <font size="1"><b><i>###PRODUCT_DATASHEET_FILE###: ###PRODUCT_DATASHEET###</i></b></font>###ICON_DATASHEET###</p>
 		<!-- ###PRODUCT_LINK_DATASHEET### end -->
+		<!-- ###PRODUCT_DATASHEET_SINGLE### end -->
+		<!-- ###PRODUCT_DATASHEET_LIST### end -->
 
 		  <!-- ###display_variant1### -->
 		  ###GW2B### Size: ###GW2E### <select id="###PRODUCT_COLOR_ID###" onchange=" ###PRODUCT_COLOR_FUNCTION1###" style="font-size: 10px"
@@ -392,9 +397,8 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 		    name="###FIELD_SIZE_NAME###" rows="1">###PRODUCT_SIZE###</select><br>
 			<!-- ###display_variant2### -->
 			<nobr>###GW2B### Preis: ###GW2E### ###GW1B###<strong id="###PRICE_TAX_ID###">###PRICE_TAX###</strong> &euro;###GW1E###<br></nobr>
-
 				<nobr>###GW2B### Menge: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
-				<input id="###BASKET_INTO_ID###" type="submit" ###DISABLED### name="order" value="###BASKET_INTO###" onClick="if(!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
+				<input id="###BASKET_INTO_ID###" type="submit" ###DISABLED### name="order" value="###BASKET_INTO###" onClick="if(!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};" id="###BASKET_INPUT_ID###" >
 				</nobr>
 			<p id="###IN_STOCK_ID###">###BASKET_IN_STOCK###</p>
 				<br>
@@ -489,7 +493,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
           </tr>
           <tr>
             <td colspan="3" align="CENTER">
-            <input type="button" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'"></td>
+            <input type="button" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='###FORM_URL_BASKET###'"></td>
           </tr>
         </table>
 			</form>
@@ -518,7 +522,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 
 
 <!-- ###MEMO_TEMPLATE### begin
-        This subpart is used to display the regular list of products. It's also used by search-results.
+        This subpart is used to display the list of memo products.
 -->
 <table border="0" cellspacing="0" cellpadding="1" width="545">
         <tr>
@@ -841,9 +845,13 @@ This whole subpart, message_payment is substituted with the subpart 'message_pay
 Es m&uuml;ssen Produkte im Gesamtwert von mindestens 250 Euro eingekauft werden.
 ###PRICE_GOODSTOTAL_TAX### sind zu wenig.
 <!-- ###MESSAGE_MINPRICE_ERROR### -->
-<!-- ###MESSAGE_MINPRICE### -->
+<!-- ###MESSAGE_MAXPRICE_ERROR### -->
+Es d&uuml;rfen Produkte im Gesamtwert von maximal 2500 Euro eingekauft werden.
+###PRICE_GOODSTOTAL_TAX### sind zu viel.
+<!-- ###MESSAGE_MAXPRICE_ERROR### -->
+<!-- ###MESSAGE_PRICE_VALID### -->
 Ihre Bestellung wird bearbeitet werden.
-<!-- ###MESSAGE_MINPRICE### -->
+<!-- ###MESSAGE_PRICE_VALID### -->
 <input type="hidden" name="mode_update" value="1">
 <input type="Submit" name="products_update" value="Warenkorb aktualisieren"></td>
 <input type="Submit" name="products_clear_basket" value="Warenkorb l&ouml;schen" >
@@ -1121,7 +1129,7 @@ Hier k&ouml;nnen Sie Ihrer Bestellung einen Kommentar hinzufgen:
 </table>
 <br>
 <table width="100%"><tr>
-
+<td><input type="hidden" name="products_info" value="1"></td>
 <td><input type="Submit" name="products_update" value="zur&uuml;ck zum Warenkorb"></td>
 <td align="right">
 <input type="Submit" name="products_payment" value="AGBs akzeptiert" onclick="document.forms[###FORM_NAME###].action='###FORM_URL_PAYMENT###';" />
