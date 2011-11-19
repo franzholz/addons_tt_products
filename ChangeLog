@@ -1,5 +1,8 @@
 (add new changes on top of this file)
 
+2011-11-19 Franz Holzinger  <franz@ttproducts.de>
+	* Modification to HTML shop templates because the POST data did not get submitted. Use the getElementById to find the form.
+
 2011-05-24 Franz Holzinger  <franz@ttproducts.de>
 	* make use of new FORM_URL markers because they keep all parameters
 	* add the DIBS payment script as an example

@@ -679,7 +679,7 @@ The product list part has the exact same features as the regular LIST_ITEM_TEMPL
 In addition there's a number of fields used for delivery and payment information.
 -->
 ###EXTERNAL_COBJECT###
-<form method="post" action="###FORM_URL###">
+<form method="post" id="basketForm" action="###FORM_URL###">
 
 <table border="0" cellspacing="0" cellpadding="1" width=1>
 <tr>
@@ -855,7 +855,7 @@ Ihre Bestellung wird bearbeitet werden.
 <input type="hidden" name="mode_update" value="1">
 <input type="Submit" name="products_update" value="Warenkorb aktualisieren"></td>
 <input type="Submit" name="products_clear_basket" value="Warenkorb l&ouml;schen" >
-<td align="right"><input type="Submit" name="products_info" value="Ihre Daten eingeben" onclick="this.form.action='###FORM_URL_INFO###';"></td>
+<td align="right"><input type="Submit" name="products_info" value="Ihre Daten eingeben" onClick="var basketForm; basketForm = document.getElementById('basketForm'); basketForm.action='###FORM_URL_INFO###';" ></td>
 </tr>
 </table>
 </form>
@@ -935,6 +935,14 @@ Exact same features as BASKET_TEMPLATE
 <tr>
 <td>###GW1B###<strong>Email: </strong>*###GW1E###</td>
 <td><input type="text" name="recs[personinfo][email]" size="60" value="###PERSON_EMAIL###"></td>
+</tr>
+<tr>
+<td>###GW1B###<strong>Gesch&auml;ftspartner:</strong>###GW1E###</td>
+<td>###GW1B######PERSON_TT_PRODUCTS_BUSINESS_PARTNER######GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###<strong>Rechtsform:</strong>###GW1E###</td>
+<td>###GW1B######PERSON_TT_PRODUCTS_ORGANISATION_FORM######GW1E###</td>
 </tr>
 </table><br>
 
@@ -1068,6 +1076,14 @@ begin -->
 <tr>
 <td>###GW1B###<strong>Email:</strong>###GW1E###</td>
 <td><input type="text" name="recs[delivery][email]" size="60" value="###DELIVERY_EMAIL###"></td>
+</tr>
+<tr>
+<td>###GW1B###<strong>Gesch&auml;ftspartner:</strong>###GW1E###</td>
+<td>###GW1B######DELIVERY_TT_PRODUCTS_BUSINESS_PARTNER######GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###<strong>Rechtsform:</strong>###GW1E###</td>
+<td>###GW1B######DELIVERY_TT_PRODUCTS_ORGANISATION_FORM######GW1E###</td>
 </tr>
 </table>
 </td>
@@ -1265,6 +1281,14 @@ Exact same features as BASKET_TEMPLATE
             (An diese Email-Adresse wird die Best&auml;tigung Ihrer Bestellung geschickt!)###GW2E###<br>
           </td>
         </tr>
+		<tr>
+		<td>###GW1B###<strong>Gesch&auml;ftspartner:</strong>###GW1E###</td>
+		<td>###GW1B######PERSON_TT_PRODUCTS_BUSINESS_PARTNER######GW1E###</td>
+		</tr>
+		<tr>
+		<td>###GW1B###<strong>Rechtsform:</strong>###GW1E###</td>
+		<td>###GW1B######PERSON_TT_PRODUCTS_ORGANISATION_FORM######GW1E###</td>
+		</tr>
       </table></td>
     <td colspan=2></td>
   </tr>
@@ -1312,6 +1336,14 @@ Exact same features as BASKET_TEMPLATE
             (An diese Email-Adresse wird die Best&auml;tigung Ihrer Bestellung geschickt!)###GW2E###<br>
           </td>
         </tr>
+		<tr>
+		<td>###GW1B###<strong>Gesch&auml;ftspartner:</strong>###GW1E###</td>
+		<td>###GW1B######DELIVERY_TT_PRODUCTS_BUSINESS_PARTNER######GW1E###</td>
+		</tr>
+		<tr>
+		<td>###GW1B###<strong>Rechtsform:</strong>###GW1E###</td>
+		<td>###GW1B######DELIVERY_TT_PRODUCTS_ORGANISATION_FORM######GW1E###</td>
+		</tr>
       </table></td>
     <td colspan=2></td>
   </tr>
@@ -1576,6 +1608,14 @@ Message for payment method 10, Paypal
 <td>###GW1B###VAT-Id:###GW1E###</td>
 <td>###GW1B###<strong>###PERSON_TT_PRODUCTS_VAT###</strong>###GW1E###</td>
 </tr>
+<tr>
+<td>###GW1B###Gesch&auml;ftspartner:###GW1E###</td>
+<td>###GW1B###<strong>###PERSON_TT_PRODUCTS_BUSINESS_PARTNER###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###Rechtsform:###GW1E###</td>
+<td>###GW1B###<strong>###PERSON_TT_PRODUCTS_ORGANISATION_FORM###</strong>###GW1E###</td>
+</tr>
 
 <!-- ###FE_USER_SECTION### begin -->
 <tr>
@@ -1629,6 +1669,14 @@ Message for payment method 10, Paypal
 <tr>
 <td>###GW1B###Email:###GW1E###</td>
 <td>###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###Gesch&auml;ftspartner:###GW1E###</td>
+<td>###GW1B###<strong>###DELIVERY_TT_PRODUCTS_BUSINESS_PARTNER###</strong>###GW1E###</td>
+</tr>
+<tr>
+<td>###GW1B###Rechtsform:###GW1E###</td>
+<td>###GW1B###<strong>###DELIVERY_TT_PRODUCTS_ORGANISATION_FORM###</strong>###GW1E###</td>
 </tr>
 </table>
 </td>
@@ -2126,9 +2174,9 @@ Email: info@ttproducts.de
 <pre>
 <!-- ###EMAIL_NEWUSER_TEMPLATE### begin -->
 
-Ihre Zugangsdaten bei meintypo3shop.com
+Ihre Zugangsdaten bei ###DOMAIN###
 
-Wir freuen uns, Sie bei uns als neuen DEMO-Kunden begr&uuml;&szlig;n zu d&uuml;rfen.
+Wir freuen uns, Sie bei uns als neuen DEMO-Kunden begr&uuml;&szlig;en zu d&uuml;rfen.
 
 Ihr Benutzername lautet: ###USERNAME###
 Ihr Passwort lautet: ###PASSWORD###

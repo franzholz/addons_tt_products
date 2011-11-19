@@ -279,7 +279,7 @@ In addition there's a number of fields used for delivery and payment information
 	-->
     ###EXTERNAL_COBJECT###
     <div class="tt_products_basket">
-    	<form method="post" name="###FORM_NAME###" action="###FORM_URL###">
+    	<form method="post" id="basketForm" name="###FORM_NAME###" action="###FORM_URL###">
         	<div>
 	            <table summary="Items in basket" class="basket_items">
 	                <caption>folgende Artikel befinden sich im Warenkorb:</caption>
@@ -391,7 +391,7 @@ In addition there's a number of fields used for delivery and payment information
 				<input type="hidden" name="mode_update" value="1" />
 				<input type="submit" id="basketbutton1" name="products_update" value="Warenkorb aktualisieren" />
 				<input type="submit" id="basketbutton2" name="products_clear_basket" value="Warenkorb l&ouml;schen">
-				<input type="submit" id="basketbutton3" name="products_info" onclick="this.form.action='###FORM_URL_INFO###';" value="Gehe zur Kasse/Bestellung" />
+				<input type="submit" id="basketbutton3" name="products_info" onClick="var basketForm; basketForm = document.getElementById('basketForm'); basketForm.action='###FORM_URL_INFO###';" value="Gehe zur Kasse/Bestellung" />
 				<input type="hidden" name="creditpoints_saved" value="###CREDITPOINTS_SAVED###">
 				<input type="hidden" name="creditpoints_spended" value="###CREDITPOINTS_SPENDED###">
             </div>

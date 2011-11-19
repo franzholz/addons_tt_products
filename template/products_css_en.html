@@ -240,7 +240,7 @@ In addition there's a number of fields used for delivery and payment information
 	-->
     ###EXTERNAL_COBJECT###
     <div class="tt_products_basket">
-    	<form method="post" action="###FORM_URL###">
+    	<form method="post" id="basketForm" action="###FORM_URL###">
         	<div>
 	            <table summary="Items in basket" class="basket_items">
 	                <caption>Items to purchase</caption>
@@ -326,7 +326,7 @@ In addition there's a number of fields used for delivery and payment information
             <div class="form_control">
                 <input type="hidden" name="mode_update" value="1" />
                 <input type="submit" name="products_update" value="Update basket" />
-                <input type="submit" name="products_info" value="Go to payment/ordering" />
+                <input type="submit" name="products_info" value="Go to payment/ordering" onClick="var basketForm; basketForm = document.getElementById('basketForm'); basketForm.action='###FORM_URL_INFO###';" />
             </div>
         </form>
     </div>

@@ -534,7 +534,7 @@ font-size: 12px;
 color: #222;
 }
 
-#TAX_INCL_EXCL_BASKET4 
+#TAX_INCL_EXCL_BASKET4
 {
 float: right;
 width: 120px;
@@ -544,7 +544,7 @@ font-size: 12px;
 color: #222;
 }
 
-p #MESSAGE_SHIPPING_BASKET4 
+p #MESSAGE_SHIPPING_BASKET4
 {
 position: relative;
 top: 0px;
@@ -608,7 +608,7 @@ width: 570px;
 color: #222;
 }
 
-#text_BILLING_ADDRESS_BASKETINFO 
+#text_BILLING_ADDRESS_BASKETINFO
 {
 position: relative;
 top: 10px;
@@ -758,7 +758,7 @@ width: 100px;
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 color: #222;
-} 
+}
 
 #text_hinweis_BASKETINFO
 {
@@ -899,7 +899,7 @@ width: 100px;
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 color: #222;
-} 
+}
 
 #text_DELIVERY_ADDRESS_BASKETINFO
 {
@@ -1069,7 +1069,7 @@ width: 370px;
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 color: #222;
-} 
+}
 /*
 #label_DELIVERY_BEMERKUNG
 {
@@ -1086,7 +1086,7 @@ width: 370px;
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 color: #222;
-} 
+}
 */
 #label_DELIVERY_DESIRED_DATE
 {
@@ -1104,7 +1104,7 @@ width: 370px;
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 color: #222;
-} 
+}
 
 #label_DELIVERY_NOTE
 {
@@ -1122,7 +1122,7 @@ width: 370px;
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 color: #222;
-} 
+}
 
 #text_agb_BASKETINFO
 {
@@ -1385,7 +1385,7 @@ width: 210px;
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 color: #222;
-} 
+}
 
 #text_email_BASKET_PAYMENT_TEMPLATE3
 {
@@ -1538,7 +1538,7 @@ width: 210px;
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 color: #222;
-} 
+}
 
 #text_email_DELIVERY_EMAIL_BASKET_PAYMENT_TEMPLATE4
 {
@@ -2581,7 +2581,7 @@ color: #222;
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 font-weight: 400;
-font-size:12px; 
+font-size:12px;
 font-weight:bold;
 }
 
@@ -2590,7 +2590,7 @@ color: #222;
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 font-weight: 400;
-font-size:12px; 
+font-size:12px;
 font-weight:bold;
 }
 .tx-ttproducts-pi1 {
@@ -2598,7 +2598,7 @@ color: #222;
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 font-weight: 400;
-font-size:12px; 
+font-size:12px;
 }
 #button1, #button3, #button4, #button5 {
 
@@ -2639,12 +2639,12 @@ border-color: #BDBDBD;
 }
 
 
-  
-p .bodytext { 
+
+p .bodytext {
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
-font-size:12px; 
+font-size:12px;
 color: #222;
-}  
+}
 
 
 /*sonst macht der IE 6 und 7 einen Underline unter den Titel*/
@@ -2663,10 +2663,11 @@ text-decoration: none;
 }
 
  a:active, a:visited {
-color: #2220;
+color: #222000;
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 text-decoration: none;
 }
+
 /*
 table, tr, td .tx-ttproducts-pi1{
 color: #333;
@@ -2674,7 +2675,7 @@ font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 font-weight: 400;
 padding: 3px 0px 3px 3px;
-font-size:12px; 
+font-size:12px;
 }
 
 .tx-ttproducts-pi1 {
@@ -2682,12 +2683,12 @@ color: #333;
 font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 font-weight: 400;
-font-size:12px; 
+font-size:12px;
 }
 */
 
 
-#registrationForm 
+#registrationForm
 {
 margin: 0px;
 vertical-align: top;

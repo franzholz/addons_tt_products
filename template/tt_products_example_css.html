@@ -603,7 +603,7 @@ Andrea: Warenkorbansicht Anfang -->
 
 <div class="basket">
   ###EXTERNAL_COBJECT###
-  <form method="post" name="###FORM_NAME###" action="###FORM_URL###">
+  <form method="post" id="basketForm" name="###FORM_NAME###" action="###FORM_URL###">
     <div class="floatbox_BASKET">
       <div id="text_Produkt">###GW2B###<strong>Produkte:</strong>###GW2E###</div>
       <!--<div id="text_Variante">###GW2B###<strong>Variante:</strong>###GW2E###</div>-->
@@ -732,7 +732,7 @@ Andrea: Warenkorbansicht Anfang -->
       <input type="hidden" name="mode_update" value="1"/>
       <input type="submit" id="button3" name="products_update" value="Warenkorb aktualisieren"/>
       <input type="submit" id="button3" name="products_clear_basket" value="Warenkorb l&ouml;schen"/>
-      <input type="submit" id="button3" name="products_info" value="Daten eingeben" onclick="document.forms['###FORM_NAME###'].action='###FORM_URL_INFO###';"/>
+      <input type="submit" id="button3" name="products_info" value="Daten eingeben" onClick="var basketForm; basketForm = document.getElementById('basketForm'); basketForm.action='###FORM_URL_INFO###';" />
     </div>
   </form>
 </div>
