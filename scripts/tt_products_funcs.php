@@ -27,7 +27,7 @@
 
 
 /**
- * Part of the tt_products (Shop System) extension.
+ * Part of the addons_tt_products (Addons to the Shop System) extension.
  *
  * TypoScript functions for the basket
  *

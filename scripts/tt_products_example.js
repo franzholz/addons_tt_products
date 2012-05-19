@@ -33,7 +33,7 @@
  *
  * @author	Franz Holzinger <franz@ttproducts.de>
  * @package TYPO3
- * @subpackage tt_products
+ * @subpackage addons_tt_products
  *
  */
 
