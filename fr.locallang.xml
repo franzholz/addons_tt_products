@@ -118,7 +118,7 @@
 
 			<label index="search_item_notfound">Aucun article correspondant.</label>
 			<label index="search_button">Recherche</label>
-			<label index="memo_not_logged_in">Vous n&apos;êtes pas enregistré dans le système.</label>
+			<label index="error_not_logged_in">Vous n&apos;êtes pas enregistré dans le système.</label>
 
 			<label index="sellers_salutation">Cordialement, </label>
 			<label index="sellers_company">Agence publicitaire </label>

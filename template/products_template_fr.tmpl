@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<TITLE>Products example template</TITLE>
+	<title>Products example template</title>
 <!-- $Id$ -->
 </head>
 
@@ -18,7 +18,7 @@
 <h2>EXAMPLE</h2>
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>ORDERS_LIST_TEMPLATE</h3>
 <em>This subpart is used to display the regular list of orders.</em><br>
 <br>
@@ -26,7 +26,7 @@
 
 <!-- ###ORDERS_LIST_TEMPLATE### begin This subpart is used to display the list of orders. PAGE orders-->
 
-<TABLE border="0" cellspacing="0" cellpadding="1" width=100%>
+<table border="0" cellspacing="0" cellpadding="1" width=100%>
 			<tr>
 				<td colspan=4 bgcolor="###GC2###">###GW2B###<b>Client : </b>###GW2E###</td>
 			</tr>
@@ -78,21 +78,21 @@
 			</tr>
 		<!-- ###ORDER_NOROWS### begin -->
 			<tr>
-				<td colspan=4 bgcolor="###GC1###">###GW2B###<b>Aucun enrigistrement ne répond à ces critères</b>###GW2E###</td>
+				<td colspan=4 bgcolor="###GC1###">###GW2B###<b>Aucun enregistrement ne répond à ces critères</b>###GW2E###</td>
 			</tr>
 		<!-- ###ORDER_NOROWS### end -->
 
 
 
-</TABLE>
-<BR><BR>
+</table>
+<br><br>
 
 
 <!-- ###ORDERS_LIST_TEMPLATE### end -->
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>ITEM_LIST_TEMPLATE</h3>
 <em>This subpart is used to display the regular list of products. It's also used by search-results.</em><br>
 <br>
@@ -105,7 +105,7 @@
 <h1>Shop System for TYPO3</h1>
 <p> Welcome to the tt_products Shop System for TYPO3. Take a look at the German tutorial at <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop System</a> before you start with it. There you can find also a forum for questions.
 </p>
-<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+<table border="0" cellspacing="0" cellpadding="1" width=1>
 	<tr>
 		<td><!--###LINK_PREV###-->###GW2B###<div align="left"><b>Page précédente</b></div>###GW2E###<!--###LINK_PREV###--></td>
 		<td></td>
@@ -139,8 +139,8 @@
 			<tr><td colspan=4>###FORM_MEMO###</td></tR>
 			<tr>
 			<td colspan=4>
-			<FORM method="post" action="###FORM_URL###" name="###FORM_NAME###">
-			<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+			<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
+			<table border="0" cellspacing="0" cellpadding="1" width=1>
 				<tr>
 					<td><img src="clear.gif" width=100 height=1></td>
 					<td><img src="clear.gif" width=5 height=1></td>
@@ -171,11 +171,11 @@
 						###GW2B###(Prix HT: ###PRICE_NO_TAX###)###GW2E###<br />
 						###GW2B###(dont TVA ###PRICE_TAX###)###GW2E###
 					</TD>
-					<TD valign=top nowrap align=right>###GW2B### Qté: ###GW2E###<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"><BR><input type="Submit" name="order" value="Ajouter au panier" onClick="if (!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
+					<TD valign=top nowrap align=right>###GW2B### Qté: ###GW2E###<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"><br><input type="Submit" name="order" value="Ajouter au panier" onClick="if (!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
 					</TD>
 				</TR>
-			</TABLE>
-			</FORM>
+			</table>
+			</form>
 			</td>
 			</tr>
 			<!-- ###ITEM_SINGLE### end -->
@@ -187,8 +187,8 @@
 		<td></td>
 		<td><!--###LINK_NEXT###-->###GW2B###<div align="right"><b>Page suivante</b></div>###GW2E###<!--###LINK_NEXT###--></td>
 	</tr>
-</TABLE>
-<BR><BR>
+</table>
+<br><br>
 <!-- ###ITEM_LIST_TEMPLATE### end -->
 
 
@@ -208,7 +208,7 @@
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>ITEM_SINGLE_DISPLAY</h3>
 <em>This subpart is used to display single products.</em><br>
 <br>
@@ -217,8 +217,8 @@
 <!-- ###ITEM_SINGLE_DISPLAY### begin
 	This subpart is used to display single products.
 -->
-<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
-<FORM method="post" action="###FORM_URL###">
+<table border="0" cellspacing="0" cellpadding="1" width=1>
+<form method="post" action="###FORM_URL###">
 	<tr>
 		<td><img src="clear.gif" width=100 height=1></td>
 		<td><img src="clear.gif" width=5 height=1></td>
@@ -246,7 +246,7 @@
 		</TD>
 	</TR>
 </form>
-</TABLE>
+</table>
 <br>
 <br>
 
@@ -270,7 +270,7 @@
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>ITEM_SEARCH</h3>
 <em>Subpart for the search-form.</em><br>
 <br>
@@ -279,7 +279,7 @@
 <!-- ###ITEM_SEARCH### begin
 	Subpart for the search-form
 -->
-<FORM method="post" action="###FORM_URL###">
+<form method="post" action="###FORM_URL###">
 	<INPUT size="30" maxlength="100" type="text" name="sword" value="###SWORD###">
 	<input type="Submit" name="order" value="Chercher">
 </form>
@@ -294,7 +294,7 @@
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>ITEM_SEARCH_EMPTY</h3>
 <em>Subpart displayed if the search was empty. If the search was successfull, the ITEM_LIST_TEMPLATE in the top is used.</em><br>
 <br>
@@ -316,7 +316,7 @@
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>BASKET_TEMPLATE</h3>
 <em>
 Subpart used to display the content of the shopping basket.<br>
@@ -332,8 +332,8 @@ In addition there's a number of fields used for delivery and payment information
 	In addition there's a number of fields used for delivery and payment information.
 -->
 ###EXTERNAL_COBJECT###
-<FORM method="post" action="###FORM_URL###">
-<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+<form method="post" action="###FORM_URL###">
+<table border="0" cellspacing="0" cellpadding="1" width=1>
 	<tr>
 		<td><img src="clear.gif" width=100 height=1></td>
 		<td><img src="clear.gif" width=5 height=1></td>
@@ -390,7 +390,7 @@ In addition there's a number of fields used for delivery and payment information
 
 		###SHIPPING_IMAGE###
 		</td>
-		<td valign=top align=right>###GW1B### <b>###PRICE_SHIPPING_TAX###</b> <BR>(###PRICE_SHIPPING_NO_TAX###) ###GW1E###</td>
+		<td valign=top align=right>###GW1B### <b>###PRICE_SHIPPING_TAX###</b> <br>(###PRICE_SHIPPING_NO_TAX###) ###GW1E###</td>
 	</TR>
 	<tr>
 		<td colspan=6><img src="clear.gif" width=1 height=10></td>
@@ -415,13 +415,13 @@ In addition there's a number of fields used for delivery and payment information
 			This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 		-->
 			<!-- ###MESSAGE_PAYMENT_10### begin -->
-			<BR><B>--</b><br>
+			<br><B>--</b><br>
 			<!-- ###MESSAGE_PAYMENT_10### end -->
 		<!-- ###MESSAGE_PAYMENT### end -->
 ###GW2E###
 
 		</td>
-		<td valign=top align=right>###GW1B### <b>###PRICE_PAYMENT_TAX###</b> <BR>(###PRICE_PAYMENT_NO_TAX###) ###GW1E###</td>
+		<td valign=top align=right>###GW1B### <b>###PRICE_PAYMENT_TAX###</b> <br>(###PRICE_PAYMENT_NO_TAX###) ###GW1E###</td>
 	</TR>
 	<tr>
 		<td colspan=6><img src="clear.gif" width=1 height=10></td>
@@ -437,12 +437,12 @@ In addition there's a number of fields used for delivery and payment information
 					</TD>
 </td>
 	</TR>
-</TABLE>
+</table>
 <input type="hidden" name="mode_update" value="1">
 <input type="Submit" name="products_update" value="Mise à jour panier">&nbsp;&nbsp;
 <input type="Submit" name="products_info" value="Commander" onClick="document.forms[0].action='###FORM_URL_INFO###';">
-</FORM>
-<BR>
+</form>
+<br>
 <!-- ###BASKET_TEMPLATE### end -->
 
 
@@ -453,11 +453,11 @@ In addition there's a number of fields used for delivery and payment information
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>BASKET_INFO_TEMPLATE</h3>
 <em>
-Subpart used if the GPvar "products_info" was set. This is normally used to let people enter address information separately from the real basket.<BR>
-Exact same features as BASKET_TEMPLATE<BR>
+Subpart used if the GPvar "products_info" was set. This is normally used to let people enter address information separately from the real basket.<br>
+Exact same features as BASKET_TEMPLATE<br>
 </em><br>
 <br>
 <br>
@@ -465,8 +465,8 @@ Exact same features as BASKET_TEMPLATE<BR>
 	Subpart used if the GPvar "products_info" was set. This is normally used to let people enter address information separately from the real basket
 	Exact same features as BASKET_TEMPLATE
 -->
-<FORM method="post" action="###FORM_URL###">
-<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+<form method="post" action="###FORM_URL###">
+<table border="0" cellspacing="0" cellpadding="1" width=1>
 	<tr>
 		<td><img src="clear.gif" width=100 height=1></td>
 		<td><img src="clear.gif" width=5 height=1></td>
@@ -596,12 +596,12 @@ Exact same features as BASKET_TEMPLATE<BR>
 		</td>
 		<td colspan=3></td>
 	</tr>
-</TABLE>
+</table>
 <br>
 <input type="Submit" name="products_update" value="Retour au panier">&nbsp;&nbsp;	<input type="Submit" name="products_payment" value="Payer/Commander" onClick="document.forms[0].action='###FORM_URL_FINALIZE###';">
 
-</FORM>
-<BR>
+</form>
+<br>
 <!-- ###BASKET_INFO_TEMPLATE### end -->
 
 
@@ -611,11 +611,11 @@ Exact same features as BASKET_TEMPLATE<BR>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>BASKET_PAYMENT_TEMPLATE</h3>
 <em>
-Subpart used if the GPvar "products_payment" was set. This displays the final information about the order before the payment is initiated.<BR>
-Exact same features as BASKET_TEMPLATE<BR>
+Subpart used if the GPvar "products_payment" was set. This displays the final information about the order before the payment is initiated.<br>
+Exact same features as BASKET_TEMPLATE<br>
 </em><br>
 <br>
 <br>
@@ -624,7 +624,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 	Exact same features as BASKET_TEMPLATE
 -->
 ###EXTERNAL_COBJECT###
-	<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+	<table border="0" cellspacing="0" cellpadding="1" width=1>
 		<tr>
 			<td><img src="clear.gif" width=100 height=1></td>
 			<td><img src="clear.gif" width=5 height=1></td>
@@ -721,7 +721,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 			<tr>
 				<td>###GW1B###Email:###GW1E###</td>
 				<td>###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E###
-				###GW2B###<BR>(Cette adresse recevra la confirmation de commande!)###GW2E###<BR>
+				###GW2B###<br>(Cette adresse recevra la confirmation de commande!)###GW2E###<br>
 				</td>
 			</tr>
 			</table>
@@ -781,7 +781,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 			This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 		-->
 			<!-- ###MESSAGE_PAYMENT_10### begin -->
-			<BR><B>--</b><br>
+			<br><B>--</b><br>
 			<!-- ###MESSAGE_PAYMENT_10### end -->
 		<!-- ###MESSAGE_PAYMENT### -->
 ###GW2E###
@@ -809,12 +809,12 @@ Exact same features as BASKET_TEMPLATE<BR>
 
 		###GW1E###</td>
 	</TR>
-</TABLE>
+</table>
 <br>
-<FORM method="post" action="###FORM_URL###">
+<form method="post" action="###FORM_URL###">
 <input type="Submit" name="products_update" value="Retour au panier">&nbsp;&nbsp;	<input type="Submit" name="products_finalize" value="Valider la commande!" onClick="document.forms[0].action='###FORM_URL_THANKS###'; document.forms[0].target='###FORM_URL_TARGET###';">
-</FORM>
-<BR>
+</form>
+<br>
 <!-- ###BASKET_PAYMENT_TEMPLATE### end -->
 
 
@@ -830,18 +830,18 @@ Exact same features as BASKET_TEMPLATE<BR>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>BASKET_ORDERCONFIRMATION_TEMPLATE</h3>
 <em>
-Subpart used if the GPvar "products_payment" was set. This displays the final information about the order before the payment is initiated.<BR>
-Exact same features as BASKET_TEMPLATE<BR>
+Subpart used if the GPvar "products_payment" was set. This displays the final information about the order before the payment is initiated.<br>
+Exact same features as BASKET_TEMPLATE<br>
 </em><br>
 <br>
 <br>
 <!-- ###BASKET_ORDERCONFIRMATION_TEMPLATE### begin
 	Subpart used if the order is finalized and this is thus the confirmation shown.
 -->
-<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+<table border="0" cellspacing="0" cellpadding="1" width=1>
 	<tr>
 		<td><img src="clear.gif" width=100 height=1></td>
 		<td><img src="clear.gif" width=5 height=1></td>
@@ -1090,9 +1090,9 @@ Exact same features as BASKET_TEMPLATE<BR>
 				###GW1E###
 		</td>
 	</tr>
-</TABLE>
+</table>
 <br>
-<BR>
+<br>
 <!-- ###BASKET_ORDERCONFIRMATION_TEMPLATE### end -->
 
 
@@ -1108,7 +1108,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>BASKET_TEMPLATE_EMPTY</h3>
 <em>
 If the basket is empty this subpart is displayed<br>
@@ -1127,7 +1127,7 @@ If the basket is empty this subpart is displayed<br>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>BASKET_REQUIRED_INFO_MISSING</h3>
 <em>
 If payment is initiated but the required information fields are not filled in correctly, this happens.<br>
@@ -1138,9 +1138,9 @@ If payment is initiated but the required information fields are not filled in co
 	If payment is initiated but the required information fields are not filled in correctly, this happens
 -->
 ###GW1B###<B>Vous n'avez pas saisi toutes les informations d'adresse nécessaires. ###ERROR_DETAILS### Merci de saisir toutes les données!</B>###GW1E###
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 	<input type="Submit" name="products_info" value="Saisissez information adresse" onClick="document.forms[0].action='###FORM_URL_INFO###';">
-	</FORM>
+	</form>
 <!-- ###BASKET_REQUIRED_INFO_MISSING### end -->
 
 
@@ -1154,7 +1154,7 @@ If payment is initiated but the required information fields are not filled in co
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>TRACKING_DISPLAY_INFO</h3>
 <em>
 Displays the view of the order status by tracking codes.<br>
@@ -1198,7 +1198,7 @@ Displays the view of the order status by tracking codes.<br>
 		###GW1B###
 
 		<!-- ###ADMIN_CONTROL_OK### begin -->
-		<FORM method="post" action="###FORM_URL###">
+		<form method="post" action="###FORM_URL###">
 		<select name="orderRecord[status][]" size="9" multiple>
 			###STATUS_OPTIONS###
 		</select>
@@ -1209,24 +1209,24 @@ Displays the view of the order status by tracking codes.<br>
 			<input type="hidden" name="tracking" value="###TRACKING_NUMBER###"><br>
 			<input type="hidden" name="update_code" value="###UPDATE_CODE###"><br>
 			<input type="Submit" name="submit" value="Ajouter un état de commande">
-			</FORM>
+			</form>
 			<hr>
 			Passer à une autre commande :
-			<FORM method="post" action="###FORM_URL###">
+			<form method="post" action="###FORM_URL###">
 				<select name="tracking" size="9">
 					###OTHER_ORDERS_OPTIONS###
 				</select><br><br>
 				<input type="Submit" name="submit" value="Valider">
 				<input type="hidden" name="update_code" value="###UPDATE_CODE###"><br>
-			</FORM>
+			</form>
 		<!-- ###ADMIN_CONTROL_OK### begin -->
 		<!-- ###ADMIN_CONTROL_DENY### begin -->
-			<FORM method="post" action="###FORM_URL###">
+			<form method="post" action="###FORM_URL###">
 			<input type="hidden" name="tracking" value="###TRACKING_NUMBER###"><br>
 			###GW1B###Mot de passe :###GW1B###<br>
 			<input type="password" size=40 name="update_code" value="###UPDATE_CODE###">
 			<input type="Submit" name="submit" value="Entrez le mot de passe">
-			</FORM>
+			</form>
 		<!-- ###ADMIN_CONTROL_DENY### begin -->
 		</td></tr></table>
 	</td></tr>
@@ -1236,19 +1236,19 @@ Displays the view of the order status by tracking codes.<br>
 
 <strong>Contenu Email :</strong><br>
 Cochez cette case si vous souhaitez recevoir un Email à l'adresse (###FIELD_EMAIL###) à chaque changement d'état de votre commande :<br>
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 
 	<input type="hidden" name="orderRecord[email_notify]" value="0">
-	<input type="checkbox" name="orderRecord[email_notify]" value="1"###FIELD_EMAIL_NOTIFY###>Recevoir messages à chaque mise à jour de la commande.<br>
+	<input type="checkbox" name="orderRecord[email_notify]" value="1" ###FIELD_EMAIL_NOTIFY###>Recevoir messages à chaque mise à jour de la commande.<br>
 	<input type="text" size=40 name="orderRecord[email]" value="###FIELD_EMAIL###">
 	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
 
 	<input type="Submit" name="submit" value="Mettre à jour">
-	</FORM>
+	</form>
 <br><br>
 <strong>Envoyez un message au magasin :</strong><br>
 Vous pouvez envoyer un message au magasin concernant cette commande.<br>
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
 	###GW1B###Select topic:###GW1B###<br>
 	<select name="orderRecord[status][]" size="1">
@@ -1260,7 +1260,7 @@ Vous pouvez envoyer un message au magasin concernant cette commande.<br>
 	###GW1B###Comment to follow:###GW1B###<br>
 	<textarea cols="40" rows="5" name="orderRecord[status_comment]"></textarea><br>
 	<input type="Submit" name="submit" value="Envoyer message">
-	</FORM>
+	</form>
 <br>
 <br>
 <B>Voici la confirmation de commande originale :</B><br><br>
@@ -1285,7 +1285,7 @@ Vous pouvez envoyer un message au magasin concernant cette commande.<br>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>TRACKING_ENTER_NUMBER</h3>
 <em>
 Displays form for entering the tracking number.<br>
@@ -1296,10 +1296,10 @@ Displays form for entering the tracking number.<br>
 	Displays form for entering the tracking number.
 -->
 ###GW1B###<B>Saisissez votre code de suivi :</B>###GW1E###<br>
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 	<input type="text" name="tracking"><br>
 	<input type="Submit" name="submit" value="Voir état">
-	</FORM>
+	</form>
 
 <!-- ###ADMIN_CONTROL### begin -->
 <table border=0 cellpadding=1 cellspacing=0 bgcolor="black"><tr><td>
@@ -1307,11 +1307,11 @@ Displays form for entering the tracking number.<br>
 		###GW1B### <strong>Accès administrateur : saisissez le mot de passe pour accéder au suivi des commandes
 </strong><br>
 		<!-- ###ADMIN_CONTROL_DENY### begin -->
-			<FORM method="post" action="###FORM_URL###">
+			<form method="post" action="###FORM_URL###">
 			###GW1B###Mot de passe:###GW1B###<br>
 			<input type="password" size=40 name="update_code" value="">
 			<input type="Submit" name="submit" value="Entrez le mot de passe">
-			</FORM>
+			</form>
 		<!-- ###ADMIN_CONTROL_DENY### begin -->
 		</td></tr></table>
 	</td></tr>
@@ -1327,7 +1327,7 @@ Displays form for entering the tracking number.<br>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>TRACKING_WRONG_NUMBER</h3>
 <em>
 Displays error message if no tracking code.<br>
@@ -1339,10 +1339,10 @@ Displays error message if no tracking code.<br>
 -->
 ###GW1B###<B>LE code de suivi est incorrect ! Saisissez un n° valide ou contactez le magasin !</B>###GW1E###<br>
 
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 	<input type="text" name="tracking"><br>
 	<input type="Submit" name="submit" value="Voir état">
-	</FORM>
+	</form>
 
 <!-- ###TRACKING_WRONG_NUMBER### end -->
 
@@ -1358,7 +1358,7 @@ Displays error message if no tracking code.<br>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>TRACKING_EMAILNOTIFY_TEMPLATE</h3>
 <em>
 Subpart used as template for the notify emails.<br>
@@ -1427,7 +1427,7 @@ Bien cordialement
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>EMAIL_PLAINTEXT_TEMPLATE</h3>
 <em>
 Subpart used as template for the order-emails.<br>
@@ -1728,7 +1728,7 @@ Bien cordialement, Ma Boutique
 <!-- ###DELIVERY_TEMPLATE### end -->
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>EMAIL_NEWUSER_TEMPLATE</h3>
 <em>
 Subpart used as template for the account-creation-emails. First line is

@@ -937,6 +937,10 @@ Exact same features as BASKET_TEMPLATE
 <td><input type="text" name="recs[personinfo][email]" size="60" value="###PERSON_EMAIL###"></td>
 </tr>
 <tr>
+<td>###GW1B###<strong>Geburtsdatum: </strong>###GW1E###</td>
+<td><input type="text" name="recs[personinfo][date_of_birth]" size="60" value="###PERSON_DATE_OF_BIRTH###"></td>
+</tr>
+<tr>
 <td>###GW1B###<strong>Gesch&auml;ftspartner:</strong>###GW1E###</td>
 <td>###GW1B######PERSON_TT_PRODUCTS_BUSINESS_PARTNER######GW1E###</td>
 </tr>
@@ -1076,6 +1080,10 @@ begin -->
 <tr>
 <td>###GW1B###<strong>Email:</strong>###GW1E###</td>
 <td><input type="text" name="recs[delivery][email]" size="60" value="###DELIVERY_EMAIL###"></td>
+</tr>
+<tr>
+<td>###GW1B###<strong>Geburtsdatum: </strong>###GW1E###</td>
+<td><input type="text" name="recs[delivery][date_of_birth]" size="60" value="###DELIVERY_DATE_OF_BIRTH###"></td>
 </tr>
 <tr>
 <td>###GW1B###<strong>Gesch&auml;ftspartner:</strong>###GW1E###</td>
@@ -1419,7 +1427,7 @@ Exact same features as BASKET_TEMPLATE
 <table width="100%"><tr>
 <td><input type="Submit" name="products_update" value="zur&uuml;ck zum Warenkorb">
 <input type="hidden" name="products_cmd" value="cardno" /></td>
-<td align="right"><input type="Submit" name="products_finalize" value="Bestellung abschlie&szlig;en!" onclick="document.forms[0].action='###FORM_URL_THANKS###'; document.forms[0].target='###FORM_URL_TARGET###';">###GW1B### (auch PayPal)###GW1E###</td>
+<td align="right"><input type="Submit" name="products_finalize" value="Bestellung abschlie&szlig;en!" onclick="document.forms[###FORM_NAME###].action='###FORM_URL_THANKS###'; document.forms[###FORM_NAME###].target='###FORM_URL_TARGET###';">###GW1B### (auch PayPal)###GW1E###</td>
 </tr></table>
 </form>
 <br>
@@ -2642,7 +2650,11 @@ If the basket is empty this subpart is displayed
     <td colspan="2"><img src="clear.gif" width="1" height="2"></td>
   </tr>
   <tr>
-    <td valign="top" colspan="2"> ###FIELD_QTY###x ###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
+    <td valign="top" colspan="2">
+		  <!-- ###display_variant2### -->
+		  ###GW2B### Size: ###GW2E### ###PRODUCT_SIZE###<br>
+		  <!-- ###display_variant2### -->
+          ###FIELD_QTY###x ###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
     </td>
   </tr>
   <!-- ###ITEM_SINGLE### end -->

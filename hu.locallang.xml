@@ -105,7 +105,7 @@
             <label index="list_item_quantity">Darab:</label>
             <label index="search_item_notfound">Nem talált egy cikket sem.</label>
             <label index="search_button">keresés</label>
-            <label index="memo_not_logged_in">Ön nincs bejelentve a rendszerbe.</label>
+            <label index="error_not_logged_in">Ön nincs bejelentve a rendszerbe.</label>
             <label index="sellers_salutation">Üdvözlettel,</label>
             <label index="sellers_company">TT_Products</label>
             <label index="sellers_name">Franz Holzinger </label>

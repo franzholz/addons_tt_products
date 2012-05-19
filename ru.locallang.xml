@@ -109,7 +109,7 @@
 
 			<label index="search_item_notfound">Товар не найден!</label>
 			<label index="search_button">поиск</label>
-			<label index="memo_not_logged_in">Вы не зарегестрированы.</label>
+			<label index="error_not_logged_in">Вы не зарегестрированы.</label>
 
 			<label index="sellers_salutation">С наилучшими пожеланиями,</label>
 			<label index="sellers_company"></label>

@@ -114,7 +114,7 @@
 
 			<label index="search_item_notfound">No Items found!</label>
 			<label index="search_button">search</label>
-			<label index="p_memo_not_logged_in">You are not logged in.</label>
+			<label index="error_not_logged_in">You are not logged in.</label>
 
 			<label index="sellers_salutation">With best regards,</label>
 			<label index="sellers_company">Company</label>

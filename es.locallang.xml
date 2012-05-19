@@ -117,7 +117,7 @@
 
 			<label index="search_item_notfound">No se ha encontrado ningún artículo.</label>
 			<label index="search_button">Buscar</label>
-			<label index="memo_not_logged_in">No se ha registrado en el sistema.</label>
+			<label index="error_not_logged_in">No se ha registrado en el sistema.</label>
 
 			<label index="sellers_salutation">Atentamente,</label>
 			<label index="sellers_company"> </label>

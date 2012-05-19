@@ -108,7 +108,7 @@
 
 			<label index="search_item_notfound">Geen items gevonden!</label>
 			<label index="search_button">zoek</label>
-			<label index="memo_not_logged_in">U bent niet ingelogd.</label>
+			<label index="error_not_logged_in">U bent niet ingelogd.</label>
 
 			<label index="sellers_salutation">Met vriendelijke groet,</label>
 			<label index="sellers_company">Bedrijf</label>
