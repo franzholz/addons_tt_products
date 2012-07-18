@@ -1,5 +1,8 @@
 (add new changes on top of this file)
 
+2012-07-18 Franz Holzinger  <franz@ttproducts.de>
+	* use German button text "Zahlungspflichtig bestellen" instead of "Abschluss der Bestellung"
+
 2012-05-19 Franz Holzinger  <franz@ttproducts.de>
 	* Add example function scripts for jQuery and a TypoScript user function to check the contents of the basket
 
