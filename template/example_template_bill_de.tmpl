@@ -226,8 +226,8 @@ Weiterentwicklungen zum Shop k&ouml;nnen Sie unter <a href="http://ttproducts.de
 
 
 <br><br><br><br><hr><br><br><br>
-<h3>ITEM_LIST_TEMPLATE</h3>
-<em>This subpart is used to display the regular list of products. It's also used by search-results.</em><br>
+<h3>#ITEM_DAMCATLIST_TEMPLATE</h3>
+<em>This subpart is used to display the regular list of DAM categories. It's also used by search-results.</em><br>
 <br>
 <br>
 
@@ -348,7 +348,6 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 	</tr>
 </table>
 
-<form method="post" name="###FORM_NAME###" action="###FORM_URL###">
 <table border="0" cellspacing="0" cellpadding="1" width=1>
 	<tr>
 		<td><img src="clear.gif" width="100" height="1"></td>
@@ -363,6 +362,8 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 	</tr>
 	<tr>
 		<td colspan=3 bgcolor="###GC1###"><!--###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###<!--###LINK_ITEM###--></td>
+	</tr>###GW1B###<b>###PRODUCT_SUBTITLE###</b>###GW1E###
+	<tr>
 	</tr>
 	<tr>
 		<td valign=top><p id="###ARTICLE_IMAGE_ID1###">###ARTICLE_IMAGE1###</p></td>
@@ -388,8 +389,10 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 		<!-- ###PRODUCT_DATASHEET_SINGLE### end -->
 		<!-- ###PRODUCT_DATASHEET_LIST### end -->
 
+<form method="post" name="###FORM_NAME###" action="###FORM_URL###">
+
 		  <!-- ###display_variant1### -->
-		  ###GW2B### Size: ###GW2E### <select id="###PRODUCT_COLOR_ID###" onchange=" ###PRODUCT_COLOR_FUNCTION1###" style="font-size: 10px"
+		  ###GW2B### Color: ###GW2E### <select id="###PRODUCT_COLOR_ID###" onchange=" ###PRODUCT_COLOR_FUNCTION1###" style="font-size: 10px"
 		  name="###FIELD_COLOR_NAME###" rows="1">###PRODUCT_COLOR###</select><br>
 		  <!-- ###display_variant1### -->
 			<!-- ###display_variant2### -->
@@ -400,6 +403,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 				<nobr>###GW2B### Menge: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
 				<input id="###BASKET_INTO_ID###" type="submit" ###DISABLED### name="order" value="###BASKET_INTO###" onClick="if(!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};" id="###BASKET_INPUT_ID###" >
 				</nobr>
+</form>
 			<p id="###IN_STOCK_ID###">###BASKET_IN_STOCK###</p>
 				<br>
 			 <br> <p> ###PRODUCT_TEXT_TEXT1### </p>
@@ -410,7 +414,6 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 		</td>
 	</tr>
 </table>
-</form>
 <br>
 <br>
 
