@@ -1,4 +1,6 @@
 (add new changes on top of this file)
+2013-09-30 Franz Holzinger  <franz@ttproducts.de>
+	* Add code based template files for responsive web design. Provided by Andrea Herzog-Kienast.
 
 2012-07-18 Franz Holzinger  <franz@ttproducts.de>
 	* use German button text "Zahlungspflichtig bestellen" instead of "Abschluss der Bestellung"
