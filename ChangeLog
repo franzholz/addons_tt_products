@@ -1,4 +1,10 @@
 (add new changes on top of this file)
+
+2013-11-26 Franz Holzinger  <franz@ttproducts.de>
+	* add IBAN marker ###PERSON_ACCOUNTS_IBAN### for SEPA
+	* fix bugs in template tt_products_example_css.html
+	* add new subpart marker ###PRODUCT_ITEMNUMBER_FN_NOT_EMPTY###
+
 2013-09-30 Franz Holzinger  <franz@ttproducts.de>
 	* Add code based template files for responsive web design. Provided by Andrea Herzog-Kienast.
 

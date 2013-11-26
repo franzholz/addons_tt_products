@@ -885,7 +885,7 @@ Exact same features as BASKET_TEMPLATE
     </div>
     <div id="textinfo_DELIVERY_ADDRESS_BASKETINFO">
       ###GW1B###
-      Wenn Ihre Bestellung zu einer anderen Anschrift geliefert werden soll, so geben Sie hier bitte die vollst&#65533;dige Adresse an.
+      Wenn Ihre Bestellung zu einer anderen Anschrift geliefert werden soll, so geben Sie hier bitte die vollständige Adresse an.
       ###GW1E###
     </div>
         <br />
@@ -951,15 +951,15 @@ Exact same features as BASKET_TEMPLATE
       <textarea cols="30" rows="5" name="recs[delivery][note]">###DELIVERY_NOTE###</textarea>
     </div>
     <div id="text_agb_BASKETINFO">
-      ###GW1B### Sie best&#65533;igen hiermit, dass Sie
+      ###GW1B### Sie bestätigen hiermit, dass Sie
       die AGB des Testshop - Online Vertrieb gelesen haben und diese akzeptieren.<br /><br />
       ###GW1E###
       <input type="checkbox" name="recs[personinfo][agb]" ###PERSON_AGB### />
        ###GW1B###<!--###LINK_AGB###-->Die Allgemeinen Gesch&auml;ftsbedingungen <!--###LINK_AGB###--> erkenne ich hiermit an.
     </div>
     <!--<div align="center">-->
-      <input type="submit" id="button5" name="products_update" value="zurck zum Warenkorb" />
-      <input type="submit" id="button4" name="products_payment" value="ABGs akzeptiert" onclick="document.forms['###FORM_NAME###'].action='###FORM_URL_FINALIZE###';"/>
+      <input type="submit" id="button5" name="products_update" value="zurück zum Warenkorb" />
+      <input type="submit" id="button4" name="products_payment" value="ABGs akzeptiert" onclick="document.forms['###FORM_NAME###'].action='###FORM_URL_PAYMENT###';"/>
       <!--<input type="submit" id="button4" name="products_payment" value="ABGs ansehen" />-->
     <!--</div>-->
   <!--</div>-->
@@ -1095,7 +1095,7 @@ Exact same features as BASKET_TEMPLATE
     ###GW1B###<strong>###PERSON_EMAIL###</strong>###GW1E### ###GW2B###<br />
   </div>
   <div id="text_email_BASKET_PAYMENT_TEMPLATE3">
-    (An diese Email-Adresse wird die Best&#65533;igung Ihrer Bestellung geschickt!)###GW2E###<br />
+    (An diese Email-Adresse wird die Bestätigung Ihrer Bestellung geschickt!)###GW2E###<br />
   </div>
 </div>
 
@@ -1146,7 +1146,7 @@ Exact same features as BASKET_TEMPLATE
     ###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E### ###GW2B###<br />
   </div>
   <div id="text_email_DELIVERY_EMAIL_BASKET_PAYMENT_TEMPLATE4">
-    (An diese Email-Adresse wird die Best&auml;tigung Ihrer Bestellung geschickt!)###GW2E###<br />
+    (An diese Email-Adresse wird die Bestätigung Ihrer Bestellung geschickt!)###GW2E###<br />
   </div>
   <div id="text_DELIVERY_DESIRED_DATE_BASKET_PAYMENT_TEMPLATE4">
     ###GW1B###gewnschtes Lieferdatum:###GW1E###
@@ -1202,9 +1202,9 @@ Exact same features as BASKET_TEMPLATE
   <div id="SUBMIT_BASKET_PAYMENT_TEMPLATE7">
   <br />
   <form method="post" action="###FORM_URL###" name="###FORM_NAME###" id="paymentForm">
-  <input type="submit" name="products_update" value="zur&uuml;ck zum Warenkorb"/>
+  <input type="submit" name="products_update" value="zurück zum Warenkorb"/>
   <input type="hidden" name="products_cmd" value="cardno" />
-  <input type="submit" name="products_finalize" value="Zahlungspflichtig bestellen" onclick="document.forms['###FORM_NAME###'].action='###FORM_URL_THANKS###'; document.forms['###FORM_NAME###'].target='###FORM_URL_TARGET###';"/>###GW1B### <!--(auch PayPal)-->###GW1E###
+  <input type="submit" name="products_finalize" value="Zahlungspflichtig bestellen" onclick="document.forms['###FORM_NAME###'].action='###FORM_URL_FINALIZE###'; document.forms['###FORM_NAME###'].target='###FORM_URL_TARGET###';"/>###GW1B### <!--(auch PayPal)-->###GW1E###
  </div>
 </div>
 </form>
@@ -1233,7 +1233,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 <!--
 <div class="BASKET_ORDERCONFIRMATION_TEMPLATE">-->
   <div id="text_dank_BASKET_ORDERCONFIRMATION_TEMPLATE"><br />
-    ###GW1B###Vielen Dank fr Ihre Bestellung!<br /><br />
+    ###GW1B###Vielen Dank für Ihre Bestellung!<br /><br />
     Ihre Test-Bestellung ist nun abgeschlossen und hat folgende Nummer:
   </div>
   <div id="ORDER_UID_BASKET_ORDERCONFIRMATION_TEMPLATE">
@@ -1241,7 +1241,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
   </div>
   <div id="text_payment_emailsend_BASKET_ORDERCONFIRMATION_TEMPLATE">
 		Es handelt sich hierbei nur um einen Test.<br />
-    Die Bestellbest&#65533;igung wird ebenfalls an die Emailadresse ###CUSTOMER_RECIPIENTS_EMAIL###
+    Die Bestellbestätigung wird ebenfalls an die Emailadresse ###CUSTOMER_RECIPIENTS_EMAIL###
     geschickt.
   </div>
   <div id="header_zahlungsart_BASKET_ORDERCONFIRMATION_TEMPLATE">
@@ -1411,7 +1411,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
       ###GW1B###<strong>###PERSON_EMAIL###</strong>###GW1E### ###GW2B###<br />
     </div>
     <div id="text_email_BASKET_ORDERCONFIRMATION_TEMPLATE3">
-      (An diese Email-Adresse wird die Best&#65533;igung Ihrer Bestellung geschickt!)###GW2E###<br />
+      (An diese Email-Adresse wird die Bestätigung Ihrer Bestellung geschickt!)###GW2E###<br />
     </div>
   </div>
 
@@ -1471,7 +1471,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
       ###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E### ###GW2B###<br />
     </div>
     <div id="text_email_DELIVERY_EMAIL_BASKET_ORDERCONFIRMATION_TEMPLATE4">
-      (An diese Email-Adresse wird die Best&#65533;igung Ihrer Bestellung geschickt!)###GW2E###<br />
+      (An diese Email-Adresse wird die Bestätigung Ihrer Bestellung geschickt!)###GW2E###<br />
     </div>
     <div id="text_DELIVERY_DESIRED_DATE_BASKET_ORDERCONFIRMATION_TEMPLATE4">
       ###GW1B###gewnschtes Lieferdatum:###GW1E###
@@ -1498,7 +1498,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
       ###GW1B###Pauschale:<br /><strong>###SHIPPING_TITLE###</strong>###GW1E###
     </div>
     <div id="SHIPPING_SELECTOR_BASKET_ORDERCONFIRMATION_TEMPLATE5">
-      ###GW1B######SHIPPING_SELECTOR######GW1E###
+      ###GW1B######SHIPPING_TITLE######GW1E###
     </div>
     <div id="PRICE_SHIPPING_TAX_BASKET_ORDERCONFIRMATION_TEMPLATE5">
        ###GW1B### <strong>ink. MwSt. ###TAX_INCL_EXCL### ###PRICE_SHIPPING_TAX###</strong><br />
@@ -1511,7 +1511,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
       ###GW2B###<strong>Zahlungsweise:</strong><br />###GW2E###
     </div>
     <div id="PAYMENT_SELECTOR_BASKET_ORDERCONFIRMATION_TEMPLATE6">
-      ###GW1B######PAYMENT_SELECTOR######GW1E###
+      ###GW1B######PAYMENT_TITLE######GW1E###
     </div>
     <div id="TAX_INCL_EXCL_BASKET_ORDERCONFIRMATION_TEMPLATE6">
       ###GW1B###<strong>###TAX_INCL_EXCL### ###PRICE_PAYMENT_TAX###</strong><br />
@@ -1534,7 +1534,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
     ###GW1B###
     <br />
     <br />
-    Mit freundlichen Gr&szlig;en: <br />
+    Mit freundlichen Grüßen: <br />
     <br />
     <strong>ttproducts.de</strong><br />
     Testshop<br />
@@ -1646,7 +1646,7 @@ This part is repeated for each order status item and finally this part in the te
 Order: ####ORDER_UID###<br /><br />
 
 <div id="text_status_codeORDER_TRACKING_NO_BASKET_ORDERCONFIRMATION_TEMPLATE">
-  Sie k&#65533;nen Ihren Bestellstatus jederzeit mittels Ihres Bestellstatus-Codes
+  Sie können Ihren Bestellstatus jederzeit mittels Ihres Bestellstatus-Codes
   <strong>###ORDER_TRACKING_NO###</strong> nachvollziehen.
 </div>
 <br />
@@ -1692,23 +1692,22 @@ Zu einer anderen Bestellung wechseln:
 <!-- ###ADMIN_CONTROL### end -->
 
 <p><strong>Email-Benachrichtigung:</strong></p><br />
-Wenn Sie sich ber den Status Ihrer Bestellung informieren lassen wollen (###FIELD_EMAIL###) sobald sich der Status ge&#65533;dert hat, dann berprfen Sie bitte folgendes:<br /><br />
+Wenn Sie sich über den Status Ihrer Bestellung informieren lassen wollen (###FIELD_EMAIL###) sobald sich der Status geändert hat, dann überprüfen Sie bitte Folgendes:<br /><br />
 <form method="post" action="###FORM_URL###" name="statusinform">
-  <input type="hidden" name="orderRecord[email_notify]" value="0"/>
-  <input type="checkbox" name="orderRecord[email_notify]" value="###FIELD_EMAIL_NOTIFY###" />Nachricht ber Ablauf des Bestellvorgangs erhalten.<br /><br />
+  <input type="checkbox" name="orderRecord[email_notify]" value="###FIELD_EMAIL_NOTIFY###" />Nachricht &uuml;ber Ablauf des Bestellvorgangs erhalten.<br /><br />
   <input type="text" size="40" name="orderRecord[email]" value="###FIELD_EMAIL###"/>
   <input type="hidden" name="tracking" value="###TRACKING_NUMBER###"/>
-  <input type="submit" name="submit" value="Aktualisieren"/>
+  <input type="submit" name="userNotification" value="Aktualisieren"/>
 </form>
 <br /><br />
 
 
 <p><strong>Nachricht an ttproducts.de:</strong><br />
-Hier k&#65533;nen Sie uns eine Nachricht bezglich Ihrer Bestellung schicken.<br />
+Hier können Sie uns eine Nachricht bezüglich Ihrer Bestellung schicken.<br />
 <strong>Es handelt sich hierbei nur um einen Test.</strong></p>
 <form method="post" action="###FORM_URL###"  name="sendNote">
 <input type="hidden" name="tracking" value="###TRACKING_NUMBER###"/>
-###GW1B###Betreff ausw&#65533;len:###GW1B###<br />
+###GW1B###Betreff ausw&auml;hlen:###GW1B###<br />
 <select name="orderRecord[status][]" size="1">
     <option value="51">Nachricht von Kunde an ttproducts.de</option>
     <option value="50">Kunde w&uuml;nscht die Stornierung der Bestellung</option>
@@ -1721,7 +1720,7 @@ Hier k&#65533;nen Sie uns eine Nachricht bezglich Ihrer Bestellung schicken.<br 
 
 <br />
 <br />
-<p><strong>Bestellbest&#65533;igung - Original:</strong></p><br /><br />
+<p><strong>Bestellbestätigung - Original:</strong></p><br /><br />
 ###GW1E###
 <hr>
 <br />
@@ -1822,11 +1821,11 @@ Auf Ihren Wunsch hin, erhalten Sie diese E-mail bzgl. Ihrer DEMO-Bestellung bei 
 ###ORDER_TRACKING_NO###
 
 Klicken Sie um Ihre Daten jetzt einzusehen:
-http://###DOMAIN###/index.php?id=###PID_TRACKING###&tracking=###ORDER_TRACKING_NO###
+http://###DOMAIN###/index.php?id=###PID_TRACKING###&amp;tracking=###ORDER_TRACKING_NO###
 
 Es handelt sich hierbei nur um einen Test.
 
-Mit freundlichen Gr&#65533;n,
+Mit freundlichen Grüßen,
 ttproducts.de
 Testshop - Online Vertrieb
 Testshopstr. 4
@@ -1859,19 +1858,24 @@ Bestellung ####ORDER_UID###
 
 Bestellung ####ORDER_UID###
 
-Bestellbest&auml;tigung:
+Bestellbestätigung:
 Ihre Test-Bestellung ist abgeschlossen und hat die Nummer ###ORDER_UID###.
 Verweisen Sie bitte bei jedem Kontakt mit uns auf diese Bestellnummer.
 
 BESTELLSTATUS:
-Sie k&ouml;nnen den Status Ihrer Bestellung an dieser Adresse einsehen:
-http://###DOMAIN###/index.php?id=###PID_TRACKING###&tracking=###ORDER_TRACKING_NO###
+Sie können den Status Ihrer Bestellung an dieser Adresse einsehen:
+http://###DOMAIN###/index.php?id=###PID_TRACKING###&amp;tracking=###ORDER_TRACKING_NO###
 
 Ihre Bestellung:
 1) ARTIKEL:
-
-###PRODUCT_TITLE### ###PRODUCT_IMAGE###
+<!-- ###ITEM_CATEGORY_AND_ITEMS### -->
+<!-- ###ITEM_LIST### begin -->
+<!-- ###ITEM_SINGLE### begin-->
+###PRODUCT_TITLE### ###PRODUCT_SUBTITLE###
 Anzahl: ###FIELD_QTY### Price: ###PRICE_TAX### (Steuer: ###PRICE_ONLY_TAX###)
+<!-- ###ITEM_SINGLE### end -->
+<!-- ###ITEM_LIST### end -->
+<!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
 
 2) ZAHLUNGSADRESSE:
 ###PERSON_SALUTATION###
@@ -1889,7 +1893,7 @@ Email: ###PERSON_EMAIL###
 att. ###DELIVERY_NAME###
 Telefon: ###DELIVERY_TELEPHONE###
 Email: ###DELIVERY_EMAIL###
-4) GEW&#65533;SCHTER LIEFERTERMIN:
+4) GEWÜNSCHTER LIEFERTERMIN:
 ###DELIVERY_DESIRED_DATE###
 5) BEMERKUNG:
 ###DELIVERY_NOTE###
@@ -1901,8 +1905,8 @@ Preis: ###PRICE_PAYMENT_TAX### EUR
 
 GESAMT: ________________________ EUR ###PRICE_TOTAL_TAX### (ohne MwSt. EUR ###PRICE_TOTAL_NO_TAX###)
 
-Herzlichen Dank f&uuml;r Ihre Bestellung!
-Mit freundlichen Gr&#65533;n
+Herzlichen Dank für Ihre Bestellung!
+Mit freundlichen Grüßen
 
 ttproducts.de
 Testshop - Online Vertrieb
@@ -1935,14 +1939,14 @@ Wir freuen uns, Sie bei uns als neuen Kunden begr&#65533;n zu drfen.
 Ihr Benutzername lautet: ###USERNAME###
 Ihr Passwort lautet: ###PASSWORD###
 
-In zuknftigen Bestellungen k&#65533;nen Sie sich mit Ihrem Benutzernamen und
+In zukünftigen Bestellungen können Sie sich mit Ihrem Benutzernamen und
 Ihrem Passwort anmelden, und auf Rechnung bestellen.
 Bitte bewahren Sie diese E-Mail gut auf.
 
 Dies ist nur ein Test!
 
-Mit freundlichen Gr&#65533;n,
-Mein Typo3 Shop
+Mit freundlichen Grüßen,
+Mein TYPO3 Shop
 
 <!-- ###EMAIL_NEWUSER_TEMPLATE### end -->
 <!----------------------------------------------------------------------------------->
@@ -2074,7 +2078,7 @@ Mein Typo3 Shop
 
 ###GW1B### Vielen Dank <br /><br />
 
-      <p>Mit freundlichen Grssen: <br /> <br /> <strong>ttproducts.de<br />
+      <p>Mit freundlichen Grüßen: <br /> <br /> <strong>ttproducts.de<br />
       </strong>Testshop - Online Vertrieb<br />
       Testshopstr. 1<br />
       11111 Teststadt<br />
@@ -2147,7 +2151,7 @@ Mein Typo3 Shop
 
 ###GW1B### Vielen Dank. <br />
 
-      <p>Mit freundlichen Grssen: <br /> <br /> <strong>ttproducts.de<br />
+      <p>Mit freundlichen Grüßen: <br /> <br /> <strong>ttproducts.de<br />
       </strong>Testshop - Online Vertrieb<br />
       Testshopstr. 1<br />
       11111 Teststadt<br />

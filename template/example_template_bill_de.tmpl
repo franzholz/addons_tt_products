@@ -41,10 +41,10 @@ Weiterentwicklungen zum Shop k&ouml;nnen Sie unter <a href="http://ttproducts.de
 </p>
 <br>
 <h1>bananaGUARD Shop-Template</h1>
-<p> Dieses Template entspricht dem fr&uuml;heren Shop von <A href="http://www.bananaguard.de">bananaguard.de</A> und ist noch erweitert worden.
+<p> Dieses Template entspricht dem fr&uuml;heren Shop von <a href="http://www.bananaguard.de">bananaguard.de</a> und ist noch erweitert worden.
 </p>
 
-<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
+<form method="post" action="###FORM_URL###" name="ProductList">
 <table border="0" cellspacing="0" cellpadding="1" width=1>
 	<tr>
 		<!-- ###FE_GROUP_1_TEMPLATE### begin -->
@@ -94,14 +94,26 @@ Weiterentwicklungen zum Shop k&ouml;nnen Sie unter <a href="http://ttproducts.de
 		  name="###FIELD_SIZE_NAME###" rows="1">###PRODUCT_SIZE###</select><br>
 		  <!-- ###display_variant2### -->
 
+		<!-- ###PRODUCT_ITEMNUMBER_FN_NOT_EMPTY### begin -->
+			Dieses Produkt hat eine Artikelnummer.
+			This product has an itemnumber.
+		<!-- ###PRODUCT_ITEMNUMBER_FN_NOT_EMPTY### end -->
+
+		<!-- ###PRODUCT_ITEMNUMBER_FN_EMPTY### begin -->
+			Dieses Produkt hat keine Artikelnummer.
+			This product has no itemnumber.
+		<!-- ###PRODUCT_ITEMNUMBER_FN_EMPTY### end -->
+
 		<!-- ###PRODUCT_OFFER_EQ_1### begin -->
 			*** AKTION ***
 		<!-- ###PRODUCT_OFFER_EQ_1### end -->
 		<!-- ###PRODUCT_INSTOCK_EQ_0### begin -->
 			Nicht mehr auf Lager!
+			Is not on stock.
 		<!-- ###PRODUCT_INSTOCK_EQ_0### end -->
 		<!-- ###PRODUCT_INSTOCK_NE_0### begin -->
 		 	Ist auf Lager!
+			Is on stock.
 		<!-- ###PRODUCT_INSTOCK_NE_0### end -->
             <!-- ###display_variant5_isSingle### -->
             Einzelprodukt, das nur einmal gew&auml;hlt werden kann. ###PRODUCT_ADDITIONAL_SINGLE###
@@ -110,7 +122,7 @@ Weiterentwicklungen zum Shop k&ouml;nnen Sie unter <a href="http://ttproducts.de
             <!-- ###display_variant5_isNotSingle### -->
             ###PRODUCT_DELIVERY###
             ###GW1B### St&uuml;ckzahl: ###GW1E### <input size="8" maxlength="10" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
-            <!-- ###FE_GROUP_1_TEMPLATE### begin --><input type="image" name="addtomemo" src="###PATH_FE_REL###res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products[addmemo]=###PRODUCT_UID###';" title="Add to memo"><!-- ###FE_GROUP_1_TEMPLATE### end -->
+				<!-- ###FE_GROUP_1_TEMPLATE### begin --><input type="image" name="addtomemo" src="###PATH_FE_REL###res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('ProductList')[0].action='###FORM_MEMO###&amp;tt_products%5Baddmemo%5D=###PRODUCT_UID###';" title="Add to memo"><!-- ###FE_GROUP_1_TEMPLATE### end -->
             <!-- ###display_variant5_isNotSingle### --></td>
           ###ITEM_SINGLE_POST_HTML###
           <!-- ###ITEM_SINGLE### end -->
@@ -296,7 +308,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
             <!-- ###display_variant5_isNotSingle### -->
             ###PRODUCT_DELIVERY###
             ###GW1B### St&uuml;ckzahl: ###GW1E### <input size="8" maxlength="10" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
-            <!-- ###FE_GROUP_1_TEMPLATE### begin --><input type="image" name="addtomemo" src="###PATH_FE_REL###/res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products[addmemo]=###PRODUCT_UID###';" title="Add to memo"><!-- ###FE_GROUP_1_TEMPLATE### end -->
+            <!-- ###FE_GROUP_1_TEMPLATE### begin --><input type="image" name="addtomemo" src="###PATH_FE_REL###/res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('ProductList')[0].action='###FORM_MEMO###&amp;%5Baddmemo%5D=###PRODUCT_UID###';" title="Add to memo"><!-- ###FE_GROUP_1_TEMPLATE### end -->
             <!-- ###display_variant5_isNotSingle### --> <p> </td>
           ###ITEM_SINGLE_POST_HTML###
           <!-- ###ITEM_SINGLE### end -->
@@ -810,9 +822,12 @@ This whole subpart, message_payment is substituted with the subpart 'message_pay
 <!-- ###MESSAGE_PAYMENT_30### -->
 <br><b>Nachnahme EU-Land.</b><br>
 <!-- ###MESSAGE_PAYMENT_30### -->
-<!-- ###MESSAGE_PAYMENT_40### -->
+<!-- ###MESSAGE_PAYMENT_90### -->
 <br><b>Paypal Bezahlung.</b><br>
-<!-- ###MESSAGE_PAYMENT_40### -->
+<!-- ###MESSAGE_PAYMENT_90### -->
+<!-- ###MESSAGE_PAYMENT_95### -->
+<br><b>Paypal Bezahlung.</b><br>
+<!-- ###MESSAGE_PAYMENT_95### -->
 <!-- ###MESSAGE_PAYMENT_50### -->
 <br>
 <b>Bezahlung bei Abholung im Gesch&auml;ft.</b><br>
@@ -1000,11 +1015,8 @@ If this part is not empty then this will be used instead of BILLING_ADDRESS if t
 </td>
 </tr>
 <tr>
-<td>###GW1B###<strong>Kontonummer:</strong>###GW1E###</td>
-<td><input name="recs[account][ac_number]" value="###PERSON_ACCOUNTS_AC_NUMBER###" size="12" maxlength="12"/>
-<td>###GW1B###<strong>Bankleitzahl:</strong>###GW1E###</td>
-<td><input name="recs[account][bic]" value="###PERSON_ACCOUNTS_BIC###" size="11" maxlength="11"/>
-</td>
+<td>###GW1B###<strong>IBAN:</strong>###GW1E###</td>
+<td><input name="recs[account][iban]" value="###PERSON_ACCOUNTS_IBAN###" size="24" maxlength="24"/>
 </tr>
 <tr>
   <td >###GW1B###<strong>Konto Inhaber</strong>###GW1E###</td>
@@ -1492,8 +1504,15 @@ Message for payment method 10, Vorkasse
         BIC: PBNKTEST<br>
         Betreff: Ihre Bestellnummer ###ORDER_UID### unbedingt angeben! </font></p>
 	<!-- ###MESSAGE_PAYMENT_10### end -->
-        <!-- ###MESSAGE_PAYMENT_20### begin
-Message for payment method 10, Paypal
+        <!-- ###MESSAGE_PAYMENT_30### begin -->
+      <p><font color=red><strong>Nachnahme:</strong><br>
+        Die bananaGUARDs werden Ihnen direkt zugesandt.<br>
+        Sie bezahlen die Ware bei Erhalt.
+      </font>
+        <br></p>
+        <!-- ###MESSAGE_PAYMENT_30### end -->
+        <!-- ###MESSAGE_PAYMENT_90### begin
+Message for payment method 90, Paypal
 -->
       <p><font color=red><strong>PayPal:</strong><br>
         Sie haben als Zahlungsart PayPal gew&auml;hlt. Bezahlen Sie ber diesen Link direkt Online per Kreditkarte via PayPal.
@@ -1509,23 +1528,17 @@ Message for payment method 10, Paypal
 <input type="hidden" name="tax" value="0,00">
 <input type="submit" name="submit" value="Bezahlung mit Kreditkarte via Paypal" alt="Protect Your Banana!">
 </form>	</font></p>
-	<!-- ###MESSAGE_PAYMENT_20### end -->
+	<!-- ###MESSAGE_PAYMENT_90### end -->
 
-        <!-- ###MESSAGE_PAYMENT_30### begin -->
-      <p><font color=red><strong>Nachnahme:</strong><br>
-        Die bananaGUARDs werden Ihnen direkt zugesandt.<br>
-        Sie bezahlen die Ware bei Erhalt.
-      </font>
-        <br></p>
-        <!-- ###MESSAGE_PAYMENT_30### end -->
-        <!-- ###MESSAGE_PAYMENT_40### begin -->
+        <!-- ###MESSAGE_PAYMENT_95### begin -->
       <p><font color=red><strong>PAYPAL:</strong><br>
         F&uuml;hren Sie hier die Bezahlung &uuml;ber Paypal durch.<br>
         Erst nach der Bezahlung werden die Waren an Sie verschickt.
       </font>
         ###MESSAGE_PAYMENT_SCRIPT###
         <br></p>
-        <!-- ###MESSAGE_PAYMENT_40### end -->
+        <!-- ###MESSAGE_PAYMENT_95### end -->
+
 	<!-- ###MESSAGE_PAYMENT### -->
    <br>
         <b>Liefer- und Bestellstatus</b><br>
@@ -1912,7 +1925,7 @@ Zu einer anderen Bestellung wechseln:
 
 <!-- ###ORDER_ITEM### begin -->
 ###ORDER_NAME### ###ORDER_ADDRESS### ###ORDER_ZIP### ###ORDER_CITY### ###ORDER_COUNTRY###
-###ACCOUNT_OWNER_NAME###  ###ACCOUNT_AC_NUMBER###  ###ACCOUNT_BIC###
+###ACCOUNT_OWNER_NAME###  ###ACCOUNT_IBAN###
 <!-- ###ORDER_ITEM### end -->
 <!-- ###ADMIN_CONTROL_OK### end -->
 <!-- ###ADMIN_CONTROL_DENY### begin -->
@@ -1933,12 +1946,11 @@ Zu einer anderen Bestellung wechseln:
 Wenn Sie sich &uuml;ber den Status Ihrer Bestellung informieren lassen wollen (###FIELD_EMAIL###) sobald sich der Status ge&auml;ndert hat, dann &uuml;berpr&uuml;fen Sie bitte Folgendes:<br>
 <form method="post" action="###FORM_URL###" name="statusInform">
 
-<input type="hidden" name="orderRecord[email_notify]" value="0">
 <input type="checkbox" name="orderRecord[email_notify]" value="1"###FIELD_EMAIL_NOTIFY###>Nachricht &uuml;ber Ablauf des Bestellvorgangs erhalten.<br>
 <input type="text" size=40 name="orderRecord[email]" value="###FIELD_EMAIL###">
 <input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
 
-<input type="Submit" name="submit" value="Aktualisieren">
+<input type="Submit" name="userNotification" value="Aktualisieren">
 </form>
 <br><br>
 
@@ -2302,8 +2314,16 @@ Message for payment method 10, Vorkasse
         BIC: PBNKTEST<br>
         Betreff: Ihre Bestellnummer ###ORDER_UID### unbedingt angeben! </font></p>
 	<!-- ###MESSAGE_PAYMENT_10### end -->
-        <!-- ###MESSAGE_PAYMENT_20### begin
-Message for payment method 10, Paypal
+
+        <!-- ###MESSAGE_PAYMENT_30### begin -->
+      <p><font color=red><strong>Nachnahme:</strong><br>
+        Die bananaGUARDs werden Ihnen direkt zugesandt.<br>
+        Sie bezahlen die Ware bei Erhalt.
+      </font>
+        <br></p>
+        <!-- ###MESSAGE_PAYMENT_30### end -->
+        <!-- ###MESSAGE_PAYMENT_90### begin
+Message for payment method 90, Paypal
 -->
       <p><font color=red><strong>PayPal:</strong><br>
         Sie haben als Zahlungsart PayPal gew&auml;hlt. Bezahlen Sie ber diesen Link direkt Online per Kreditkarte via PayPal.
@@ -2319,23 +2339,15 @@ Message for payment method 10, Paypal
 <input type="hidden" name="tax" value="0,00">
 <input type="submit" name="submit" value="Bezahlung mit Kreditkarte via Paypal" alt="Protect Your Banana!">
 </form>	</font></p>
-	<!-- ###MESSAGE_PAYMENT_20### end -->
-
-        <!-- ###MESSAGE_PAYMENT_30### begin -->
-      <p><font color=red><strong>Nachnahme:</strong><br>
-        Die bananaGUARDs werden Ihnen direkt zugesandt.<br>
-        Sie bezahlen die Ware bei Erhalt.
-      </font>
-        <br></p>
-        <!-- ###MESSAGE_PAYMENT_30### end -->
-        <!-- ###MESSAGE_PAYMENT_40### begin -->
+	<!-- ###MESSAGE_PAYMENT_90### end -->
+        <!-- ###MESSAGE_PAYMENT_95### begin -->
       <p><font color=red><strong>PAYPAL:</strong><br>
         F&uuml;hren Sie hier die Bezahlung &uuml;ber Paypal durch.<br>
         Erst nach der Bezahlung werden die Waren an Sie verschickt.
       </font>
         ###MESSAGE_PAYMENT_SCRIPT###
         <br></p>
-        <!-- ###MESSAGE_PAYMENT_40### end -->
+        <!-- ###MESSAGE_PAYMENT_95### end -->
 	<!-- ###MESSAGE_PAYMENT### -->
    <br>
         <b>Liefer- und Bestellstatus</b><br>
@@ -2356,12 +2368,12 @@ Message for payment method 10, Paypal
 <td>###PERSON_CARDS_OWNER_NAME###   ###PERSON_CARDS_CC_TYPE_SELECTED### ###PERSON_CARDS_CC_NUMBER###</td>
 
 <td>###GW1B###<strong>Konto:</strong>###GW1E###
-###PERSON_ACCOUNTS_OWNER_NAME###  ###PERSON_ACCOUNTS_AC_NUMBER###  ###PERSON_ACCOUNTS_BIC###
+###PERSON_ACCOUNTS_OWNER_NAME###  ###PERSON_ACCOUNTS_IBAN###
 </td>
 </tr>
 
 <tr>
-<td colspan=3 bgcolor="###GC2###">###GW2B###<b>bananaGUARDs:</b>###GW2E###</td>
+<td colspan=3 bgcolor="###GC2###">###GW2B###<b>Produkte:</b>###GW2E###</td>
 <td bgcolor="###GC2###">###GW2B###<b>Preis:</b>###GW2E###</td>
 <td bgcolor="###GC2###">###GW2B###<b>Menge:</b>###GW2E###</td>
 <td bgcolor="###GC2###">###GW2B###<b>Gesamt:</b>###GW2E###</td>
