@@ -1,67 +1,86 @@
 <!-- $Id$ -->
 
-<h3>ITEM_LIST_TEMPLATE</h3>
-<em>This subpart is used to display the regular list of products. It's also used by search-results.</em>
-
 <!-- ###ITEM_LIST_TEMPLATE### begin -->
 
+  <div class="pagebrowser_list">
+    <!--###LINK_PREV###--><span class="list_link_prev">&laquo; ###LIST_PREV_PAGE### </span><!--###LINK_PREV###-->
+    <!-- ###LINK_BROWSE### begin -->[ ###BROWSE_LINKS### ]<!-- ###LINK_BROWSE### end-->
+    <!--###LINK_NEXT###--><span class="list_link_next">###LIST_NEXT_PAGE###&raquo; </span><!--###LINK_NEXT###-->
+  </div>
+
+    <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
+    <!-- ###ITEM_CATEGORY### begin -->
+    <!-- ###ITEM_CATEGORY### end -->
+    <!-- ###ITEM_LIST### begin -->
+    <!-- ###ITEM_SINGLE### begin-->
+    <!-- ###ITEM_SINGLE_PRE_HTML###-->
 
 
-		<!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
-		<!-- ###ITEM_CATEGORY### begin -->
-		<!-- ###ITEM_CATEGORY### end -->
-		<!-- ###ITEM_LIST### begin -->
-		<!-- ###ITEM_SINGLE### begin-->
-		<!-- ###ITEM_SINGLE_PRE_HTML###-->
+  <form method="post" action="###FORM_URL###" name="###FORM_NAME###">
 
 
-		<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
+    <div class="floatbox_LIST">
+      <!--###LINK_ITEM###-->
+      <div class="PRODUCT_TITLE_LIST">
+        <span class="###PRODUCT_TITLE_ID###">###PRODUCT_TITLE###</span><br />
+      </div>
+      <!--###LINK_ITEM###-->
+      <div class="product_image_list">
+         ###PRODUCT_IMAGE###
+      </div>
+      <div class="floatbox_list2">
+        <div class="PRODUCT_NOTE">
+        ###PRODUCT_NOTE### <!--###LINK_ITEM###-->[...]<!--###LINK_ITEM###-->
+        </div>
 
-				<!--###LINK_ITEM###-->
-			<div class="floatbox_LIST">
-
-				<h2 class="PRODUCT_TITLE_LIST">
-				 ###PRODUCT_TITLE###
-				</h2>
-				<!--
-				<div class="PRODUCT_SUBTITLE_LIST">
-				 ###PRODUCT_SUBTITLE###
-				</div>
-				-->
-				<div class="product_image_list">
-				###PRODUCT_IMAGE1###
-				</div>
-				<!--###LINK_ITEM###-->
-
-				<div class="price_list">
-
-				<div class="web_price_LIST_tax">
-					<span id="###PRICE_TAX_ID###" class="fontcolor"> ###PRICE_TAX### ###P_CURRENCY###</span>
-				</div>
-
-				<div class="label_shipping_info">
-
-				<!-- ###PRODUCT_CATEGORY_EQ_9### begin -->
-				&nbsp;
-				<!-- ###PRODUCT_CATEGORY_EQ_9### end -->
-				</div>
-				</div>
-				<div class="qty_list">
-					<span class="qty-label-field-list"> ###LIST_ITEM_QUANTITY### <input size="2" maxlength="2" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
-					</span>
-					<input type="image" src="fileadmin/page/images/cart-add.png" name="basket" id="inputimage_cartadd" alt="###LIST_BUY_NOW###" title="###LIST_BUY_NOW###"  onClick="if(!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};"/>
-				</div>
-
-
-
+        <div class="price_list">
+			<div class="web_price_LIST_tax">
+			###INCL_VAT###<span id="###PRICE_TAX_ID###"> ###PRICE_TAX### ###P_CURRENCY###</span>
 			</div>
+        </div>
 
-		</form>
+		<div class="###PRODUCT_ID###-display-variant1">
+			<!--###display_variant1### -->
+			###P_COLOR### <select name="###FIELD_COLOR_NAME###" id="###PRODUCT_COLOR_ID###" onchange=" ###PRODUCT_COLOR_FUNCTION1###">###PRODUCT_COLOR###</select>
+			<!--###display_variant1### -->
+		</div>
 
-		<!--###ITEM_SINGLE_POST_HTML###-->
-		<!-- ###ITEM_SINGLE### end -->
-		<!-- ###ITEM_LIST### end -->
-		<!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
+		<div class="###PRODUCT_ID###-display-variant2">
+			<!--###display_variant2### -->
+			###P_SIZE### <select name="###FIELD_SIZE_NAME###" id="###PRODUCT_SIZE_ID###" onchange=" ###PRODUCT_SIZE_FUNCTION1###">###PRODUCT_SIZE###</select>
+			<!--###display_variant2### -->
+		</div>
+
+		<div class="###PRODUCT_ID###-display-variant3">
+			<!--###display_variant3### -->
+			###P_DESCRIPTION### <select name="###FIELD_DESCRIPTION_NAME###" id="###PRODUCT_DESCRIPTION_ID###" onchange=" ###PRODUCT_DESCRIPTION_FUNCTION1###">###PRODUCT_DESCRIPTION###</select>
+			<!--###display_variant3### -->
+		</div>
+
+        <div class="intobasket">
+          <div class="qty_list">
+            ###LIST_ITEM_QUANTITY### <input size="3" maxlength="6" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
+          </div>
+          <div class="cart_add">
+            <input type="image" src="fileadmin/demoshop/page/img/cart-add.png" name="basket" id="inputimage" alt="In den Warenkorb" title="In den Warenkorb"  onClick="if(!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+    <!--###ITEM_SINGLE_POST_HTML###-->
+    <!-- ###ITEM_SINGLE### end -->
+    <!-- ###ITEM_LIST### end -->
+    <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
+
+  <div class="pagebrowserbottom_list">
+    <!--###LINK_PREV###--><span class="list_link_prev">&laquo; ###LIST_PREV_PAGE### </span><!--###LINK_PREV###-->
+    <!-- ###LINK_BROWSE### begin -->[ ###BROWSE_LINKS### ]<!-- ###LINK_BROWSE### end-->
+    <!--###LINK_NEXT###--><span class="list_link_next">###LIST_NEXT_PAGE###&raquo; </span><!--###LINK_NEXT###-->
+  </div>
 
 <!-- ###ITEM_LIST_TEMPLATE### end -->
+
 

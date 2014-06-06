@@ -1,5 +1,8 @@
 (add new changes on top of this file)
 
+2014-06-06 Franz Holzinger  <franz@ttproducts.de>
+	* modify responsive templates
+
 2013-11-26 Franz Holzinger  <franz@ttproducts.de>
 	* add IBAN marker ###PERSON_ACCOUNTS_IBAN### for SEPA
 	* fix bugs in template tt_products_example_css.html

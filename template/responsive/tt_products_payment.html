@@ -11,12 +11,11 @@ Exact same features as BASKET_TEMPLATE
 -->
 
 
-
 ###EXTERNAL_COBJECT###
 
 <div class="basket_payment">
 	<div class="text_bestellung_BASKET_PAYMENT_TEMPLATE1">
-		<h1>###ORDER_CONFIRMATION_YOUR_ORDER###</h1>
+		<h2>###ORDER_CONFIRMATION_YOUR_ORDER###</h2>
     </div>
 	<div class="floatbox_BASKET_PAYMENT_TEMPLATE1">
 		<div id="text_produkte_BASKET_PAYMENT_TEMPLATE1">
@@ -49,10 +48,10 @@ Exact same features as BASKET_TEMPLATE
 		###PRODUCT_PRICE_TAX### ###P_CURRENCY###<br />
 	</div>
 	<div id="anzahl_BASKET_PAYMENT_TEMPLATE2">
-		###GW1B### ###FIELD_QTY### ###GW1E###
+		 ###FIELD_QTY###
 	</div>
 	<div id="gesamt_BASKET_PAYMENT_TEMPLATE2">
-		###PRICE_VOUCHERGOODSTOTAL_TAX### ###P_CURRENCY###
+		 ###PRICE_TOTAL_TAX### ###P_CURRENCY###
 	</div>
 </div>
 
@@ -69,20 +68,22 @@ Exact same features as BASKET_TEMPLATE
 	</div>
 
 	<div id="PERSON_NAME_BASKET_PAYMENT_TEMPLATE3">
-		###PERSON_NAME###
+		 ###PERSON_NAME###
 	</div>
 	<div id="PERSON_ADDRESS_DISPLAY_BASKET_PAYMENT_TEMPLATE3">
-		###PERSON_ADDRESS_DISPLAY###
+		 ###PERSON_ADDRESS_DISPLAY###
 	</div>
-	<div id="PERSON_CITY_BASKET_PAYMENT_TEMPLATE3">
-		###PERSON_ZIP### ###PERSON_CITY###
+	<div id="PERSON_ADDRESS_ZIP_CITY_BASKET_PAYMENT_TEMPLATE3">
+		 ###PERSON_ZIP### ###PERSON_CITY###
 	</div>
-
+	<div id="PERSON_ADDRESS_COUNTRY_BASKET_PAYMENT_TEMPLATE3">
+		 ###PERSON_COUNTRY###
+	</div>
 	<div id="PERSON_TELEPHONE_BASKET_PAYMENT_TEMPLATE3">
-		###PERSON_TELEPHONE###
+		 ###PERSON_TELEPHONE###
 	</div>
 	<div id="text_PERSON_EMAIL_BASKET_PAYMENT_TEMPLATE3">
-		###PERSON_EMAIL### <br />
+		 ###PERSON_EMAIL###
 	</div>
 	<div id="text_email_BASKET_PAYMENT_TEMPLATE3">
 		###BASKET_PAYMENT_EMAIL_COMMENT###<br />
@@ -94,34 +95,37 @@ Exact same features as BASKET_TEMPLATE
 		###BASKET_DELIVERY_ADDRESS###
 	</div>
 	<div id="DELIVERY_SALUTATION_BASKET_PAYMENT_TEMPLATE4">
-		###DELIVERY_SALUTATION###
+		 ###DELIVERY_SALUTATION###
 	</div>
 	<div id="DELIVERY_NAME_BASKET_PAYMENT_TEMPLATE4">
-		###DELIVERY_NAME###
+		 ###DELIVERY_NAME###
 	</div>
 	<div id="DELIVERY_ADDRESS_DISPLAY_BASKET_PAYMENT_TEMPLATE4">
-		###DELIVERY_ADDRESS_DISPLAY###
+		 ###DELIVERY_ADDRESS_DISPLAY###
 	</div>
-	<div id="DELIVERY_ZIP_CITY_BASKET_PAYMENT_TEMPLATE4">
-	  ###DELIVERY_ZIP### ###DELIVERY_CITY###
+	<div id="DELIVERY_ADDRESS_ZIP_CITY_BASKET_PAYMENT_TEMPLATE3">
+		 ###DELIVERY_ZIP### ###DELIVERY_CITY###
+	</div>
+	<div id="DELIVERY_ADDRESS_COUNTRY_BASKET_PAYMENT_TEMPLATE3">
+		 ###DELIVERY_COUNTRY###
 	</div>
 	<div id="DELIVERY_TELEPHONE_BASKET_PAYMENT_TEMPLATE4">
-		###DELIVERY_TELEPHONE### <br />
+		 ###DELIVERY_TELEPHONE###
 	</div>
 	<div id="DELIVERY_EMAIL_BASKET_PAYMENT_TEMPLATE4">
-		###DELIVERY_EMAIL### <br />
+		 ###DELIVERY_EMAIL###
 	</div>
 	<div id="text_DELIVERY_DESIRED_DATE_BASKET_PAYMENT_TEMPLATE4">
-		###BASKET_PAYMENT_SHIPPING_DATE###
+		 ###BASKET_PAYMENT_SHIPPING_DATE###
 	</div>
 	<div id="DELIVERY_DESIRED_DATE_BASKET_PAYMENT_TEMPLATE4">
-		###DELIVERY_DESIRED_DATE###
+		 ###DELIVERY_DESIRED_DATE###
 	</div>
 	<div id="text_DELIVERY_NOTE_DISPLAY_BASKET_PAYMENT_TEMPLATE4">
-		###BASKET_PAYMENT_COMMENT###
+		 ###BASKET_PAYMENT_COMMENT###
 	</div>
 	<div id="DELIVERY_NOTE_DISPLAY_BASKET_PAYMENT_TEMPLATE4">
-		###DELIVERY_NOTE_DISPLAY###
+		 ###DELIVERY_NOTE_DISPLAY###
 	</div>
 </div>
 
@@ -130,10 +134,10 @@ Exact same features as BASKET_TEMPLATE
 		###BASKET_SHIPPING_HANDLING### <br />
 	</div>
 	<div id="SHIPPING_TITLE_BASKET_PAYMENT_TEMPLATE5">
-		###SHIPPING_TITLE###
+		 ###SHIPPING_TITLE###
 	</div>
 	<div id="PRICE_SHIPPING_BASKET_PAYMENT_TEMPLATE5">
-		###PRICE_SHIPPING_TAX### ###P_CURRENCY###
+		 ###PRICE_SHIPPING_TAX### ###P_CURRENCY###
 	</div>
 </div>
 <div class="floatbox_BASKET_PAYMENT_TEMPLATE6">
@@ -147,29 +151,37 @@ Exact same features as BASKET_TEMPLATE
 		###PRICE_PAYMENT_TAX### ###P_CURRENCY###
 	</div>
 </div>
-	<div class="floatbox_BASKET_PAYMENT_TEMPLATE7">
-		<div id="text_PRICE_TOTAL_BASKET_PAYMENT_TEMPLATE7">
-			 ###BASKET_HEADER_TOTAL###
-		</div>
-		<div id="PRICE_TOTAL_BASKET_PAYMENT_TEMPLATE7" style="white-space:nowrap;">
-			###PRICE_VOUCHERTOTAL_TAX### ###P_CURRENCY###
-		</div>
-		<div id="text_TAX_BASKET_PAYMENT_TEMPLATE7">
-			 (###INCLUDED### ###VAT### ###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###)
-		</div>
-
-		<div id="SUBMIT_BASKET_PAYMENT_TEMPLATE7">	<br />
-			<form method="post" action="###FORM_URL###" name="###FORM_NAME###" id="paymentForm">
-			<input type="submit" id="button3" name="products_update" value="###BASKET_BACK_TO_CART###">
-			<input type="hidden" name="products_cmd" value="cardno" />
-			<input type="submit" id="button3" name="products_finalize" value="###BASKET_PLACE_ORDER###" onclick="this.form.action='###FORM_URL_FINALIZE###';" />
-			<!--<input type="submit" id="button3" name="products_finalize" value="###BASKET_PLACE_ORDER###" onclick="document.forms[0].action='###FORM_URL_THANKS###'; document.forms[0].target='###FORM_URL_TARGET###';">
-		-->
-		###HIDDENFIELDS###
-		</form>
-
-		</div>
+<div class="floatbox_BASKET_PAYMENT_TEMPLATE7">
+	<div id="text_PRICE_TOTAL_BASKET_PAYMENT_TEMPLATE7">
+		 ###BASKET_HEADER_TOTAL###
 	</div>
+	<div id="PRICE_TOTAL_BASKET_PAYMENT_TEMPLATE7" style="white-space:nowrap;">
+		 ###PRICE_TOTAL_TAX### ###P_CURRENCY###
+	</div>
+	<div id="text_TAX_BASKET_PAYMENT_TEMPLATE7">
+		 (###INCLUDES### ###VAT###&nbsp;
+	</div>
+	<div id="PRICE_TAX_BASKET_PAYMENT_TEMPLATE7">
+		###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###)
+	</div>
+
+	<div id="PAYMENT_SCRIPT_BASKET_PAYMENT_TEMPLATE7">
+<!-- start form of the payment script if available and paymentActivity = verify or payment -->
+###MESSAGE_PAYMENT_SCRIPT###
+	</div>
+
+	<div id="SUBMIT_BASKET_PAYMENT_TEMPLATE7">	<br />
+	<form method="post" action="###FORM_URL###" name="###FORM_NAME###" id="paymentForm">
+		<input type="submit" id="button3" name="products_update" value="###BASKET_BACK_TO_CART###">
+		<input type="hidden" name="products_cmd" value="cardno" />
+<!-- ###MESSAGE_PAYMENT_TRANSACTOR_NO### begin -->
+		<input type="submit" id="button3" name="products_finalize" value="###BASKET_PLACE_ORDER###" onclick="this.form.action='###FORM_URL_FINALIZE###';" />
+<!-- ###MESSAGE_PAYMENT_TRANSACTOR_NO### end -->
+	###HIDDENFIELDS###
+	</form>
+
+	</div>
+</div>
 
 <!-- ###BASKET_PAYMENT_TEMPLATE### end -->
 

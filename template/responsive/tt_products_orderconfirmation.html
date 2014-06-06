@@ -10,17 +10,14 @@
 <!-- ###BASKET_ORDERCONFIRMATION_TEMPLATE### begin
 Subpart used if the order is finalized and this is thus the confirmation shown.-->
 
-<h1 class="ORDER_CONFIRMATION">###ORDER_CONFIRMATION###</h1>
+<div class="ORDER_CONFIRMATION">###ORDER_CONFIRMATION###</div>
 	<div id="text_dank_BASKET_ORDERCONFIRMATION_TEMPLATE">
-		###ORDER_CONFIRMATION_THANKS### <br /><br />
+		 ###ORDER_CONFIRMATION_THANKS### <br /><br />
 		###ORDER_CONFIRMATION_COMPLETE###
 	</div>
 	<div id="ORDER_UID_BASKET_ORDERCONFIRMATION_TEMPLATE">
 		###ORDER_UID###
 	</div>
-	<!--<div>###ORDER_TRACKING_NO###</div>.
-	###CLICK_HERE###<a href="index.php?id=###PID_TRACKING###&type=0&tracking=###ORDER_TRACKING_NO###">###SEE_STATUS###.</a>
--->
 	<div id="header_zahlungsart_BASKET_ORDERCONFIRMATION_TEMPLATE">
 		###ORDER_CONFIRMATION_PAYMENT###
 	</div>
@@ -81,7 +78,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 
 		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 			<input type="hidden" name="cmd" value="_xclick">
-			<input type="hidden" name="business" value="c.peiniger@profino.net">
+			<input type="hidden" name="business" value="email@mytypo3webshop.com">
 			<input type="hidden" name="item_name" value="###ORDER_UID###">
 			<input type="hidden" name="amount" value="###PRICE_GOODSTOTAL_TAX###">
 			<input type="hidden" name="no_note" value="1">
@@ -101,7 +98,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 
 		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 			<input type="hidden" name="cmd" value="_xclick">
-			<input type="hidden" name="business" value="c.peiniger@profino.net">
+			<input type="hidden" name="business" value="email@mytypo3webshop.com">
 			<input type="hidden" name="item_name" value="###ORDER_UID###">
 			<input type="hidden" name="amount" value="###PRICE_GOODSTOTAL_TAX###">
 			<input type="hidden" name="no_note" value="1">
@@ -121,7 +118,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 
 		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 			<input type="hidden" name="cmd" value="_xclick">
-			<input type="hidden" name="business" value="c.peiniger@profino.net">
+			<input type="hidden" name="business" value="email@mytypo3webshop.com">
 			<input type="hidden" name="item_name" value="###ORDER_UID###">
 			<input type="hidden" name="amount" value="###PRICE_GOODSTOTAL_TAX###">
 			<input type="hidden" name="no_note" value="1">
@@ -151,7 +148,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 		<a href="index.php?id=###PID_TRACKING###&amp;type=0&amp;tracking=###ORDER_TRACKING_NO###"></a>
 	</div>
 
-    ###GW1E### ###EXTERNAL_COBJECT###
+     ###EXTERNAL_COBJECT###
 	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE1">
 		<div id="text_produkte_BASKET_ORDERCONFIRMATION_TEMPLATE1">
 			###BASKET_HEADER_ITEM###
@@ -179,7 +176,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 			 ###FIELD_QTY###
 		</div>
 		<div id="gesamt_BASKET_ORDERCONFIRMATION_TEMPLATE2">
-			###PRICE_VOUCHERGOODSTOTAL_TAX### ###P_CURRENCY###
+			###PRICE_TOTAL_TAX### ###P_CURRENCY###
 		</div>
 	</div>
 
@@ -203,11 +200,14 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 		<div id="PERSON_CITY_BASKET_ORDERCONFIRMATION_TEMPLATE3">
 		<strong> ###PERSON_ZIP### ###PERSON_CITY###</strong>
 		</div>
+		<div id="PERSON_COUNTRY_BASKET_ORDERCONFIRMATION_TEMPLATE3">
+		<strong> ###PERSON_COUNTRY###</strong>
+		</div>
 		<div id="PERSON_TELEPHONE_BASKET_ORDERCONFIRMATION_TEMPLATE3">
 			<strong>###PERSON_TELEPHONE###</strong>
 		</div>
 		<div id="text_PERSON_EMAIL_BASKET_ORDERCONFIRMATION_TEMPLATE3">
-			<strong>###PERSON_EMAIL###</strong><br />
+			<strong>###PERSON_EMAIL###</strong> ###GW2B###<br />
 		</div>
 		<div id="text_email_BASKET_ORDERCONFIRMATION_TEMPLATE3">
 			###BASKET_PAYMENT_EMAIL_COMMENT###<br />
@@ -230,18 +230,21 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 		<div id="DELIVERY_ZIP_CITY_BASKET_ORDERCONFIRMATION_TEMPLATE4">
 			<strong> ###DELIVERY_ZIP### ###DELIVERY_CITY###</strong>
 		</div>
+		<div id="DELIVERY_COUNTRY_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+			<strong>###DELIVERY_COUNTRY###</strong>
+		</div>
 		<div id="DELIVERY_TELEPHONE_BASKET_ORDERCONFIRMATION_TEMPLATE4">
 			<strong>###DELIVERY_TELEPHONE###</strong>
 		</div>
 		<div id="DELIVERY_EMAIL_BASKET_ORDERCONFIRMATION_TEMPLATE4">
-			<strong>###DELIVERY_EMAIL###</strong><br />
+			<strong>###DELIVERY_EMAIL###</strong> ###GW2B###<br />
 		</div>
 
 		<div id="text_DELIVERY_DESIRED_DATE_BASKET_ORDERCONFIRMATION_TEMPLATE4">
 			<strong>###BASKET_PAYMENT_SHIPPING_DATE###</strong>
 		</div>
 		<div id="DELIVERY_DESIRED_DATE_BASKET_ORDERCONFIRMATION_TEMPLATE4">
-			###DELIVERY_DESIRED_DATE###
+			 ###DELIVERY_DESIRED_DATE###
 		</div>
 		<div id="text_DELIVERY_NOTE_DISPLAY_BASKET_ORDERCONFIRMATION_TEMPLATE4">
 			<strong>###BASKET_PAYMENT_COMMENT###</strong>
@@ -271,7 +274,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 			###PAYMENT_SELECTOR###
 		</div>
 		<div id="TAX_INCL_EXCL_BASKET_ORDERCONFIRMATION_TEMPLATE6">
-			###PRICE_PAYMENT_TAX### ###P_CURRENCY###
+			###PRICE_PAYMENT_TAX###  ###P_CURRENCY###
 		</div>
 	</div>
 
@@ -280,11 +283,11 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 			###BASKET_HEADER_TOTAL###
 		</div>
 		<div id="PRICE_TOTAL_BASKET_ORDERCONFIRMATION_TEMPLATE7" style="white-space:nowrap;">
-			 ###PRICE_VOUCHERTOTAL_TAX### ###P_CURRENCY###
+			 ###PRICE_TOTAL_TAX### ###P_CURRENCY###
 		</div>
 		<div class="text_PRICE_ONLY_TAX_BASKET_ORDERCONFIRMATION_TEMPLATE7">
 			<div id="text_TAX_BASKET_PAYMENT_TEMPLATE7">
-				 (###INCLUDED### ###VAT###&nbsp;
+				 (###INCLUDES### ###VAT###&nbsp;
 			</div>
 			<div id="PRICE_TAX_BASKET_PAYMENT_TEMPLATE7">
 				###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###)
@@ -329,7 +332,7 @@ First line is used as subject for the mail.
 <!-- ###ITEM_CATEGORY_AND_ITEMS### --><!-- ###ITEM_LIST### begin --><!-- ###ITEM_SINGLE### begin-->
 ###LIST_ITEM_NUMBER###: ###PRODUCT_ITEMNUMBER###
 ###PRODUCT_TITLE###
-###BASKET_HEADER_QUANTITY###: ###FIELD_QTY### (###EINZELPREIS### ###PRODUCT_PRICE### ###P_CURRENCY###) ###BASKET_HEADER_TOTAL### ###PRICE_VOUCHERGOODSTOTAL_TAX#### ###P_CURRENCY###
+###BASKET_HEADER_QUANTITY###: ###FIELD_QTY### (###P_UNIT_PRICE### ###PRODUCT_PRICE### ###P_CURRENCY###) ###BASKET_HEADER_TOTAL### ###PRICE_TOTAL_TAX### ###P_CURRENCY###
 <!-- ###ITEM_SINGLE### end --><!-- ###ITEM_LIST### end --><!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
 2) ###BASKET_BILLING_ADDRESS###:
 ###PERSON_SALUTATION###
@@ -370,9 +373,8 @@ First line is used as subject for the mail.
 ###PAYMENT_TITLE###
 ###LIST_ITEM_PRICE### ###PRICE_PAYMENT_TAX### ###P_CURRENCY###
 
-###BASKET_PAYMENT_TOTAL### ________________________  (###INCLUDED### ###VAT### ###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###) ###PRICE_VOUCHERGOODSTOTAL_TAX### ###P_CURRENCY###
+###BASKET_PAYMENT_TOTAL### ________________________  (###INCLUDES### ###VAT### ###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###) ###PRICE_TOTAL_TAX### ###P_CURRENCY###
 
-Gutscheincode: ###VALUE_VOUCHERCODE###
 <!-- ###MESSAGE_PAYMENT_20### begin -->
 ###ORDER_CONFIRMATION_20_TEXT###
 
