@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Addons to tt_products',
-	'description' => 'Many translations of standard texts for shops. Additional example templates and icons for the tt_products shop system version 2.9+.',
+	'description' => 'Many translations of standard texts for shops. Additional example templates and icons for the tt_products shop system version 2.9 and later.',
 	'category' => 'templates',
 	'author' => 'Franz Holzinger',
 	'author_email' => 'franz@ttproducts.de',
@@ -28,11 +28,11 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'author_company' => 'ttproducts.org',
-	'version' => '0.3.2',
+	'author_company' => 'jambage.com',
+	'version' => '0.3.3',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '4.3.0-6.2.99',
+			'typo3' => '4.3.0-7.99.99',
 		),
 		'conflicts' => array(
 		),
