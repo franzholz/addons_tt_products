@@ -4,7 +4,6 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>tt_procucts template</title>
-<!-- $Id-->
 </head>
 
 <body>
@@ -43,7 +42,7 @@
 	                    <div class="order_form">
     						<label for="###FIELD_ID###">Quantita': </label>
                         		<input size="3" maxlength="4" type="text" id="###FIELD_ID###" name="###FIELD_NAME###" value="###FIELD_QTY###" />
-                            <a href="###FORM_MEMO###&amp;tx_ttproducts_pi1[addmemo]=###PRODUCT_ID###">Aggiugi al memo</a>
+                            <a href="###FORM_MEMO###&amp;tt_products%5Baddmemo%5D=###PRODUCT_UID###">Aggiugi al memo</a>
 	                    </div>
 	                    <p class="link">[<!--###LINK_ITEM###-->###PRODUCT_TITLE###<!--###LINK_ITEM###-->]</p>
 	                    <div class="clear_right"><!-- --></div>
@@ -155,7 +154,7 @@
                 	<label for="quantity">Quantita': </label>
                     	<input size="3" maxlength="4" type="text" id="quantity" name="###FIELD_NAME###" value="###FIELD_QTY###" />
                 	<input type="submit" name="order" value="Inserisci nel carrello" /><br />
-                	<a href="###FORM_MEMO###&amp;tx_ttproducts_pi1[addmemo]=###PRODUCT_ID###">Aggiungi a memo</a>
+                	<a href="###FORM_MEMO###&amp;tt_products%5Baddmemo%5D=###PRODUCT_UID###">Aggiungi a memo</a>
                 </div>
 	        </form>
 	    </div>
@@ -1358,7 +1357,7 @@ My Shop
                                         <td headers="product" class="product"><!--###LINK_ITEM###-->###PRODUCT_TITLE###<!--###LINK_ITEM###--><br />###PRODUCT_SUBTITLE###</td>
                                         <td headers="price" class="price">EUR ###PRICE_TAX###</td>
                                         <td headers="put_in_basket" class="put_in_basket"><input type="submit" name="order" value="Inserisci nel carrello" /></td>
-                                        <td headers="remove_from_basket" class="remove_from_memo"><a href="###FORM_MEMO###&amp;tx_ttproducts_pi1[delmemo]=###PRODUCT_ID###">Elimina da memo</a></td>
+                                        <td headers="remove_from_basket" class="remove_from_memo"><a href="###FORM_MEMO###&amp;tt_products%5Bdelmemo%5D=###PRODUCT_UID###">Elimina da memo</a></td>
                                     </tr>
                                 </form>
                             <!-- ###ITEM_SINGLE### end -->

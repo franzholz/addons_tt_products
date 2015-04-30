@@ -169,6 +169,20 @@ This subpart is used to display the regular list of products. It's also used by 
 		<dd class="product_datasheet">###PRODUCT_LINK_DATASHEET### als PDF-Datei zum freien Download ###PRODUCT_LINK_DATASHEET###</dd>
 
 	    </dl>
+
+        <!-- ###GRADPRICE_FORMULA_ITEMS### begin -->
+        <div class="container">
+        <!-- ###ITEM_FORMULA### begin -->
+        <div class="row">
+			<div class="left">ab ###GRADPRICE_STARTAMOUNT### St&uuml;ck:</div>
+			<div class="middle">###GRADPRICE_PRICE_TAX### brutto</div>
+			<div class="right">(###GRADPRICE_PRICE_NO_TAX### netto)</div>
+        </div>
+        <!-- ###ITEM_FORMULA### end -->
+        </div>
+        <!-- ###GRADPRICE_FORMULA_ITEMS### end -->
+
+
 	    <div class="order_form">
 	        <form method="post" action="###FORM_URL###">
             	<div>
@@ -1049,9 +1063,8 @@ Sie k&ouml;en ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TRAC
 	            </fieldset>
 
 	         <div class="form_control">
-	                <input type="submit" name="submit" value="Aktualisieren" />
+	                <input type="submit" name="userNotification" value="Aktualisieren" />
 	                <input type="hidden" name="tracking" value="###TRACKING_NUMBER###" />
-	                <input type="hidden" name="orderRecord[email_notify]" value="0" />
 	            </div>
 	        </form>
         </div>

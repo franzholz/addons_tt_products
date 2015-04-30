@@ -512,7 +512,7 @@ This subpart is used to display the regular list of products. It's also used by 
     <input type="image" name="order" src="typo3/ext/tt_products/res/icons/fe/minibasket1.gif" value="in den Warenkorb" onclick="if (!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};"/>
   </div>
   <div style="padding: 2px 2px 2px 2px; border-top: 1px dotted #3F4F73;">
-    <input type="image" name="remove" src="typo3/ext/tt_products/res/icons/fe/delmemo.png" value="von der Merkliste streichen" onclick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tx_ttproducts_pi1[delmemo]=###PRODUCT_ID###';"/>
+    <input type="image" name="remove" src="typo3/ext/tt_products/res/icons/fe/delmemo.png" value="von der Merkliste streichen" onclick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tx_ttproducts_pi1%5Bdelmemo%5D=###PRODUCT_ID###';"/>
   </div>
 </form>
 

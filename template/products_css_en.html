@@ -43,7 +43,7 @@
 	                    <div class="order_form">
     						<label for="###FIELD_ID###">Qty: </label>
                         		<input size="3" maxlength="4" type="text" id="###FIELD_ID###" name="###FIELD_NAME###" value="###FIELD_QTY###" />
-                            <a href="###FORM_MEMO###&amp;tx_ttproducts_pi1[addmemo]=###PRODUCT_ID###">Add to memo</a>
+                            <a href="###FORM_MEMO###&amp;tt_products%5Baddmemo%5D=###PRODUCT_UID###">Add to memo</a>
 	                    </div>
 	                    <p class="link">[<!--###LINK_ITEM###-->###PRODUCT_TITLE###<!--###LINK_ITEM###-->]</p>
 	                    <div class="clear_right"><!-- --></div>
@@ -155,7 +155,7 @@
                 	<label for="quantity">Qty: </label>
                     	<input size="3" maxlength="4" type="text" id="quantity" name="###FIELD_NAME###" value="###FIELD_QTY###" />
                 	<input type="submit" name="order" value="Put in basket" /><br />
-                	<a href="###FORM_MEMO###&amp;tx_ttproducts_pi1[addmemo]=###PRODUCT_ID###">Add to memo</a>
+                	<a href="###FORM_MEMO###&amp;tt_products%5Baddmemo%5D=###PRODUCT_UID###">Add to memo</a>
                 </div>
 	        </form>
 	    </div>
@@ -1013,9 +1013,8 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	            </fieldset>
 
 	            <div class="form_control">
-	                <input type="submit" name="submit" value="Update" />
+	                <input type="submit" name="userNotification" value="Update" />
 	                <input type="hidden" name="tracking" value="###TRACKING_NUMBER###" />
-	                <input type="hidden" name="orderRecord[email_notify]" value="0" />
 	            </div>
 	        </form>
         </div>
@@ -1357,7 +1356,7 @@ My Shop
                                         <td headers="product" class="product"><!--###LINK_ITEM###-->###PRODUCT_TITLE###<!--###LINK_ITEM###--><br />###PRODUCT_SUBTITLE###</td>
                                         <td headers="price" class="price">EUR ###PRICE_TAX###.-</td>
                                         <td headers="put_in_basket" class="put_in_basket"><input type="submit" name="order" value="Put in basket" /></td>
-                                        <td headers="remove_from_basket" class="remove_from_memo"><a href="###FORM_MEMO###&amp;tx_ttproducts_pi1[delmemo]=###PRODUCT_ID###">Remove from memo</a></td>
+                                        <td headers="remove_from_basket" class="remove_from_memo"><a href="###FORM_MEMO###&amp;tt_products%5Bdelmemo%5D=###PRODUCT_UID###">Remove from memo</a></td>
                                     </tr>
                                 </form>
                             <!-- ###ITEM_SINGLE### end -->

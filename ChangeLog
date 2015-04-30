@@ -1,6 +1,7 @@
 (add new changes on top of this file)
 2015-04-30 Franz Holzinger  <franz@ttproducts.de>
 	* constants in upper case letters
+	* improvements to the template files
 
 2014-06-06 Franz Holzinger  <franz@ttproducts.de>
 	* modify responsive templates
