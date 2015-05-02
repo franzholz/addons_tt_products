@@ -1,4 +1,7 @@
 (add new changes on top of this file)
+2015-05-02 Franz Holzinger  <franz@ttproducts.de>
+	* bugfix with wrongly used constant ADDONS_EXTkey
+
 2015-04-30 Franz Holzinger  <franz@ttproducts.de>
 	* constants in upper case letters
 	* improvements to the template files

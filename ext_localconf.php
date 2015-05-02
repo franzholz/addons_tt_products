@@ -6,15 +6,15 @@ if (!defined ('ADDONS_EXTKEY')) {
 }
 
 if (!defined ('PATH_BE_ADDONS')) {
-	define('PATH_BE_ADDONS', t3lib_extMgm::extPath(ADDONS_EXTkey));
+	define('PATH_BE_ADDONS', t3lib_extMgm::extPath(ADDONS_EXTKEY));
 }
 
 if (!defined ('PATH_BE_ADDONS_REL')) {
-	define('PATH_BE_ADDONS_REL', t3lib_extMgm::extRelPath(ADDONS_EXTkey));
+	define('PATH_BE_ADDONS_REL', t3lib_extMgm::extRelPath(ADDONS_EXTKEY));
 }
 
 if (!defined ('PATH_FE_ADDONS_REL')) {
-	define('PATH_FE_ADDONS_REL', t3lib_extMgm::siteRelPath(ADDONS_EXTkey));
+	define('PATH_FE_ADDONS_REL', t3lib_extMgm::siteRelPath(ADDONS_EXTKEY));
 }
 
 if (!defined ('PATH_FE_ADDONS_ICON_REL')) {
