@@ -1,4 +1,9 @@
 (add new changes on top of this file)
+
+2016-01-29 Franz Holzinger  <franz@ttproducts.de>
+	* The constant ADDONS_TT_PRODUCTS_EXT must be used
+	* for TYPO3 7.6.2: replace calls to t3lib_extMgm by class \TYPO3\CMS\Core\Utility\ExtensionManagementUtility
+
 2015-05-02 Franz Holzinger  <franz@ttproducts.de>
 	* bugfix with wrongly used constant ADDONS_EXTkey
 

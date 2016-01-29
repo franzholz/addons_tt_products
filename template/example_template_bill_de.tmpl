@@ -889,6 +889,9 @@ Ihre Bestellung wird bearbeitet werden.
 <!-- ###BASKET_TEMPLATE### end -->
 
 
+
+
+
 <br><br><br><br><hr><br><br><br>
 <h3>BASKET_INFO_TEMPLATE</h3>
 <em>
@@ -1021,23 +1024,27 @@ If this part is not empty then this will be used instead of BILLING_ADDRESS if t
 </tr>
 <tr>
 <td>###GW1B###<strong>IBAN:</strong>###GW1E###</td>
-<td><input name="recs[account][iban]" value="###PERSON_ACCOUNTS_IBAN###" size="24" maxlength="24"/>
+<td><input name="recs[account][iban]" value="###PERSON_ACCOUNTS_IBAN###" size="24" maxlength="24" />
+</tr>
+<tr>
+<td>###GW1B###<strong>BIC:</strong>###GW1E###</td>
+<td><input name="recs[account][bic]" value="###PERSON_ACCOUNTS_BIC###" size="8" maxlength="8" />
 </tr>
 <tr>
   <td >###GW1B###<strong>Konto Inhaber</strong>###GW1E###</td>
-  <td colspan="3"><input name="recs[account][owner_name]" value="###PERSON_ACCOUNTS_OWNER_NAME###" size="20"/>
+  <td colspan="3"><input name="recs[account][owner_name]" value="###PERSON_ACCOUNTS_OWNER_NAME###" size="20" />
   </td>
 </tr>
 <tr>
 <td>###GW1B###<strong>Kreditkarte:</strong>###GW1E###</td>
 <td>###PERSON_CARDS_CC_TYPE###   zuletzt: ###PERSON_CARDS_CC_TYPE_SELECTED###</td>
-<td><input name="recs[creditcard][cc_number_1]" value="###PERSON_CARDS_CC_NUMBER_1###" size="4" maxlength="4"/>-<input name="recs[creditcard][cc_number_2]" value="###PERSON_CARDS_CC_NUMBER_2###" size="4" maxlength="4" />-<input name="recs[creditcard][cc_number_3]" value="###PERSON_CARDS_CC_NUMBER_3###" size="4" maxlength="4" />-<input name="recs[creditcard][cc_number_4]" value="###PERSON_CARDS_CC_NUMBER_4###" size="4" maxlength="4" /> Sicherheitszahl <input name="recs[creditcard][cvv2]" value="###PERSON_CARDS_CVV2###" size="4" maxlength="4" />
+<td><input name="recs[creditcard][cc_number_1]" value="###PERSON_CARDS_CC_NUMBER_1###" size="4" maxlength="4" />-<input name="recs[creditcard][cc_number_2]" value="###PERSON_CARDS_CC_NUMBER_2###" size="4" maxlength="4" />-<input name="recs[creditcard][cc_number_3]" value="###PERSON_CARDS_CC_NUMBER_3###" size="4" maxlength="4" />-<input name="recs[creditcard][cc_number_4]" value="###PERSON_CARDS_CC_NUMBER_4###" size="4" maxlength="4" /> Sicherheitszahl <input name="recs[creditcard][cvv2]" value="###PERSON_CARDS_CVV2###" size="4" maxlength="4" />
 </td>
 <td>G&uuml;ltigkeit bis: <input name="recs[creditcard][endtime_mm]" value="###PERSON_CARDS_ENDTIME_MM###" size="2" maxlength="2"/> / <input name="recs[creditcard][endtime_yy]" value="###PERSON_CARDS_ENDTIME_YY###" size="2" maxlength="2"/></td>
 </tr>
 <tr>
   <td >###GW1B###<strong>Inhaber</strong>###GW1E###</td>
-  <td colspan="3"><input name="recs[creditcard][owner_name]" value="###PERSON_CARDS_OWNER_NAME###" size="20"/>
+  <td colspan="3"><input name="recs[creditcard][owner_name]" value="###PERSON_CARDS_OWNER_NAME###" size="20" />
   </td>
 </tr>
 <tr>
@@ -2241,7 +2248,7 @@ Mein TYPO3 Shop
 </STYLE>
 <title>tt_products Info Mail</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<meta name="generator" content="TYPO3 3.8 CMS">
+<meta name="generator" content="TYPO3 6.2 CMS">
 
 <script language="javascript">
 <!--
