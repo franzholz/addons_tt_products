@@ -1,0 +1,3268 @@
+/*********************** CSS File for tt_products, Copyright 2007 Andrea Herzog-Kienast ***************/
+/********************************** Listenansicht / Listview ******************************************/
+
+img {
+border:none;
+}
+
+#tx-ttproducts-pi1-search
+{
+
+text-align: left;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.sword
+{}
+.suchen
+{}
+
+#CATEGORY_TITLE_LIST
+{
+text-align: left;
+background-color: #F0F0F4;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.PRODUCT_TITLE_LIST
+{
+text-align: left;
+position: relative;
+top: 20px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 14px;
+color: #222;
+font-weight: bold;
+}
+
+.list_item_itemnumber
+{
+float: right;
+text-align: left;
+position: relative;
+top: 18px;
+right: 100px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+font-weight: bold;
+}
+
+
+
+.listitem_subheader
+{
+text-align: left;
+position: relative;
+top: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+font-weight: normal;
+}
+
+.special_prep
+{
+margin-top: 10px;
+}
+
+.floatbox_LIST_AUTOREN
+{
+position: relative;
+width: 400px;
+height: 150px;
+overflow: auto;
+bottom: 10px;
+}
+
+/*
+.floatbox_LIST
+{
+position: relative;
+top: 10px;
+float: left;
+width: 400px;
+height: 250px;
+}
+*/
+.listitem
+{
+float: left;
+margin-bottom:40px;
+}
+
+.listitem_AUTOREN
+{
+
+margin-bottom:40px;
+}
+.PRODUCT_IMAGE_LIST
+{
+position: relative;
+top: 10px;
+float: left;
+padding: 10px 10px 10px 0px;
+
+}
+
+
+/* Andrea Test Minibilder im Subpart MINI */
+.PRODUCT_IMAGE_LIST_MINI
+{
+position: relative;
+top: 10px;
+float: left;
+padding: 10px 10px 10px 0px;
+
+}
+
+
+
+.display_variant2_LIST
+{
+position: relative;
+top: 10px;
+float: left;
+padding: 10px 10px 10px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.display_variant1_LIST
+{
+position: relative;
+top: 10px;
+float: left;
+padding: 10px 10px 10px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+
+.display_variant5_isSingle_LIST
+{
+float: left;
+padding-left: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+
+
+.anzahl_LIST
+{
+float: left;
+margin-left: 10px;
+position: relative;
+top: 40px;
+padding: 10px 0px 10px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.anzahl_gift_LIST
+{
+margin-left: 10px;
+position: relative;
+top: 40px;
+padding: 10px 10px 20px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.input_qty
+{
+position: relative;
+top: 8px;
+border-style: solid;
+border-width: 1px;
+border-color:  #CCCCCC;
+background-color: #FFF;
+}
+
+.inputimage_list
+{
+position: relative;
+top: 12px;
+border: none;
+border-width: 0px;
+border-color:#FFFFFF;
+background-color: #FFF;
+}
+
+.web_price_LIST
+{
+float: left;
+margin-left: 10px;
+position: relative;
+top: 40px;
+padding: 0px 0px 10px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+width: auto;
+height: auto;
+}
+
+.web_price_gift_LIST
+{
+margin-left: 10px;
+position: relative;
+top: 40px;
+padding: 0px 0px 10px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+width: auto;
+height: auto;
+}
+
+.addtomemo
+{
+position: relative;
+top: 12px;
+border: none;
+border-width: 0px;
+border-color:#FFFFFF;
+background-color: #FFF;
+margin-left: 40px;
+}
+
+
+.button2_LIST {
+
+position:relative;
+float:left;
+margin-left: 0px;
+margin-top: 30px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 0.8em;
+font-weight: normal;
+height: 25px;
+width:150px;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+background: #fafafa none repeat scroll 0%;
+border: 1px solid #cccccc;
+color: #777777;
+vertical-align: middle;
+}
+
+.button2_gift_LIST {
+
+position:relative;
+float:left;
+margin-left: 0px;
+margin-top: 20px;
+margin-bottom: 50px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 0.8em;
+font-weight: normal;
+height: 25px;
+width:150px;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+background: #fafafa none repeat scroll 0%;
+border: 1px solid #cccccc;
+color: #777777;
+vertical-align: middle;
+}
+
+#tx-ttproducts-pi1-list-mini
+{
+display: block;
+margin-bottom: 20px;
+}
+
+.input-gift
+{
+margin: 10px 0px 0px 0px;
+padding: 0px;
+}
+
+.address-gift
+{
+clear: left;
+position: relative;
+top: 10px;
+}
+
+
+
+
+/********************************* Artikelliste - Article list ***************************************************/
+
+
+
+
+.ARTICLE_LIST_PRODUCT_TITLE, ARTICLE_LIST_CATEGORY_TITLE
+{
+text-align: left;
+position: relative;
+top: 20px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 14px;
+color: #222;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.ARTICLE_LIST_ARTICLE_TITLE
+{
+text-align: left;
+position: relative;
+top: 20px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 14px;
+color: #222;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+
+
+.ARTICLE_LIST_IMAGE
+{
+position: relative;
+top: 10px;
+padding: 10px 10px 10px 0px;
+}
+
+.ARTICLE_LIST_VARIANT
+
+{
+
+position: relative;
+top: 20px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+font-weight: normal;
+
+}
+
+
+/********************************* Einzelansicht- Singleview ***************************************************/
+
+
+#PRODUCT_TITLE_SINGLE
+{
+text-align: left;
+position: relative;
+top: 12px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.single_item_itemnumber
+{
+float: right;
+text-align: left;
+position: relative;
+top: 0px;
+right: 100px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+font-weight: bold;
+}
+
+.floatbox_SINGLE
+{
+position: relative;
+top: 25px;
+/*float: left;*/
+width: 400px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PRODUCT_IMAGE_SINGLE
+{
+position: relative;
+top: 10px;
+/*float: left;*/
+width: 200px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+
+#PRODUCT_NOTE_SINGLE
+{
+position: relative;
+top: 20px;
+/*float: left;*/
+width: 400px;
+margin: 10px 0px 10px 0px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#display_variant2_SINGLE
+{
+position: relative;
+top: 10px;
+float: right;
+width: 100px;
+padding: 10px 10px 10px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#display_variant1_SINGLE
+{
+position: relative;
+top: 10px;
+float: right;
+width: 100px;
+padding: 10px 10px 10px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+/*
+#display_variant5_isSingle_LIST
+{
+float: right;
+width: Wenn diese Variante aktiviert ist und neben den anderen stehen soll, muss die Gesamtbreite von 350 durch 3 geteilt werden
+padding-left: 10px;
+}
+*/
+#web_price_SINGLE
+{
+float: left;
+position: relative;
+top: 10px;
+margin-left: 270px;
+padding: 0px 0px 0px 0px;
+width: 400px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#anzahl_SINGLE
+{
+float: left;
+position: relative;
+top: 10px;
+margin-left: 270px;
+padding: 0px 0px 0px 0px;
+width: 400px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+
+#inputimage
+{
+position: relative;
+top: 8px;
+border: none;
+border-width: 0px;
+border-color:#FFFFFF;
+background-color: #FFF;
+}
+
+#PRODUCT_RELATED_UID_SINGLE, #PRODUCT_DIRECTCOST
+{
+position: relative;
+top: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+
+
+
+.DATESHEET_SINGLE
+{
+position: relative;
+top: 40px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.BULKILY_WARNING_SINGLE
+{
+position: relative;
+top: 60px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#backtolist_SINGLE
+{
+position: relative;
+top: 50px;
+float: left;
+text-align: left;
+padding: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+width: 250px;
+}
+
+#backtolist_SINGLE_AUTOREN
+{
+position: relative;
+float: left;
+text-align: left;
+padding: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+width: 250px;
+}
+
+#SHOPADMIN_EMAIL_SINGLE
+{
+float: right;
+position: relative;
+top: 6px;
+padding: 20px;
+
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+
+
+#tx-ttproducts-pi1-listgifts
+{position: relative;
+top: 60px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+/***************************** Warenkorb / Basket ***********************************************/
+
+.tx-ttproducts-pi1 fieldset
+{
+width:90%;
+margin: 0px;
+padding: 0px;
+}
+
+.basket
+{
+position: relative;
+top: 0px;
+width: 400px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET
+{
+position: relative;
+top: 0px;
+float: left;
+width: 500px;
+}
+
+#text_Produkt
+{
+float: left;
+width: 100px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_Variante
+{
+float: left;
+width: 100px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_Anzahl
+{
+float: left;
+width: 60px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_Einzelpreis
+{
+float: left;
+width: 100px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_Gesamt
+{
+float: right;
+width: 140px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET2
+{
+position: relative;
+top: 0px;
+float: left;
+width: 500px;
+}
+
+
+
+#PRODUCT_TITLE_BASKET2
+{
+float: left;
+width: 100px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#display_variant_BASKET2
+{
+float: left;
+width: 100px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#FIELD_QTY_BASKET2
+{
+float: left;
+width: 60px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PRICE_TAX_BASKET2
+{
+float: left;
+width: 100px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PRICE_TOTAL_TAX_BASKET2
+{
+float: right;
+width: 140px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+
+
+#text_versand_BASKET2
+{
+margin-top: 10px;
+margin-bottom: 10px;
+float: left;
+width: 500px;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_pauschale_BASKET2
+{
+margin-top: 0px;
+margin-bottom: 10px;
+float: left;
+width: 500px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET3
+{
+position: relative;
+top: 0px;
+float: left;
+width: 500px;
+}
+
+#SHIPPING_SELECTOR_BASKET3
+{
+float: left;
+width: 260px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PRICE_SHIPPING_TAX_BASKET3
+{
+float: right;
+width: 140px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET4
+{
+position: relative;
+top: 0px;
+float: left;
+width:500px;
+margin-bottom: 10px;
+}
+
+#text_zahlungsweise_BASKET4
+{
+float: left;
+width: 500px;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+margin-top: 10px;
+margin-bottom: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PAYMENT_SELECTOR_BASKET4
+{
+float: left;
+width: 260px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#TAX_INCL_EXCL_BASKET4 
+{
+float: right;
+width: 140px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+p #MESSAGE_SHIPPING_BASKET4 
+{
+position: relative;
+top: 20px;
+width: 400px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+
+
+}
+
+.floatbox_BASKET5
+{
+position: relative;
+top: 0px;
+margin-top: 10px;
+margin-bottom: 30px;
+float: left;
+width: 500px;
+color: #222;
+}
+
+#text_gesamt_BASKET5
+{
+float: left;
+width: 260px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+}
+
+#PRICE_TOTAL_BASKET5
+{
+float: right;
+width: 140px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+}
+
+
+
+#SUBMIT_BASKET5
+{
+margin-top: 40px;
+margin-bottom:40px;
+margin-left: 0px;
+width: 400px;
+}
+
+/******************************** BASKETINFO TEMPLATE **********************************************/
+
+#text_rechnungsanschrift_BASKETINFO
+{
+position: relative;
+top: 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+width: 400px;
+color: #222;
+}
+
+#text_BILLING_ADDRESS_BASKETINFO 
+{
+position: relative;
+top: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+width: 400px;
+}
+
+#floatbox_BASKETINFO1
+{
+position: relative;
+top: 0px;
+margin-top: 10px;
+margin-bottom: 10px;
+float: left;
+width: 400px;
+}
+
+#label_PERSON_SALUTATION
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+
+}
+
+#field_PERSON_SALUTATION
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_PERSON_NAME
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_PERSON_NAME
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+width: 200px;
+color: #222;
+}
+
+#label_PERSON_ADDRESS
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_PERSON_ADDRESS
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_PERSON_ZIP
+{
+margin-top: 10px;
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_PERSON_ZIP
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_PERSON_CITY
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_PERSON_CITY
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_PERSON_COUNTRY_CODE
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_PERSON_COUNTRY_CODE
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_PERSON_TELEPHONE
+{
+margin-top: 10px;
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_PERSON_TELEPHONE
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_PERSON_EMAIL
+{
+padding-right:10px;
+width: 200px;
+}
+
+#field_PERSON_EMAIL
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+} 
+
+#text_hinweis_BASKETINFO
+{
+margin-top: 0px;
+margin-bottom: 10px;
+float: left;
+width: 400px;
+padding: 10px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#floatbox_BASKETINFO2
+{
+position: relative;
+top: 0px;
+margin-top: 10px;
+margin-bottom: 10px;
+float: left;
+width: 400px;
+}
+
+#label_PERSON_NAME2
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_PERSON_NAME2
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+width: 200px;
+color: #222;
+}
+
+#label_PERSON_ADDRESS2
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_PERSON_ADDRESS2
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_PERSON_ZIP2
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_PERSON_ZIP2
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_PERSON_CITY2
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_PERSON_CITY2
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_PERSON_COUNTRY_CODE2
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_PERSON_COUNTRY_CODE2
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_PERSON_TELEPHONE2
+{
+margin-top: 10px;
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_PERSON_TELEPHONE2
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_PERSON_EMAIL2
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_PERSON_EMAIL2
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+} 
+
+#text_DELIVERY_ADDRESS_BASKETINFO
+{
+position: relative;
+top: 20px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+width: 400px;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+font-weight: bold;
+color: #222;
+}
+
+#textinfo_DELIVERY_ADDRESS_BASKETINFO
+{
+position: relative;
+top: 30px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+width: 400px;
+color: #222;
+}
+
+#floatbox_BASKETINFO3
+{
+position: relative;
+top: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+float: left;
+width: 400px;
+color: #222;
+}
+
+#label_DELIVERY_SALUTATION
+{
+padding-right:10px;
+margin-top: 10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_DELIVERY_SALUTATION
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_DELIVERY_NAME
+{
+margin-top: 10px;
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_DELIVERY_NAME
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+width: 200px;
+color: #222;
+}
+
+#label_DELIVERY_ADDRESS
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_DELIVERY_ADDRESS
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_DELIVERY_ZIP
+{
+padding-right:10px;
+margin-top: 10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_DELIVERY_ZIP
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_DELIVERY_CITY
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_DELIVERY_CITY
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_DELIVERY_COUNTRY_CODE
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_DELIVERY_COUNTRY_CODE
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_DELIVERY_TELEPHONE
+{
+margin-top: 10px;
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_DELIVERY_TELEPHONE
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#label_DELIVERY_EMAIL
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_DELIVERY_EMAIL
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+} 
+/*
+#label_DELIVERY_BEMERKUNG
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#field_DELIVERY_BEMERKUNG
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+} 
+*/
+#label_DELIVERY_DESIRED_DATE
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+}
+
+#field_DELIVERY_DESIRED_DATE
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+} 
+
+#label_DELIVERY_NOTE
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+}
+
+#field_DELIVERY_NOTE
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+} 
+
+/************************** Billing Adress FEUSER *****************************************************/
+
+.billing_address_feuser
+{
+}
+
+.billing_address_title, .delivery_address_title
+{
+margin: 0px 0px 10px 0px;
+font-weight: bold;
+text-decoration: underline;
+font-size: 14px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+}
+
+.label_billing_name_feuser, .label_billing_address_feuser, .label_billing_email, .label_billing_telephone, .label_delivery_notes, .label_trading_conditions
+{
+margin: 0px 0px 10px 0px;
+}
+
+.billing_name_feuser, .billing_email, .billing_telephone, .billing_address_feuser, .billing_country
+{
+margin: 0px 0px 10px 0px;
+font-weight: normal;
+}
+
+#delivery_notes
+{
+background-color:#F4F4F4;
+border:1px solid #BDBDBD;
+margin-bottom: 20px;
+}
+
+
+/*
+.billing_country
+{
+margin: 0px 0px 10px 0px;
+font-weight: normal;
+}
+*/
+#text_agb_BASKETINFO
+{
+padding: 20px 0px 10px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+width: 400px;
+color: #222;
+}
+#floatbox_BASKETINFO4
+{
+position: relative;
+top: 0px;
+margin-top: 10px;
+margin-bottom: 10px;
+float: left;
+width: 400px;
+color: #222;
+}
+#checkboxagb input 
+{
+float:left;
+position: relative;
+width: 20px;
+}
+
+#text_best_agb_BASKETINFO
+{
+float: right;
+position: relative;
+top: -24px;
+left: 20px; 
+}
+
+#SUBMIT_BASKETINFO
+{
+margin-top: 50px;
+margin-bottom:40px;
+margin-left: 50px;
+width: 400px;
+}
+
+/************************************** BASKET_OVERVIEW_TEMPLATE *****************************/
+
+.shop_minibasket
+{
+border-style: solid;
+border-width: 1px;
+border-color: #BDBDBD;
+background-color: #F4F4F4;
+padding: 10px;
+margin: 10px 0px 10px 0px;
+width: 41%;
+height: auto;
+}
+
+.floatbox_minibasket
+{
+border-style: solid;
+border-width: 1px;
+border-color: #BDBDBD;
+height: 23px;
+}
+
+.shop_minibasket_image
+{
+float: left;
+padding: 2px 2px 0px 2px;
+}
+
+.text_mini
+{
+float: right;
+padding: 4px 25px 0px 0px;
+}
+
+.anzahl_mini
+{
+clear: both;
+}
+
+.warenwert_mini
+{
+border-top: 1px solid #BDBDBD;
+}
+/************************************** BASKET_PAYMENT_TEMPLATE *****************************/
+
+.basket_payment
+{
+position: relative;
+top: 0px;
+width: 400px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET_PAYMENT_TEMPLATE1
+{
+position: relative;
+top: 0px;
+float: left;
+width: 500px;
+}
+
+.text_bestellung_BASKET_PAYMENT_TEMPLATE1
+{
+position: relative;
+top: 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+width: 500px;
+margin-top: 10px;
+margin-bottom: 10px;
+color: #222;
+}
+
+#text_produkte_BASKET_PAYMENT_TEMPLATE1
+{
+float: left;
+width: 250px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_anzahl_BASKET_PAYMENT_TEMPLATE1
+{
+float: left;
+width: 100px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_gesamt_BASKET_PAYMENT_TEMPLATE1
+{
+float: right;
+width: 150px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET_PAYMENT_TEMPLATE2
+{
+position: relative;
+top: 0px;
+float: left;
+width: 500px;
+color: #222;
+}
+
+#produkte_BASKET_PAYMENT_TEMPLATE2
+{
+float: left;
+width: 250px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#anzahl_BASKET_PAYMENT_TEMPLATE2
+{
+float: left;
+width: 100px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#gesamt_BASKET_PAYMENT_TEMPLATE2
+{
+float: right;
+width: 150px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET_PAYMENT_TEMPLATE3
+{
+position: relative;
+top: 0px;
+float: left;
+width: 500px;
+color: #222;
+}
+
+#text_rechnungsanschrift_BASKET_PAYMENT_TEMPLATE3
+{
+position: relative;
+top: 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+width: 500px;
+margin-top: 10px;
+margin-bottom: 10px;
+color: #222;
+}
+
+#text_PERSON_SALUTATION_BASKET_PAYMENT_TEMPLATE3
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PERSON_SALUTATION_BASKET_PAYMENT_TEMPLATE3
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_PERSON_NAME_BASKET_PAYMENT_TEMPLATE3
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PERSON_NAME_BASKET_PAYMENT_TEMPLATE3
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+width: 200px;
+color: #222;
+}
+
+#text_PERSON_ADDRESS_DISPLAY_PAYMENT_BASKET_TEMPLATE3
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PERSON_ADDRESS_DISPLAY_BASKET_PAYMENT_TEMPLATE3
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_PERSON_CITY_BASKET_PAYMENT_TEMPLATE3
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PERSON_CITY_BASKET_PAYMENT_TEMPLATE3
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_PERSON_COUNTRY_BASKET_PAYMENT_TEMPLATE3
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PERSON_COUNTRY_BASKET_PAYMENT_TEMPLATE3
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_PERSON_TELEPHONE_BASKET_PAYMENT_TEMPLATE3
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PERSON_TELEPHONE_BASKET_PAYMENT_TEMPLATE3
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_PERSON_EMAIL_BASKET_PAYMENT_TEMPLATE3
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+}
+
+#PERSON_EMAIL_BASKET_PAYMENT_TEMPLATE3
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+} 
+
+#text_email_BASKET_PAYMENT_TEMPLATE3
+{
+margin-top: 0px;
+margin-bottom: 10px;
+float: left;
+width: 500px;
+padding: 10px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET_PAYMENT_TEMPLATE4
+{
+position: relative;
+top: 0px;
+float: left;
+width: 500px;
+}
+
+#text_lieferanschrift_BASKET_PAYMENT_TEMPLATE4
+{
+position: relative;
+top: 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+width: 500px;
+margin-top: 10px;
+margin-bottom: 10px;
+color: #222;
+}
+
+#text_DELIVERY_SALUTATION_BASKET_PAYMENT_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#DELIVERY_SALUTATION_BASKET_PAYMENT_TEMPLATE4
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_DELIVERY_NAME_BASKET_PAYMENT_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#DELIVERY_NAME_BASKET_PAYMENT_TEMPLATE4
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+width: 200px;
+}
+
+#text_DELIVERY_ADDRESS_DISPLAY_BASKET_PAYMENT_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#DELIVERY_ADDRESS_DISPLAY_BASKET_PAYMENT_TEMPLATE4
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_DELIVERY_CITY_BASKET_PAYMENT_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#DELIVERY_CITY_BASKET_PAYMENT_TEMPLATE4
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_DELIVERY_COUNTRY_BASKET_PAYMENT_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#DELIVERY_COUNTRY_BASKET_PAYMENT_TEMPLATE4
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_DELIVERY_TELEPHONE_BASKET_PAYMENT_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#DELIVERY_TELEPHONE_PAYMENT_TEMPLATE4
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_DELIVERY_EMAIL_BASKET_PAYMENT_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+}
+
+#DELIVERY_EMAIL_BASKET_PAYMENT_TEMPLATE4
+{
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+} 
+
+#text_email_DELIVERY_EMAIL_BASKET_PAYMENT_TEMPLATE4
+{
+margin-top: 0px;
+margin-bottom: 10px;
+float: left;
+width: 500px;
+padding: 10px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET_PAYMENT_TEMPLATE5
+{
+position: relative;
+top: 0px;
+float: left;
+width: 500px;
+}
+
+#text_versand_BASKET_PAYMENT_TEMPLATE5
+{
+position: relative;
+top: 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+width: 500px;
+margin-top: 10px;
+margin-bottom: 10px;
+color: #222;
+}
+
+#SHIPPING_TITLE_BASKET_PAYMENT_TEMPLATE5
+{
+float: left;
+width: 350px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PRICE_SHIPPING_BASKET_PAYMENT_TEMPLATE5
+{
+float: right;
+width: 150px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET_PAYMENT_TEMPLATE6
+{
+position: relative;
+top: 0px;
+float: left;
+width: 500px;
+margin: 10px 0px 10px 0px;
+}
+
+#PAYMENT_TITLE_BASKET_PAYMENT_TEMPLATE6, #PRICE_DISCOUNT_TITLE_BASKET_PAYMENT_TEMPLATE6
+{
+float: left;
+width: 350px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+/*
+#text_zahlungsweise_BASKET_PAYMENT_TEMPLATE6
+{
+float: left;
+width: 350px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}*/
+
+/*
+#PAYMENT_IMAGE_BASKET_PAYMENT_TEMPLATE6
+{
+float: left;
+width: 120px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}*/
+
+#PRICE_PAYMENT_BASKET_PAYMENT_TEMPLATE6, #PRICE_DISCOUNT_BASKET_PAYMENT_TEMPLATE6
+{
+float: right;
+width: 150px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+
+}
+
+.floatbox_BASKET_PAYMENT_TEMPLATE7
+{
+position: relative;
+top: 0px;
+float: left;
+width: 500px;
+}
+
+#text_PRICE_TOTAL_BASKET_PAYMENT_TEMPLATE7
+{
+float: left;
+width: 350px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PRICE_TOTAL_BASKET_PAYMENT_TEMPLATE7
+{
+float: right;
+width: 150px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_VOUCHER_TOTAL_BASKET_PAYMENT_TEMPLATE7
+{
+float: left;
+width: 260px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+}
+
+#PRICE_VOUCHERTOTAL_TAX
+
+{
+float: right;
+width: 150px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+}
+#SUBMIT_BASKET_PAYMENT_TEMPLATE7
+{
+margin-top: 40px;
+margin-bottom:40px;
+margin-left: 40px;
+width: 500px;
+}
+
+/************************************** BASKET_ORDERCONFIRMATION_TEMPLATE *****************************/
+
+.BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_dank_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+width: 600px;
+}
+
+#ORDER_UID_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 13px;
+text-align: center;
+font-weight: bold;
+margin-top: 10px;
+margin-bottom: 10px;
+color: #222;
+width: 600px;
+}
+
+#text_payment_emailsend_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#header_zahlungsart_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+width: 600px;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+margin-top: 10px;
+margin-bottom: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+}
+
+
+#header_zahlungsart_rechnung_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+}
+
+#text_zahlungsart_rechnung_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#header_zahlungsart_selbstabholer_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+}
+
+#text_zahlungsart_selbstabholer_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#header_zahlungsart_nachnahme_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+}
+
+#text_zahlungsart_nachnahme_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#header_zahlungsart_paypal_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+}
+
+#text_zahlungsart_paypal_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#header_lieferstatus__BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+width: 600px;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+margin-top: 10px;
+margin-bottom: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+}
+
+#text_lieferstatus_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#bestelldatum_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+margin-top: 10px;
+margin-bottom: 10px;
+color: #222;
+}
+
+#text_status_codeORDER_TRACKING_NO_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+margin-top: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#link_PID_TRACKING_TRACKING_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+margin: 0px 0px 10px 0px;
+}
+
+#link_PID_BILLING_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#link_PID_DELIVERY_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+margin-bottom: 10px;
+color: #222;
+}
+
+.floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE1
+{
+position: relative;
+top: 0px;
+float: left;
+width: 600px;
+}
+
+#text_produkte_BASKET_ORDERCONFIRMATION_TEMPLATE1
+{
+float: left;
+width: 300px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+/*
+#text_produkte_BASKET_ORDERCONFIRMATION_TEMPLATE1
+{
+float: left;
+width: 120px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}*/
+
+#text_anzahl_BASKET_ORDERCONFIRMATION_TEMPLATE1
+{
+float: left;
+width: 100px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_gesamt_BASKET_ORDERCONFIRMATION_TEMPLATE1
+{
+float: left;
+width: 200px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE2
+{
+position: relative;
+top: 0px;
+float: left;
+width: 600px;
+}
+
+#produkte_BASKET_ORDERCONFIRMATION_TEMPLATE2
+{
+float: left;
+width: 300px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#anzahl_BASKET_ORDERCONFIRMATION_TEMPLATE2
+{
+float: left;
+width: 100px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#gesamt_BASKET_ORDERCONFIRMATION_TEMPLATE2
+{
+float: left;
+width: 200px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+position: relative;
+top: 0px;
+float: left;
+width: 600px;
+}
+
+#text_rechnungsanschrift_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+position: relative;
+top: 0px;
+margin: 10px 0px 10px 0px;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+width: 600px;
+color: #222;
+}
+
+#text_PERSON_SALUTATION_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+position: relative;
+top: 0px;
+float: left;
+width: 200px;
+}
+
+#PERSON_SALUTATION_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_PERSON_NAME_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PERSON_NAME_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_PERSON_ADDRESS_DISPLAY_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PERSON_ADDRESS_DISPLAY_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_PERSON_CITY_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PERSON_CITY_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_PERSON_COUNTRY_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PERSON_COUNTRY_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_PERSON_TELEPHONE_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PERSON_TELEPHONE_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_PERSON_EMAIL_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+margin: 10px 0px 10px 0px;
+}
+
+#PERSON_EMAIL_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_email_BASKET_ORDERCONFIRMATION_TEMPLATE3
+{
+margin-bottom:10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+position: relative;
+top: 0px;
+float: left;
+width: 600px;
+color: #222;
+}
+
+#text_lieferanschrift_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+position: relative;
+top: 0px;
+margin-top: 10px;
+margin-bottom: 10px;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+width: 600px;
+color: #222;
+}
+
+#text_DELIVERY_SALUTATION_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#DELIVERY_SALUTATION_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_DELIVERY_NAME_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#DELIVERY_NAME_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_DELIVERY_ADDRESS_DISPLAY_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#DELIVERY_ADDRESS_DISPLAY_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_DELIVERY_CITY_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#DELIVERY_CITY_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_DELIVERY_COUNTRY_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#DELIVERY_COUNTRY_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_DELIVERY_TELEPHONE_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#DELIVERY_TELEPHONE_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_DELIVERY_EMAIL_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+padding-right:10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+margin-bottom: 10px;
+}
+
+#DELIVERY_EMAIL_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+margin: 10px 0px 10px 0px;
+}
+
+
+#text_email_DELIVERY_EMAIL_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+margin-bottom: 10px;
+}
+
+#text_DELIVERY_DESIRED_DATE_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+font-weight: bold;
+}
+
+#DELIVERY_DESIRED_DATE_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+/*
+#text_DELIVERY_BEMERKUNGEN_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}*/
+
+#text_DELIVERY_NOTE_DISPLAY_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+padding-right:10px;
+width: 200px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+#DELIVERY_NOTE_DISPLAY_BASKET_ORDERCONFIRMATION_TEMPLATE4
+{
+width: 210px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+
+.floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE5
+{
+position: relative;
+top: 0px;
+float: left;
+width: 600px;
+color: #222;
+}
+
+#text_versand_BASKET_ORDERCONFIRMATION_TEMPLATE5
+{
+width: 600px;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+margin-top: 10px;
+margin-bottom: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+#text_pauschale_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+float: left;
+position: relative;
+top: 10px;
+margin-top: 0px;
+margin-bottom: 10px;
+width: 600px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+#SHIPPING_SELECTOR_BASKET_ORDERCONFIRMATION_TEMPLATE5
+{
+float: left;
+width: 400px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PRICE_SHIPPING_TAX_BASKET_ORDERCONFIRMATION_TEMPLATE5
+{
+float: right;
+width: 200px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+margin-top: -20px;
+}
+
+
+#text_zahlungsweise_BASKET_ORDERCONFIRMATION_TEMPLATE6
+{
+float: left;
+width: 600px;
+padding: 2px 0px 2px 2px;
+background-color: #F0F0F4;
+margin-top: 10px;
+margin-bottom: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE6
+{
+position: relative;
+top: 0px;
+float: left;
+width: 600px;
+}
+
+#PAYMENT_SELECTOR_BASKET_ORDERCONFIRMATION_TEMPLATE6
+{
+float: left;
+width: 400px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#TAX_INCL_EXCL_BASKET_ORDERCONFIRMATION_TEMPLATE6
+{
+float: right;
+width: 200px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+margin-top: -10px;
+}
+
+.floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE7
+{
+position: relative;
+top: 10px;
+float: left;
+width: 600px;
+}
+
+#text_PRICE_TOTAL_BASKET_ORDERCONFIRMATION_TEMPLATE7
+{
+float: left;
+width: 400px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#PRICE_TOTAL_BASKET_ORDERCONFIRMATION_TEMPLATE7
+{
+float: right;
+width: 200px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+
+#text_regards_BASKET_ORDERCONFIRMATION_TEMPLATE
+{
+margin-top: 20px;
+width: 600px;
+padding: 0px 0px 0px 0px;
+margin-bottom: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+/************************************** BASKET_TEMPLATE_EMPTY *****************************/
+
+.BASKET_TEMPLATE_EMPTY
+{
+position: relative;
+top: 10px;
+padding: 10px;
+text-align: left;
+width: 600px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+
+}
+
+
+#backtolist_BASKET_EMPTY
+{
+position: relative;
+top: 10px;
+text-align: left;
+padding: 10px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+/************************************** BASKET_REQUIRED_INFO_MISSING *****************************/
+.BASKET_REQUIRED_INFO_MISSING
+{
+position: relative;
+top: 10px;
+text-align: left;
+width: 410px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #222;
+margin-bottom: 10px;
+}
+#form_URL
+{
+margin-top: 20px;
+margin-left: 70px;
+}
+#button2_BASKET_REQUIRED_INFO_MISSING {
+
+position:relative;
+top: 10px;
+left: 110px;
+margin-left: 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 0.8em;
+font-weight: normal;
+margin-left: 0px;
+margin-top: 5px;
+height: 25px;
+width:150px;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+background: #fafafa none repeat scroll 0%;
+border: 1px solid #cccccc;
+color: #777777;
+vertical-align: middle;
+
+}
+
+/************************************** TRACKING_DISPLAY_INFO *****************************/
+.floatbox_TRACKING_DISPLAY_INFO1
+{
+position: relative;
+top: 0px;
+float: left;
+width: 570px;
+}
+
+
+#text_datum_zeit_TRACKING_DISPLAY_INFO1
+{
+float: left;
+width: 120px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_code_TRACKING_DISPLAY_INFO1
+{
+float: left;
+width: 50px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_aktion_TRACKING_DISPLAY_INFO1
+{
+float: left;
+width: 200px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#text_kommentar_zeit_TRACKING_DISPLAY_INFO1
+{
+float: left;
+width: 200px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.floatbox_TRACKING_DISPLAY_INFO2
+{
+position: relative;
+top: 0px;
+float: left;
+width: 570px;
+margin: 10px 0px 10px 0px;
+}
+
+#datum_zeit_TRACKING_DISPLAY_INFO2
+{
+float: left;
+width: 120px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#code_TRACKING_DISPLAY_INFO2
+{
+float: left;
+width: 50px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#aktion_TRACKING_DISPLAY_INFO2
+{
+float: left;
+width: 200px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+#kommentar_TRACKING_DISPLAY_INFO2
+{
+float: left;
+width: 200px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.shopadmin
+{
+position: relative;
+top: 10px;
+text-align: left;
+margin-top: 10px;
+margin-bottom: 10px;
+width: 570px;
+font-weight: bold;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+
+}
+
+#checkbox_tracking
+{
+margin:0px 10px 0px 0px;
+}
+
+.statuscode, .shopadmin
+{
+margin: 10px 0px 0px 0px;
+font-weight: bold;
+}
+
+.tracking-form
+{
+margin: 0px;
+}
+/************************************** TRACKING_DISPLAY_INFO END*****************************/
+
+.input {
+border-style: solid;
+border-width: 1px;
+border-color: #BDBDBD;
+}
+
+select {
+border-style: solid;
+border-width: 1px;
+border-color: #BDBDBD;
+width: auto;
+}
+
+p {
+color: #222;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: 400;
+/*padding-bottom: 10px;*/
+}
+
+#tx-ttproducts-pi1-list {
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size:14px;
+}
+
+.tx-ttproducts-pi1-wrap2 {
+color: #222;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: 400;
+font-size:12px; 
+font-weight:bold;
+}
+
+.tx-ttproducts-pi1-wrap1 {
+color: #222;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: 400;
+font-size:12px; 
+font-weight:bold;
+}
+.tx-ttproducts-pi1 {
+color: #222;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: 400;
+font-size:12px; 
+}
+#button1, #button3, #button4, #button5 {
+
+  border: 1px solid #cccccc;
+  padding: 2px;
+  background: #fafafa none repeat scroll 0%;
+  margin-left: 0em;
+  width: auto;
+  font-family: Verdana,Arial,Helvetica,Sans-Serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+  line-height: normal;
+  font-size-adjust: none;
+  font-stretch: normal;
+  color: #777777;
+}
+
+
+.button3 {
+
+  border: 1px solid #cccccc;
+  padding: 2px;
+  background: #fafafa none repeat scroll 0%;
+  margin-left: 0em;
+  width: auto;
+  font-family: Verdana,Arial,Helvetica,Sans-Serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+  line-height: normal;
+  font-size-adjust: none;
+  font-stretch: normal;
+  color: #777777;
+}
+/* Button Submit Listenansicht */
+
+
+
+#tx-ttproducts-pi1-search .inputimage {
+border: none;
+border-width: 0px;
+border-color:#FFFFFF;
+/*!important*/
+}
+
+
+#tx-ttproducts-pi1-search input{
+border-style: solid;
+border-width: 1px;
+border-color: #BDBDBD;
+}
+
+
+  
+p .bodytext { 
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size:12px; 
+color: #222;
+}  
+
+
+/*sonst macht der IE 6 und 7 einen Underline unter den Titel*/
+
+
+p a:link {
+color: #AA3123;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+text-decoration: none;
+}
+
+p a:hover {
+color: #FE6F00;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+text-decoration: none;
+}
+
+p a:active, a:visited {
+color: #222;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+text-decoration: none;
+}
+/*
+table, tr, td .tx-ttproducts-pi1{
+color: #333;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: 400;
+padding: 3px 0px 3px 3px;
+font-size:12px; 
+}
+
+.tx-ttproducts-pi1 {
+color: #333;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: 400;
+font-size:12px; 
+}
+*/
+
+
+#registrationForm 
+{
+margin: 0px;
+vertical-align: top;
+}
+
+/********************************* ORDERS_LIST_TEMPLATE *********************************************************/
+
+
+
+.header_ORDERS_LIST
+{
+font-size: 12px;
+position: relative;
+top: 10px;
+margin-bottom: 20px;
+}
+
+.floatbox_ORDERS_LIST1, floatbox_ORDERS_LIST2
+{
+position: relative;
+top: 0px;
+float: left;
+width: 500px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+font-weight: bold;
+}
+
+#text_datum_ORDERS_LIST, #datum_ORDERS_LIST
+{
+float: left;
+width: 100px;
+padding: 0px 0px 0px 0px;
+margin-bottom: 10px;
+}
+
+#text_ordernumber_ORDERS_LIST, #ordernumber_ORDERS_LIST
+{
+float: left;
+width: 120px;
+padding: 0px 0px 0px 0px;
+}
+
+#text_price_ORDERS_LIST, #price_ORDERS_LIST
+{
+float: left;
+width: 150px;
+padding: 0px 0px 0px 0px;
+}
+
+#text_action_ORDERS_LIST, #action_ORDERS_LIST
+{
+float: left;
+width: 130px;
+padding: 0px 0px 0px 0px;
+margin-bottom: 10px;
+}
+
+.link1, .link2, .link3
+{
+padding-bottom: 5px;
+}
+
+
+.statistic_ORDERS_LIST
+{
+clear: left;
+width: 500px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+}
+
+.header_statistic_ORDERS_LIST
+{
+width: 200px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color: #222;
+font-weight: bold;
+}
+
+
+
+
