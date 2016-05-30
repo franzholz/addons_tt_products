@@ -15,9 +15,9 @@
 <!-- ###ITEM_LIST_TEMPLATE### begin
 This subpart is used to display the regular list of products. It's also used by search-results.-->
 
- 	  <!-- ###FE_GROUP_1_TEMPLATE### begin -->
+	<!-- ###FE_GROUP_1_TEMPLATE### begin -->
 		Sie sind angemeldet!
-		<!-- ###FE_GROUP_1_TEMPLATE### end -->
+	<!-- ###FE_GROUP_1_TEMPLATE### end -->
 
  <div class="floatbox_LIST">
 	   <div class="page_links">
@@ -99,7 +99,7 @@ This subpart is used to display the regular list of products. It's also used by 
     ###GW1B### Anzahl: ###GW1E### <INPUT class="input_qty" size="4" maxlength="6" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
     <input type="image" src="fileadmin/osp/images/icons/basket1.gif" name="basket" class="inputimage_list" alt="Artikel in den Warenkorb legen" />
       <!-- ###FE_GROUP_1_TEMPLATE### begin -->
-    <input type="image" name="addtomemo" class="addtomemo" src="fileadmin/osp/images/icons/addtomemo.gif" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tx_ttproducts_pi1[addmemo]=###PRODUCT_UID###';" title="Diesen Artikel vormerken" alt="Diesen Artikel vormerken">
+    <input type="image" name="addtomemo" class="addtomemo" src="fileadmin/osp/images/icons/addtomemo.gif" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products[addmemo]=###PRODUCT_UID###';" title="Diesen Artikel vormerken" alt="Diesen Artikel vormerken">
       <!-- ###FE_GROUP_1_TEMPLATE### end -->
     <input type="button" class="button2_LIST" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'" />
 
@@ -130,9 +130,9 @@ This subpart is used to display the regular list of products. It's also used by 
 <!-- ###ITEM_LIST_TEMPLATE_SPEZIELL### begin
 This subpart is used to display the regular list of products. It's also used by search-results.-->
 
- 	  <!-- ###FE_GROUP_1_TEMPLATE### begin -->
+	<!-- ###FE_GROUP_1_TEMPLATE### begin -->
 		Sie sind angemeldet!
-		<!-- ###FE_GROUP_1_TEMPLATE### end -->
+	<!-- ###FE_GROUP_1_TEMPLATE### end -->
 
  <div class="floatbox_LIST">
 	   <div class="page_links">
@@ -167,7 +167,7 @@ This subpart is used to display the regular list of products. It's also used by 
     ###GW1B### Anzahl: ###GW1E### <INPUT class="input_qty" size="4" maxlength="6" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
     <input type="image" src="fileadmin/osp/images/icons/basket1.gif" name="basket" class="inputimage_list" alt="In den Warenkorb" />
 
-    <input type="image" name="addtomemo" class="addtomemo" src="###PATH_FE_REL###/res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tx_ttproducts_pi1[addmemo]=###PRODUCT_UID###';" title="Add to memo">
+    <input type="image" name="addtomemo" class="addtomemo" src="###PATH_FE_REL###/res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products[addmemo]=###PRODUCT_UID###';" title="Add to memo">
 
     <input type="button" class="button2_LIST" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'" />
   </div>
@@ -200,8 +200,6 @@ This subpart is used to display the regular list of products. It's also used by 
 <p><em>This subpart is used to display the regular list of products. It's also used by search-results.</em></p>
 <!-- ###ITEM_LIST_TEMPLATE_REGISTRIERT### begin
 This subpart is used to display the regular list of products. It's also used by search-results.-->
-
-
 
  <div class="floatbox_LIST">
 	   <div class="page_links">
@@ -239,11 +237,8 @@ This subpart is used to display the regular list of products. It's also used by 
 	    	</form>
 
 	            <!-- ###ITEM_SINGLE### end -->
-
 	        <!-- ###ITEM_LIST### end -->
-
 <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
-
 
 	    <div class="page_navigation">
 	        <div class="page_prev"><!--###LINK_PREV###-->vorherige Seite<!--###LINK_PREV###--></div>
@@ -303,7 +298,7 @@ This subpart is used to display the regular list of products. It's also used by 
     ###GW1B### Anzahl: ###GW1E### <INPUT class="input_qty" size="4" maxlength="6" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
     <input type="image" src="fileadmin/osp/images/icons/basket1.gif" name="basket" class="inputimage_list" alt="In den Warenkorb" />
       <!-- ###FE_GROUP_1_TEMPLATE### begin -->
-    <input type="image" name="addtomemo" class="addtomemo" src="###PATH_FE_REL###/res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tx_ttproducts_pi1[addmemo]=###PRODUCT_UID###';" title="Add to memo">
+    <input type="image" name="addtomemo" class="addtomemo" src="###PATH_FE_REL###res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;%5Baddmemo%5D=###PRODUCT_UID###';" title="Add to memo">
       <!-- ###FE_GROUP_1_TEMPLATE### end -->
     <input type="button" class="button2_LIST" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'" />
 
@@ -312,11 +307,8 @@ This subpart is used to display the regular list of products. It's also used by 
 	    	</form>
 
 	            <!-- ###ITEM_SINGLE### end -->
-
 	        <!-- ###ITEM_LIST### end -->
-
 <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
-
 
 	    <div class="page_navigation">
 	        <div class="page_prev"><!--###LINK_PREV###-->vorherige Seite<!--###LINK_PREV###--></div>
@@ -393,7 +385,6 @@ This subpart is used to display the regular list of products. It's also used by 
 <!-- ###ORDERS_LIST_TEMPLATE### begin This subpart is used to display the list of orders. PAGE orders-->
 
 
-
 <h1 class="header_ORDERS_LIST">Bestell-Liste von: ###CLIENT_NAME### Nr.: ###CLIENT_NUMBER###</h1>
 
 
@@ -458,8 +449,6 @@ This subpart is used to display the regular list of products. It's also used by 
    <br>
    <br>
 
-
-
    <!-- ###ITEM_LIST_RELATED_ARTICLES_TEMPLATE### begin
    	This subpart is used to display the regular list of products. It's also used by search-results.
    -->
@@ -471,7 +460,6 @@ This subpart is used to display the regular list of products. It's also used by 
    		<!-- ###ITEM_CATEGORY### end -->
    		<!-- ###ITEM_LIST### begin -->
    			<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
-
 
              <!-- ###ITEM_SINGLE### begin-->
              ###ITEM_SINGLE_PRE_HTML###
@@ -539,15 +527,12 @@ This subpart is used to display the regular list of gift products.
 
 	          <div class="PRODUCT_IMAGE_LIST">###PRODUCT_IMAGE###</div>
 
-
-
             <div class="display_variant2_LIST">
 
        <!-- ###display_variant2### -->
 
        ###GW2B### Größee: ###GW2E###
        <select style="font-size: 10px" name="###FIELD_SIZE_NAME###">###PRODUCT_SIZE###</select>
-
 
      	<!-- ###display_variant2### -->
 
@@ -595,7 +580,7 @@ This subpart is used to display the regular list of gift products.
     <input type="hidden" name="mode_update" value="0">
     <input type="image" src="fileadmin/osp/images/icons/basket1.gif" name="basket" class="inputimage_list" alt="In den Warenkorb" />
       <!-- ###FE_GROUP_1_TEMPLATE### begin -->
-    <input type="image" name="addtomemo" class="addtomemo" src="###PATH_FE_REL###/res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tx_ttproducts_pi1[addmemo]=###PRODUCT_UID###';" title="Add to memo">
+    <input type="image" name="addtomemo" class="addtomemo" src="###PATH_FE_REL###res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products%5Baddmemo%5D=###PRODUCT_UID###';" title="Add to memo">
       <!-- ###FE_GROUP_1_TEMPLATE### end -->
     <input type="button" class="button2_gift_LIST" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'" />
    </div>
@@ -603,9 +588,7 @@ This subpart is used to display the regular list of gift products.
 	    	</form>
 
 	            <!-- ###ITEM_SINGLE### end -->
-
 	        <!-- ###ITEM_LIST### end -->
-
 <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
 
 	    <div class="page_navigation">
@@ -682,14 +665,10 @@ This subpart is used to display the regular list of gift products.
      ###BULKILY_WARNING### <br />
    </div>
 
-
-
    <div id="backtolist_SINGLE">
-
       <!--###LINK_ITEM###-->
       <img src="fileadmin/osp/images/icons/zur_liste.gif" />zurück zur Liste
       <!--###LINK_ITEM###-->
-
    </div>
 
    <div id="SHOPADMIN_EMAIL_SINGLE">
@@ -845,7 +824,7 @@ Sie sind eingeloggt!
     <!-- ###display_variant5_isNotSingle### -->
     ###GW1B### Stückzahl: ###GW1E### <INPUT size="8" maxlength="10" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
       <!-- ###FE_GROUP_1_TEMPLATE### begin -->
-    <input type="image" name="addtomemo" src="typo3/ext/tt_products/res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tx_ttproducts_pi1[addmemo]=###PRODUCT_ID###';" title="Add to memo">
+    <input type="image" name="addtomemo" src="###PATH_FE_REL###res/icons/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products%5Baddmemo%5D=###PRODUCT_ID###';" title="Add to memo">
       <!-- ###FE_GROUP_1_TEMPLATE### end -->
     <!-- ###display_variant5_isNotSingle### -->
     ###ITEM_SINGLE_POST_HTML###
@@ -912,10 +891,10 @@ This subpart is used to display the regular list of products. It's also used by 
     <INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
   </div>
   <div style="padding: 2px 2px 2px 2px; border-top: 1px dotted #3F4F73;">
-    <input type="image" name="order" src="typo3/ext/tt_products/res/icons/fe/minibasket1.gif" value="in den Warenkorb" onClick="if (!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
+    <input type="image" name="order" src="###PATH_FE_REL###res/icons/fe/minibasket1.gif" value="in den Warenkorb" onClick="if (!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
   </div>
   <div style="padding: 2px 2px 2px 2px; border-top: 1px dotted #3F4F73;">
-    <input type="image" name="remove" src="typo3/ext/tt_products/res/icons/fe/delmemo.png" value="von der Merkliste streichen" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tx_ttproducts_pi1[delmemo]=###PRODUCT_ID###';">
+    <input type="image" name="remove" src="###PATH_FE_REL###res/icons/fe/delmemo.png" value="von der Merkliste streichen" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products%5Bdelmemo%5D=###PRODUCT_ID###';">
   </div>
 </FORM>
 
@@ -2615,8 +2594,7 @@ mytypo3domain.de
 
 <!-- ###BILL_TEMPLATE### start -->
 
-<!--<img src="http://shopms.de/images/header_rechnung.jpg" width="669" height="90">-->
-<a href="javascript:history.back()"><img src="fileadmin/osp/images/icons/zur_liste.gif" />zurück</a>
+<a href="javascript:history.back()"><img src="###PATH_FE_REL###res/icons/zur_liste.gif" />zurück</a>
    ###GW1B### mytypo3domain.de &#8211; Teststr.
       1, 11111 Testort, Germany<br />
       -------------------------------------------------------------------------------------------------
