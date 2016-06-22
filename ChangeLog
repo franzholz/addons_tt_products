@@ -1,6 +1,10 @@
-(add new changes on top of this file)
+
+2016-06-22 Franz Holzinger  <franz@ttproducts.de>
+	* remove the meerwijn template folder
+
 2016-05-30 Franz Holzinger  <franz@ttproducts.de>
 	* add icon files of the book "Der TYPO3 Webshop"
+	* bugfix for the typo3webshop template file: MEMO
 
 2016-05-30 Franz Holzinger  <franz@ttproducts.de>
 	* add the files tt_products_css.html and tt_products.css of the book "Der TYPO3 Webshop"

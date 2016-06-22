@@ -6,7 +6,6 @@ http://ttproducts.de
 pob_ttp_marker_xml.htm: multiple language marker template sponsored by Rainer Lindner (pob.com)
 products_css_de.html: CSS template by Robert Markula and translated by Masod Mohmand
 
-The folder meerwijn contains the shop sources of a former site at http://meerwijn.nl .
 The folder template/responsive contains a responsive template file.
 The folder template/typo3webshop contains the files for the book "Der TYPO3-Webshop" by Andrea Herzog-Kienast.
 

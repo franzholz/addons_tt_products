@@ -91,7 +91,6 @@ This subpart is used to display the regular list of products. It's also used by 
             ###GW1B###Web-Preis: ###PRICE_TAX### &euro;###GW1E###
 						###GW2B###(enth. MwSt.: ###PRICE_ONLY_TAX### &euro;)###GW2E###
             ###PRODUCT_DELIVERY###<br /><br />
-            <!--Einkaufspreis:###DIRECTCOST_TAX### (###DIRECTCOST_NO_TAX###)-->
   </div>
   <div class="anzahl_LIST">
     ###GW1B### Anzahl: ###GW1E### <INPUT class="input_qty" size="4" maxlength="6" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
@@ -429,8 +428,6 @@ This subpart is used to display the regular list of products. It's also used by 
 		<!-- ###ORDER_NOROWS### end -->
 
 
-
-
 <br /><br />
 
 
@@ -567,7 +564,6 @@ This subpart is used to display the regular list of gift products.
             ###GW1B###Web-Preis: ###PRICE_TAX### &euro;###GW1E###
 						###GW2B###(enth. MwSt.: ###PRICE_ONLY_TAX### &euro;)###GW2E###
             ###PRODUCT_DELIVERY###<br /><br />
-            <!--Einkaufspreis:###DIRECTCOST_TAX### (###DIRECTCOST_NO_TAX###)-->
   </div>
   <div class="anzahl_gift_LIST">
     ###GW1B### Anzahl: ###GW1E### <INPUT class="input_qty" size="4" maxlength="6" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
@@ -647,7 +643,7 @@ This subpart is used to display the regular list of gift products.
       <!-- ###FE_GROUP_1_TEMPLATE### begin -->
 
    <div id="PRODUCT_DIRECTCOST">
-    Einkaufspreis:###DIRECTCOST_NO_TAX### (###DIRECTCOST_NO_TAX###)<br />
+    Einkaufspreis: ###DIRECTCOST_TAX### (###DIRECTCOST_NO_TAX###)<br />
    </div>
 
       <!-- ###FE_GROUP_1_TEMPLATE### end -->
@@ -667,7 +663,7 @@ This subpart is used to display the regular list of gift products.
    </div>
 
    <div id="SHOPADMIN_EMAIL_SINGLE">
-      <a href="mailto:###SHOPADMIN_EMAIL###?subject=Frage zum Artikel: ###PRODUCT_TITLE###&body=Ich habe folgenden Artikel gesehen: ###PRODUCT_TITLE### %0AMeine Fragen: "><b>Fragen zum Artikel</b></a>  <br />
+      <a href="mailto:###SHOPADMIN_EMAIL###?subject=Frage zum Artikel: ###PRODUCT_TITLE###&amp;body=Ich habe folgenden Artikel gesehen: ###PRODUCT_TITLE### %0AMeine Fragen: "><b>Fragen zum Artikel</b></a>  <br />
    </div>
 
  </div>
@@ -2663,22 +2659,22 @@ mytypo3domain.de
 
 ###GW1B### Vielen Dank <br /><br />
 
-      <p>Mit freundlichen Grüßen: <br /> <br /> <strong><br />
-      </strong>mytypo3domain.deb<br />
+      <p>Mit freundlichen Grüßen: <br /> <br />
+      mytypo3domain.de<br />
       Teststr. 1<br />
       11111 Testort<br />
       Deutschland
       Tel: +49 (0)1111 / 111111<br />
         Email: tester@mytypo3domain.de<br />
         Steuer-Nr. DE000000</p>
-      ###GW1E###
+###GW1E###
 ###GW1B### Bankverbindung:<br />
         Bank <br />
         Blz. 11111111<br />
         Kto. 11111111</p>
         IBAN: DE11 1111 1111 1111 1111 11<br />
         BIC: BNKTEST<br />
-        ###GW1E### </p>
+###GW1E### </p>
 
 <!-- ###BILL_TEMPLATE### end -->
 
