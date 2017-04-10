@@ -1,3 +1,6 @@
+2017-04-10 Franz Holzinger  <franz@ttproducts.de>
+    * add a composer.json file
+    * works with TYPO3 8.x
 
 2016-06-22 Franz Holzinger  <franz@ttproducts.de>
 	* remove the meerwijn template folder

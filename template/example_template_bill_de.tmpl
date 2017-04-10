@@ -4,7 +4,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head>
 <title>bananaGUARD Shop-Template</title>
-<!-- $Id$ -->
 </head>
 
 <body>
@@ -580,7 +579,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
                                 </td>
                                 <td style="padding: 2px 2px 2px 2px; border-top: 1px dotted #3F4F73;"><input type="image" name="order" src="###PATH_FE_REL###res/icons/fe/minibasket1.gif" value="###BASKET_INTO###" onClick="if (!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};"></td>
 				<td style="padding: 2px 2px 2px 2px; border-top: 1px dotted #3F4F73;">
-					<input type="image" name="remove" src="###PATH_FE_REL###res/icons/fe/delmemo.png" value="von der Merkliste streichen" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products[delmemo]=###PRODUCT_UID###';">
+					<input type="image" name="remove" src="###PATH_FE_REL###res/icons/fe/delmemo.png" value="von der Merkliste streichen" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products%5Bdelmemo%5D=###PRODUCT_UID###';">
 			</td>
                         </tr>
                         </form>
@@ -729,7 +728,7 @@ In addition there's a number of fields used for delivery and payment information
 <tr>
 
 <td valign=top>
-<!--###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###<!--###LINK_ITEM###-->
+<!--###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###&nbsp;<!-- ###PRODUCT_OFFER_EQ_1### begin -->*** AKTION ***<!-- ###PRODUCT_OFFER_EQ_1### end --></b>###GW1E###<!--###LINK_ITEM###-->
 
 </td>
 <td>	  <!-- ###display_variant2### -->
@@ -740,6 +739,7 @@ In addition there's a number of fields used for delivery and payment information
 <td valign=top> <input size="2" maxlength="4" type="text" name="###FIELD_NAME_BASKET###" value="###FIELD_QTY###"> </td>
 <td valign=top align=right>###GW1B### <b>###TAX_INCL_EXCL### ###PRICE_TOTAL_TAX###</b> <br>(exkl. MwSt.: EUR ###PRICE_TOTAL_NO_TAX###)###GW1E###</td>
 </tr>
+
 <!-- ###ITEM_SINGLE### end -->
 <!-- ###ITEM_LIST### end -->
 <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->

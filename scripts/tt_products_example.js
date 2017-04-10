@@ -29,8 +29,6 @@
  *
  * JavaScript File
  *
- * $Id$
- *
  * @author	Franz Holzinger <franz@ttproducts.de>
  * @package TYPO3
  * @subpackage addons_tt_products

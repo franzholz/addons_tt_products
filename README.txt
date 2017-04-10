@@ -9,9 +9,16 @@ products_css_de.html: CSS template by Robert Markula and translated by Masod Moh
 The folder template/responsive contains a responsive template file.
 The folder template/typo3webshop contains the files for the book "Der TYPO3-Webshop" by Andrea Herzog-Kienast.
 
+Example Constants:
+
+plugin.tt_products {
+  file.templateFile = EXT:addons_tt_products/template/example_template_bill_de.tmpl
+}
+
 Please join the team to further develop these templates at https://github.com/franzholz/addons_tt_products .
 Send us your shop templates and icons to collect them here.
 
 Regards,
 
 Franz Holzinger
+

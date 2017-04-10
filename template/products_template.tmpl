@@ -1151,12 +1151,11 @@ Displays the view of the order status by tracking codes.<br>
 If you wish to recieve a message to the contact email of the order (###FIELD_EMAIL###) each time the status is updated, please check this:<br>
 	<FORM method="post" action="###FORM_URL###">
 
-	<input type="hidden" name="orderRecord[email_notify]" value="0">
-	<input type="checkbox" name="orderRecord[email_notify]" value="1"###FIELD_EMAIL_NOTIFY###>Recieve message by status changes.<br>
+	<input type="checkbox" name="orderRecord[email_notify]" value="1" ###FIELD_EMAIL_NOTIFY###>Recieve message by status changes.<br>
 	<input type="text" size=40 name="orderRecord[email]" value="###FIELD_EMAIL###">
 	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
 
-	<input type="Submit" name="submit" value="Update">
+	<input type="submit" name="userNotification" value="Update">
 	</FORM>
 <br><br>
 <strong>Message to the shop:</strong><br>
