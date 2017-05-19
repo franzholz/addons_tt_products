@@ -43,7 +43,7 @@ This subpart is used to display the regular list of products. It's also used by 
 	        <!--###LINK_ITEM###-->###PRODUCT_TITLE###<!--###LINK_ITEM###--></h1>
 
 	          <p class="listitem_subheader"><em>###PRODUCT_SUBTITLE###</em></p>
-            <!-- Andrea: nur zum Testen von Minibildern, die aber nicht funktionieren
+            <!-- Andrea: nur zum Testen von Minibildern
              <div class="PRODUCT_IMAGE_LIST">###PRODUCT_IMAGE:MINI###</div>-->
 	          <div class="PRODUCT_IMAGE_LIST">###PRODUCT_IMAGE###</div>
 
@@ -278,10 +278,7 @@ This subpart is used to display the regular list of products. It's also used by 
           <h1 class="PRODUCT_TITLE_LIST">
 	        <!--###LINK_ITEM###-->###PRODUCT_TITLE###<!--###LINK_ITEM###--></h1>
 	          <p class="listitem_subheader"><em>###PRODUCT_SUBTITLE###</em></p>
-	         <!--
-           Andrea auskommentier, klappt nicht-->
            <div class="PRODUCT_IMAGE_LIST_MINI">###PRODUCT_IMAGE2:MINI###</div>
-          <!--  <div class="PRODUCT_IMAGE_LIST_MINI">###PRODUCT_IMAGE###</div>-->
 	             <div class="web_price_LIST">
 
             ###GW1B###Web-Preis: ###PRICE_TAX### &euro;###GW1E###
@@ -674,7 +671,8 @@ This subpart is used to display the regular list of gift products.
 
 <!------------------------------------------------- ITEM_SINGLE_DISPLAY_GIFT ------------------------------------------------------------>
 
-<!-- Andrea: ACHTUNG das sind noch Tabellen. Da ich diese Einzelansicht nicht nutze, ist das Template nicht in Form von divs.
+<!-- Andrea: ACHTUNG das sind noch Tabellen. Da ich diese Einzelansicht nicht nutze, ist das Template nicht in Form von div-Tags.
+-->
 
 <!-- ###ITEM_SINGLE_DISPLAY_GIFT### begin
 
@@ -957,7 +955,8 @@ In addition there's a number of fields used for delivery and payment information
 Subpart used to display the content of the shopping basket.
 The product list part has the exact same features as the regular LIST_ITEM_TEMPLATE subpart.
 In addition there's a number of fields used for delivery and payment information.
-Andrea: Warenkorbansicht Anfang -->
+
+Warenkorbansicht Anfang -->
 
 
 <div class="basket">
@@ -1144,7 +1143,7 @@ Andrea: Warenkorbansicht Anfang -->
 
 
 
-  <!--- Andrea Neu für Gutschein --->
+  <!--- Andrea Neu für Gutschein System --->
 
   <!-- ###FE_USER_SECTION### begin -->
   <form method="post" action="###FORM_URL###" name="###FORM_NAME_GIFT_CERTIFICATE###">
@@ -1558,7 +1557,7 @@ Exact same features as BASKET_TEMPLATE
   <div id="PRICE_PAYMENT_BASKET_PAYMENT_TEMPLATE6">
     ###GW1B###<b>###PRICE_PAYMENT_TAX###</b>###GW1E###
   </div>
-  <!-- Andrea auskommentier. Marker funktionieren noch nicht in 2.6.0
+  <!-- Andrea auskommentiert. Marker funktionieren noch nicht in 2.6.0
   <div id="PRICE_DISCOUNT_TITLE_BASKET_PAYMENT_TEMPLATE6">
   <strong>Enhaltener Rabatt:</strong>
   <div id="PRICE_DISCOUNT_BASKET_PAYMENT_TEMPLATE6">
@@ -1634,7 +1633,7 @@ Exact same features as BASKET_TEMPLATE
     <!-- ###SUB_CREDITPOINTS_AMOUNT### begin -->
     <input size="5" class="number" class="button3" maxlength="5" type="text" name="###CHANGE_AMOUNT_CREDITPOINTS###" value="###AMOUNT_CREDITPOINTS_QTY###">
     <br /><img src="###PATH_FE_REL###res/icons/fe/+.gif" width="12" height="11" class="quantity" onClick="javascript:document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value++;">
-    <br /><img src="###PATH_FE_REL###res/icons/fe/_.gif" width="12" height="11" class="quantity" onClick="if (!parseInt(document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value)<=0) {document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value--;};" >
+    <br /><img src="###PATH_FE_REL###res/icons/fe/_.gif" width="12" height="11" class="quantity" onClick="if (!parseInt(document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value) <= 0) {document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value--;};" >
     <br /><br />
     <input name="products_payment" type="submit" class="button3" value="Punkte einlösen" onClick="if (!document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value!=''){document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value=0;};">
 
@@ -1653,7 +1652,7 @@ Exact same features as BASKET_TEMPLATE
 
    <!-- ###SUB_VOUCHERCODE_EMPTY### begin -->
    <!-- ###SUB_VOUCHERCODE_START### begin -->
-     <p> Freundschaftswerbung - Benutzername desjenigen, der Sie geworben hat:  </p>
+     <p> Gutschein Code:  </p>
      <input name="###INSERT_VOUCHERCODE###" type="text" class="field" value="###VALUE_VOUCHERCODE###">
      <input name="products_payment" type="submit" class="buttonsmall" value="Rabatt/Preis berechnen" onClick="if (!document.forms['###FORM_NAME###']['###INSERT_VOUCHERCODE###'].value!=''){document.forms['###FORM_NAME###']['###INSERT_VOUCHERCODE###'].value='';};">
    <!-- ###SUB_VOUCHERCODE_START### end -->
@@ -1661,7 +1660,7 @@ Exact same features as BASKET_TEMPLATE
 
    <!-- ###SUB_VOUCHERCODE_NODISCOUNT### end -->
    <!-- ###SUB_VOUCHERCODE_DISCOUNT### begin -->
-    <p> Freundschaftswerbung Preisnachlass:
+    <p> Preisnachlass:
      - &euro; ###VOUCHER_DISCOUNT###</p>
    <!-- ###SUB_VOUCHERCODE_DISCOUNT### end -->
    <!-- ###SUB_VOUCHERCODE_DISCOUNTWRONG### begin -->
@@ -1675,8 +1674,6 @@ Exact same features as BASKET_TEMPLATE
      <p> Sie haben bereits den Coupon-Rabatt genossen.</p>
    <!-- ###SUB_VOUCHERCODE### end -->
 
-   <!-- Andrea: Hier ist was falsch. Das gehört nicht zur Freundschaftswerbung. Das Template ist total durcheinander.
-   Und den Marker verstehe ich auch nicht. Bitte korrigieren -->
      <p>Ihr Vorteil: Bei dieser Bestellung sparen Sie ###PRICE_TOTUNITS_DISCOUNT###</p>
 
    ###CREDITPOINTS_SAVED###
@@ -2130,7 +2127,7 @@ If payment is initiated but the required information fields are not filled in co
 
 
 <!------------------------------------------ BASKET_TEMPLATE_NOT_LOGGED_IN -------------------------------------------------------------->
-<!-- Andrea: Ist das noch aktuell -->
+<!-- Andrea: Ist das noch aktuell ? -->
 
 
 <!-- ###BASKET_TEMPLATE_NOT_LOGGED_IN### begin
@@ -2138,7 +2135,7 @@ If payment is initiated but the required information fields are not filled in co
 For some functionality it is necessary that a front end user has been logged in. Otherwise this error message must appear.
 
 -->
-###GW1B###<b>Sie sind nicht angemeldet. Sie müssen sich als Frontendbenutezr anmelden, bzw. zunächst registrieren bevor Sie einen Gutschein einlösen können.</b>###GW1E###
+###GW1B###<b>Sie sind nicht angemeldet. Sie müssen sich als Frontendbenutzer anmelden, bzw. zunächst registrieren bevor Sie einen Gutschein einlösen können.</b>###GW1E###
 
 	<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
 	<input type="Submit" name="basket" value="back to the basket page" onClick="document.forms['###FORM_NAME###'].action='###FORM_URL_INFO###';">
@@ -2156,7 +2153,7 @@ For some functionality it is necessary that a front end user has been logged in.
 When someone has entered a wrong unique gift number this message will appear
 
 -->
-###GW1B###<b>Der Gutscheincode ist ungülitg.</b>###GW1E###
+###GW1B###<b>Der Gutscheincode ist ungültig.</b>###GW1E###
 
 	<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
 	<input type="Submit" name="basket" value="back to the basket page" onClick="document.forms['###FORM_NAME###'].action='###FORM_URL_INFO###';">
