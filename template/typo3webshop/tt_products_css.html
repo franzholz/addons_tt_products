@@ -1635,7 +1635,7 @@ Exact same features as BASKET_TEMPLATE
     <br /><img src="###PATH_FE_REL###res/icons/fe/+.gif" width="12" height="11" class="quantity" onClick="javascript:document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value++;">
     <br /><img src="###PATH_FE_REL###res/icons/fe/_.gif" width="12" height="11" class="quantity" onClick="if (!parseInt(document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value) <= 0) {document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value--;};" >
     <br /><br />
-    <input name="products_payment" type="submit" class="button3" value="Punkte einlösen" onClick="if (!document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value!=''){document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value=0;};">
+    <input name="products_payment" type="submit" class="button3" value="Punkte einlösen" >
 
     <!-- ###SUB_CREDITPOINTS_AMOUNT### end -->
     <!-- ###SUB_CREDITPOINTS_DISCOUNT_EMPTY### begin -->
@@ -1654,7 +1654,7 @@ Exact same features as BASKET_TEMPLATE
    <!-- ###SUB_VOUCHERCODE_START### begin -->
      <p> Gutschein Code:  </p>
      <input name="###INSERT_VOUCHERCODE###" type="text" class="field" value="###VALUE_VOUCHERCODE###">
-     <input name="products_payment" type="submit" class="buttonsmall" value="Rabatt/Preis berechnen" onClick="if (!document.forms['###FORM_NAME###']['###INSERT_VOUCHERCODE###'].value!=''){document.forms['###FORM_NAME###']['###INSERT_VOUCHERCODE###'].value='';};">
+     <input type="submit" class="buttonsmall" value="Rabatt/Preis berechnen" >
    <!-- ###SUB_VOUCHERCODE_START### end -->
    <!-- ###SUB_VOUCHERCODE_NODISCOUNT### begin -->
 
