@@ -1,4 +1,6 @@
 2017-06-10 Franz Holzinger  <franz@ttproducts.de>
+    * add all 26 variant subparts for tt_products 3.0.0
+    * remove ###GW1B### and ###GW1E### wraps from responsive template
     * bugfix: remove XHTML parts from responsive templates
 
 2017-05-26 Franz Holzinger  <franz@ttproducts.de>

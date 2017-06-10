@@ -1,8 +1,8 @@
 <!-- ###TRACKING_DISPLAY_INFO### begin
 Displays the view of the order status by tracking codes.-->
 
-###GW1B###
-###GW1B###
+
+
 ###TRACKING_STATUS_ORDER### (###ORDER_UID###) ###TRACKING_STATUS_STATUS###<br>
 ###TRACKING_STATUS_STATUS_TEXT###<br>
 <!-- ###ORDER_ITEM### begin -->
@@ -12,16 +12,16 @@ Displays the view of the order status by tracking codes.-->
 
 <div class="floatbox_TRACKING_DISPLAY_INFO1">
   <div id="text_datum_zeit_TRACKING_DISPLAY_INFO1">
-    ###GW1B### ###TRACKING_STATUS_DATE### ###GW1E###
+    ###TRACKING_STATUS_DATE###
   </div>
   <div id="text_code_TRACKING_DISPLAY_INFO1">
-    ###GW1B### ###TRACKING_STATUS_CODE### ###GW1E###
+    ###TRACKING_STATUS_CODE###
   </div>
   <div id="text_aktion_TRACKING_DISPLAY_INFO1">
-    ###GW1B### ###TRACKING_STATUS_ACTION### ###GW1E###
+    ###TRACKING_STATUS_ACTION###
   </div>
   <div id="text_kommentar_TRACKING_DISPLAY_INFO1">
-    ###GW1B### ###TRACKING_STATUS_COMMENT### ###GW1E###
+    ###TRACKING_STATUS_COMMENT###
   </div>
 </div>
 <!-- ###STATUS_ITEM### begin
@@ -30,16 +30,16 @@ This part is repeated for each order status item and finally this part in the te
 
 <div class="floatbox_TRACKING_DISPLAY_INFO2">
   <div id="datum_zeit_TRACKING_DISPLAY_INFO2">
-    ###GW1B### ###ORDER_STATUS_TIME###  ###GW1E###
+    ###ORDER_STATUS_TIME###
   </div>
   <div id="code_TRACKING_DISPLAY_INFO2">
-    ###GW1B### ###ORDER_STATUS###  ###GW1E###
+    ###ORDER_STATUS###
   </div>
   <div id="aktion_TRACKING_DISPLAY_INFO2">
-    ###GW1B### ###ORDER_STATUS_INFO###  ###GW1E###
+    ###ORDER_STATUS_INFO###
   </div>
   <div id="kommentar_TRACKING_DISPLAY_INFO2">
-    ###GW1B### ###ORDER_STATUS_COMMENT###  ###GW1E###
+    ###ORDER_STATUS_COMMENT###
   </div>
 </div>
 
@@ -105,7 +105,7 @@ This part is repeated for each order status item and finally this part in the te
 		<strong>###TRACKING_STATUS_EMAIL###</strong><br>###TRACKING_STATUS_EMAIL_TEXT###<br>
 <form method="post" action="###FORM_URL###" name="statusInform">
 	<input type="hidden" name="orderRecord[email_notify]" value="0">
-	<input type="checkbox" name="orderRecord[email_notify]" value="1"###FIELD_EMAIL_NOTIFY###>###TRACKING_STATUS_EMAIL_CHECKBOX###<br>
+	<input type="checkbox" name="orderRecord[email_notify]" value="1" ###FIELD_EMAIL_NOTIFY###>###TRACKING_STATUS_EMAIL_CHECKBOX###<br>
 	<input type="text" size=40 name="orderRecord[email]" value="###FIELD_EMAIL###">
 	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
 	<input type="Submit" name="submit" value="###TRACKING_STATUS_EMAIL_BUTTON###">
@@ -113,18 +113,18 @@ This part is repeated for each order status item and finally this part in the te
 <br><br>
 <strong>###TRACKING_STATUS_MESSAGE###</strong><br>###TRACKING_STATUS_MESSAGE_TEXT###
 <form method="post" action="###FORM_URL###"  name="sendNote">
-	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">###GW1B######TRACKING_STATUS_MESSAGE_SUBJECT######GW1B###<br>
+	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">###TRACKING_STATUS_MESSAGE_SUBJECT###<br>
 	<select name="orderRecord[status][]" size="1">
 	<option value="50">###TRACKING_STATUS_MESSAGE_50###</option>
 	<option value="51">###TRACKING_STATUS_MESSAGE_51###</option>
 	<option value="52">###TRACKING_STATUS_MESSAGE_52###</option>
 	<option value="53">###TRACKING_STATUS_MESSAGE_53###</option>
 	</select>
-	<br>###GW1B######TRACKING_STATUS_MESSAGE_SUBJECT_COMMENT######GW1B###<br>
+	<br>###TRACKING_STATUS_MESSAGE_SUBJECT_COMMENT###<br>
 	<textarea cols="40" rows="5" name="orderRecord[status_comment]"></textarea><br>
-	<input type="Submit" name="submit" class="wobistdu"value="###TRACKING_STATUS_MESSAGE_BUTTON###">
+	<input type="Submit" name="submit" class="wobistdu" value="###TRACKING_STATUS_MESSAGE_BUTTON###">
 </form>
-<br><br><b>###TRACKING_STATUS_ORDER_ORIGINAL###</b><br><br>###GW1E###
+<br><br><b>###TRACKING_STATUS_ORDER_ORIGINAL###</b><br><br>
 <hr><br>###ORDER_HTML_OUTPUT###
 <!-- ###TRACKING_DISPLAY_INFO### end -->
 
@@ -135,7 +135,7 @@ This part is repeated for each order status item and finally this part in the te
 <!-- ###TRACKING_ENTER_NUMBER### begin
 Displays form for entering the tracking number.
 -->
-###GW1B###<b>###TRACKING_STATUS_NUMBER###</b>###GW1E###<br>
+<b>###TRACKING_STATUS_NUMBER###</b><br>
 <form method="post" action="###FORM_URL###">
 	<input type="text" name="tracking" size="20"><br>
 	<input type="Submit" name="submit" value="###TRACKING_STATUS_NUMBER_BUTTON###">
@@ -147,9 +147,9 @@ Displays form for entering the tracking number.
 		<td>
 		<table border=0 cellpadding=10 cellspacing=0 bgcolor="#92AFCB">
 			<tr>
-				<td>###GW1B### <strong>Shop ADMIN:</strong><br>
+				<td><strong>Shop ADMIN:</strong><br>
 <!-- ###ADMIN_CONTROL_DENY### begin -->
-				<form method="post" action="###FORM_URL###">###GW1B###Code:###GW1B###<br>
+				<form method="post" action="###FORM_URL###">Code:<br>
 					<input type="password" size=40 name="update_code" value="">
 					<input type="Submit" name="submit" value="Code eingeben">
 				</form>
@@ -176,7 +176,7 @@ Displays form for entering the tracking number.
 <!-- ###TRACKING_WRONG_NUMBER### begin
 Displays error message if no tracking code.
 -->
-###GW1B###<b>###ORDER_STATUS_WRONG_NUMBER###</b>###GW1E###<br>
+<b>###ORDER_STATUS_WRONG_NUMBER###</b><br>
 <form method="post" action="###FORM_URL###">
 	<input type="text" name="tracking" size="20"><br>
 	<input type="Submit" name="submit" value="###ORDER_STATUS_VIEW###">
