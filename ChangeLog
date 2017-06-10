@@ -1,3 +1,6 @@
+2017-06-10 Franz Holzinger  <franz@ttproducts.de>
+    * bugfix: remove XHTML parts from responsive templates
+
 2017-05-26 Franz Holzinger  <franz@ttproducts.de>
     * bugfix to template of TYPO3 Webshop: do not change to activity products_payment after the entering of the voucher code on the basket page.
     * remove wrong resetting of a form field in Javascript

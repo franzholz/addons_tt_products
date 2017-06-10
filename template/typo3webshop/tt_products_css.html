@@ -2,7 +2,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>tt_products Beispiel-Template für mytypo3domain.de und das Buch "Der TYPO3-Webshop" - Copyright Andrea Herzog-Kienast 2007</title></head>
 
 <body>
@@ -36,7 +36,7 @@ This subpart is used to display the regular list of products. It's also used by 
 	    <!-- ###ITEM_LIST### begin -->
 	      <!-- ###ITEM_SINGLE### begin-->
 
-    <form method="post" action="###FORM_URL###" name="###FORM_NAME###" >
+    <form method="post" action="###FORM_URL###" name="###FORM_NAME###">
 	        <div class="listitem">
           <p class="list_item_itemnumber">ISBN:&nbsp;###PRODUCT_ITEMNUMBER###</p>
           <h1 class="PRODUCT_TITLE_LIST">
@@ -90,15 +90,15 @@ This subpart is used to display the regular list of products. It's also used by 
 
             ###GW1B###Web-Preis: ###PRICE_TAX### &euro;###GW1E###
 						###GW2B###(enth. MwSt.: ###PRICE_ONLY_TAX### &euro;)###GW2E###
-            ###PRODUCT_DELIVERY###<br /><br />
+            ###PRODUCT_DELIVERY###<br><br>
   </div>
   <div class="anzahl_LIST">
     ###GW1B### Anzahl: ###GW1E### <INPUT class="input_qty" size="4" maxlength="6" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
-    <input type="image" src="###PATH_FE_REL###res/icons/fe/basket.gif" name="basket" class="inputimage_list" alt="Artikel in den Warenkorb legen" />
+    <input type="image" src="###PATH_FE_REL###res/icons/fe/basket.gif" name="basket" class="inputimage_list" alt="Artikel in den Warenkorb legen">
       <!-- ###FE_GROUP_1_TEMPLATE### begin -->
-    <input type="image" name="addtomemo" class="addtomemo" src="###PATH_FE_REL###res/icons/fe/addtomemo.gif" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products[addmemo]=###PRODUCT_UID###';" title="Diesen Artikel vormerken" alt="Diesen Artikel vormerken" />
+    <input type="image" name="addtomemo" class="addtomemo" src="###PATH_FE_REL###res/icons/fe/addtomemo.gif" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products%5Baddmemo%5D=###PRODUCT_UID###';" title="Diesen Artikel vormerken" alt="Diesen Artikel vormerken">
       <!-- ###FE_GROUP_1_TEMPLATE### end -->
-    <input type="button" class="button2_LIST" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'" />
+    <input type="button" class="button2_LIST" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'">
 
    </div>
 </div>
@@ -115,7 +115,7 @@ This subpart is used to display the regular list of products. It's also used by 
 	    </div>
     </div>
 <!-- ###ITEM_LIST_TEMPLATE### end -->
-<br /><br />
+<br><br>
 
 <!---------------------------------------------- ITEM_LIST_TEMPLATE_SPEZIELL ------------------------------------------------------------>
 
@@ -159,11 +159,11 @@ This subpart is used to display the regular list of products. It's also used by 
   <!-- ###FE_GROUP_1_TEMPLATE### begin -->
   <div class="anzahl_LIST">
     ###GW1B### Anzahl: ###GW1E### <INPUT class="input_qty" size="4" maxlength="6" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
-    <input type="image" src="###PATH_FE_REL###res/icons/fe/basket.gif" name="basket" class="inputimage_list" alt="In den Warenkorb" />
+    <input type="image" src="###PATH_FE_REL###res/icons/fe/basket.gif" name="basket" class="inputimage_list" alt="In den Warenkorb">
 
-    <input type="image" name="addtomemo" class="addtomemo" src="###PATH_FE_REL###res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products[addmemo]=###PRODUCT_UID###';" title="Add to memo">
+    <input type="image" name="addtomemo" class="addtomemo" src="###PATH_FE_REL###res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products%5Baddmemo%5D=###PRODUCT_UID###';" title="Add to memo">
 
-    <input type="button" class="button2_LIST" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'" />
+    <input type="button" class="button2_LIST" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'">
   </div>
   <!-- ###FE_GROUP_1_TEMPLATE### end -->
 
@@ -287,11 +287,11 @@ This subpart is used to display the regular list of products. It's also used by 
   </div>
   <div class="anzahl_LIST">
     ###GW1B### Anzahl: ###GW1E### <INPUT class="input_qty" size="4" maxlength="6" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
-    <input type="image" src="###PATH_FE_REL###res/icons/fe/basket.gif" name="basket" class="inputimage_list" alt="In den Warenkorb" />
+    <input type="image" src="###PATH_FE_REL###res/icons/fe/basket.gif" name="basket" class="inputimage_list" alt="In den Warenkorb">
       <!-- ###FE_GROUP_1_TEMPLATE### begin -->
     <input type="image" name="addtomemo" class="addtomemo" src="###PATH_FE_REL###res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;%5Baddmemo%5D=###PRODUCT_UID###';" title="Add to memo">
       <!-- ###FE_GROUP_1_TEMPLATE### end -->
-    <input type="button" class="button2_LIST" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'" />
+    <input type="button" class="button2_LIST" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'">
 
    </div>
 </div>
@@ -328,8 +328,8 @@ This subpart is used to display the regular list of products. It's also used by 
 	  <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
 		<!-- ###ITEM_CATEGORY### begin -->
 
-    <br />###GW1B######CATEGORY_TITLE######GW1E###
-		<br />
+    <br>###GW1B######CATEGORY_TITLE######GW1E###
+		<br>
 
 		<!-- ###ITEM_CATEGORY### end -->
 		<!-- ###ITEM_PRODUCT_AND_ITEMS### begin -->
@@ -349,8 +349,8 @@ This subpart is used to display the regular list of products. It's also used by 
     <!--###LINK_ITEM###-->
     ###GW1B###<b>###ARTICLE_TITLE###</b>###GW1E###
     <!--###LINK_ITEM###-->
-    <br />
-    ###ARTICLE_IMAGE### <br />
+    <br>
+    ###ARTICLE_IMAGE### <br>
     <!-- ###display_variant2### -->
     Größe:  ###ARTICLE_SIZE###
     <!-- ###display_variant2### -->
@@ -425,7 +425,7 @@ This subpart is used to display the regular list of products. It's also used by 
 		<!-- ###ORDER_NOROWS### end -->
 
 
-<br /><br />
+<br><br>
 
 
 <!-- ###ORDERS_LIST_TEMPLATE### end -->
@@ -553,24 +553,24 @@ This subpart is used to display the regular list of gift products.
 				<dd class="input-gift"><input type="text" name="###FIELD_NAME_DELIVERY_EMAIL###" size="30" value="###GIFT_DELIVERY_EMAIL###"></dd>
 
 				<dt>###GW1B###<strong>Nachricht: </strong>###GW1E###</dt>
-				<dd class="input-gift"><textarea cols=30 rows=5 name="###FIELD_NAME_GIFT_NOTE###" >###GIFT_NOTE###</textarea></dd>
+				<dd class="input-gift"><textarea cols=30 rows=5 name="###FIELD_NAME_GIFT_NOTE###">###GIFT_NOTE###</textarea></dd>
       </dl>
      </div><!--Ende class address-gift-->
 	             <div class="web_price_gift_LIST">
 
             ###GW1B###Web-Preis: ###PRICE_TAX### &euro;###GW1E###
 						###GW2B###(enth. MwSt.: ###PRICE_ONLY_TAX### &euro;)###GW2E###
-            ###PRODUCT_DELIVERY###<br /><br />
+            ###PRODUCT_DELIVERY###<br><br>
   </div>
   <div class="anzahl_gift_LIST">
     ###GW1B### Anzahl: ###GW1E### <INPUT class="input_qty" size="4" maxlength="6" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
     <input type="hidden" name="giftnumber" value="###GIFTNO###">
     <input type="hidden" name="mode_update" value="0">
-    <input type="image" src="###PATH_FE_REL###res/icons/fe/basket.gif" name="basket" class="inputimage_list" alt="In den Warenkorb" />
+    <input type="image" src="###PATH_FE_REL###res/icons/fe/basket.gif" name="basket" class="inputimage_list" alt="In den Warenkorb">
       <!-- ###FE_GROUP_1_TEMPLATE### begin -->
     <input type="image" name="addtomemo" class="addtomemo" src="###PATH_FE_REL###res/icons/fe/addmemo.png" value="auf die Merkliste" onClick="document.getElementsByName('###FORM_NAME###')[0].action='###FORM_MEMO###&amp;tt_products%5Baddmemo%5D=###PRODUCT_UID###';" title="Add to memo">
       <!-- ###FE_GROUP_1_TEMPLATE### end -->
-    <input type="button" class="button2_gift_LIST" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'" />
+    <input type="button" class="button2_gift_LIST" name="warenkorb" value="zum Warenkorb" onclick="self.location.href='index.php?id=###PID_BASKET###'">
    </div>
 </div><!--Ende Floatbox-->
 	    	</form>
@@ -588,7 +588,7 @@ This subpart is used to display the regular list of gift products.
 <!-- ###ITEM_LIST_TEMPLATE### end -->
 
 <!-- ###ITEM_LIST_GIFTS_TEMPLATE### end-->
-<br /><br />
+<br><br>
 
 <!--------------------------------------- ITEM_SINGLE_DISPLAY --------------------------------------------------------------------------->
 
@@ -605,8 +605,8 @@ This subpart is used to display the regular list of gift products.
 
 <form method="post" name="###FORM_NAME###" action="###FORM_URL###">
   <p class="single_item_itemnumber">ISBN:&nbsp;###PRODUCT_ITEMNUMBER###</p>
-  <div id="PRODUCT_TITLE_SINGLE"><!--###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b><br />###GW1E######PRODUCT_SUBTITLE###<!--###LINK_ITEM###-->
-  <br /><a href="http://###PRODUCT_WWW###">###PRODUCT_WWW###</a>
+  <div id="PRODUCT_TITLE_SINGLE"><!--###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b><br>###GW1E######PRODUCT_SUBTITLE###<!--###LINK_ITEM###-->
+  <br><a href="http://###PRODUCT_WWW###">###PRODUCT_WWW###</a>
   </div>
 
 
@@ -620,9 +620,9 @@ This subpart is used to display the regular list of gift products.
 
 
    <div id="PRODUCT_NOTE_SINGLE">
-      ###HERSTELLER### <br />
-   		###PRODUCT_NOTE### <br />
-   		###PRODUCT_NOTE2### <br />
+      ###HERSTELLER### <br>
+   		###PRODUCT_NOTE### <br>
+   		###PRODUCT_NOTE2### <br>
    		###PRODUCT_NOTE_UID_1_title###
    		###PRODUCT_NOTE_UID_1_1_TEXT_bodytext###
    </div>
@@ -631,36 +631,36 @@ This subpart is used to display the regular list of gift products.
       ###PRODUCT_RELATED_UID###
    </div>
    <!--
-    <br /><br />
-    Gewicht:###PRODUCT_WEIGHT###<br /><br />
-    Fator:###PRODUCT_UNIT###<br /><br />
-    Faktor der Maßeinheit:###PRODUCT_UNIT_FACTOR###<br /><br />
+    <br><br>
+    Gewicht:###PRODUCT_WEIGHT###<br><br>
+    Fator:###PRODUCT_UNIT###<br><br>
+    Faktor der Maßeinheit:###PRODUCT_UNIT_FACTOR###<br><br>
    -->
 
       <!-- ###FE_GROUP_1_TEMPLATE### begin -->
 
    <div id="PRODUCT_DIRECTCOST">
-    Einkaufspreis: ###DIRECTCOST_TAX### (###DIRECTCOST_NO_TAX###)<br />
+    Einkaufspreis: ###DIRECTCOST_TAX### (###DIRECTCOST_NO_TAX###)<br>
    </div>
 
       <!-- ###FE_GROUP_1_TEMPLATE### end -->
 
    <div class="DATESHEET_SINGLE">
-      <!--###LINK_DATASHEET###--> Datenblatt <!--###LINK_DATASHEET###--><br />
+      <!--###LINK_DATASHEET###--> Datenblatt <!--###LINK_DATASHEET###--><br>
    </div>
 
    <div class="BULKILY_WARNING_SINGLE">
-     ###BULKILY_WARNING### <br />
+     ###BULKILY_WARNING### <br>
    </div>
 
    <div id="backtolist_SINGLE">
       <!--###LINK_ITEM###-->
-      <img src="###PATH_FE_REL###res/icons/fe/zur_liste.gif" />zurück zur Liste
+      <img src="###PATH_FE_REL###res/icons/fe/zur_liste.gif">zurück zur Liste
       <!--###LINK_ITEM###-->
    </div>
 
    <div id="SHOPADMIN_EMAIL_SINGLE">
-      <a href="mailto:###SHOPADMIN_EMAIL###?subject=Frage zum Artikel: ###PRODUCT_TITLE###&amp;body=Ich habe folgenden Artikel gesehen: ###PRODUCT_TITLE### %0AMeine Fragen: "><b>Fragen zum Artikel</b></a>  <br />
+      <a href="mailto:###SHOPADMIN_EMAIL###?subject=Frage zum Artikel: ###PRODUCT_TITLE###&amp;body=Ich habe folgenden Artikel gesehen: ###PRODUCT_TITLE### %0AMeine Fragen: "><b>Fragen zum Artikel</b></a>  <br>
    </div>
 
  </div>
@@ -788,8 +788,8 @@ Sie sind eingeloggt!
 <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
 <!-- ###ITEM_CATEGORY### begin -->
 
-<br />###GW1B###<font size="3"><strong>###CATEGORY_TITLE###</strong></font> ###GW1E###
-<br />
+<br>###GW1B###<font size="3"><strong>###CATEGORY_TITLE###</strong></font> ###GW1E###
+<br>
 
 <!-- ###ITEM_CATEGORY### end -->
 <!-- ###ITEM_LIST### begin -->
@@ -801,11 +801,11 @@ Sie sind eingeloggt!
     <!--###LINK_ITEM###-->
     ###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
     <!--###LINK_ITEM###-->
-    <br />
-    ###PRODUCT_IMAGE1### <br />
+    <br>
+    ###PRODUCT_IMAGE1### <br>
     <!-- ###display_variant2### -->
     ###GW2B### Size: ###GW2E### <select style="font-size: 10px"
-    name="###FIELD_SIZE_NAME###" >###PRODUCT_SIZE###</select><br />
+    name="###FIELD_SIZE_NAME###">###PRODUCT_SIZE###</select><br>
     <!-- ###display_variant2### -->
     <!-- ###display_variant5_isSingle### -->
     Einzelprodukt, das nur einmal gewählt werden kann. ###PRODUCT_ADDITIONAL_SINGLE###
@@ -833,7 +833,7 @@ Sie sind eingeloggt!
 		<!--###LINK_PREV###-->###GW2B###<div align="left"><b>vorherige Seite</b>###GW2E###</div><!--###LINK_PREV###-->
 		<!--###LINK_NEXT###-->###GW2B###<div align="right"><b>nächste Seite</b>###GW2E###</div><!--###LINK_NEXT###-->
 
-###GW1B###In Ihrem Browser sollten Cookies zugelassen sein.<br />Sollte die Befüllung des Warenkorbs nach mehreren Versuchen nicht funktionieren, bestellen Sie bitte ber den Link Kontakt/Bestellung per Email. Viel Spaß beim Einkaufen! ###GW1E###
+###GW1B###In Ihrem Browser sollten Cookies zugelassen sein.<br>Sollte die Befüllung des Warenkorbs nach mehreren Versuchen nicht funktionieren, bestellen Sie bitte ber den Link Kontakt/Bestellung per Email. Viel Spaß beim Einkaufen! ###GW1E###
 
 <!-- ###ITEM_LIST_RELATED_TEMPLATE### end -->
 <!-- ###MEMO_TEMPLATE### begin
@@ -851,10 +851,10 @@ This subpart is used to display the regular list of products. It's also used by 
 <!-- ###ITEM_CATEGORY### begin -->
 
 <div class="TITLE"></div>
-<div class="TITLE" >Artikel</div>
-<div class="TITLE" >Preis</div>
-<div class="TITLE" ></div>
-<div class="TITLE" ></div>
+<div class="TITLE">Artikel</div>
+<div class="TITLE">Preis</div>
+<div class="TITLE"></div>
+<div class="TITLE"></div>
 
 <!-- ###ITEM_CATEGORY### end -->
 <!-- ###ITEM_LIST### begin -->
@@ -865,8 +865,8 @@ This subpart is used to display the regular list of products. It's also used by 
     <!--###LINK_ITEM###-->###PRODUCT_IMAGE###<!--###LINK_ITEM###-->
   </div>
   <div style="border-top: 1px dotted #3F4F73;">
-    <!--###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###<!--###LINK_ITEM###--><br />###GW2B######PRODUCT_SUBTITLE######GW2E###<br />
-    ###PRODUCT_NOTE###<br />
+    <!--###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###<!--###LINK_ITEM###--><br>###GW2B######PRODUCT_SUBTITLE######GW2E###<br>
+    ###PRODUCT_NOTE###<br>
     <!-- ###display_variant2### -->
     <select name="###FIELD_SIZE_NAME###">###PRODUCT_SIZE###</select>
     <!-- ###display_variant2### -->
@@ -875,8 +875,8 @@ This subpart is used to display the regular list of products. It's also used by 
     <!-- ###display_variant1### -->
   </div>
   <div style="border-top: 1px dotted #3F4F73;">
-    ###GW1B###<strong>###PRICE_TAX### &euro;###GW1E###<br />
-    ###GW2B### Anzahl: ###GW2E###<br />
+    ###GW1B###<strong>###PRICE_TAX### &euro;###GW1E###<br>
+    ###GW2B### Anzahl: ###GW2E###<br>
     <INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
   </div>
   <div style="padding: 2px 2px 2px 2px; border-top: 1px dotted #3F4F73;">
@@ -973,7 +973,7 @@ Warenkorbansicht Anfang -->
     <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
     <!-- ###ITEM_CATEGORY### begin -->
 
-    <br />###CATEGORY_TITLE###<br />
+    <br>###CATEGORY_TITLE###<br>
 
     <!-- ###ITEM_CATEGORY### end -->
     <!-- ###ITEM_LIST### begin -->
@@ -987,7 +987,7 @@ Warenkorbansicht Anfang -->
         <!-- ###display_variant2### -->
   		  ###PRODUCT_SIZE###
   		  <!-- ###display_variant2### -->
-        <!--<br />-->
+        <!--<br>-->
         <!-- ###display_variant1### -->
   		  ###PRODUCT_COLOR###
   	    <!-- ###display_variant1### -->
@@ -1011,7 +1011,7 @@ Warenkorbansicht Anfang -->
       ###GW2B###<b>Versand und Verpackung:</b>###GW2E###
     </div>
     <div id="text_pauschale_BASKET2">
-      ###GW1B###Pauschale:<br /><b>###SHIPPING_TITLE###</b>###GW1E###
+      ###GW1B###Pauschale:<br><b>###SHIPPING_TITLE###</b>###GW1E###
     </div>
 
     <div class="floatbox_BASKET3">
@@ -1024,7 +1024,7 @@ Warenkorbansicht Anfang -->
     </div>
 
     <div id="text_zahlungsweise_BASKET4">
-      ###GW2B###Zahlungsweise:<b>&nbsp;###PAYMENT_TITLE###</b><br />###GW2E###
+      ###GW2B###Zahlungsweise:<b>&nbsp;###PAYMENT_TITLE###</b><br>###GW2E###
     </div>
 
     <div class="floatbox_BASKET4">
@@ -1117,8 +1117,8 @@ Warenkorbansicht Anfang -->
         ###GW2B###<b>Gesamtbetrag:</b>###GW2E###
       </div>
       <div id="PRICE_TOTAL_BASKET5">
-        ###GW1B### <b>###TAX_INCL_EXCL### ###PRICE_TOTAL_TAX###</b><br />
-        (exkl. MwSt. ###PRICE_TOTAL_NO_TAX###)<br /> (MwSt. ###PRICE_TOTAL_ONLY_TAX###) ###GW1E###
+        ###GW1B### <b>###TAX_INCL_EXCL### ###PRICE_TOTAL_TAX###</b><br>
+        (exkl. MwSt. ###PRICE_TOTAL_NO_TAX###)<br> (MwSt. ###PRICE_TOTAL_ONLY_TAX###) ###GW1E###
 
       </div>
     </div>
@@ -1180,8 +1180,8 @@ If the basket is empty this subpart is displayed
 <!---------------------------------------------- BASKET_INFO_TEMPLATE ------------------------------------------------------------------->
 
 <h2>BASKET_INFO_TEMPLATE</h2>
-<p><em>Subpart used if the GPvar "products_info" was set.<br />
-This is normally used to let people enter address information separately from the real basket.<br />
+<p><em>Subpart used if the GPvar "products_info" was set.<br>
+This is normally used to let people enter address information separately from the real basket.<br>
 Exact same features as BASKET_TEMPLATE.</em></p>
 <!-- ###BASKET_INFO_TEMPLATE### begin
 	Subpart used if the GPvar "products_info" was set.
@@ -1198,24 +1198,24 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	            <fieldset>
 	                <div class="billing_address_title">Rechnungsanschrift:</div>
 	                <p class="billing_address_info">
-                    	Geben Sie ihre Adresse hier ein. Der Name und die Adresse wird auf die Rechnung geschrieben.<br />
+                    	Geben Sie ihre Adresse hier ein. Der Name und die Adresse wird auf die Rechnung geschrieben.<br>
 üblicherweise senden wir die  Artikel an die Adresse, aber wenn Sie eine alternative Adresse im unteren Feld eingeben, werden wir die Artikel
 an diese Adresse schicken.
                     </p>
 	                <div class="billing_address">
 	                    <label for="billing_name">Name/Unternehmen*: </label>
-	                        <input type="text" name="recs[personinfo][name]" size="30" id="billing_name" value="###PERSON_NAME###" /><br />
+	                        <input type="text" name="recs[personinfo][name]" size="30" id="billing_name" value="###PERSON_NAME###"><br>
 	                    <label for="billing_address">Straße*: </label>
-	                        <input type="text" name="recs[personinfo][address]" size="30" id="billing_address" value="###PERSON_ADDRESS###" /><br />
+	                        <input type="text" name="recs[personinfo][address]" size="30" id="billing_address" value="###PERSON_ADDRESS###"><br>
 	                    <label for="billing_zip">PLZ/Stadt*: </label>
-	                        <input type="text" name="recs[personinfo][zip]" size="5" id="billing_zip" value="###PERSON_ZIP###" />&nbsp;<input type="text" name="recs[personinfo][city]" size="20" id="billing_city" value="###PERSON_CITY###" /><br />
+	                        <input type="text" name="recs[personinfo][zip]" size="5" id="billing_zip" value="###PERSON_ZIP###">&nbsp;<input type="text" name="recs[personinfo][city]" size="20" id="billing_city" value="###PERSON_CITY###"><br>
 	                    <label for="billing_country">Land*: </label>
-	                       <!-- <input type="text" name="recs[personinfo][country]" size="30" id="billing_country" value="###PERSON_COUNTRY_FIRST###" /><br />
-	                   --><div class="billing_country">###PERSON_COUNTRY_CODE###</div><br />
+	                       <!-- <input type="text" name="recs[personinfo][country]" size="30" id="billing_country" value="###PERSON_COUNTRY_FIRST###"><br>
+	                   --><div class="billing_country">###PERSON_COUNTRY_CODE###</div><br>
                       <label for="billing_email">Email*: </label>
-	                        <input type="text" name="recs[personinfo][email]" size="30" id="billing_email" value="###PERSON_EMAIL###" /><br />
+	                        <input type="text" name="recs[personinfo][email]" size="30" id="billing_email" value="###PERSON_EMAIL###"><br>
 	                    <label for="billing_telephone">Telefon*: </label>
-	                        <input type="text" name="recs[personinfo][telephone]" size="30" id="billing_telephone" value="###PERSON_TELEPHONE###" />
+	                        <input type="text" name="recs[personinfo][telephone]" size="30" id="billing_telephone" value="###PERSON_TELEPHONE###">
 	                </div>
 	            </fieldset>
             <!-- ###BILLING_ADDRESS### end-->
@@ -1247,7 +1247,7 @@ an diese Adresse schicken.
 	                    This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 	                    -->
 	                    <!-- ###MESSAGE_SHIPPING_10### begin -->
-Wenn sie wünschen, daß ihre Ware an eine andere Adresse geliefert wird, tragen Sie hier diese Anschrift ein.<br />
+Wenn sie wünschen, daß ihre Ware an eine andere Adresse geliefert wird, tragen Sie hier diese Anschrift ein.<br>
 	                    <!-- ###MESSAGE_SHIPPING_10### end -->
 	                    <!-- ###MESSAGE_SHIPPING_20### begin -->
 	                <!-- ###MESSAGE_SHIPPING_20### end -->
@@ -1256,17 +1256,17 @@ Wenn sie wünschen, daß ihre Ware an eine andere Adresse geliefert wird, tragen
                 </p>
 	            <div class="delivery_address">
 	                <label for="delivery_name">Kontaktperson: </label>
-	                    <input type="text" name="recs[delivery][name]" size="30" id="delivery_name" value="###DELIVERY_NAME###" /><br />
+	                    <input type="text" name="recs[delivery][name]" size="30" id="delivery_name" value="###DELIVERY_NAME###"><br>
 	                <label for="delivery_address">Straße: </label>
-	                    <input type="text" name="recs[delivery][address]" size="30" id="delivery_address" value="###DELIVERY_ADDRESS###" /><br />
+	                    <input type="text" name="recs[delivery][address]" size="30" id="delivery_address" value="###DELIVERY_ADDRESS###"><br>
 					<label for="delivery_zip">PLZ/Stadt: </label>
-                    	<input type="text" name="recs[delivery][zip]" size="5" id="delivery_zip" value="###DELIVERY_ZIP###" />&nbsp;<input type="text" name="recs[delivery][city]" size="20" id="delivery_city" value="###DELIVERY_CITY###" /><br />
+                    	<input type="text" name="recs[delivery][zip]" size="5" id="delivery_zip" value="###DELIVERY_ZIP###">&nbsp;<input type="text" name="recs[delivery][city]" size="20" id="delivery_city" value="###DELIVERY_CITY###"><br>
                     <label for="delivery_country">Land: </label>
-                    	<input type="text" name="recs[delivery][country]" size="30" id="delivery_country" value="###DELIVERY_COUNTRY###" /><br />
+                    	<input type="text" name="recs[delivery][country]" size="30" id="delivery_country" value="###DELIVERY_COUNTRY###"><br>
 	                <label for="delivery_email">Email: </label>
-	                    <input type="text" name="recs[delivery][email]" size="30" id="delivery_email" value="###DELIVERY_EMAIL###" /><br />
+	                    <input type="text" name="recs[delivery][email]" size="30" id="delivery_email" value="###DELIVERY_EMAIL###"><br>
 	                <label for="delivery_telephone">Telefon: </label>
-	                    <input type="text" name="recs[delivery][telephone]" size="30" id="delivery_telephone" value="###DELIVERY_TELEPHONE###" />
+	                    <input type="text" name="recs[delivery][telephone]" size="30" id="delivery_telephone" value="###DELIVERY_TELEPHONE###">
 	            </div>
 	        </fieldset>
 
@@ -1293,8 +1293,8 @@ Wenn sie wünschen, daß ihre Ware an eine andere Adresse geliefert wird, tragen
             <!--<p><em>Bemerkung: Felder mit * müssen ausgefüllt werden!</em></p>-->
 
 			<div class="form_control">
-	        <input type="submit" name="products_update" value="zurück zum Warenkorb" />
-	        <input type="submit" name="products_payment" value="zur Kasse/Bestellung" />
+	        <input type="submit" name="products_update" value="zurück zum Warenkorb">
+	        <input type="submit" name="products_payment" value="zur Kasse/Bestellung">
 		<input type="hidden" name="creditpoints_saved" value="###CREDITPOINTS_SAVED###">
 		<input type="hidden" name="creditpoints_spended" value="###CREDITPOINTS_SPENDED###">
 		<input type="hidden" name="creditpoints_gifts" value="###CREDITPOINTS_GIFTS###">
@@ -1399,7 +1399,7 @@ Exact same features as BASKET_TEMPLATE
 <div class="floatbox_BASKET_PAYMENT_TEMPLATE2">
   <div id="produkte_BASKET_PAYMENT_TEMPLATE2">
     ###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
-    <br />###CATEGORY_TITLE###<br />
+    <br>###CATEGORY_TITLE###<br>
   </div>
   <div id="anzahl_BASKET_PAYMENT_TEMPLATE2">
     ###GW1B### ###FIELD_QTY### ###GW1E###
@@ -1457,10 +1457,10 @@ Exact same features as BASKET_TEMPLATE
     ###GW1B###Email:###GW1E###
   </div>-->
   <div id="text_PERSON_EMAIL_BASKET_PAYMENT_TEMPLATE3">
-    ###GW1B###<strong>###PERSON_EMAIL###</strong>###GW1E### ###GW2B###<br />
+    ###GW1B###<strong>###PERSON_EMAIL###</strong>###GW1E### ###GW2B###<br>
   </div>
   <div id="text_email_BASKET_PAYMENT_TEMPLATE3">
-    (An diese Email-Adresse wird die Bestätigung Ihrer Bestellung geschickt!)###GW2E###<br />
+    (An diese Email-Adresse wird die Bestätigung Ihrer Bestellung geschickt!)###GW2E###<br>
   </div>
 </div>
 
@@ -1508,10 +1508,10 @@ Exact same features as BASKET_TEMPLATE
     ###GW1B###Email:###GW1E###
   </div>  -->
   <div id="DELIVERY_EMAIL_BASKET_PAYMENT_TEMPLATE4">
-    ###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E### ###GW2B###<br />
+    ###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E### ###GW2B###<br>
   </div>
   <div id="text_email_DELIVERY_EMAIL_BASKET_PAYMENT_TEMPLATE4">
-    (An diese Email-Adresse wird die Bestätigung Ihrer Bestellung geschickt!)###GW2E###<br />
+    (An diese Email-Adresse wird die Bestätigung Ihrer Bestellung geschickt!)###GW2E###<br>
   </div>
   <div id="text_DELIVERY_DESIRED_DATE_BASKET_PAYMENT_TEMPLATE4">
     ###GW1B###<strong>gewünschtes Lieferdatum:</strong>###GW1E###
@@ -1532,7 +1532,7 @@ Exact same features as BASKET_TEMPLATE
 
 <div class="floatbox_BASKET_PAYMENT_TEMPLATE5">
   <div id="text_versand_BASKET_PAYMENT_TEMPLATE5">
-    ###GW2B###<b>Versand und Verpackung:</b>###GW2E###<br />
+    ###GW2B###<b>Versand und Verpackung:</b>###GW2E###<br>
   </div>
   <div id="SHIPPING_TITLE_BASKET_PAYMENT_TEMPLATE5">
     ###GW1B###<b>###SHIPPING_TITLE###</b>###GW1E###
@@ -1543,7 +1543,7 @@ Exact same features as BASKET_TEMPLATE
 </div>
 <div class="floatbox_BASKET_PAYMENT_TEMPLATE6">
   <div id="text_zahlungsweise_BASKET_PAYMENT_TEMPLATE6">
-    ###GW2B###<b>Zahlungsweise:</b>###GW2E###<br />
+    ###GW2B###<b>Zahlungsweise:</b>###GW2E###<br>
 
   </div>
   <div id="PAYMENT_TITLE_BASKET_PAYMENT_TEMPLATE6">
@@ -1572,23 +1572,23 @@ Exact same features as BASKET_TEMPLATE
   </div>
  <!-- <div id="PRICE_TOTAL_BASKET_PAYMENT_TEMPLATE7" style="white-space:nowrap;">
      ###GW1B### <b>###PRICE_TOTAL_TAX###</b>
-     <br />
-     (exkl. MwSt.: ###PRICE_TOTAL_NO_TAX###)<br />###GW1E###
+     <br>
+     (exkl. MwSt.: ###PRICE_TOTAL_NO_TAX###)<br>###GW1E###
   </div>-->
   <div id="PRICE_TOTAL_BASKET_PAYMENT_TEMPLATE7" style="white-space:nowrap;">
      ###GW1B### <strong>###PRICE_VOUCHERTOTAL_TAX###</strong>###GW1E###
-     <br />
-     (exkl. MwSt.: ###PRICE_VOUCHERTOTAL_NO_TAX###)<br />###GW1E###
+     <br>
+     (exkl. MwSt.: ###PRICE_VOUCHERTOTAL_NO_TAX###)<br>###GW1E###
   </div>
 
 
   <!--
-  <div id="PRICE_DISCOUNT"><strong>Enhaltener Rabatt:</strong><br />
+  <div id="PRICE_DISCOUNT"><strong>Enhaltener Rabatt:</strong><br>
   ###PRICE_TOTUNITS_DISCOUNT###
   </div>-->
 
   <div id="SUBMIT_BASKET_PAYMENT_TEMPLATE7">
-  <br />
+  <br>
         <!-- ###MESSAGE_PAYMENT### begin -->
         <!-- ###MESSAGE_PAYMENT_70### -->
         <!--<p>Sie bezahlen über den Paypal Gateway nach Abschluß der Bestellung.</p>-->
@@ -1606,7 +1606,7 @@ Exact same features as BASKET_TEMPLATE
 
   <form method="post" action="###FORM_URL###" name="###FORM_NAME###" id="paymentForm">
   <input type="submit" name="products_update" value="zurück zum Warenkorb">
-  <input type="hidden" name="products_cmd" value="cardno" />
+  <input type="hidden" name="products_cmd" value="cardno">
   <input type="submit" name="products_finalize" value="Bestellung abschließen!" onclick="document.forms[0].action='###FORM_URL_THANKS###'; document.forms[0].target='###FORM_URL_TARGET###';">
   </div>
  </div>
@@ -1632,10 +1632,10 @@ Exact same features as BASKET_TEMPLATE
     <!-- ###SUB_CREDITPOINTS_AMOUNT_EMPTY### end -->
     <!-- ###SUB_CREDITPOINTS_AMOUNT### begin -->
     <input size="5" class="number" class="button3" maxlength="5" type="text" name="###CHANGE_AMOUNT_CREDITPOINTS###" value="###AMOUNT_CREDITPOINTS_QTY###">
-    <br /><img src="###PATH_FE_REL###res/icons/fe/+.gif" width="12" height="11" class="quantity" onClick="javascript:document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value++;">
-    <br /><img src="###PATH_FE_REL###res/icons/fe/_.gif" width="12" height="11" class="quantity" onClick="if (!parseInt(document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value) <= 0) {document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value--;};" >
-    <br /><br />
-    <input name="products_payment" type="submit" class="button3" value="Punkte einlösen" >
+    <br><img src="###PATH_FE_REL###res/icons/fe/+.gif" width="12" height="11" class="quantity" onClick="javascript:document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value++;">
+    <br><img src="###PATH_FE_REL###res/icons/fe/_.gif" width="12" height="11" class="quantity" onClick="if (!parseInt(document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value) <= 0) {document.forms['###FORM_NAME###']['###CHANGE_AMOUNT_CREDITPOINTS###'].value--;};">
+    <br><br>
+    <input name="products_payment" type="submit" class="button3" value="Punkte einlösen">
 
     <!-- ###SUB_CREDITPOINTS_AMOUNT### end -->
     <!-- ###SUB_CREDITPOINTS_DISCOUNT_EMPTY### begin -->
@@ -1654,7 +1654,7 @@ Exact same features as BASKET_TEMPLATE
    <!-- ###SUB_VOUCHERCODE_START### begin -->
      <p> Gutschein Code:  </p>
      <input name="###INSERT_VOUCHERCODE###" type="text" class="field" value="###VALUE_VOUCHERCODE###">
-     <input type="submit" class="buttonsmall" value="Rabatt/Preis berechnen" >
+     <input type="submit" class="buttonsmall" value="Rabatt/Preis berechnen">
    <!-- ###SUB_VOUCHERCODE_START### end -->
    <!-- ###SUB_VOUCHERCODE_NODISCOUNT### begin -->
 
@@ -1730,7 +1730,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 <!--
 <div class="BASKET_ORDERCONFIRMATION_TEMPLATE">-->
   <div id="text_dank_BASKET_ORDERCONFIRMATION_TEMPLATE">
-    ###GW1B###Vielen Dank für Ihre Bestellung!<br /><br />
+    ###GW1B###Vielen Dank für Ihre Bestellung!<br><br>
     Ihre Bestellung ist nun abgeschlossen und hat folgende Nummer:
   </div>
   <div id="ORDER_UID_BASKET_ORDERCONFIRMATION_TEMPLATE">
@@ -1751,17 +1751,17 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
   </div>
   <div id="text_zahlungsart_rechnung_BASKET_ORDERCONFIRMATION_TEMPLATE">
     Die Ware wird nach Eingang Ihrer Zahlung auf unserem Konto versendet.</br>
-    Bitte überweisen Sie den Rechnungsbetrag auf folgendes Konto:<br /><br />
-    Empfänger:    <br />
-    Bankinstitut: <br />
-    Konto Nr.:     <br />
-    Bankleitzahl:  <br />
-    Angabe Verwendungszweck: Vollständiger Name + komplette Adresse<br /><br />
+    Bitte überweisen Sie den Rechnungsbetrag auf folgendes Konto:<br><br>
+    Empfänger:    <br>
+    Bankinstitut: <br>
+    Konto Nr.:     <br>
+    Bankleitzahl:  <br>
+    Angabe Verwendungszweck: Vollständiger Name + komplette Adresse<br><br>
 
-    IBAN: <br />
-    BIC:   <br /><br />
+    IBAN: <br>
+    BIC:   <br><br>
 
-    Betreff: Ihre Bestellnummer ###ORDER_UID### unbedingt angeben! <br />
+    Betreff: Ihre Bestellnummer ###ORDER_UID### unbedingt angeben! <br>
 	  <!-- ###MESSAGE_PAYMENT_10### end -->
   </div>
   <!--
@@ -1788,9 +1788,9 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
     PayPal:
   </div>
   <div id="text_zahlungsart_paypal_BASKET_ORDERCONFIRMATION_TEMPLATE">
-    Sie haben als Zahlungsart PayPal gewählt. <br />
+    Sie haben als Zahlungsart PayPal gewählt. <br>
     Bezahlen Sie über diesen Link direkt Online per Kreditkarte via PayPal.
-    <br /><br />
+    <br><br>
 
 
 
@@ -1806,8 +1806,8 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
     <input type="hidden" name="lc" value="DE">
     <input type="hidden" name="tax" value="###PRICE_PAYMENT_TAX###">
     <!--<input type="hidden" name="shipping" value="###PRICE_SHIPPING_TAX###">-->
-    <input type="hidden" name="cancel_return" value="http://mytypo3domain.de/index.php?id=329" />
-    <input type="hidden" name="return" value="http://mytypo3domain.de/index.php?id=320" />
+    <input type="hidden" name="cancel_return" value="http://mytypo3domain.de/index.php?id=329">
+    <input type="hidden" name="return" value="http://mytypo3domain.de/index.php?id=320">
     <input type="submit" name="submit" id="button2" value="Bezahlung mit Kreditkarte via PayPal" alt="Bezahlen mit Kreditkarte via Paypal">
 
     </form>
@@ -1830,7 +1830,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
     <input type="hidden" name="trxpassword" value="0">
 
 
-     <input type="hidden" name="trx_amount" value="###PRICE_TOTAL_CENT_TAX###" />
+     <input type="hidden" name="trx_amount" value="###PRICE_TOTAL_CENT_TAX###">
 
      <!--<input type="hidden" name="trx_amount" value="###PRICE_VOUCHERTOTAL_CENT_TAX###">-->
     <input type="hidden" name="trx_currency" value="EUR">
@@ -1897,14 +1897,14 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
   <div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE2">
     <div id="produkte_BASKET_ORDERCONFIRMATION_TEMPLATE2">
       ###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
-      <br />###CATEGORY_TITLE###<br />
+      <br>###CATEGORY_TITLE###<br>
     </div>
     <div id="anzahl_BASKET_ORDERCONFIRMATION_TEMPLATE2">
       ###GW1B### ###FIELD_QTY### ###GW1E###
     </div>
     <div id="gesamt_BASKET_ORDERCONFIRMATION_TEMPLATE2">###GW1B###
       <b>inkl. MwSt. ###PRICE_TOTAL_TAX###</b>
-      <br />(exkl. MwSt. ###PRICE_TOTAL_NO_TAX###) ###GW1E###
+      <br>(exkl. MwSt. ###PRICE_TOTAL_NO_TAX###) ###GW1E###
     </div>
 
   </div>
@@ -1937,10 +1937,10 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
     </div>
 
     <div id="text_PERSON_EMAIL_BASKET_ORDERCONFIRMATION_TEMPLATE3">
-      ###GW1B###<strong>###PERSON_EMAIL###</strong>###GW1E### ###GW2B###<br />
+      ###GW1B###<strong>###PERSON_EMAIL###</strong>###GW1E### ###GW2B###<br>
     </div>
     <div id="text_email_BASKET_ORDERCONFIRMATION_TEMPLATE3">
-      (An diese Email-Adresse wird die Bestätigung Ihrer Bestellung geschickt!)###GW2E###<br />
+      (An diese Email-Adresse wird die Bestätigung Ihrer Bestellung geschickt!)###GW2E###<br>
     </div>
   </div>
 
@@ -1997,10 +1997,10 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
       ###GW1B###Email:###GW1E###
     </div>-->
     <div id="DELIVERY_EMAIL_BASKET_ORDERCONFIRMATION_TEMPLATE4">
-      ###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E### ###GW2B###<br />
+      ###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E### ###GW2B###<br>
     </div>
     <div id="text_email_DELIVERY_EMAIL_BASKET_ORDERCONFIRMATION_TEMPLATE4">
-      (An diese Email-Adresse wird die Bestätigung Ihrer Bestellung geschickt!)###GW2E###<br />
+      (An diese Email-Adresse wird die Bestätigung Ihrer Bestellung geschickt!)###GW2E###<br>
     </div>
     <div id="text_DELIVERY_DESIRED_DATE_BASKET_ORDERCONFIRMATION_TEMPLATE4">
       ###GW1B###gewünschtes Lieferdatum:###GW1E###
@@ -2024,13 +2024,13 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
       ###GW2B###<b>Versand und Verpackung:</b>###GW2E###
     </div>
     <div id="text_pauschale_BASKET_ORDERCONFIRMATION_TEMPLATE5">
-      ###GW1B###Pauschale:<br /><b>###SHIPPING_TITLE###</b>###GW1E###
+      ###GW1B###Pauschale:<br><b>###SHIPPING_TITLE###</b>###GW1E###
     </div>
    <!-- <div id="SHIPPING_SELECTOR_BASKET_ORDERCONFIRMATION_TEMPLATE5">
       ###GW1B######SHIPPING_SELECTOR######GW1E###
     </div>-->
     <div id="PRICE_SHIPPING_TAX_BASKET_ORDERCONFIRMATION_TEMPLATE5">
-       ###GW1B### <b>###TAX_INCL_EXCL### ###PRICE_SHIPPING_TAX###</b><br />
+       ###GW1B### <b>###TAX_INCL_EXCL### ###PRICE_SHIPPING_TAX###</b><br>
       (exkl. MwSt. ###PRICE_SHIPPING_NO_TAX###)###GW1E###
     </div>
   </div>
@@ -2050,7 +2050,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 
 
     <div id="TAX_INCL_EXCL_BASKET_ORDERCONFIRMATION_TEMPLATE6">
-      ###GW1B###<b>###TAX_INCL_EXCL### ###PRICE_PAYMENT_TAX###</b><br />
+      ###GW1B###<b>###TAX_INCL_EXCL### ###PRICE_PAYMENT_TAX###</b><br>
       (exkl. MwSt. ###PRICE_PAYMENT_NO_TAX###)###GW1E###
     </div>
   </div>
@@ -2062,9 +2062,9 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
     <div id="PRICE_TOTAL_BASKET_ORDERCONFIRMATION_TEMPLATE7" style="white-space:nowrap;">
       ###GW1B### <b>inkl. MwSt. ###PRICE_VOUCHERTOTAL_TAX###</b>
       <!-- ###GW1B### <b>inkl. MwSt. ###PRICE_TOTAL_TAX###</b>-->
-      <br />
-      (exkl. MwSt. ###PRICE_VOUCHERTOTAL_NO_TAX###)<br />###GW1E###
-      <!--(exkl. MwSt. ###PRICE_TOTAL_NO_TAX###)<br />###GW1E###-->
+      <br>
+      (exkl. MwSt. ###PRICE_VOUCHERTOTAL_NO_TAX###)<br>###GW1E###
+      <!--(exkl. MwSt. ###PRICE_TOTAL_NO_TAX###)<br>###GW1E###-->
     </div>
   </div>
 
@@ -2072,18 +2072,18 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 
   <div id="text_regards_BASKET_ORDERCONFIRMATION_TEMPLATE">
     ###GW1B###
-    <br />
-    <br />
-    Mit freundlichen Grüßen: <br />
-    <br />
-    <strong>mytypo3domain.de</strong><br />
-    Empfänger: mytypo3domain<br />
-    Bankinstitut:<br />
-    Konto Nr.: <br />
-    Bankleitzahl: <br />
-    Angabe Verwendungszweck: Vollständiger Name + komplette Adresse<br /><br />
-    IBAN: <br />
-    BIC:   <br />
+    <br>
+    <br>
+    Mit freundlichen Grüßen: <br>
+    <br>
+    <strong>mytypo3domain.de</strong><br>
+    Empfänger: mytypo3domain<br>
+    Bankinstitut:<br>
+    Konto Nr.: <br>
+    Bankleitzahl: <br>
+    Angabe Verwendungszweck: Vollständiger Name + komplette Adresse<br><br>
+    IBAN: <br>
+    BIC:   <br>
     ###GW1E### </p>
   </div>
 </div>
@@ -2112,7 +2112,7 @@ If the basket is empty this subpart is displayed -->
 If payment is initiated but the required information fields are not filled in correctly, this happens-->
 
 <div class="BASKET_REQUIRED_INFO_MISSING">
-  Fehler bei der Eingabe<br />
+  Fehler bei der Eingabe<br>
   <b>Sie haben nicht alle erforderlichen Felder mit Ihren Adressinformationen ausgefüllt. ###ERROR_DETAILS### Bitte gehen Sie zurück und aktualisieren Ihre Eingaben.</b>
 </div>
   <form method="post" action="###FORM_URL###">
@@ -2170,9 +2170,9 @@ When someone has entered a wrong unique gift number this message will appear
 Displays the view of the order status by tracking codes.-->
 
 ###GW1B###
-<b>Ihre Bestellung (###ORDER_UID###) hat folgenden Status:</b><br /><br />
-(siehe letzte Zeile für aktuellsten Stand)<br />
-<br />
+<b>Ihre Bestellung (###ORDER_UID###) hat folgenden Status:</b><br><br>
+(siehe letzte Zeile für aktuellsten Stand)<br>
+<br>
 
 <div class="floatbox_TRACKING_DISPLAY_INFO1">
   <div id="text_datum_zeit_TRACKING_DISPLAY_INFO1">
@@ -2209,13 +2209,13 @@ This part is repeated for each order status item and finally this part in the te
 
 <!-- ###STATUS_ITEM### end -->
 
-<br />
+<br>
 
 <!-- ###ADMIN_CONTROL### begin -->
 <div class="shopadmin">
-  ###GW1B###Shop ADMIN:<br /><br />
+  ###GW1B###Shop ADMIN:<br><br>
 
-  Order: ####ORDER_UID###<br /><br />
+  Order: ####ORDER_UID###<br><br>
 </div>
 
 
@@ -2227,13 +2227,13 @@ This part is repeated for each order status item and finally this part in the te
 ###STATUS_OPTIONS###
 </select>
 
-<br />
-###GW1B###Kommentar zum neuen Bestellstatus:###GW1B###<br />
-<textarea cols="40" rows="5" name="orderRecord[status_comment]"></textarea><br />
+<br>
+###GW1B###Kommentar zum neuen Bestellstatus:###GW1B###<br>
+<textarea cols="40" rows="5" name="orderRecord[status_comment]"></textarea><br>
 
-<input type="hidden" name="tracking" value="###TRACKING_NUMBER###"><br />
-<input type="hidden" name="update_code" value="###UPDATE_CODE###"><br />
-<input type="submit" name="submit" value="Bestellstatus hinzufügen"><br />
+<input type="hidden" name="tracking" value="###TRACKING_NUMBER###"><br>
+<input type="hidden" name="update_code" value="###UPDATE_CODE###"><br>
+<input type="submit" name="submit" value="Bestellstatus hinzufügen"><br>
 </form>
 
 <hr>
@@ -2241,60 +2241,60 @@ Zu einer anderen Bestellung wechseln:
 <form method="post" action="###FORM_URL###" name="orderChange">
 <select name="tracking" size="9">
 ###OTHER_ORDERS_OPTIONS###
-</select><br /><br />
+</select><br><br>
 <input type="submit" name="submit" value="Select">
-<input type="hidden" name="update_code" value="###UPDATE_CODE###"><br />
+<input type="hidden" name="update_code" value="###UPDATE_CODE###"><br>
 </form>
 <!-- ###ADMIN_CONTROL_OK### end -->
 <!-- ###ADMIN_CONTROL_DENY### begin -->
 <form method="post" action="###FORM_URL###" name="orderChange">
-<input type="hidden" name="tracking" value="###TRACKING_NUMBER###"><br />
-###GW1B###Code:###GW1B###<br />
+<input type="hidden" name="tracking" value="###TRACKING_NUMBER###"><br>
+###GW1B###Code:###GW1B###<br>
 <input type="password" size=40 name="update_code" value="###UPDATE_CODE###">
 <input type="submit" name="submit" value="Code eingeben">
 </form>
 
 <!-- ###ADMIN_CONTROL_DENY### begin -->
 
-<br /><br />
+<br><br>
 
 <!-- ###ADMIN_CONTROL### end -->
 
 <p><strong>Email-Benachrichtigung:</strong></p>
-Wenn Sie sich ber den Status Ihrer Bestellung informieren lassen wollen <!--(###FIELD_EMAIL###)--> sobald sich der Status geändert hat, dann überprüfen Sie bitte folgendes:<br /><br />
+Wenn Sie sich ber den Status Ihrer Bestellung informieren lassen wollen <!--(###FIELD_EMAIL###)--> sobald sich der Status geändert hat, dann überprüfen Sie bitte folgendes:<br><br>
 <form method="post" action="###FORM_URL###" name="statusinform">
   <input type="hidden" name="orderRecord[email_notify]" value="0">
-  <input type="checkbox" id="checkbox_tracking" name="orderRecord[email_notify]" value="###FIELD_EMAIL_NOTIFY###" />Nachricht über Ablauf des Bestellvorgangs erhalten.<br /><br />
+  <input type="checkbox" id="checkbox_tracking" name="orderRecord[email_notify]" value="###FIELD_EMAIL_NOTIFY###">Nachricht über Ablauf des Bestellvorgangs erhalten.<br><br>
   <input type="text" size="40" name="orderRecord[email]" value="###FIELD_EMAIL###">
   <input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
   <input type="submit" name="submit" value="Aktualisieren">
 </form>
-<br /><br />
+<br><br>
 
 
-<p><strong>Nachricht an den Shop:</strong><br />
-Hier können Sie uns eine Nachricht bezüglich Ihrer Bestellung schicken.<br />
+<p><strong>Nachricht an den Shop:</strong><br>
+Hier können Sie uns eine Nachricht bezüglich Ihrer Bestellung schicken.<br>
 
 <form method="post" action="###FORM_URL###"  name="sendNote">
 <input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
-###GW1B###Betreff auswählen:###GW1B###<br /><br />
+###GW1B###Betreff auswählen:###GW1B###<br><br>
 <select name="orderRecord[status][]" size="1">
     <option value="51">Nachricht vom Kunden an den Shop</option>
     <option value="50">Kunde wünscht die Stornierung der Bestellung</option>
     <option value="60">Email für Geschenkgutscheine versenden</option>
   </select>
-<br /><br />
-  ###GW1B###Bemerkung:###GW1B###<br /><br />
-<textarea cols="40" rows="5" name="orderRecord[status_comment]"></textarea><br />
+<br><br>
+  ###GW1B###Bemerkung:###GW1B###<br><br>
+<textarea cols="40" rows="5" name="orderRecord[status_comment]"></textarea><br>
 <input type="submit" name="submit" value="Nachricht senden">
 </form>
 
-<br />
-<br />
-<p><b>Bestellbestätigung - Original:</b></p><br /><br />
+<br>
+<br>
+<p><b>Bestellbestätigung - Original:</b></p><br><br>
 ###GW1E###
 <hr>
-<br />
+<br>
 
 ###ORDER_HTML_OUTPUT###
 <!-- ###TRACKING_DISPLAY_INFO### end -->
@@ -2308,21 +2308,21 @@ Displays form for entering the tracking number.
 <!-- ###TRACKING_ENTER_NUMBER### begin
 Displays form for entering the tracking number.
 -->
-###GW1B###<p class="statuscode">Bestellstatus-Code eingeben:</p>###GW1E###<br />
+###GW1B###<p class="statuscode">Bestellstatus-Code eingeben:</p>###GW1E###<br>
 <div class="tracking-form">
   <form method="post" action="###FORM_URL###">
-  <input type="text" name="tracking"><br />
+  <input type="text" name="tracking"><br>
   <input type="submit" name="submit" value="Status sehen">
 </form>
 </div>
 
 <!-- ###ADMIN_CONTROL### begin -->
 
-###GW1B### <p class="shopadmin">Shop ADMIN:</p><br />
+###GW1B### <p class="shopadmin">Shop ADMIN:</p><br>
 <!-- ###ADMIN_CONTROL_DENY### begin -->
 <div class="tracking-form">
   <form method="post" action="###FORM_URL###">
-  ###GW1B###Code:###GW1B###<br />
+  ###GW1B###Code:###GW1B###<br>
   <input type="password" size=40 name="update_code" value="">
   <input type="submit" name="submit" value="Code eingeben">
   </form>
@@ -2330,7 +2330,7 @@ Displays form for entering the tracking number.
 <!-- ###ADMIN_CONTROL_DENY### begin -->
 
 
-<br />
+<br>
 <!-- ###ADMIN_CONTROL### end -->
 
 
@@ -2346,10 +2346,10 @@ Displays error message if no tracking code.
 <!-- ###TRACKING_WRONG_NUMBER### begin
 Displays error message if no tracking code.
 -->
-###GW1B###<p><b>Der Bestellstatus-Code existiert nicht! Bitte geben Sie den korrekten Code und versuchen es noch einmal!</b></p>###GW1E###<br />
+###GW1B###<p><b>Der Bestellstatus-Code existiert nicht! Bitte geben Sie den korrekten Code und versuchen es noch einmal!</b></p>###GW1E###<br>
 
 <form method="post" action="###FORM_URL###">
-<input type="text" name="tracking"><br />
+<input type="text" name="tracking"><br>
 <input type="submit" name="submit" value="Bestellstatus einsehen">
 </form>
 
@@ -2512,8 +2512,8 @@ E-Mail: 	tester@mytypo3domain.de
 
 
 <h3>EMAIL_NEWUSER_TEMPLATE</h3>
-<br />
-<br />
+<br>
+<br>
 <pre>
 <!-- ###EMAIL_NEWUSER_TEMPLATE### begin -->
 
@@ -2582,9 +2582,9 @@ mytypo3domain.de
 
 <!-- ###BILL_TEMPLATE### start -->
 
-<a href="javascript:history.back()"><img src="###PATH_FE_REL###res/icons/zur_liste.gif" />zurück</a>
+<a href="javascript:history.back()"><img src="###PATH_FE_REL###res/icons/zur_liste.gif">zurück</a>
    ###GW1B### mytypo3domain.de &#8211; Teststr.
-      1, 11111 Testort, Germany<br />
+      1, 11111 Testort, Germany<br>
       -------------------------------------------------------------------------------------------------
       ###GW1E###
 
@@ -2610,13 +2610,13 @@ mytypo3domain.de
 
 
 
-###GW1B###<p><b>Rechnung Nr. ###ORDER_UID###:</b></p>###GW1E###<br />
-      <br /><p><strong>Es handelt sich um einen Test.</strong></p>
+###GW1B###<p><b>Rechnung Nr. ###ORDER_UID###:</b></p>###GW1E###<br>
+      <br><p><strong>Es handelt sich um einen Test.</strong></p>
   <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
   <!-- ###ITEM_CATEGORY### begin -->
 
     ###GW1B###Warenwert (###CATEGORY_QTY### x ###CATEGORY_TITLE###)###GW1E###
-###GW1B###<p> <b>EUR ###PRICE_GOODS_TAX### <br />(ohne MwSt. EUR ###PRICE_GOODS_NO_TAX###)</b></p> ###GW1E###
+###GW1B###<p> <b>EUR ###PRICE_GOODS_TAX### <br>(ohne MwSt. EUR ###PRICE_GOODS_NO_TAX###)</b></p> ###GW1E###
 
   <!-- ###ITEM_CATEGORY### end -->
   <!-- ###ITEM_LIST### begin -->
@@ -2634,12 +2634,12 @@ mytypo3domain.de
 
 
 ###GW1B### Zahlungsart: ###PAYMENT_TITLE### ###GW1E###
-###GW1B### <p><b>EUR ###PRICE_PAYMENT_TAX###</b></p><br />
+###GW1B### <p><b>EUR ###PRICE_PAYMENT_TAX###</b></p><br>
       ###GW1E###
 
 
 ###GW1B### Verpackung und Versand:###GW1E###
-###GW1B###<p> <b>EUR ###PRICE_SHIPPING_TAX### (###PRICE_SHIPPING_NO_TAX###)</b></p><br />
+###GW1B###<p> <b>EUR ###PRICE_SHIPPING_TAX### (###PRICE_SHIPPING_NO_TAX###)</b></p><br>
       ###GW1E###
 
 
@@ -2648,29 +2648,29 @@ mytypo3domain.de
 
 
 ###GW1B###<p> <strong>Gesamt:</strong></p> ###GW1E###
-<!--###GW1B### <p><b>EUR ###PRICE_VOUCHERTOTAL_TAX### <br />(ohne MwSt. EUR ###PRICE_VOUCHERTOTAL_NO_TAX###)</b></p><br />
+<!--###GW1B### <p><b>EUR ###PRICE_VOUCHERTOTAL_TAX### <br>(ohne MwSt. EUR ###PRICE_VOUCHERTOTAL_NO_TAX###)</b></p><br>
       ###GW1E###-->
-###GW1B### <p><b>EUR ###PRICE_TOTAL_TAX### <br />(ohne MwSt. EUR ###PRICE_TOTAL_NO_TAX###)</b></p><br />
+###GW1B### <p><b>EUR ###PRICE_TOTAL_TAX### <br>(ohne MwSt. EUR ###PRICE_TOTAL_NO_TAX###)</b></p><br>
       ###GW1E###
 
 
-###GW1B### Vielen Dank <br /><br />
+###GW1B### Vielen Dank <br><br>
 
-      <p>Mit freundlichen Grüßen: <br /> <br />
-      mytypo3domain.de<br />
-      Teststr. 1<br />
-      11111 Testort<br />
+      <p>Mit freundlichen Grüßen: <br> <br>
+      mytypo3domain.de<br>
+      Teststr. 1<br>
+      11111 Testort<br>
       Deutschland
-      Tel: +49 (0)1111 / 111111<br />
-        Email: tester@mytypo3domain.de<br />
+      Tel: +49 (0)1111 / 111111<br>
+        Email: tester@mytypo3domain.de<br>
         Steuer-Nr. DE000000</p>
 ###GW1E###
-###GW1B### Bankverbindung:<br />
-        Bank <br />
-        Blz. 11111111<br />
+###GW1B### Bankverbindung:<br>
+        Bank <br>
+        Blz. 11111111<br>
         Kto. 11111111</p>
-        IBAN: DE11 1111 1111 1111 1111 11<br />
-        BIC: BNKTEST<br />
+        IBAN: DE11 1111 1111 1111 1111 11<br>
+        BIC: BNKTEST<br>
 ###GW1E### </p>
 
 <!-- ###BILL_TEMPLATE### end -->
@@ -2678,9 +2678,9 @@ mytypo3domain.de
 <!-- ###DELIVERY_TEMPLATE### start -->
 
 <img src="http://mytypo3domain.de/images/header_rechnung.jpg" width="669" height="90">
-<a href="javascript:history.back()"><img src="###PATH_FE_REL###res/icons/fe/zur_liste.gif" />zurück</a>
+<a href="javascript:history.back()"><img src="###PATH_FE_REL###res/icons/fe/zur_liste.gif">zurück</a>
 ###GW1B### mytypo3domain.de &#8211; Teststr.
-      1, 11111 Testort, Germany<br />
+      1, 11111 Testort, Germany<br>
       -------------------------------------------------------------------------------------------------
       ###GW1E###
 
@@ -2694,8 +2694,8 @@ mytypo3domain.de
 
 ###DELIVERY_COUNTRY###
 
-###GW1B###<p><b>Lieferschein für Rechnung Nr. ###ORDER_UID###:</b></p>###GW1E###<br /><br />
-<br />
+###GW1B###<p><b>Lieferschein für Rechnung Nr. ###ORDER_UID###:</b></p>###GW1E###<br><br>
+<br>
 <p><strong>Es handelt sich hierbei nur um einen Test.</strong></p>
 
 <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
@@ -2721,23 +2721,23 @@ mytypo3domain.de
 -----------------------------------------------------------------------------------------------------
 
 
-###GW1B### Vielen Dank. <br />
+###GW1B### Vielen Dank. <br>
 
-      <p>Mit freundlichen Grüßen: <br /> <br /> <strong><br />
-      </strong>mytypo3domain.de<br />
-      Teststr. 1<br />
-      11111 Testort<br />
+      <p>Mit freundlichen Grüßen: <br> <br> <strong><br>
+      </strong>mytypo3domain.de<br>
+      Teststr. 1<br>
+      11111 Testort<br>
       Deutschland
-      Tel: +49 (0)1111 / 111111<br />
-        Email: tester@mytypo3domain.de<br />
+      Tel: +49 (0)1111 / 111111<br>
+        Email: tester@mytypo3domain.de<br>
         Steuer-Nr. DE1111111111
       ###GW1E###
-###GW1B### Bankverbindung:<br />
-        Bank Teststadt<br />
-        Blz. 11111111<br />
+###GW1B### Bankverbindung:<br>
+        Bank Teststadt<br>
+        Blz. 11111111<br>
         Kto. 11111111111
-        IBAN: DE11 1111 1111 1111 1111 11<br />
-        BIC: PBNKTEST<br />
+        IBAN: DE11 1111 1111 1111 1111 11<br>
+        BIC: PBNKTEST<br>
         ###GW1E### </p>
 
 
