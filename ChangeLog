@@ -1,3 +1,6 @@
+2017-06-28 Franz Holzinger  <franz@ttproducts.de>
+    * rename all responsive template files without the prefix tt_products_
+
 2017-06-10 Franz Holzinger  <franz@ttproducts.de>
     * add all 26 variant subparts for tt_products 3.0.0
     * remove ###GW1B### and ###GW1E### wraps from responsive template
