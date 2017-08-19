@@ -1,3 +1,6 @@
+2017-08-19 Franz Holzinger  <franz@ttproducts.de>
+    * add all variants to file responsive/orderconfirmation.html ###EMAIL_PLAINTEXT_TEMPLATE###
+
 2017-06-28 Franz Holzinger  <franz@ttproducts.de>
     * rename all responsive template files without the prefix tt_products_
 
