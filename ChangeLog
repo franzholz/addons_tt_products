@@ -1,3 +1,6 @@
+2017-08-21 Franz Holzinger  <franz@ttproducts.de>
+    * restructure the responsive template orderconfirmation.html because the product list part inside of the order confirmation must be shown in only 3 columns even if a products has many variants
+
 2017-08-19 Franz Holzinger  <franz@ttproducts.de>
     * add all variants to file responsive/orderconfirmation.html ###EMAIL_PLAINTEXT_TEMPLATE###
 
