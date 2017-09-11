@@ -1143,7 +1143,7 @@ Warenkorbansicht Anfang -->
 
 
 
-  <!--- Andrea Neu für Gutschein System --->
+  <!--- für Gutschein System --->
 
   <!-- ###FE_USER_SECTION### begin -->
   <form method="post" action="###FORM_URL###" name="###FORM_NAME_GIFT_CERTIFICATE###">
@@ -1175,6 +1175,8 @@ If the basket is empty this subpart is displayed
 <br>
 ###GW1B###<b>Es müssen mindestens Waren für 250 Euro gekauft werden.</b>###GW1E###
 <!-- ###BASKET_TEMPLATE_MINPRICE_ERROR### end -->
+
+
 
 
 <!---------------------------------------------- BASKET_INFO_TEMPLATE ------------------------------------------------------------------->
@@ -1293,8 +1295,8 @@ Wenn sie wünschen, daß ihre Ware an eine andere Adresse geliefert wird, tragen
             <!--<p><em>Bemerkung: Felder mit * müssen ausgefüllt werden!</em></p>-->
 
 			<div class="form_control">
-	        <input type="submit" name="products_update" value="zurück zum Warenkorb">
-	        <input type="submit" name="products_payment" value="zur Kasse/Bestellung">
+	        <input type="submit" name="products_update" value="zurück zum Warenkorb" onclick="this.form.action='###FORM_URL_BASKET###';">
+	        <input type="submit" name="products_payment" value="zur Kasse/Bestellung" onclick="this.form.action='###FORM_URL_PAYMENT###';">
 		<input type="hidden" name="creditpoints_saved" value="###CREDITPOINTS_SAVED###">
 		<input type="hidden" name="creditpoints_spended" value="###CREDITPOINTS_SPENDED###">
 		<input type="hidden" name="creditpoints_gifts" value="###CREDITPOINTS_GIFTS###">
@@ -1306,9 +1308,9 @@ Wenn sie wünschen, daß ihre Ware an eine andere Adresse geliefert wird, tragen
 
 <!--------------------------------------------------- BASKET_OVERVIEW_TEMPLATE ---------------------------------------------------------->
 
+
+
 <!-- ###BASKET_OVERVIEW_TEMPLATE### begin -->
-
-
 
 <div class="shop_minibasket">
 
@@ -1342,9 +1344,9 @@ Wenn sie wünschen, daß ihre Ware an eine andere Adresse geliefert wird, tragen
   </div>
 </div>
 
-
-
 <!-- ###BASKET_OVERVIEW_TEMPLATE### end -->
+
+
 
 <!-- ###BASKET_OVERVIEW_EMPTY### begin -->
 
@@ -1354,8 +1356,6 @@ Wenn sie wünschen, daß ihre Ware an eine andere Adresse geliefert wird, tragen
 
 
 <!----------------------------------------------- BASKET_PAYMENT_TEMPLATE --------------------------------------------------------------->
-
-
 
 
 <h3>BASKET_PAYMENT_TEMPLATE</h3>
@@ -1605,11 +1605,9 @@ Exact same features as BASKET_TEMPLATE
         <!-- ###MESSAGE_PAYMENT### end -->
 
   <form method="post" action="###FORM_URL###" name="###FORM_NAME###" id="paymentForm">
-  <input type="submit" name="products_update" value="zurück zum Warenkorb">
+  <input type="submit" name="products_update" value="zurück zum Warenkorb" onclick="this.form.action='###FORM_URL_BASKET###';">
   <input type="hidden" name="products_cmd" value="cardno">
-  <input type="submit" name="products_finalize" value="Bestellung abschließen!" onclick="document.forms[0].action='###FORM_URL_THANKS###'; document.forms[0].target='###FORM_URL_TARGET###';">
-  </div>
- </div>
+  <input type="submit" name="products_finalize" value="Bestellung abschließen!" onclick="this.form.action='###FORM_URL_THANKS###'; this.form.target='###FORM_URL_TARGET###';">
 
 
     <!-- ###SUB_GIFTCODE_DISCOUNTWRONG### begin -->
@@ -1707,6 +1705,8 @@ Exact same features as BASKET_TEMPLATE
 </form>
     <!-- ###FE_USER_SECTION### end -->
 
+  </div>
+ </div>
 
 <!-- ###BASKET_PAYMENT_TEMPLATE### end -->
 

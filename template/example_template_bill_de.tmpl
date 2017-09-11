@@ -1181,7 +1181,7 @@ Hier k&ouml;nnen Sie Ihrer Bestellung einen Kommentar hinzufgen:
 <br>
 <table width="100%"><tr>
 <td><input type="hidden" name="products_info" value="1"></td>
-<td><input type="Submit" name="products_update" value="zur&uuml;ck zum Warenkorb"></td>
+<td><input type="Submit" name="products_update" value="zur&uuml;ck zum Warenkorb" onclick="document.forms[###FORM_NAME###].action='###FORM_URL_BASKET###';"></td>
 <td align="right">
 <input type="Submit" name="products_payment" value="AGBs akzeptiert" onclick="document.forms[###FORM_NAME###].action='###FORM_URL_PAYMENT###';" />
 ###HIDDENFIELDS###</td>
@@ -1452,7 +1452,7 @@ Exact same features as BASKET_TEMPLATE
 <br>
 <form method="post" action="###FORM_URL###" name="###FORM_NAME###" id="paymentForm">
 <table width="100%"><tr>
-<td><input type="Submit" name="products_update" value="zur&uuml;ck zum Warenkorb">
+<td><input type="Submit" name="products_update" value="zur&uuml;ck zum Warenkorb" onclick="document.forms[###FORM_NAME###].action='###FORM_URL_BASKET###';">
 <input type="hidden" name="products_cmd" value="cardno" /></td>
 <td align="right"><input type="Submit" name="products_finalize" value="Zahlungspflichtig bestellen!" onclick="document.forms[###FORM_NAME###].action='###FORM_URL_THANKS###'; document.forms[###FORM_NAME###].target='###FORM_URL_TARGET###';">###GW1B### (auch PayPal)###GW1E###</td>
 </tr></table>

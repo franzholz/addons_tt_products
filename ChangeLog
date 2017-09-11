@@ -1,3 +1,6 @@
+2017-09-11 Franz Holzinger  <franz@ttproducts.de>
+    * the back to the basket button must change to the basket page. Modification of the template files example_template_bill_de.tmpl, the reponsive templates and the TYPO3 webshop
+
 2017-08-21 Franz Holzinger  <franz@ttproducts.de>
     * restructure the responsive template orderconfirmation.html because the product list part inside of the order confirmation must be shown in only 3 columns even if a products has many variants
 
