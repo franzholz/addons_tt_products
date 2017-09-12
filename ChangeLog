@@ -1,3 +1,6 @@
+2017-09-12 Franz Holzinger  <franz@ttproducts.de>
+    * The order confirmation of the responsive template must not offer a call to the PayPal payment. The call to PayPal must be done at the payment activity one step before. The order shall be paid before it is finalized and not the other way.
+
 2017-09-11 Franz Holzinger  <franz@ttproducts.de>
     * the back to the basket button must change to the basket page. Modification of the template files example_template_bill_de.tmpl, the reponsive templates and the TYPO3 webshop
 
