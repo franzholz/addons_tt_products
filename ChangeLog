@@ -1,3 +1,7 @@
+2017-09-16 Franz Holzinger  <franz@ttproducts.de>
+    * bugfix to the responsive basket template. Remove nested FORM tag.
+    * remove unused voucher subpart marker ###SUB_VOUCHERCODE_NODISCOUNT###
+
 2017-09-12 Franz Holzinger  <franz@ttproducts.de>
     * The order confirmation of the responsive template must not offer a call to the PayPal payment. The call to PayPal must be done at the payment activity one step before. The order shall be paid before it is finalized and not the other way.
 
