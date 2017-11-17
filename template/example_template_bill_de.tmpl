@@ -1174,7 +1174,7 @@ Hier k&ouml;nnen Sie Ihrer Bestellung einen Kommentar hinzufgen:
 </tr>
 <tr>
 <td colspan="3">###GW1B###<!--###LINK_AGB###-->Die Allgemeinen Gesch&auml;ftsbedingungen<!--###LINK_AGB###--> habe ich gelesen und erkenne sie hiermit an.:
-<input type="checkbox" name="recs[personinfo][agb]" ###PERSON_AGB### /></td>
+<input type="checkbox" name="recs[personinfo][agb]" ###PERSON_AGB###></td>
 <td colspan="3"></td>
 </tr>
 </table>
@@ -1523,9 +1523,25 @@ Message for payment method 10, Vorkasse
       </font>
         <br></p>
         <!-- ###MESSAGE_PAYMENT_30### end -->
-        <!-- ###MESSAGE_PAYMENT_90### begin
-Message for payment method 90, Paypal
+
+        <!-- ###MESSAGE_PAYMENT_90### begin -->
+
+        ###MESSAGE_PAYMENT_SCRIPT###
+      <br>
+      <p><font color=red><strong>PAYPAL:</strong><br>
+        Die Bezahlung ist über Paypal erfolgt. Die Waren werden bald an Sie verschickt.
+      </font>
+      </p>
+        <!-- ###MESSAGE_PAYMENT_90### end -->
+
+        <!-- ###MESSAGE_PAYMENT_95### begin
+Message for payment method 95, Paypal
 -->
+      <p><font color=red><strong>PAYPAL:</strong><br>
+        F&uuml;hren Sie hier die Bezahlung &uuml;ber Paypal durch.<br>
+        Erst nach der Bezahlung werden die Waren an Sie verschickt.
+      </font>
+      </p>
       <p><font color=red><strong>PayPal:</strong><br>
         Sie haben als Zahlungsart PayPal gew&auml;hlt. Bezahlen Sie ber diesen Link direkt Online per Kreditkarte via PayPal.
 
@@ -1540,16 +1556,8 @@ Message for payment method 90, Paypal
 <input type="hidden" name="tax" value="0,00">
 <input type="submit" name="submit" value="Bezahlung mit Kreditkarte via Paypal" alt="Protect Your Banana!">
 </form>	</font></p>
-	<!-- ###MESSAGE_PAYMENT_90### end -->
+	<!-- ###MESSAGE_PAYMENT_95### end -->
 
-        <!-- ###MESSAGE_PAYMENT_95### begin -->
-      <p><font color=red><strong>PAYPAL:</strong><br>
-        F&uuml;hren Sie hier die Bezahlung &uuml;ber Paypal durch.<br>
-        Erst nach der Bezahlung werden die Waren an Sie verschickt.
-      </font>
-        ###MESSAGE_PAYMENT_SCRIPT###
-        <br></p>
-        <!-- ###MESSAGE_PAYMENT_95### end -->
 
 	<!-- ###MESSAGE_PAYMENT### -->
    <br>
