@@ -1,3 +1,6 @@
+2017-11-17 Franz Holzinger  <franz@ttproducts.de>
+    * remove support for the paymentlib extension
+
 2017-09-16 Franz Holzinger  <franz@ttproducts.de>
     * bugfix to the responsive basket template. Remove nested FORM tag.
     * remove unused voucher subpart marker ###SUB_VOUCHERCODE_NODISCOUNT###
