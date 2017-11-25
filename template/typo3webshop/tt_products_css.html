@@ -1125,6 +1125,7 @@ Warenkorbansicht Anfang -->
 
     <div id="SUBMIT_BASKET5">
 		<input type="hidden" name="mode_update" value="1">
+		<input type="submit" name="products_info" value="###BASKET_CHECKOUT###" onClick="var basketForm; basketForm = this.form.action='###FORM_URL_INFO###';">
 		<input type="submit" id="button3" name="products_update" value="Warenkorb aktualisieren">
 		<input type="submit" id="button4" name="products_clear_basket" value="Warenkorb löschen">
 <!-- ###MESSAGE_MINPRICE### begin -->
@@ -1159,8 +1160,8 @@ Warenkorbansicht Anfang -->
 
 </div>
 
-
 <!-- ###BASKET_TEMPLATE### end -->
+
 
 <br><br><br><br><hr><br><br><br>
 <h3>BASKET_TEMPLATE_MINPRICE_ERROR</h3>
@@ -1563,6 +1564,11 @@ Exact same features as BASKET_TEMPLATE
   <div id="PRICE_DISCOUNT_BASKET_PAYMENT_TEMPLATE6">
   ###PRICE_DISCOUNT### Prozente: ###FE_USER_TT_PRODUCTS_DISCOUNT### %
   </div>-->
+
+  <!--
+  <div id="PRICE_DISCOUNT"><strong>Enhaltener Rabatt:</strong><br>
+  ###PRICE_TOTUNITS_DISCOUNT###
+  </div>-->
 </div>
 
 <div class="floatbox_BASKET_PAYMENT_TEMPLATE7">
@@ -1581,11 +1587,6 @@ Exact same features as BASKET_TEMPLATE
      (exkl. MwSt.: ###PRICE_VOUCHERTOTAL_NO_TAX###)<br>###GW1E###
   </div>
 
-
-  <!--
-  <div id="PRICE_DISCOUNT"><strong>Enhaltener Rabatt:</strong><br>
-  ###PRICE_TOTUNITS_DISCOUNT###
-  </div>-->
 
   <div id="SUBMIT_BASKET_PAYMENT_TEMPLATE7">
   <br>
@@ -1644,11 +1645,9 @@ Exact same features as BASKET_TEMPLATE
       - &euro; ###CREDIT_DISCOUNT### </p>
       <!-- ###SUB_CREDITPOINTS_DISCOUNT### end -->
 
-<!------------------------------------------------ BASKET_PAYMENT_TEMPLATE -- Freundschaftswerbung -------------------------------------->
+<!------------------------------------------------ BASKET_PAYMENT_TEMPLATE -- Gutschein mit Voucher Codes -------------------------------------->
 
-  <!-- ###FE_USER_SECTION### begin -->
 
-   <!-- ###SUB_VOUCHERCODE_EMPTY### begin -->
    <!-- ###SUB_VOUCHERCODE_START### begin -->
      <p> Gutschein Code:  </p>
      <input name="###INSERT_VOUCHERCODE###" type="text" class="field" value="###VALUE_VOUCHERCODE###">
@@ -1661,10 +1660,7 @@ Exact same features as BASKET_TEMPLATE
    <!-- ###SUB_VOUCHERCODE_DISCOUNTWRONG### begin -->
     <p> Der eingegebene Gutscheincode ist falsch. Probieren Sie es nocheinmal.</p>
    <!-- ###SUB_VOUCHERCODE_DISCOUNTWRONG### end -->
-   <!-- ###SUB_VOUCHERCODE_DISCOUNTOWNID### begin -->
-     <p> Sie haben den eigenen Gutscheincode eingegeben. Das ist nicht erlaubt.</p>
-   <!-- ###SUB_VOUCHERCODE_DISCOUNTOWNID### end -->
-   <!-- ###SUB_VOUCHERCODE_EMPTY### end -->
+
    <!-- ###SUB_VOUCHERCODE### begin -->
      <p> Sie haben bereits den Coupon-Rabatt genossen.</p>
    <!-- ###SUB_VOUCHERCODE### end -->
@@ -1681,25 +1677,15 @@ Exact same features as BASKET_TEMPLATE
 
 </form>
 
+  <!-- ###FE_USER_SECTION### begin -->
 
     <form method="post" action="###FORM_URL###" name="###FORM_NAME_GIFT_CERTIFICATE###">
     	Anzahl der Gutscheinzertifikate:<br>
     		<input size="30" maxlength="30" type="text" name="###INSERT_GIFTCODE###">
     		<input type="hidden" name="products_payment" value="1">
     		<input type="submit" name="products_redeem_gift" value="Gutschein einlösen">
-		<input type="hidden" name="recs[personinfo][agb]" value="###PERSON_AGB###" id="checkboxagb">
    	</form>
 
-   <!-- ###FE_USER_SECTION### end -->
-
-<!-- ###FE_USER_SECTION### begin -->
-<form method="post" action="###FORM_URL###" name="###FORM_NAME_GIFT_CERTIFICATE###">
-	###GW1B###number of gift certificate:###GW1E###<br>
-		<input size="30" maxlength="30" type="text" name="###GIFT_CERTIFICATE_UNIQUE_NUMBER_NAME###">
-		<input type="hidden" name="products_payment" value="1">
-		<input type="Submit" name="products_redeem_gift" value="redeem gift certificate">&nbsp;&nbsp;
-
-</form>
     <!-- ###FE_USER_SECTION### end -->
 
   </div>

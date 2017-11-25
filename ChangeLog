@@ -1,3 +1,7 @@
+
+2017-11-25 Franz Holzinger  <franz@ttproducts.de>
+    * remove unused voucher subpart markers ###SUB_VOUCHERCODE_EMPTY### and ###SUB_VOUCHERCODE_DISCOUNTOWNID### in the template for the TYPO3 Webshop book
+
 2017-11-17 Franz Holzinger  <franz@ttproducts.de>
     * remove support for the paymentlib extension
 
