@@ -6,7 +6,6 @@
   </div>
   <div class="item_single_display">
 
-    <form method="post" name="###FORM_NAME###" action="###FORM_URL###">
       <div class="PRODUCT_TITLE_SINGLE"><span class="###PRODUCT_TITLE_ID###">###PRODUCT_TITLE###</span>
       </div>
 
@@ -186,12 +185,14 @@
         <div id="web_price_single_vat">
             ###INCL_VAT###  <span id="###PRICE_TAX_ID###">###PRICE_TAX###</span> ###P_CURRENCY###
         </div>
+    <form method="post" name="###FORM_NAME###" action="###FORM_URL###">
             <div class="qty_single">
             ###LIST_ITEM_QUANTITY### <input size="3" maxlength="2" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
           </div>
           <div class="cart_add_single">
             <input type="image" src="fileadmin/demoshop/page/img/cart-add.png" name="basket" id="inputimage" alt="In den Warenkorb" title="In den Warenkorb"  onClick="if(!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
           </div>
+    </form>
 
       </div>
 
@@ -261,7 +262,6 @@
         ###PRODUCT_RELATED_UID###
           ###PRODUCT_ACCESSORY_UID###
       </div>
-    </form>
   </div>
   <div>
     <div class="button_group">
