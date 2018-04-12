@@ -18,7 +18,7 @@
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>ITEM_LIST_TEMPLATE</h3>
 <em>This subpart is used to display the regular list of products. It's also used by search-results.</em><br>
 <br>
@@ -31,7 +31,7 @@
 <h1>Shop System for TYPO3</h1>
 <p> Welcome to the tt_products Shop System for TYPO3. Take a look at the German tutorial at <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop System</a> before you start with it. There you can find also a forum for questions.
 </p>
-<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+<table border="0" cellspacing="0" cellpadding="1" width=1>
 	<tr>
 		<td><!--###LINK_PREV###-->###GW2B###<div align="left"><b>Edellinen sivu</b></div>###GW2E###<!--###LINK_PREV###--></td>
 		<td></td>
@@ -65,8 +65,8 @@
 			<tr>
 			<tr>
 			<td colspan=4>
-			<FORM method="post" action="###FORM_URL###" name="###FORM_NAME###">
-			<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+			<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
+			<table border="0" cellspacing="0" cellpadding="1" width=1>
 				<tr>
 					<td><img src="clear.gif" width=100 height=1></td>
 					<td><img src="clear.gif" width=5 height=1></td>
@@ -79,18 +79,18 @@
 				<tr>
 					<td colspan=4 bgcolor="###GC1###"><!--###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###<!--###LINK_ITEM###--></td>
 				</tr>
-				<TR>
-				+	<TD valign=top>###PRODUCT_IMAGE###</TD>
+				<tr>
+				+	<td valign=top>###PRODUCT_IMAGE###</td>
 					<td></td>
-					<TD valign=top>###GW2B######PRODUCT_NOTE######GW2E###<br />
-						###GW1B###<B>Hinta:</b> <strong class="red">###PRICE_TAX### EUR</strong>###GW1E###<br />
+					<td valign=top>###GW2B######PRODUCT_NOTE######GW2E###<br />
+						###GW1B###<b>Hinta:</b> <strong class="red">###PRICE_TAX### EUR</strong>###GW1E###<br />
 						###GW2B###(ilman ALV:tä: ###PRICE_NO_TAX###)###GW2E###
-					</TD>
-					<TD valign=top nowrap align=right>###GW2B### Lukumäärä: ###GW2E###<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"><BR><input class="submit submitAddToBasket" type="Submit" name="order" value="Laita ostoskoriin" onClick="if (!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
-					</TD>
-				</TR>
-			</TABLE>
-			</FORM>
+					</td>
+					<td valign=top nowrap align=right>###GW2B### Lukumäärä: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"><br><input class="submit submitAddToBasket" type="Submit" name="order" value="Laita ostoskoriin" onClick="if (!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
+					</td>
+				</tr>
+			</table>
+			</form>
 			</td>
 			</tr>
 			<!-- ###ITEM_SINGLE### end -->
@@ -102,8 +102,8 @@
 		<td></td>
 		<td><!--###LINK_NEXT###-->###GW2B###<div align="right"><b>Seuraava sivu</b></div>###GW2E###<!--###LINK_NEXT###--></td>
 	</tr>
-</TABLE>
-<BR><BR>
+</table>
+<br><br>
 <!-- ###ITEM_LIST_TEMPLATE### end -->
 
 
@@ -123,7 +123,7 @@
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>ITEM_SINGLE_DISPLAY</h3>
 <em>This subpart is used to display single products.</em><br>
 <br>
@@ -132,8 +132,8 @@
 <!-- ###ITEM_SINGLE_DISPLAY### begin
 	This subpart is used to display single products.
 -->
-<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
-<FORM method="post" action="###FORM_URL###">
+<table border="0" cellspacing="0" cellpadding="1" width=1>
+<form method="post" action="###FORM_URL###">
 	<tr>
 		<td><img src="clear.gif" width=100 height=1></td>
 		<td><img src="clear.gif" width=5 height=1></td>
@@ -145,23 +145,23 @@
 	<tr>
 		<td colspan=3 bgcolor="###GC1###"><!--###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###<!--###LINK_ITEM###--></td>
 	</tr>
-	<TR>
-		<TD valign=top>###PRODUCT_IMAGE###</TD>
+	<tr>
+		<td valign=top>###PRODUCT_IMAGE###</td>
 		<td></td>
-		<TD valign=top>
+		<td valign=top>
 			###GW1B###
-				<B>Luokka:</B> ###CATEGORY_TITLE### <br>
-				<B>Tuotenumero:</B> ###PRODUCT_ITEMNUMBER###<br>
-				<B>Hinta:</B> <strong class="red">###PRICE_TAX### EUR</strong>###GW2B### &nbsp; (ilman ALV:tä ###PRICE_NO_TAX###)###GW2E###<br>
+				<b>Luokka:</b> ###CATEGORY_TITLE### <br>
+				<b>Tuotenumero:</b> ###PRODUCT_ITEMNUMBER###<br>
+				<b>Hinta:</b> <strong class="red">###PRICE_TAX### EUR</strong>###GW2B### &nbsp; (ilman ALV:tä ###PRICE_NO_TAX###)###GW2E###<br>
 
-				<B>Info:</B><br>
+				<b>Info:</b><br>
 				###PRODUCT_NOTE###<br>
 			###GW1E###	<br>
-				<nobr>###GW2B### Lukumäärä: ###GW2E###<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"> &nbsp; <input class="submit submitAddToBasket"type="Submit" name="order" value="Laita ostoskoriin" onClick="if (!document.forms[0]['###FIELD_NAME###'].value!=''){document.forms[0]['###FIELD_NAME###'].value=1;};"></nobr>
-		</TD>
-	</TR>
+				<nobr>###GW2B### Lukumäärä: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"> &nbsp; <input class="submit submitAddToBasket"type="Submit" name="order" value="Laita ostoskoriin" onClick="if (!document.forms[0]['###FIELD_NAME###'].value!=''){document.forms[0]['###FIELD_NAME###'].value=1;};"></nobr>
+		</td>
+	</tr>
 </form>
-</TABLE>
+</table>
 <br>
 <br>
 
@@ -185,7 +185,7 @@
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>ITEM_SEARCH</h3>
 <em>Subpart for the search-form.</em><br>
 <br>
@@ -194,8 +194,8 @@
 <!-- ###ITEM_SEARCH### begin
 	Subpart for the search-form
 -->
-<FORM method="post" action="###FORM_URL###">
-	<INPUT size="30" maxlength="100" type="text" name="###SWORD_NAME###" value="###SWORD###">
+<form method="post" action="###FORM_URL###">
+	<input size="30" maxlength="100" type="text" name="###SWORD_NAME###" value="###SWORD###">
 	<input type="Submit" name="order" value="Etsi">
 </form>
 <!-- ###ITEM_SEARCH### end -->
@@ -209,7 +209,7 @@
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>ITEM_SEARCH_EMPTY</h3>
 <em>Subpart displayed if the search was empty. If the search was successfull, the ITEM_LIST_TEMPLATE in the top is used.</em><br>
 <br>
@@ -218,7 +218,7 @@
 <!-- ###ITEM_SEARCH_EMPTY### begin
 	Subpart displayed if the search was empty. If the search was successfull, the ITEM_LIST_TEMPLATE in the top is used.
 -->
-###GW1B###<B>Etsintä ei tuottanut yhtää hakutulosta.</B>###GW1E###
+###GW1B###<b>Etsintä ei tuottanut yhtää hakutulosta.</b>###GW1E###
 <!-- ###ITEM_SEARCH_EMPTY### end -->
 
 
@@ -231,7 +231,7 @@
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>BASKET_TEMPLATE</h3>
 <em>
 Subpart used to display the content of the shopping basket.<br>
@@ -247,8 +247,8 @@ In addition there's a number of fields used for delivery and payment information
 	In addition there's a number of fields used for delivery and payment information.
 -->
 ###EXTERNAL_COBJECT###
-<FORM method="post" action="###FORM_URL###">
-<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+<form method="post" action="###FORM_URL###">
+<table border="0" cellspacing="0" cellpadding="1" width=1>
 	<tr>
 		<td><img src="clear.gif" width=100 height=1></td>
 		<td><img src="clear.gif" width=5 height=1></td>
@@ -273,17 +273,17 @@ In addition there's a number of fields used for delivery and payment information
 				<tr>
 					<td colspan=6><img src="clear.gif" width=1 height=6></td>
 				</tr>
-				<TR>
-					<TD valign=top>###PRODUCT_IMAGE###</TD>
+				<tr>
+					<td valign=top>###PRODUCT_IMAGE###</td>
 					<td></td>
-					<TD valign=top>
+					<td valign=top>
 						<!--###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###<!--###LINK_ITEM###-->
 
-					</TD>
+					</td>
 					<td valign=top>###GW1B### ###PRICE_TAX### ###GW1E###</td>
-					<TD valign=top>&nbsp;<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME_BASKET###" value="###FIELD_QTY###">&nbsp;</TD>
+					<td valign=top>&nbsp;<input size="3" maxlength="4" type="text" name="###FIELD_NAME_BASKET###" value="###FIELD_QTY###">&nbsp;</td>
 					<td valign=top align=right>###GW1B### <b>###PRICE_TOTAL_TAX###</b> ###GW1E###</td>
-				</TR>
+				</tr>
 			<!-- ###ITEM_SINGLE### end -->
 		<!-- ###ITEM_LIST### end -->
 	<!-- ###ITEM_CATEGORY_AND_ITEMS###  end -->
@@ -297,16 +297,16 @@ In addition there's a number of fields used for delivery and payment information
 	<tr>
 		<td colspan=6><img src="clear.gif" width=1 height=6></td>
 	</tr>
-	<TR>
+	<tr>
 		<td colspan=5>
-		###GW1B###Kuljetus: <b>###SHIPPING_TITLE###</B>###GW1E###<br><br>
+		###GW1B###Kuljetus: <b>###SHIPPING_TITLE###</b>###GW1E###<br><br>
 
 		###SHIPPING_SELECTOR###
 
 		###SHIPPING_IMAGE###
 		</td>
-		<td valign=top align=right>###GW1B### <b>###PRICE_SHIPPING_TAX###</b> <BR>(###PRICE_SHIPPING_NO_TAX###) ###GW1E###</td>
-	</TR>
+		<td valign=top align=right>###GW1B### <b>###PRICE_SHIPPING_TAX###</b> <br>(###PRICE_SHIPPING_NO_TAX###) ###GW1E###</td>
+	</tr>
 	<tr>
 		<td colspan=6><img src="clear.gif" width=1 height=10></td>
 	</tr>
@@ -317,7 +317,7 @@ In addition there's a number of fields used for delivery and payment information
 	<tr>
 		<td colspan=6><img src="clear.gif" width=1 height=6></td>
 	</tr>
-	<TR>
+	<tr>
 		<td colspan=5>
 		###GW1B###
 
@@ -330,31 +330,31 @@ In addition there's a number of fields used for delivery and payment information
 			This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 		-->
 			<!-- ###MESSAGE_PAYMENT_10### begin -->
-			<BR><B class="paymentCard">Voit käyttää kaupassamme vain kansainvälistä maksukorttia!</b><br>
+			<br><b class="paymentCard">Voit käyttää kaupassamme vain kansainvälistä maksukorttia!</b><br>
 			<!-- ###MESSAGE_PAYMENT_10### end -->
 		<!-- ###MESSAGE_PAYMENT### end -->
 ###GW2E###
 
 		</td>
-		<td valign=top align=right>###GW1B### <b>###PRICE_PAYMENT_TAX###</b> <BR>(###PRICE_PAYMENT_NO_TAX###) ###GW1E###</td>
-	</TR>
+		<td valign=top align=right>###GW1B### <b>###PRICE_PAYMENT_TAX###</b> <br>(###PRICE_PAYMENT_NO_TAX###) ###GW1E###</td>
+	</tr>
 	<tr>
 		<td colspan=6><img src="clear.gif" width=1 height=10></td>
 	</tr>
 	<tr>
 		<td colspan=6 bgcolor="###GC2###">###GW2B###<b>KOKONAISSUMMA:</b>###GW2E###</td>
 	</tr>
-	<TR>
+	<tr>
 		<td valign=top colspan=5></td>
 		<td valign=top align=right nowrap>###GW1B### <b>EUR ###PRICE_TOTAL_TAX###</b><br>
 		(w/o VAT ###PRICE_TOTAL_NO_TAX###) ###GW1E###</td>
-	</TR>
-</TABLE>
+	</tr>
+</table>
 <input type="hidden" name="mode_update" value="1">
 <input type="Submit" class="submit resetBasket" name="products_update" value="Päivitä ostoskori">&nbsp;&nbsp;
 <input type="Submit" class="submit productInfo" name="products_info" value="Maksa/tilaa" onClick="document.forms[0].action='###FORM_URL_INFO###';">
-</FORM>
-<BR>
+</form>
+<br>
 <!-- ###BASKET_TEMPLATE### end -->
 
 
@@ -365,11 +365,11 @@ In addition there's a number of fields used for delivery and payment information
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>BASKET_INFO_TEMPLATE</h3>
 <em>
-Subpart used if the GPvar "products_info" was set. This is normally used to let people enter address information separately from the real basket.<BR>
-Exact same features as BASKET_TEMPLATE<BR>
+Subpart used if the GPvar "products_info" was set. This is normally used to let people enter address information separately from the real basket.<br>
+Exact same features as BASKET_TEMPLATE<br>
 </em><br>
 <br>
 <br>
@@ -377,8 +377,8 @@ Exact same features as BASKET_TEMPLATE<BR>
 	Subpart used if the GPvar "products_info" was set. This is normally used to let people enter address information separately from the real basket
 	Exact same features as BASKET_TEMPLATE
 -->
-<FORM method="post" action="###FORM_URL###">
-<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+<form method="post" action="###FORM_URL###">
+<table border="0" cellspacing="0" cellpadding="1" width=1>
 	<tr>
 		<td><img src="clear.gif" width=100 height=1></td>
 		<td><img src="clear.gif" width=5 height=1></td>
@@ -508,12 +508,12 @@ Exact same features as BASKET_TEMPLATE<BR>
 		</td>
 		<td colspan=3></td>
 	</tr>
-</TABLE>
+</table>
 <br>
 <input type="Submit" class="submit submitBackToBasket" name="products_update" value="Takaisin ostoskoriin">&nbsp;&nbsp;	<input type="Submit" name="products_payment" value="Maksa / tilaa" onClick="document.forms[0].action='###FORM_URL_FINALIZE###';">
 
-</FORM>
-<BR>
+</form>
+<br>
 <!-- ###BASKET_INFO_TEMPLATE### end -->
 
 
@@ -523,11 +523,11 @@ Exact same features as BASKET_TEMPLATE<BR>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>BASKET_PAYMENT_TEMPLATE</h3>
 <em>
-Subpart used if the GPvar "products_payment" was set. This displays the final information about the order before the payment is initiated.<BR>
-Exact same features as BASKET_TEMPLATE<BR>
+Subpart used if the GPvar "products_payment" was set. This displays the final information about the order before the payment is initiated.<br>
+Exact same features as BASKET_TEMPLATE<br>
 </em><br>
 <br>
 <br>
@@ -536,7 +536,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 	Exact same features as BASKET_TEMPLATE
 -->
 ###EXTERNAL_COBJECT###
-	<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+	<table border="0" cellspacing="0" cellpadding="1" width=1>
 		<tr>
 			<td><img src="clear.gif" width=100 height=1></td>
 			<td><img src="clear.gif" width=5 height=1></td>
@@ -561,17 +561,17 @@ Exact same features as BASKET_TEMPLATE<BR>
 					<tr>
 						<td colspan=6><img src="clear.gif" width=1 height=6></td>
 					</tr>
-					<TR>
-						<TD valign=top>###PRODUCT_IMAGE###</TD>
+					<tr>
+						<td valign=top>###PRODUCT_IMAGE###</td>
 						<td></td>
-						<TD valign=top>
+						<td valign=top>
 							###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
 
-						</TD>
+						</td>
 						<td valign=top>###GW1B### ###PRICE_TAX### ###GW1E###</td>
-						<TD valign=top>###GW1B### ###FIELD_QTY### ###GW1E###</TD>
+						<td valign=top>###GW1B### ###FIELD_QTY### ###GW1E###</td>
 						<td valign=top align=right>###GW1B### <b>###PRICE_TOTAL_TAX###</b> ###GW1E###</td>
-					</TR>
+					</tr>
 				<!-- ###ITEM_SINGLE### end -->
 			<!-- ###ITEM_LIST### end -->
 		<!-- ###ITEM_CATEGORY_AND_ITEMS###  end -->
@@ -633,7 +633,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 			<tr>
 				<td>###GW1B###Sähköposti:###GW1E###</td>
 				<td>###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E###
-				###GW2B###<BR>(Tilausvahvistus tulee ähän osoitteeseen!)###GW2E###<BR>
+				###GW2B###<br>(Tilausvahvistus tulee ähän osoitteeseen!)###GW2E###<br>
 				</td>
 			</tr>
 			</table>
@@ -670,7 +670,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 
 
 
-	<TR>
+	<tr>
 		<td valign=top colspan=3>###GW1B###
 			<strong>Lähetystapa:</strong><br>
 			###SHIPPING_IMAGE### ###SHIPPING_TITLE###
@@ -682,8 +682,8 @@ Exact same features as BASKET_TEMPLATE<BR>
 		(###PRICE_SHIPPING_NO_TAX###)<br>
 
 		###GW1E###</td>
-	</TR>
-	<TR>
+	</tr>
+	<tr>
 		<td valign=top colspan=3>###GW1B###
 			<strong>Maksutapa:</strong><br>
 			###PAYMENT_IMAGE### ###PAYMENT_TITLE###
@@ -694,7 +694,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 		-->
 			<!-- ###MESSAGE_PAYMENT_10### begin -->
 
-			<B class="paymentCard">Voit käyttää kaupassamme vain kansainvälistä maksukorttia!</b><br>
+			<b class="paymentCard">Voit käyttää kaupassamme vain kansainvälistä maksukorttia!</b><br>
 			<!-- ###MESSAGE_PAYMENT_10### end -->
 		<!-- ###MESSAGE_PAYMENT### -->
 ###GW2E###
@@ -704,14 +704,14 @@ Exact same features as BASKET_TEMPLATE<BR>
 		(###PRICE_PAYMENT_NO_TAX###)<br>
 
 		###GW1E###</td>
-	</TR>
+	</tr>
 	<tr>
 		<td colspan=6><img src="clear.gif" width=1 height=10></td>
 	</tr>
 	<tr>
 		<td colspan=6 bgcolor="###GC2###">###GW2B###<b>KOKONAISUMMA:</b>###GW2E###</td>
 	</tr>
-	<TR>
+	<tr>
 		<td valign=top colspan=3>###GW1B###
 			<strong>Kokonaissumma euroina:</strong>
 		###GW1E###</td>
@@ -721,13 +721,13 @@ Exact same features as BASKET_TEMPLATE<BR>
 		(ilman ALV:tä: ###PRICE_TOTAL_NO_TAX###)<br>
 
 		###GW1E###</td>
-	</TR>
-</TABLE>
+	</tr>
+</table>
 <br>
-<FORM method="post" action="###FORM_URL###">
+<form method="post" action="###FORM_URL###">
 <input type="Submit" name="products_update" class="submit submitBackToBasket"value="Takaisin ostoskoriin">&nbsp;&nbsp;	<input type="Submit" class="submit finalize"name="products_finalize" value="Päätä tilaus!" onClick="document.forms[0].action='###FORM_URL_THANKS###'; document.forms[0].target='###FORM_URL_TARGET###';">
-</FORM>
-<BR>
+</form>
+<br>
 <!-- ###BASKET_PAYMENT_TEMPLATE### end -->
 
 
@@ -743,18 +743,18 @@ Exact same features as BASKET_TEMPLATE<BR>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>BASKET_ORDERCONFIRMATION_TEMPLATE</h3>
 <em>
-Subpart used if the GPvar "products_payment" was set. This displays the final information about the order before the payment is initiated.<BR>
-Exact same features as BASKET_TEMPLATE<BR>
+Subpart used if the GPvar "products_payment" was set. This displays the final information about the order before the payment is initiated.<br>
+Exact same features as BASKET_TEMPLATE<br>
 </em><br>
 <br>
 <br>
 <!-- ###BASKET_ORDERCONFIRMATION_TEMPLATE### begin
 	Subpart used if the order is finalized and this is thus the confirmation shown.
 -->
-<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+<table border="0" cellspacing="0" cellpadding="1" width=1>
 	<tr>
 		<td><img src="clear.gif" width=100 height=1></td>
 		<td><img src="clear.gif" width=5 height=1></td>
@@ -770,7 +770,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 			<b>Tilausvahvistus:</b><br>
 			Kiitos asioinnista kanssamme!<br>
 			Tilauksesi on käsitelty ja sen numero on:<br><br>
-								&nbsp;&nbsp;&nbsp;&nbsp;<B>###ORDER_UID###</B> <br>
+								&nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_UID###</b> <br>
 								<br>
 								Käytä tätä numeroa viittauksena kun otat meihin yhteyttä.<br>
 			Tilausvahvisitus on lähetetty sähköpostilla ilmoittamaasi jakeluosoitteeseen (###DELIVERY_EMAIL###). Mutta sinun tulee joka tapauksessa tulostaa tämä sivu sivu todisteena tilauksestasi.<br>
@@ -782,13 +782,13 @@ Exact same features as BASKET_TEMPLATE<BR>
 				<!-- ###MESSAGE_PAYMENT_10### begin
 					Message for payment method 10
 				-->
-				<B>Mastercard-toimenpide hyväksyttiin</B> ja siirrolla on numero, ###TRANSACT_CODE###.<br>
+				<b>Mastercard-toimenpide hyväksyttiin</b> ja siirrolla on numero, ###TRANSACT_CODE###.<br>
 				<br>
 				<!-- ###MESSAGE_PAYMENT_10### end -->
 				<!-- ###MESSAGE_PAYMENT_40### begin
 					Message for payment method 40, in this case not a credit card but plain ordering
 				-->
-				<B>Tärkeää! Seuraava vaihe:</B><br>
+				<b>Tärkeää! Seuraava vaihe:</b><br>
 				Olet valinnut tavaroittesi maksutavaksi tilisiiirron. Siihen tarvitaan seuraavia tietoja:<br>
 				- Pankki: <strong>xxxx</strong> Tili: <strong>xxxxxxxx</strong><br>
 				- Shekki: lähetä shekki postiosoitteeseeemme (katso sivun alalaita).<br>
@@ -798,7 +798,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 				<!-- ###MESSAGE_PAYMENT_50### begin
 					Message for payment method 50, in this case the customer has chosed to by on credit.
 				-->
-				<B>Luotto</B><br>
+				<b>Luotto</b><br>
 				Sinä olet etuasiakas (olet kirjautunut...), joten annamme luottoa<br>
 				<!-- ###MESSAGE_PAYMENT_50### -->
 			<!-- ###MESSAGE_PAYMENT### -->
@@ -831,17 +831,17 @@ Exact same features as BASKET_TEMPLATE<BR>
 				<tr>
 					<td colspan=6><img src="clear.gif" width=1 height=6></td>
 				</tr>
-				<TR>
-					<TD valign=top>###PRODUCT_IMAGE###</TD>
+				<tr>
+					<td valign=top>###PRODUCT_IMAGE###</td>
 					<td></td>
-					<TD valign=top>
+					<td valign=top>
 						###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
 
-					</TD>
+					</td>
 					<td valign=top>###GW1B### ###PRICE_TAX### ###GW1E###</td>
-					<TD valign=top>###GW1B### ###FIELD_QTY### ###GW1E###</TD>
+					<td valign=top>###GW1B### ###FIELD_QTY### ###GW1E###</td>
 					<td valign=top align=right>###GW1B### <b>###PRICE_TOTAL_TAX###</b> ###GW1E###</td>
-				</TR>
+				</tr>
 			<!-- ###ITEM_SINGLE### end -->
 		<!-- ###ITEM_LIST### end -->
 	<!-- ###ITEM_CATEGORY_AND_ITEMS###  end -->
@@ -942,7 +942,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 		<td colspan=3 bgcolor="###GC2###">###GW2B###<b>Jakelu/maksu:</b>###GW2E###</td>
 		<td colspan=3></td>
 	</tr>
-	<TR>
+	<tr>
 		<td valign=top colspan=3>###GW1B###
 			<strong>Jakelutapa:</strong><br>
 			###SHIPPING_IMAGE### ###SHIPPING_TITLE###
@@ -954,8 +954,8 @@ Exact same features as BASKET_TEMPLATE<BR>
 		(###PRICE_SHIPPING_NO_TAX###)<br>
 
 		###GW1E###</td>
-	</TR>
-	<TR>
+	</tr>
+	<tr>
 		<td valign=top colspan=3>###GW1B###
 			<strong>Maksutapa:</strong><br>
 			###PAYMENT_IMAGE### ###PAYMENT_TITLE###
@@ -966,14 +966,14 @@ Exact same features as BASKET_TEMPLATE<BR>
 		(###PRICE_PAYMENT_NO_TAX###)<br>
 
 		###GW1E###</td>
-	</TR>
+	</tr>
 	<tr>
 		<td colspan=6><img src="clear.gif" width=1 height=10></td>
 	</tr>
 	<tr>
 		<td colspan=6 bgcolor="###GC2###">###GW2B###<b>KOKONAISSUMMA:</b>###GW2E###</td>
 	</tr>
-	<TR>
+	<tr>
 		<td valign=top colspan=3>###GW1B###
 			<strong>Kokonaissumma euroina:</strong>
 		###GW1E###</td>
@@ -983,7 +983,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 		(w/o VAT: ###PRICE_TOTAL_NO_TAX###)<br>
 
 		###GW1E###</td>
-	</TR>
+	</tr>
 		<tr>
 			<td colspan=6>
 			###GW1B###
@@ -1003,9 +1003,9 @@ Exact same features as BASKET_TEMPLATE<BR>
 				###GW1E###
 		</td>
 	</tr>
-</TABLE>
+</table>
 <br>
-<BR>
+<br>
 <!-- ###BASKET_ORDERCONFIRMATION_TEMPLATE### end -->
 
 
@@ -1021,7 +1021,7 @@ Exact same features as BASKET_TEMPLATE<BR>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>BASKET_TEMPLATE_EMPTY</h3>
 <em>
 If the basket is empty this subpart is displayed<br>
@@ -1031,7 +1031,7 @@ If the basket is empty this subpart is displayed<br>
 <!-- ###BASKET_TEMPLATE_EMPTY### begin
 	If the basket is empty this subpart is displayed
 -->
-###GW1B###<B>Ostoskori on tyhjä.</B>###GW1E###
+###GW1B###<b>Ostoskori on tyhjä.</b>###GW1E###
 <!-- ###BASKET_TEMPLATE_EMPTY### end -->
 
 
@@ -1040,7 +1040,7 @@ If the basket is empty this subpart is displayed<br>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>BASKET_REQUIRED_INFO_MISSING</h3>
 <em>
 If payment is initiated but the required information fields are not filled in correctly, this happens.<br>
@@ -1050,10 +1050,10 @@ If payment is initiated but the required information fields are not filled in co
 <!-- ###BASKET_REQUIRED_INFO_MISSING### begin
 	If payment is initiated but the required information fields are not filled in correctly, this happens
 -->
-###GW1B###<B>You have not filled in all required fields with address information. ###ERROR_DETAILS### Please go back and do that!</B>###GW1E###
-	<FORM method="post" action="###FORM_URL###">
+###GW1B###<b>You have not filled in all required fields with address information. ###ERROR_DETAILS### Please go back and do that!</b>###GW1E###
+	<form method="post" action="###FORM_URL###">
 	<input type="Submit" class="submit productInfo" name="products_info" value="Anna osoitetietosi" onClick="document.forms[0].action='###FORM_URL_INFO###';">
-	</FORM>
+	</form>
 <!-- ###BASKET_REQUIRED_INFO_MISSING### end -->
 
 
@@ -1067,7 +1067,7 @@ If payment is initiated but the required information fields are not filled in co
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>TRACKING_DISPLAY_INFO</h3>
 <em>
 Displays the view of the order status by tracking codes.<br>
@@ -1079,7 +1079,7 @@ Displays the view of the order status by tracking codes.<br>
 	Displays the view of the order status by tracking codes.
 -->
 ###GW1B###
-<B>Tilauksesi (###ORDER_UID###) tila:</B><br>
+<b>Tilauksesi (###ORDER_UID###) tila:</b><br>
 (viimeisellä rivillä on viimeisin muutos)<br>
 <br>
 
@@ -1112,7 +1112,7 @@ Displays the view of the order status by tracking codes.<br>
 		###GW1B###
 
 		<!-- ###ADMIN_CONTROL_OK### begin -->
-		<FORM method="post" action="###FORM_URL###">
+		<form method="post" action="###FORM_URL###">
 		<select name="orderRecord[status][]" size="9" multiple>
 			###STATUS_OPTIONS###
 		</select>
@@ -1123,24 +1123,24 @@ Displays the view of the order status by tracking codes.<br>
 			<input type="hidden" name="tracking" value="###TRACKING_NUMBER###"><br>
 			<input type="hidden" name="update_code" value="###UPDATE_CODE###"><br>
 			<input type="Submit" class="submit addStatus"name="submit" value="Lisää tilaustilanne">
-			</FORM>
+			</form>
 			<hr>
 			Vaihda toiseen tilaukseen:
-			<FORM method="post" action="###FORM_URL###">
+			<form method="post" action="###FORM_URL###">
 				<select name="tracking" size="9">
 					###OTHER_ORDERS_OPTIONS###
 				</select><br><br>
 				<input type="Submit" name="submit" value="Select">
 				<input type="hidden" name="update_code" value="###UPDATE_CODE###"><br>
-			</FORM>
+			</form>
 		<!-- ###ADMIN_CONTROL_OK### begin -->
 		<!-- ###ADMIN_CONTROL_DENY### begin -->
-			<FORM method="post" action="###FORM_URL###">
+			<form method="post" action="###FORM_URL###">
 			<input type="hidden" name="tracking" value="###TRACKING_NUMBER###"><br>
 			###GW1B###Koodi:###GW1B###<br>
 			<input type="password" size=40 name="update_code" value="###UPDATE_CODE###">
 			<input type="Submit" class="submit enterCode" name="submit" value="Anna koodi">
-			</FORM>
+			</form>
 		<!-- ###ADMIN_CONTROL_DENY### begin -->
 		</td></tr></table>
 	</td></tr>
@@ -1150,18 +1150,18 @@ Displays the view of the order status by tracking codes.<br>
 
 <strong>Sähköpostiviesti:</strong><br>
 Jos haluat tilauksesi kontaktihenkilön  (###FIELD_EMAIL###) vastaanottavan sähköpostiviestin joka kerran kun tilaustila muuttuu, ole hyvä ja laita ruksi seuraavaan kohtaan:<br>
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 	<input type="hidden" name="orderRecord[email_notify]" value="0">
 	<input class="check checkbox" type="checkbox" name="orderRecord[email_notify]" value="1"###FIELD_EMAIL_NOTIFY###>Vastanota viesti tilaustilan muuttuessa.<br>
 	<input type="text" size=40 name="orderRecord[email]" value="###FIELD_EMAIL###">
 	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
 	<input type="Submit" name="submit" class="submit update" value="Päivitä">
-	</FORM>
+	</form>
 <br><br>
 
 <strong>Viesti verkkokauppaan:</strong><br>
 Voit lähettää tilausta koskevan viestin verkkokauppaan.<br>
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
 	###GW1B###Select topic:###GW1B###<br>
 	<select name="orderRecord[status][]" size="1">
@@ -1173,10 +1173,10 @@ Voit lähettää tilausta koskevan viestin verkkokauppaan.<br>
 	###GW1B###Kommentit:###GW1B###<br>
 	<textarea cols="40" rows="5" name="orderRecord[status_comment]"></textarea><br>
 	<input type="Submit" class="submit sendMessage" name="submit" value="Lähetä viesti">
-	</FORM>
+	</form>
 <br>
 <br>
-<B>Tämä on alkuperäinen tilausvahvistus:</B><br><br>
+<b>Tämä on alkuperäinen tilausvahvistus:</b><br><br>
 ###GW1E###
 <HR>
 <br>
@@ -1198,7 +1198,7 @@ Voit lähettää tilausta koskevan viestin verkkokauppaan.<br>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>TRACKING_ENTER_NUMBER</h3>
 <em>
 Displays form for entering the tracking number.<br>
@@ -1208,22 +1208,22 @@ Displays form for entering the tracking number.<br>
 <!-- ###TRACKING_ENTER_NUMBER### begin
 	Displays form for entering the tracking number.
 -->
-###GW1B###<B>Anna seurantakoodi:</B>###GW1E###<br>
-	<FORM method="post" action="###FORM_URL###">
+###GW1B###<b>Anna seurantakoodi:</b>###GW1E###<br>
+	<form method="post" action="###FORM_URL###">
 	<input type="text" name="tracking"><br>
 	<input type="Submit" class="submit seeStatus" name="submit" value="Katso tilauksen tila">
-	</FORM>
+	</form>
 
 <!-- ###ADMIN_CONTROL### begin -->
 <table border=0 cellpadding=1 cellspacing=0 bgcolor="black"><tr><td>
 	<table border=0 cellpadding=10 cellspacing=0 bgcolor="#92AFCB"><tr><td>
 		###GW1B### <strong>Verkkokaupan järjestelmänvalvoja (admin):</strong><br>
 		<!-- ###ADMIN_CONTROL_DENY### begin -->
-			<FORM method="post" action="###FORM_URL###">
+			<form method="post" action="###FORM_URL###">
 			###GW1B###Kokodi:###GW1B###<br>
 			<input type="password" size=40 name="update_code" value="">
 			<input type="Submit" name="submit" class="submit enterCode" value="Anna koodi">
-			</FORM>
+			</form>
 		<!-- ###ADMIN_CONTROL_DENY### begin -->
 		</td></tr></table>
 	</td></tr>
@@ -1239,7 +1239,7 @@ Displays form for entering the tracking number.<br>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>TRACKING_WRONG_NUMBER</h3>
 <em>
 Displays error message if no tracking code.<br>
@@ -1249,12 +1249,12 @@ Displays error message if no tracking code.<br>
 <!-- ###TRACKING_WRONG_NUMBER### begin
 	Displays error message if no tracking code.
 -->
-###GW1B###<B>Seurantakoodia ei ole! Varmista, että annoit oikean koodin ja yritä uudelleen!</B>###GW1E###<br>
+###GW1B###<b>Seurantakoodia ei ole! Varmista, että annoit oikean koodin ja yritä uudelleen!</b>###GW1E###<br>
 
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 	<input type="text" name="tracking"><br>
 	<input type="Submit" name="submit" class="submit seeStatus" value="Katso tilauksen tila">
-	</FORM>
+	</form>
 
 <!-- ###TRACKING_WRONG_NUMBER### end -->
 
@@ -1270,7 +1270,7 @@ Displays error message if no tracking code.<br>
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>TRACKING_EMAILNOTIFY_TEMPLATE</h3>
 <em>
 Subpart used as template for the notify emails.<br>
@@ -1332,7 +1332,7 @@ Parhain terveisin
 
 
 
-<BR><BR><BR><BR><HR><BR><BR><BR>
+<br><br><br><br><HR><br><br><br>
 <h3>EMAIL_PLAINTEXT_TEMPLATE</h3>
 <em>
 Subpart used as template for the order-emails.<br>

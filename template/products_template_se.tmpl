@@ -21,7 +21,7 @@ It's also used by search-results.
 <h1>Shop System for TYPO3</h1>
 <p> Welcome to the tt_products Shop System for TYPO3. Take a look at the German tutorial at <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop System</a> before you start with it. There you can find also a forum for questions.
 </p>
-		<TABLE border="1" cellspacing="0" cellpadding="1" width=1>
+		<table border="1" cellspacing="0" cellpadding="1" width=1>
 			<tr>
 				<td><!--###LINK_PREV###-->###GW2B###<div align="left"><b>Föregående sida</b></div>###GW2E###<!--###LINK_PREV###--></td>
 				<td></td>
@@ -54,8 +54,8 @@ It's also used by search-results.
 			<!-- ###ITEM_SINGLE### begin-->
 			<tr>
 			<td colspan=4>
-			<FORM method="post" action="###FORM_URL###">
-			<TABLE border="1" cellspacing="0" cellpadding="1" width=1>
+			<form method="post" action="###FORM_URL###">
+			<table border="1" cellspacing="0" cellpadding="1" width=1>
 				<tr>
 					<td><img src="clear.gif" width=100 height=1></td>
 					<td><img src="clear.gif" width=5 height=1></td>
@@ -68,18 +68,18 @@ It's also used by search-results.
 				<tr>
 					<td colspan=4 bgcolor="###GC1###"><!-- ###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###<!-- ###LINK_ITEM###--></td>
 				</tr>
-				<TR>
-					<TD valign=top>###PRODUCT_IMAGE###</TD>
+				<tr>
+					<td valign=top>###PRODUCT_IMAGE###</td>
 					<td></td>
-					<TD valign=top>###GW2B######PRODUCT_NOTE######GW2E###<br>
+					<td valign=top>###GW2B######PRODUCT_NOTE######GW2E###<br>
 						###GW1B###<B>Pris:</b> <font color=red><strong>###PRICE_TAX### $</strong></font>###GW1E###<br>
 						###GW2B###(exkl. moms: ###PRICE_NO_TAX###)###GW2E###
-					</TD>
-					<TD valign=top nowrap align=right>###GW2B### Antal: ###GW2E###<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"><BR><input type="Submit" name="order" value="Lägg i kundkorgen">
-					</TD>
-				</TR>
-			</TABLE>
-			</FORM>
+					</td>
+					<td valign=top nowrap align=right>###GW2B### Antal: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"><br><input type="Submit" name="order" value="Lägg i kundkorgen">
+					</td>
+				</tr>
+			</table>
+			</form>
 			</td>
 			</tr>
 			<!-- ###ITEM_SINGLE### end -->
@@ -92,8 +92,8 @@ It's also used by search-results.
 				<td></td>
 				<td><!--###LINK_NEXT###-->###GW2B###<div align="right"><b>Nästa sida</b></div>###GW2E###<!--###LINK_NEXT###--></td>
 			</tr>
-</TABLE>
-<BR><BR>
+</table>
+<br><br>
 <!-- ###ITEM_LIST_TEMPLATE### -->
 
 
@@ -110,8 +110,8 @@ It's also used by search-results.
 This subpart is used to display single products.
 
 -->
-		<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
-<FORM method="post" action="###FORM_URL###">
+		<table border="0" cellspacing="0" cellpadding="1" width=1>
+<form method="post" action="###FORM_URL###">
 			<tr>
 				<td><img src="clear.gif" width=100 height=1></td>
 				<td><img src="clear.gif" width=5 height=1></td>
@@ -123,10 +123,10 @@ This subpart is used to display single products.
 			<tr>
 				<td colspan=3 bgcolor="###GC1###"><!-- ###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###<!-- ###LINK_ITEM###--></td>
 			</tr>
-			<TR>
-				<TD valign=top>###PRODUCT_IMAGE###</TD>
+			<tr>
+				<td valign=top>###PRODUCT_IMAGE###</td>
 				<td></td>
-				<TD valign=top>
+				<td valign=top>
 					###GW1B###
 						<B>Kategori:</B> ###CATEGORY_TITLE### <br>
 						<B>Artikelnummer:</B> ###PRODUCT_ITEMNUMBER###<br>
@@ -135,11 +135,11 @@ This subpart is used to display single products.
 						<B>Info:</B><br>
 						###PRODUCT_NOTE###<br>
 					###GW1E###	<br>
-						<nobr>###GW2B### Antal: ###GW2E###<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"> &nbsp; <input type="Submit" name="order" value="Lägg i kundkorgen"></nobr>
-				</TD>
-			</TR>
+						<nobr>###GW2B### Antal: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"> &nbsp; <input type="Submit" name="order" value="Lägg i kundkorgen"></nobr>
+				</td>
+			</tr>
 </form>
-		</TABLE>
+		</table>
 <br>
 <br>
 
@@ -168,8 +168,8 @@ This subpart is used to display single products.
 Subpart for the search-form
 
 -->
-<FORM method="post" action="###FORM_URL###">
-	<INPUT size="30" maxlength="100" type="text" name="###SWORD_NAME###" value="###SWORDS###">
+<form method="post" action="###FORM_URL###">
+	<input size="30" maxlength="100" type="text" name="###SWORD_NAME###" value="###SWORDS###">
 	<input type="Submit" name="order" value="Sök">
 </form>
 <!-- ###ITEM_SEARCH### -->
@@ -213,8 +213,8 @@ In addition there's a number of fields used for delivery and payment information
 
 -->
 
-			<FORM method="post" action="###FORM_URL###">
-		<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+			<form method="post" action="###FORM_URL###">
+		<table border="0" cellspacing="0" cellpadding="1" width=1>
 			<tr>
 				<td><img src="clear.gif" width=100 height=1></td>
 				<td><img src="clear.gif" width=5 height=1></td>
@@ -240,17 +240,17 @@ In addition there's a number of fields used for delivery and payment information
 				<tr>
 					<td colspan=6><img src="clear.gif" width=1 height=6></td>
 				</tr>
-				<TR>
-					<TD valign=top>###PRODUCT_IMAGE###</TD>
+				<tr>
+					<td valign=top>###PRODUCT_IMAGE###</td>
 					<td></td>
-					<TD valign=top>
+					<td valign=top>
 						<!-- ###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###<!-- ###LINK_ITEM###-->
 
-					</TD>
+					</td>
 					<td valign=top>###GW1B### ###PRICE_TAX### ###GW1E###</td>
-					<TD valign=top>&nbsp;<INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">&nbsp;</TD>
+					<td valign=top>&nbsp;<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">&nbsp;</td>
 					<td valign=top align=right>###GW1B### <b>###PRICE_TOTAL_TAX###</b> ###GW1E###</td>
-				</TR>
+				</tr>
 			<!-- ###ITEM_SINGLE### end -->
 		<!-- ###ITEM_LIST### end -->
 	<!-- ###ITEM_CATEGORY_AND_ITEMS###  end -->
@@ -264,7 +264,7 @@ In addition there's a number of fields used for delivery and payment information
 		<tr>
 			<td colspan=6><img src="clear.gif" width=1 height=6></td>
 		</tr>
-		<TR>
+		<tr>
 			<td colspan=5>
 			###GW1B###Frakt: <b>###SHIPPING_TITLE###</B>###GW1E###<br><br>
 
@@ -272,8 +272,8 @@ In addition there's a number of fields used for delivery and payment information
 
 			###SHIPPING_IMAGE###
 			</td>
-			<td valign=top align=right>###GW1B### <b>###PRICE_SHIPPING_TAX###</b> <BR>(exkl. moms ###PRICE_SHIPPING_NO_TAX###) ###GW1E###</td>
-		</TR>
+			<td valign=top align=right>###GW1B### <b>###PRICE_SHIPPING_TAX###</b> <br>(exkl. moms ###PRICE_SHIPPING_NO_TAX###) ###GW1E###</td>
+		</tr>
 		<tr>
 			<td colspan=6><img src="clear.gif" width=1 height=10></td>
 		</tr>
@@ -284,7 +284,7 @@ In addition there's a number of fields used for delivery and payment information
 		<tr>
 			<td colspan=6><img src="clear.gif" width=1 height=6></td>
 		</tr>
-		<TR>
+		<tr>
 			<td colspan=5>
 			###GW1B###
 
@@ -297,7 +297,7 @@ In addition there's a number of fields used for delivery and payment information
 				This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 			-->
 				<!-- ###MESSAGE_PAYMENT_11### begin -->
-				<BR><B>Du kan bara använda internationella Mastercard i våran shop.</b><br>
+				<br><B>Du kan bara använda internationella Mastercard i våran shop.</b><br>
 				<!-- ###MESSAGE_PAYMENT_11### end -->
 				<!-- ###MESSAGE_PAYMENT_12### begin -->
 				<br>
@@ -311,25 +311,25 @@ In addition there's a number of fields used for delivery and payment information
 ###GW2E###
 
 			</td>
-			<td valign=top align=right>###GW1B### <b>###PRICE_PAYMENT_TAX###</b> <BR>(exkl. moms ###PRICE_PAYMENT_NO_TAX###) ###GW1E###</td>
-		</TR>
+			<td valign=top align=right>###GW1B### <b>###PRICE_PAYMENT_TAX###</b> <br>(exkl. moms ###PRICE_PAYMENT_NO_TAX###) ###GW1E###</td>
+		</tr>
 		<tr>
 			<td colspan=6><img src="clear.gif" width=1 height=10></td>
 		</tr>
 		<tr>
 			<td colspan=6 bgcolor="###GC2###">###GW2B###<b>Totalt:</b>###GW2E###</td>
 		</tr>
-		<TR>
+		<tr>
 			<td valign=top colspan=5></td>
 			<td valign=top align=right nowrap>###GW1B### <b>SEK  ###PRICE_TOTAL_TAX###</b><br>
 			(utan moms: ###PRICE_TOTAL_NO_TAX###) ###GW1E###</td>
-		</TR>
-	</TABLE>
+		</tr>
+	</table>
 	<input type="hidden" name="mode_update" value="1">
 	<input type="Submit" name="products_update" value="Uppdatera kundkorgen">&nbsp;&nbsp;
 	<input type="Submit" name="products_info" value="Gå till betalning/orderavslut" onClick="document.forms[0].action='###FORM_URL_INFO###';">
-	</FORM>
-<BR>
+	</form>
+<br>
 <!-- ###BASKET_TEMPLATE### end -->
 
 
@@ -346,9 +346,9 @@ Exact same features as BASKET_TEMPLATE
 
 -->
 
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 
-	<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+	<table border="0" cellspacing="0" cellpadding="1" width=1>
 		<tr>
 			<td><img src="clear.gif" width=100 height=1></td>
 			<td><img src="clear.gif" width=5 height=1></td>
@@ -487,13 +487,13 @@ Exact same features as BASKET_TEMPLATE
 			</td>
 			<td colspan=3></td>
 		</tr>
-	</TABLE>
+	</table>
 	<br>
 <input type="Submit" name="products_update" value="tillbaka till kundkorgen">&nbsp;&nbsp;
 <input type="Submit" name="products_payment" value="Betala/beställ" onClick="document.forms[0].action='###FORM_URL_FINALIZE###';">
 
-	</FORM>
-<BR>
+	</form>
+<br>
 <!-- ###BASKET_INFO_TEMPLATE### end -->
 
 
@@ -510,7 +510,7 @@ Exact same features as BASKET_TEMPLATE
 
 -->
 
-		<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+		<table border="0" cellspacing="0" cellpadding="1" width=1>
 			<tr>
 				<td><img src="clear.gif" width=100 height=1></td>
 				<td><img src="clear.gif" width=5 height=1></td>
@@ -536,17 +536,17 @@ Exact same features as BASKET_TEMPLATE
 				<tr>
 					<td colspan=6><img src="clear.gif" width=1 height=6></td>
 				</tr>
-				<TR>
-					<TD valign=top>###PRODUCT_IMAGE###</TD>
+				<tr>
+					<td valign=top>###PRODUCT_IMAGE###</td>
 					<td></td>
-					<TD valign=top>
+					<td valign=top>
 						###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
 
-					</TD>
+					</td>
 					<td valign=top>###GW1B### ###PRICE_TAX### ###GW1E###</td>
-					<TD valign=top>###GW1B### ###FIELD_QTY### ###GW1E###</TD>
+					<td valign=top>###GW1B### ###FIELD_QTY### ###GW1E###</td>
 					<td valign=top align=right>###GW1B### <b>###PRICE_TOTAL_TAX###</b> ###GW1E###</td>
-				</TR>
+				</tr>
 			<!-- ###ITEM_SINGLE### end -->
 		<!-- ###ITEM_LIST### end -->
 	<!-- ###ITEM_CATEGORY_AND_ITEMS###  end -->
@@ -612,7 +612,7 @@ Exact same features as BASKET_TEMPLATE
 				<tr>
 					<td>###GW1B###Epost:###GW1E###</td>
 					<td>###GW1B###<strong>###DELIVERY_EMAIL###</strong>###GW1E###
-					###GW2B###<BR>(Den här adressen kommer få orderbekräftelsen!)###GW2E###<BR>
+					###GW2B###<br>(Den här adressen kommer få orderbekräftelsen!)###GW2E###<br>
 					</td>
 				</tr>
 				</table>
@@ -649,7 +649,7 @@ Exact same features as BASKET_TEMPLATE
 
 
 
-		<TR>
+		<tr>
 			<td valign=top colspan=3>###GW1B###
 				<strong>Leveransmetod:</strong><br>
 				###SHIPPING_IMAGE### ###SHIPPING_TITLE###
@@ -661,8 +661,8 @@ Exact same features as BASKET_TEMPLATE
 			(exkl. moms ###PRICE_SHIPPING_NO_TAX###)<br>
 
 			###GW1E###</td>
-		</TR>
-		<TR>
+		</tr>
+		<tr>
 			<td valign=top colspan=3>###GW1B###
 				<strong>Betalningsmetod:</strong><br>
 				###PAYMENT_IMAGE### ###PAYMENT_TITLE###
@@ -672,7 +672,7 @@ Exact same features as BASKET_TEMPLATE
 				This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
 			-->
 				<!-- ###MESSAGE_PAYMENT_11### begin -->
-				<BR><B>Du kan bara använda internationella Mastercard i våran shop.</b><br>
+				<br><B>Du kan bara använda internationella Mastercard i våran shop.</b><br>
 				<!-- ###MESSAGE_PAYMENT_11### end -->
 				<!-- ###MESSAGE_PAYMENT_12### begin -->
 				<br>
@@ -690,7 +690,7 @@ Exact same features as BASKET_TEMPLATE
 			(exkl. moms ###PRICE_PAYMENT_NO_TAX###)<br>
 
 			###GW1E###</td>
-		</TR>
+		</tr>
 
 
 		<tr>
@@ -699,7 +699,7 @@ Exact same features as BASKET_TEMPLATE
 		<tr>
 			<td colspan=6 bgcolor="###GC2###">###GW2B###<b>TOTALT:</b>###GW2E###</td>
 		</tr>
-		<TR>
+		<tr>
 			<td valign=top colspan=3>###GW1B###
 				<strong>Totalsumma i SEK:</strong>
 			###GW1E###</td>
@@ -709,15 +709,15 @@ Exact same features as BASKET_TEMPLATE
 			(utan moms: ###PRICE_TOTAL_NO_TAX###)<br>
 
 			###GW1E###</td>
-		</TR>
-	</TABLE>
+		</tr>
+	</table>
 	<br>
 
-<FORM method="post" action="###FORM_URL###">
+<form method="post" action="###FORM_URL###">
 <input type="Submit" name="products_update" value="Tillbaka till kundkorgen">&nbsp;&nbsp;
 <input type="Submit" name="products_finalize" value="Skicka beställningen" onClick="document.forms[0].action='###FORM_URL_THANKS###'; document.forms[0].target='###FORM_URL_TARGET###';">
-</FORM>
-<BR>
+</form>
+<br>
 
 
 
@@ -743,7 +743,7 @@ Exact same features as BASKET_TEMPLATE
 
 -->
 
-		<TABLE border="0" cellspacing="0" cellpadding="1" width=1>
+		<table border="0" cellspacing="0" cellpadding="1" width=1>
 			<tr>
 				<td><img src="clear.gif" width=100 height=1></td>
 				<td><img src="clear.gif" width=5 height=1></td>
@@ -829,17 +829,17 @@ Exact same features as BASKET_TEMPLATE
 				<tr>
 					<td colspan=6><img src="clear.gif" width=1 height=6></td>
 				</tr>
-				<TR>
-					<TD valign=top>###PRODUCT_IMAGE###</TD>
+				<tr>
+					<td valign=top>###PRODUCT_IMAGE###</td>
 					<td></td>
-					<TD valign=top>
+					<td valign=top>
 						###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
 
-					</TD>
+					</td>
 					<td valign=top>###GW1B### ###PRICE_TAX### ###GW1E###</td>
-					<TD valign=top>###GW1B### ###FIELD_QTY### ###GW1E###</TD>
+					<td valign=top>###GW1B### ###FIELD_QTY### ###GW1E###</td>
 					<td valign=top align=right>###GW1B### <b>###PRICE_TOTAL_TAX###</b> ###GW1E###</td>
-				</TR>
+				</tr>
 			<!-- ###ITEM_SINGLE### end -->
 		<!-- ###ITEM_LIST### end -->
 	<!-- ###ITEM_CATEGORY_AND_ITEMS###  end -->
@@ -952,7 +952,7 @@ Exact same features as BASKET_TEMPLATE
 
 
 
-		<TR>
+		<tr>
 			<td valign=top colspan=3>###GW1B###
 				<strong>Leveransmetod:</strong><br>
 				###SHIPPING_IMAGE### ###SHIPPING_TITLE###
@@ -964,8 +964,8 @@ Exact same features as BASKET_TEMPLATE
 			(exkl moms ###PRICE_SHIPPING_NO_TAX###)<br>
 
 			###GW1E###</td>
-		</TR>
-		<TR>
+		</tr>
+		<tr>
 			<td valign=top colspan=3>###GW1B###
 				<strong>Betalningsmetod:</strong><br>
 				###PAYMENT_IMAGE### ###PAYMENT_TITLE###
@@ -976,7 +976,7 @@ Exact same features as BASKET_TEMPLATE
 			(###PRICE_PAYMENT_NO_TAX###)<br>
 
 			###GW1E###</td>
-		</TR>
+		</tr>
 
 
 		<tr>
@@ -985,7 +985,7 @@ Exact same features as BASKET_TEMPLATE
 		<tr>
 			<td colspan=6 bgcolor="###GC2###">###GW2B###<b>TOTALT:</b>###GW2E###</td>
 		</tr>
-		<TR>
+		<tr>
 			<td valign=top colspan=3>###GW1B###
 				<strong>Totalsumma i SEK:</strong>
 			###GW1E###</td>
@@ -995,7 +995,7 @@ Exact same features as BASKET_TEMPLATE
 			(utan moms: ###PRICE_TOTAL_NO_TAX###)<br>
 
 			###GW1E###</td>
-		</TR>
+		</tr>
 			<tr>
 				<td colspan=6>
 				###GW1B###
@@ -1015,9 +1015,9 @@ Vänliga hälsningar:
 				###GW1E###
 				</td>
 			</tr>
-	</TABLE>
+	</table>
 	<br>
-<BR>
+<br>
 <!-- ###BASKET_ORDERCONFIRMATION_TEMPLATE### end -->
 
 
@@ -1051,9 +1051,9 @@ If payment is initiated but the required information fields are not filled in co
 -->
 ###GW1B###<B>Du har inte fyllt i alla nödvändiga fält med adressuppgifter. Vänligen gå tillbaka och gör det.</B>###GW1E###
 
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 	<input type="Submit" name="products_info" value="Ange adressuppgifter" onClick="document.forms[0].action='###FORM_URL_INFO###';">
-	</FORM>
+	</form>
 
 <!-- ###BASKET_REQUIRED_INFO_MISSING### end -->
 
@@ -1107,7 +1107,7 @@ Displays the view of the order status by tracking codes.
 		###GW1B###
 
 		<!-- ###ADMIN_CONTROL_OK### begin -->
-		<FORM method="post" action="###FORM_URL###">
+		<form method="post" action="###FORM_URL###">
 		<select name="orderRecord[status][]" size="9" multiple>
 			###STATUS_OPTIONS###
 		</select>
@@ -1118,24 +1118,24 @@ Displays the view of the order status by tracking codes.
 			<input type="hidden" name="tracking" value="###TRACKING_NUMBER###"><br>
 			<input type="hidden" name="update_code" value="###UPDATE_CODE###"><br>
 			<input type="Submit" name="submit" value="Lägg till orderstatus">
-			</FORM>
+			</form>
 			<hr>
 			Byta till annan beställning:
-			<FORM method="post" action="###FORM_URL###">
+			<form method="post" action="###FORM_URL###">
 				<select name="tracking" size="9">
 					###OTHER_ORDERS_OPTIONS###
 				</select><br><br>
 				<input type="Submit" name="submit" value="Välj">
 				<input type="hidden" name="update_code" value="###UPDATE_CODE###"><br>
-			</FORM>
+			</form>
 		<!-- ###ADMIN_CONTROL_OK### begin -->
 		<!-- ###ADMIN_CONTROL_DENY### begin -->
-			<FORM method="post" action="###FORM_URL###">
+			<form method="post" action="###FORM_URL###">
 			<input type="hidden" name="tracking" value="###TRACKING_NUMBER###"><br>
 			###GW1B###Kod:###GW1B###<br>
 			<input type="password" size=40 name="update_code" value="###UPDATE_CODE###">
 			<input type="Submit" name="submit" value="Ange kod">
-			</FORM>
+			</form>
 		<!-- ###ADMIN_CONTROL_DENY### begin -->
 		</td></tr></table>
 	</td></tr>
@@ -1145,7 +1145,7 @@ Displays the view of the order status by tracking codes.
 
 <strong>Epostmeddelande:</strong><br>
 Om du önskar att få ett meddelande till angiven kontakt epostadress (###FIELD_EMAIL###) varje gång orderstatusen ändras så markera det här:<br />
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 
 	<input type="hidden" name="orderRecord[email_notify]" value="0">
 	<input type="checkbox" name="orderRecord[email_notify]" value="1"###FIELD_EMAIL_NOTIFY###>Få epost om orderstatusändringar.<br>
@@ -1153,11 +1153,11 @@ Om du önskar att få ett meddelande till angiven kontakt epostadress (###FIELD_
 	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
 
 	<input type="Submit" name="submit" value="Uppdatera">
-	</FORM>
+	</form>
 <br><br>
 <strong>Meddelande till shopen:</strong><br>
 Du kan skicka ett meddelande till shopen rörande den här ordern.<br>
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
 	###GW1B###Välj ärendetyp:###GW1B###<br>
 	<select name="orderRecord[status][]" size="1">
@@ -1169,7 +1169,7 @@ Du kan skicka ett meddelande till shopen rörande den här ordern.<br>
 	###GW1B###Comment to follow:###GW1B###<br>
 	<textarea cols="40" rows="5" name="orderRecord[status_comment]"></textarea><br>
 	<input type="Submit" name="submit" value="Skicka meddelandet">
-	</FORM>
+	</form>
 <br>
 <br>
 <B>Detta är orginalet av orderbekräftelsen:</B><br><br>
@@ -1190,21 +1190,21 @@ Du kan skicka ett meddelande till shopen rörande den här ordern.<br>
 Displays form for entering the tracking number.
 -->
 ###GW1B###<B>Ange ditt spårningsnummer:</B>###GW1E###<br>
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 	<input type="text" name="tracking"><br>
 	<input type="Submit" name="submit" value="Se orderstatus">
-	</FORM>
+	</form>
 
 <!-- ###ADMIN_CONTROL### begin -->
 <table border=0 cellpadding=1 cellspacing=0 bgcolor="black"><tr><td>
 	<table border=0 cellpadding=10 cellspacing=0 bgcolor="#92AFCB"><tr><td>
 		###GW1B### <strong>Shop ADMIN:</strong><br>
 		<!-- ###ADMIN_CONTROL_DENY### begin -->
-			<FORM method="post" action="###FORM_URL###">
+			<form method="post" action="###FORM_URL###">
 			###GW1B###Kod:###GW1B###<br>
 			<input type="password" size=40 name="update_code" value="">
 			<input type="Submit" name="submit" value="Ange kod">
-			</FORM>
+			</form>
 		<!-- ###ADMIN_CONTROL_DENY### begin -->
 		</td></tr></table>
 	</td></tr>
@@ -1224,10 +1224,10 @@ Displays form for entering the tracking number.
 -->
 ###GW1B###<B>Spårningsnumret finns inte, försäkra dig om att det är rätt och försök igen.</B>###GW1E###<br>
 
-	<FORM method="post" action="###FORM_URL###">
+	<form method="post" action="###FORM_URL###">
 	<input type="text" name="tracking"><br>
 	<input type="Submit" name="submit" value="Se orderstatus">
-	</FORM>
+	</form>
 
 <!-- ###TRACKING_WRONG_NUMBER### end -->
 
