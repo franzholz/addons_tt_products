@@ -39,7 +39,7 @@ This subpart is used to display the regular list of products. It's also used by 
 	          <p class="listitem_subheader"><em>###PRODUCT_SUBTITLE###</em></p>
 	                    ###PRODUCT_IMAGE###
 	           <div class="product_note">###PRODUCT_NOTE###</div>
-				<p class="price"> Preis : <strong>###PRICE_TAX### EUR</strong><br/>
+				<p class="price"> Preis : <strong>###PRICE_TAX### EUR</strong><br>
 	           (enthaltene MwSt: ###PRICE_ONLY_TAX###.- EUR)
 	           </p>
 				<p class="price"> Punkte : ###PRODUCT_CREDITPOINTS### </p>
@@ -51,7 +51,7 @@ This subpart is used to display the regular list of products. It's also used by 
 	                    <div class="clear_right"><!-- --></div>
 		</div>
 <div>
-      <input type="submit" name="order" value="In Warenkorb einf&uuml;gen"/>
+      <input type="submit" name="order" value="In Warenkorb einf&uuml;gen">
                 </div>
 	    	</form>
 +++++++++++++++++++++++++++++++++++++++++++++
@@ -120,15 +120,15 @@ This subpart is used to display the regular list of products. It's also used by 
     	<!-- ###CATEGORY_SINGLE### begin-->
 		###ITEM_SINGLE_PRE_HTML###
         	<!--###LINK_CATEGORY### begin-->
-            	###LIST_LINK###<br/>
+            	###LIST_LINK###<br>
             <!--###LINK_CATEGORY### end-->
 		###ITEM_SINGLE_POST_HTML###
         <!-- ###CATEGORY_SINGLE### end-->
 
-       <br/> <!-- ###CATEGORY_SINGLE_2### begin-->
+       <br> <!-- ###CATEGORY_SINGLE_2### begin-->
         <!-- ###CATEGORY_SINGLE_2### end-->
 
-        <br/><!-- ###CATEGORY_SINGLE_3### begin-->
+        <br><!-- ###CATEGORY_SINGLE_3### begin-->
         <!-- ###CATEGORY_SINGLE_3### end-->
     </div>
 
@@ -333,7 +333,7 @@ In addition there's a number of fields used for delivery and payment information
 
             <div class="delivery">
                 <h2>Versand</h2>
-                <label for="shipping-select">Versandarten: </label> <br/>
+                <label for="shipping-select">Versandarten: </label> <br>
                 	###SHIPPING_SELECTOR######SHIPPING_IMAGE###
                 <p>
                     Gesamtgewicht: <strong>###SHIPPING_WEIGHT### kg</strong> <br>
@@ -345,7 +345,7 @@ In addition there's a number of fields used for delivery and payment information
 
             <div class="payment">
                 <h2>Bezahlung</h2>
-                <label for="payment-select">Art der Bezahlung: </label> <br/>
+                <label for="payment-select">Art der Bezahlung: </label> <br>
                 	###PAYMENT_SELECTOR######PAYMENT_IMAGE###
                 <p>
                     Bezahlung : <strong>###PAYMENT_TITLE###</strong><br>
@@ -368,14 +368,14 @@ In addition there's a number of fields used for delivery and payment information
             <div class="price_summary">
                 <h2>Gesamtpreis </h2>
 
-                    <strong>Insgesamt: ###PRICE_TOTAL_TAX### EUR</strong><br/>
+                    <strong>Insgesamt: ###PRICE_TOTAL_TAX### EUR</strong><br>
     <!-- ###SUB_CREDITPOINTS_AMOUNT### begin -->
-                    <strong>Rabatt: ###USERCREDITPOINTS_PRICE_TOTAL_TAX### EUR</strong><br/>
-                    <strong>Zahlungsbetrag: ###PRICE_VOUCHERTOTAL_TAX### EUR</strong><br/>
+                    <strong>Rabatt: ###USERCREDITPOINTS_PRICE_TOTAL_TAX### EUR</strong><br>
+                    <strong>Zahlungsbetrag: ###PRICE_VOUCHERTOTAL_TAX### EUR</strong><br>
 					<p>m&ouml;glicher Rabatt: ###AUTOCREDITPOINTS_PRICE_TOTAL_TAX###</p>
 
     <!-- ###SUB_CREDITPOINTS_AMOUNT### end -->
-			</div> <br/>
+			</div> <br>
 		   <ul><li> (Insgesamt ohne MwSt: ###PRICE_TOTAL_NO_TAX### EUR)</li>
                     <li>(enthaltene MwSt: ###PRICE_TOTAL_ONLY_TAX### EUR)</li></ul>
 
@@ -505,8 +505,8 @@ Sie k&ouml;nnen auch die Kontaktperson/Email an diesem Ort eingeben?
 	        <fieldset>
 	            <legend>Allgemeine Gesch&auml;tsbedingungen</legend>
 	            <div class="trading_conditions">
-	             <p>Hiermit best&auml;tige ich, dass ich die <!--###LINK_AGB### -->Allgemeine Gesch&auml;tsbedingungen(AGB)<!--###LINK_AGB###--> und die <a href="http://###DOMAIN###/index.php?id=188">Datenschutzbestimmungen</a> gelesen und akzeptiert habe:</p>
-	                <input type="checkbox" name="recs[personinfo][agb]" id="delivery_agb" class="checkbox" ###PERSON_AGB###>&nbsp;
+	             <p>Hiermit best&auml;tige ich, dass ich die <!--###LINK_AGB### -->Allgemeine Gesch&auml;tsbedingungen(AGB)<!--###LINK_AGB###--> und die <!--###LINK_PRIVACY### -->Datenschutzbestimmungen<!--###LINK_PRIVACY### --> gelesen und akzeptiert habe:</p>
+	                <input type="checkbox" name="recs[personinfo][agb]" id="delivery_agb" class="checkbox" ###PERSON_AGB### onchange="document.getElementsByName('products_payment')[0].disabled=!document.getElementsByName('recs[personinfo][agb]')[0].checked;">&nbsp;
 	                    <label for="delivery_agb" class="checkbox"><strong>Ich bin mit den Allgemeinen Gesch&auml;tsbedingungen und den Datenschutzbedingungen einverstanden*</strong></label>
 	            </div>
 	        </fieldset>
@@ -515,7 +515,7 @@ Sie k&ouml;nnen auch die Kontaktperson/Email an diesem Ort eingeben?
 
 			<div class="form_control">
 	        <input type="submit" name="products_update" value="zur&uuml;ck zum Warenkorb">
-	        <input type="submit" name="products_payment" onclick="this.form.action='###FORM_URL_PAYMENT###';" value="zur Kasse/Bestellung">
+	        <input type="submit" name="products_payment" disabled onclick="this.form.action='###FORM_URL_PAYMENT###';" value="zur Kasse/Bestellung">
 	        </div>
         </form>
     </div>
@@ -585,7 +585,7 @@ Exact same features as BASKET_TEMPLATE.</em></p>
             <!-- ###MESSAGE_SHIPPING### end -->
 
             <dl>
-	            <dt>Bezahlungsart: </dt> <br/>
+	            <dt>Bezahlungsart: </dt> <br>
 	                <dd>###PAYMENT_IMAGE### ###PAYMENT_TITLE###</dd>
 	            <!-- <dt>Bezahlungskosten: </dt>
 	                <dd><strong>EUR ###PRICE_PAYMENT_TAX###.-</strong>&nbsp;<em>(ohne MWSt: EUR ###PRICE_PAYMENT_NO_TAX###.-)</em></dd> -->
@@ -642,16 +642,16 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	           <dd class="delivery_date"><strong>###DELIVERY_DESIRED_DATE###</strong></dd> -->
 	        </dl>
 	    </div>
-           <br/>
+           <br>
 	    <div class="price_summary">
         	<h2>Insgesamt</h2>
 
             <ul><li>(ohne MwSt:  ###PRICE_TOTAL_NO_TAX### EUR)</li>
 		<li>(enthaltene MwSt: ###PRICE_TOTAL_ONLY_TAX### EUR)</li></ul>
-                <strong>Insgesamt: ###PRICE_TOTAL_TAX### EUR</strong><br/>
+                <strong>Insgesamt: ###PRICE_TOTAL_TAX### EUR</strong><br>
     <!-- ###SUB_CREDITPOINTS_AMOUNT### begin -->
-                <strong>Rabatt: ###PRICE_TOTUNITS_DISCOUNT### EUR</strong><br/>
-                <strong>Zahlungsbetrag: ###PRICE_VOUCHERTOTAL_TAX### EUR</strong><br/>
+                <strong>Rabatt: ###PRICE_TOTUNITS_DISCOUNT### EUR</strong><br>
+                <strong>Zahlungsbetrag: ###PRICE_VOUCHERTOTAL_TAX### EUR</strong><br>
     <!-- ###SUB_CREDITPOINTS_AMOUNT### end -->
 
 	    </div>
@@ -678,7 +678,7 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	-->
     <div class="tt_products_order_confirmation">
 
-        <p><strong>Vielen Dank f&uuml;r Ihre Bestellung bei der Dunia Foundation<br/>
+        <p><strong>Vielen Dank f&uuml;r Ihre Bestellung bei der Dunia Foundation<br>
 	Die Einzelheiten dazu sind unten aufgef&uuml;hrt.</strong> </p>
 
         <div class="order_data">
@@ -700,7 +700,7 @@ Drucken Sie diese Seite am besten aus.</em>
 	    <h2>Bestellinformationen</h2>
         <p>
     Ihre Bestellung ist vom  ###ORDER_DATE###.<br>
-Sie k&ouml;nnen ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TRACKING_NO###</strong> verfolgen. Klicken Sie hier  <a href="index.php?id=###PID_TRACKING###&amp;type=0&amp;tracking=###ORDER_TRACKING_NO##">um den Status zum jetzigen Zeitpunkt zu sehen.</a><br><br/>
+Sie k&ouml;nnen ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TRACKING_NO###</strong> verfolgen. Klicken Sie hier  <a href="index.php?id=###PID_TRACKING###&amp;type=0&amp;tracking=###ORDER_TRACKING_NO##">um den Status zum jetzigen Zeitpunkt zu sehen.</a><br><br>
 </p>
 
         <div class="payment_message">
@@ -827,7 +827,7 @@ Sie k&ouml;nnen ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TR
 
 	    <div class="price_summary">
 
-            	<strong>Insgesamt: ###PRICE_TOTAL_TAX### EUR</strong><br/>
+            	<strong>Insgesamt: ###PRICE_TOTAL_TAX### EUR</strong><br>
 	        <ul><li>(ohne MwSt: ###PRICE_TOTAL_NO_TAX### EUR)</li>
 		<li>(enthaltene MwSt:###PRICE_TOTAL_ONLY_TAX### EUR)</li>
 
@@ -845,9 +845,9 @@ Sie k&ouml;nnen ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TR
         <div class="shop_address">
 
 
-        	<strong>Ihre Ansprechpartnerin </strong><br/>
-		 Dunia Dunia <br/>
-		 Bestellung/ Versand <br/>
+        	<strong>Ihre Ansprechpartnerin </strong><br>
+		 Dunia Dunia <br>
+		 Bestellung/ Versand <br>
 
             	<strong>Deutsche Dunia Bund </strong><br>
 	            Adenauerallee 111<br>
@@ -906,7 +906,7 @@ Sie k&ouml;nnen ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TR
 	Displays form for entering the tracking number.
 	-->
     <div class="tt_products_tracking_enter_number">
-    	<h1>Bestellverfolgung</h1> <br/> <br/>
+    	<h1>Bestellverfolgung</h1> <br> <br>
 	    <form method="post" action="###FORM_URL###">
 	        <div>
 	            <label for="tracking">Geben Sie Ihre Auftragsstatusnummer ein: </label>
@@ -916,7 +916,7 @@ Sie k&ouml;nnen ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TR
 	    </form>
 
 	    <!-- ###ADMIN_CONTROL### begin -->
-        	<div class="admin_control"> <br/><br/><br/></<br/>
+        	<div class="admin_control"> <br><br><br><br>
 	            <h1>Shop-Administrator(Bestellung/Versand)</h1>
 	            <!-- ###ADMIN_CONTROL_DENY### begin -->
 	                <form method="post" action="###FORM_URL###">
@@ -1049,7 +1049,7 @@ Sie k&ouml;nnen ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TR
 	        <form method="post" action="###FORM_URL###">
 	            <fieldset>
                 	<legend>E-Mail Eigenschaften</legend>
-	                <input type="checkbox" name="orderRecord[email_notify]" id="orderRecord_email_notify" class="checkbox" value="1" ###FIELD_EMAIL_NOTIFY### />
+	                <input type="checkbox" name="orderRecord[email_notify]" id="orderRecord_email_notify" class="checkbox" value="1" ###FIELD_EMAIL_NOTIFY### >
 	                    <label for="orderRecord_email_notify" class="checkbox">Nachricht bei Bestellstatus&auml;nderung erhalten </label><br>
 	                <label for="orderRecord_email">E-Mail: </label>
 	                    <input type="text" size="40" name="orderRecord[email]" id="orderRecord_email" value="###FIELD_EMAIL###"><br>
@@ -1314,7 +1314,7 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 	<strong>Dunia Foundation</strong><br>
                 www.aopnews.com
 </p>
-<hr />
+<hr >
 <h1>Rechnung</h1>
 <p style="float:left"><strong>
 	###PERSON_SALUTATION###<br>
@@ -1406,7 +1406,7 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 
 <p>Bezahlung sollte innerhalb von 14 Tagen erfolgen.</p>
 
-<hr />
+<hr >
 <p style="text-align:center">
 Dunia, Adenauerallee 111, 53113 Bonn
 
@@ -1443,7 +1443,7 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 	<strong>Ehlm-Wissen</strong><br>
     www.aopnews.com
 </p>
-<hr />
+<hr >
 <h1>Lieferblatt</h1>
 <p style="float:left"><strong>
 	###DELIVERY_SALUTATION###<br>
@@ -1491,7 +1491,7 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 <h2>R&uuml;ckgabe</h2>
 <p>R&uuml;ckgabe ist innerhalb von 14 Tagen m&ouml;glich.</p>
 
-<hr />
+<hr >
 <p style="text-align:center">
 	FH BRS, Adenauerallee 111, 53113 Bonn
 	            <br>

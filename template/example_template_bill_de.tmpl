@@ -412,7 +412,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 			<!-- ###display_variant2### -->
 			<nobr>###GW2B### Preis: ###GW2E### ###GW1B###<strong id="###PRICE_TAX_ID###">###PRICE_TAX###</strong> &euro;###GW1E###<br></nobr>
 				<nobr>###GW2B### Menge: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
-				<input id="###BASKET_INTO_ID###" type="submit" ###DISABLED### name="order" value="###BASKET_INTO###" onClick="if(!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};" id="###BASKET_INPUT_ID###" >
+				<input id="###BASKET_INTO_ID###" type="submit" ###DISABLED### name="order" value="###BASKET_INTO###" onClick="if(!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};" id="###BASKET_INPUT_ID###">
 				</nobr>
 </form>
 			<p id="###IN_STOCK_ID###">###BASKET_IN_STOCK###</p>
@@ -803,15 +803,15 @@ This whole subpart, message_payment is substituted with the subpart 'message_pay
 <!-- ###MESSAGE_SHIPPING_30### -->
 <!-- ###MESSAGE_SHIPPING_40### -->
 <br><b>Versand erfolgt in die EU</b><br>
-<br /><b>Lieferung EU mit g&uuml;ltiger VAT Reg. No.</b><br />
+<br><b>Lieferung EU mit g&uuml;ltiger VAT Reg. No.</b><br>
 Lieferung ab Werk. Lieferkosten berechnen wir Ihnen g&uuml;nstigst nach
 Aufwand analog unserer <a
 href="http://www.bananaguard.de/index.php?id=9737">Transportkosten&uuml;bersicht
-</a>.<br />
-Ihre g&uuml;ltige VAT Reg. No. Hier eingeben: <input type="text" name="recs[personinfo][tt_products_vat]" size="30" value="###PERSON_TT_PRODUCTS_VAT###"><br />
+</a>.<br>
+Ihre g&uuml;ltige VAT Reg. No. Hier eingeben: <input type="text" name="recs[personinfo][tt_products_vat]" size="30" value="###PERSON_TT_PRODUCTS_VAT###"><br>
 <!-- ###MESSAGE_SHIPPING_40### -->
 <!-- ###MESSAGE_SHIPPING_40_10### -->
-<br /><b>Versand erfolgt nach &Ouml;sterreich</b><br />
+<br><b>Versand erfolgt nach &Ouml;sterreich</b><br>
 <!-- ###MESSAGE_SHIPPING_40_10### -->
 <!-- ###MESSAGE_SHIPPING_50### -->
 <br><b>Griatzi in di Schwiz</b><br>
@@ -838,7 +838,7 @@ This whole subpart, message_payment is substituted with the subpart 'message_pay
 <b>Bezahlung bei Abholung im Gesch&auml;ft.</b><br>
 <!-- ###MESSAGE_PAYMENT_50### -->
 <!-- ###MESSAGE_PAYMENT_130### -->
-<br /><b>Bezahlung &uuml;ber ConCardis.</b><br />
+<br><b>Bezahlung &uuml;ber ConCardis.</b><br>
 <!-- ###MESSAGE_PAYMENT_130### -->
 <!-- ###MESSAGE_PAYMENT### -->
 ###GW2E###
@@ -877,8 +877,8 @@ Ihre Bestellung wird bearbeitet werden.
 <!-- ###MESSAGE_PRICE_VALID### -->
 <input type="hidden" name="mode_update" value="1">
 <input type="Submit" name="products_update" value="Warenkorb aktualisieren"></td>
-<input type="Submit" name="products_clear_basket" value="Warenkorb l&ouml;schen" >
-<td align="right"><input type="Submit" name="products_info" value="Ihre Daten eingeben" onClick="var basketForm; basketForm = document.getElementById('basketForm'); basketForm.action='###FORM_URL_INFO###';" ></td>
+<input type="Submit" name="products_clear_basket" value="Warenkorb l&ouml;schen">
+<td align="right"><input type="Submit" name="products_info" value="Ihre Daten eingeben" onClick="var basketForm; basketForm = document.getElementById('basketForm'); basketForm.action='###FORM_URL_INFO###';"></td>
 </tr>
 </table>
 </form>
@@ -1024,27 +1024,27 @@ If this part is not empty then this will be used instead of BILLING_ADDRESS if t
 </tr>
 <tr>
 <td>###GW1B###<strong>IBAN:</strong>###GW1E###</td>
-<td><input name="recs[account][iban]" value="###PERSON_ACCOUNTS_IBAN###" size="24" maxlength="24" />
+<td><input name="recs[account][iban]" value="###PERSON_ACCOUNTS_IBAN###" size="24" maxlength="24">
 </tr>
 <tr>
 <td>###GW1B###<strong>BIC:</strong>###GW1E###</td>
-<td><input name="recs[account][bic]" value="###PERSON_ACCOUNTS_BIC###" size="8" maxlength="8" />
+<td><input name="recs[account][bic]" value="###PERSON_ACCOUNTS_BIC###" size="8" maxlength="8">
 </tr>
 <tr>
-  <td >###GW1B###<strong>Konto Inhaber</strong>###GW1E###</td>
-  <td colspan="3"><input name="recs[account][owner_name]" value="###PERSON_ACCOUNTS_OWNER_NAME###" size="20" />
+  <td>###GW1B###<strong>Konto Inhaber</strong>###GW1E###</td>
+  <td colspan="3"><input name="recs[account][owner_name]" value="###PERSON_ACCOUNTS_OWNER_NAME###" size="20">
   </td>
 </tr>
 <tr>
 <td>###GW1B###<strong>Kreditkarte:</strong>###GW1E###</td>
 <td>###PERSON_CARDS_CC_TYPE###   zuletzt: ###PERSON_CARDS_CC_TYPE_SELECTED###</td>
-<td><input name="recs[creditcard][cc_number_1]" value="###PERSON_CARDS_CC_NUMBER_1###" size="4" maxlength="4" />-<input name="recs[creditcard][cc_number_2]" value="###PERSON_CARDS_CC_NUMBER_2###" size="4" maxlength="4" />-<input name="recs[creditcard][cc_number_3]" value="###PERSON_CARDS_CC_NUMBER_3###" size="4" maxlength="4" />-<input name="recs[creditcard][cc_number_4]" value="###PERSON_CARDS_CC_NUMBER_4###" size="4" maxlength="4" /> Sicherheitszahl <input name="recs[creditcard][cvv2]" value="###PERSON_CARDS_CVV2###" size="4" maxlength="4" />
+<td><input name="recs[creditcard][cc_number_1]" value="###PERSON_CARDS_CC_NUMBER_1###" size="4" maxlength="4">-<input name="recs[creditcard][cc_number_2]" value="###PERSON_CARDS_CC_NUMBER_2###" size="4" maxlength="4">-<input name="recs[creditcard][cc_number_3]" value="###PERSON_CARDS_CC_NUMBER_3###" size="4" maxlength="4">-<input name="recs[creditcard][cc_number_4]" value="###PERSON_CARDS_CC_NUMBER_4###" size="4" maxlength="4"> Sicherheitszahl <input name="recs[creditcard][cvv2]" value="###PERSON_CARDS_CVV2###" size="4" maxlength="4">
 </td>
-<td>G&uuml;ltigkeit bis: <input name="recs[creditcard][endtime_mm]" value="###PERSON_CARDS_ENDTIME_MM###" size="2" maxlength="2"/> / <input name="recs[creditcard][endtime_yy]" value="###PERSON_CARDS_ENDTIME_YY###" size="2" maxlength="2"/></td>
+<td>G&uuml;ltigkeit bis: <input name="recs[creditcard][endtime_mm]" value="###PERSON_CARDS_ENDTIME_MM###" size="2" maxlength="2"> / <input name="recs[creditcard][endtime_yy]" value="###PERSON_CARDS_ENDTIME_YY###" size="2" maxlength="2"></td>
 </tr>
 <tr>
-  <td >###GW1B###<strong>Inhaber</strong>###GW1E###</td>
-  <td colspan="3"><input name="recs[creditcard][owner_name]" value="###PERSON_CARDS_OWNER_NAME###" size="20" />
+  <td>###GW1B###<strong>Inhaber</strong>###GW1E###</td>
+  <td colspan="3"><input name="recs[creditcard][owner_name]" value="###PERSON_CARDS_OWNER_NAME###" size="20">
   </td>
 </tr>
 <tr>
@@ -1173,17 +1173,29 @@ Hier k&ouml;nnen Sie Ihrer Bestellung einen Kommentar hinzufgen:
         ###GW1E### </td>
 </tr>
 <tr>
-<td colspan="3">###GW1B###<!--###LINK_AGB###-->Die Allgemeinen Gesch&auml;ftsbedingungen<!--###LINK_AGB###--> habe ich gelesen und erkenne sie hiermit an.:
+<td colspan="3">###GW1B###<!--###LINK_AGB###-->Die Allgemeinen Gesch&auml;ftsbedingungen<!--###LINK_AGB###--> habe ich gelesen und erkenne sie hiermit an.:###GW1E###
 <input type="checkbox" name="recs[personinfo][agb]" ###PERSON_AGB###></td>
 <td colspan="3"></td>
 </tr>
+
+<tr>
+<td colspan="4">###GW2B###<b><!--###LINK_PRIVACY### -->###BASKET_PRIVACY_POLICY###<!--###LINK_PRIVACY### --></b><br>
+###BASKET_PRIVACY_POLICY_AGREE_1### ###BASKET_PRIVACY_POLICY_AGREE_2###<input type="checkbox" name="recs[personinfo][privacy]" onchange="document.getElementsByName('products_payment')[0].disabled=!document.getElementsByName('recs[personinfo][privacy]')[0].checked;">###GW2E###</td>
+
+<td colspan="2">
+<b>###BASKET_PRIVACY_POLICY_HINT###:</b>
+###BASKET_PRIVACY_POLICY_HINT_1###
+</td>
+
+</tr>
+
 </table>
 <br>
 <table width="100%"><tr>
 <td><input type="hidden" name="products_info" value="1"></td>
 <td><input type="Submit" name="products_update" value="zur&uuml;ck zum Warenkorb" onclick="document.forms[###FORM_NAME###].action='###FORM_URL_BASKET###';"></td>
 <td align="right">
-<input type="Submit" name="products_payment" value="AGBs akzeptiert" onclick="document.forms[###FORM_NAME###].action='###FORM_URL_PAYMENT###';" />
+<input type="Submit" name="products_payment" value="AGBs akzeptiert" disabled onclick="document.forms[###FORM_NAME###].action='###FORM_URL_PAYMENT###';">
 ###HIDDENFIELDS###</td>
 </tr></table>
 </form>
@@ -1453,7 +1465,7 @@ Exact same features as BASKET_TEMPLATE
 <form method="post" action="###FORM_URL###" name="###FORM_NAME###" id="paymentForm">
 <table width="100%"><tr>
 <td><input type="Submit" name="products_update" value="zur&uuml;ck zum Warenkorb" onclick="document.forms[###FORM_NAME###].action='###FORM_URL_BASKET###';">
-<input type="hidden" name="products_cmd" value="cardno" /></td>
+<input type="hidden" name="products_cmd" value="cardno"></td>
 <td align="right"><input type="Submit" name="products_finalize" value="Zahlungspflichtig bestellen!" onclick="document.forms[###FORM_NAME###].action='###FORM_URL_THANKS###'; document.forms[###FORM_NAME###].target='###FORM_URL_TARGET###';">###GW1B### (auch PayPal)###GW1E###</td>
 </tr></table>
 </form>
@@ -2262,8 +2274,8 @@ Mein TYPO3 Shop
 <!--
 	browserName = navigator.appName;
 	browserVer = parseInt(navigator.appVersion);
-	var msie4 = (browserName == "Microsoft Internet Explorer" && browserVer >= 4);
-	if ((browserName == "Netscape" && browserVer >= 3) || msie4) {version = "n3";} else {version = "n2";}
+	var msie4 = (browserName == "Microsoft Internet Explorer" && browserVer>= 4);
+	if ((browserName == "Netscape" && browserVer>= 3) || msie4) {version = "n3";} else {version = "n2";}
 
 	function openPic(url,winName,winParams)	{
 		var theWindow = window.open(url,winName,winParams);

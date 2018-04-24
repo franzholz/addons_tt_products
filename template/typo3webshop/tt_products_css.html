@@ -1292,12 +1292,24 @@ Wenn sie wünschen, daß ihre Ware an eine andere Adresse geliefert wird, tragen
       </div>
     </div>
     </fieldset>
+    
+    <fieldset>
+        <legend>Privacy policy</legend>
+        <div class="privacy_policy">
+            <p>###BASKET_PRIVACY_POLICY_AGREE_1### <!--###LINK_PRIVACY###-->###BASKET_PRIVACY_POLICY###<!--###LINK_PRIVACY###-->. ###BASKET_PRIVACY_POLICY_AGREE_2###</p>
+            <input type="checkbox" name="recs[personinfo][privacy]" onchange="document.getElementsByName('products_payment')[0].disabled=!document.getElementsByName('recs[personinfo][privacy]')[0].checked;">&nbsp;
+                <label for="delivery_agb" class="checkbox"><strong>Ich stimme den Datenschutzbestimmungen zu.*</strong></label>
+            <p>###BASKET_PRIVACY_POLICY_HINT###:
+                ###BASKET_PRIVACY_POLICY_HINT_1###</p>
+        </div>
+    </fieldset>
 
-            <!--<p><em>Bemerkung: Felder mit * müssen ausgefüllt werden!</em></p>-->
+
+            <p><em>Bemerkung: Felder mit * müssen ausgefüllt werden!</em></p>
 
 			<div class="form_control">
 	        <input type="submit" name="products_update" value="zurück zum Warenkorb" onclick="this.form.action='###FORM_URL_BASKET###';">
-	        <input type="submit" name="products_payment" value="zur Kasse/Bestellung" onclick="this.form.action='###FORM_URL_PAYMENT###';">
+	        <input type="submit" name="products_payment" value="zur Kasse/Bestellung" disabled onclick="this.form.action='###FORM_URL_PAYMENT###';">
 		<input type="hidden" name="creditpoints_saved" value="###CREDITPOINTS_SAVED###">
 		<input type="hidden" name="creditpoints_spended" value="###CREDITPOINTS_SPENDED###">
 		<input type="hidden" name="creditpoints_gifts" value="###CREDITPOINTS_GIFTS###">

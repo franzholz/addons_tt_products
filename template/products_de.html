@@ -946,13 +946,25 @@ habe ich gelesen und erkenne sie hiermit an.:
 <input type="checkbox" name="recs[personinfo][agb]" ###PERSON_AGB###>###GW1E### </td>
 <td colspan="3"></td>
 </tr>
+
+<tr>
+<td colspan="4">###GW2B###<b><!--###LINK_PRIVACY### -->###BASKET_PRIVACY_POLICY###<!--###LINK_PRIVACY### --></b><br>
+###BASKET_PRIVACY_POLICY_AGREE_1### ###BASKET_PRIVACY_POLICY_AGREE_2###<input type="checkbox" name="recs[personinfo][privacy]" onchange="document.getElementsByName('products_payment')[0].disabled=!document.getElementsByName('recs[personinfo][privacy]')[0].checked;">###GW2E###</td>
+
+<td colspan="2">
+<b>###BASKET_PRIVACY_POLICY_HINT###:</b>
+###BASKET_PRIVACY_POLICY_HINT_1###
+</td>
+
+</tr>
+
 </table>
 <br>
 <table width="100%"><tr>
 
 <td><input type="Submit" name="products_update" value="zur&uuml;ck zum Warenkorb"></td>
 <td align="right">
-<input type="submit" name="products_payment" value="zur Bestellung" onclick="document.forms[0].action='index.php?id=###PID_BASKET###;">
+<input type="submit" name="products_payment" disabled value="zur Bestellung" onclick="document.forms[0].action='index.php?id=###PID_BASKET###;">
 <input type="hidden" name="products_cmd" value="cardno">
 </td>
 </tr></table>

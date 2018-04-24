@@ -1,4 +1,6 @@
 
+2018-04-24 Franz Holzinger  <franz@ttproducts.de>
+    * Add new HTML and markers for the DSGVO / GDPR privacy policy.
 
 2018-04-12 Franz Holzinger  <franz@ttproducts.de>
     * Use the marker ###SWORD_NAME### for the search input html tag name in search forms.

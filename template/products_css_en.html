@@ -440,11 +440,22 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	            </div>
 	        </fieldset>
 
+	        <fieldset>
+	            <legend>Privacy policy</legend>
+	            <div class="privacy_policy">
+	                <p>###BASKET_PRIVACY_POLICY_AGREE_1### <!--###LINK_PRIVACY###-->###BASKET_PRIVACY_POLICY###<!--###LINK_PRIVACY###-->. ###BASKET_PRIVACY_POLICY_AGREE_2###</p>
+	                <input type="checkbox" name="recs[personinfo][privacy]" onchange="document.getElementsByName('products_payment')[0].disabled=!document.getElementsByName('recs[personinfo][privacy]')[0].checked;">&nbsp;
+	                    <label for="delivery_agb" class="checkbox"><strong>I agree to the privacy policy.*</strong></label>
+                    <p>###BASKET_PRIVACY_POLICY_HINT###:
+                        ###BASKET_PRIVACY_POLICY_HINT_1###</p>
+	            </div>
+	        </fieldset>
+
             <p><em>Notice: Fields with * must be filled in!</em></p>
 
 			<div class="form_control">
 	            <input type="submit" name="products_update" value="Back to basket">
-	            <input type="submit" name="products_payment" value="Pay/Order">
+	            <input type="submit" name="products_payment" disabled value="Pay/Order">
 	        </div>
         </form>
     </div>
@@ -1005,7 +1016,7 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	        <form method="post" action="###FORM_URL###">
 	            <fieldset>
                 	<legend>E-Mail preferences</legend>
-	                <input type="checkbox" name="orderRecord[email_notify]" id="orderRecord_email_notify" class="checkbox" value="1" ###FIELD_EMAIL_NOTIFY### />
+	                <input type="checkbox" name="orderRecord[email_notify]" id="orderRecord_email_notify" class="checkbox" value="1" ###FIELD_EMAIL_NOTIFY### >
 	                    <label for="orderRecord_email_notify" class="checkbox">Recieve message by status changes</label><br>
 	                <label for="orderRecord_email">Email: </label>
 	                    <input type="text" size="40" name="orderRecord[email]" id="orderRecord_email" value="###FIELD_EMAIL###"><br>
@@ -1408,7 +1419,7 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 	<strong>MyShopy</strong><br>
     www.myshop.tld
 </p>
-<hr />
+<hr >
 <h1>Bill</h1>
 <p style="float:left"><strong>
 	###PERSON_SALUTATION###<br>
@@ -1490,7 +1501,7 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 <h2>Payment conditions</h2>
 <p>Payment is possible within 14 days.</p>
 
-<hr />
+<hr >
 <p style="text-align:center">
 	My Shop, My Street, 12345 My City, My Country<br>
 	Phone: +xx xxx xxx-xxxx, Fax: +xx xxx xxx-xxxx, WWW: www.myshop.tld, Email: shop@myshop.tld
@@ -1521,7 +1532,7 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 	<strong>MyShopy</strong><br>
     www.myshop.tld
 </p>
-<hr />
+<hr >
 <h1>Delivery sheet</h1>
 <p style="float:left"><strong>
 	###DELIVERY_SALUTATION###<br>
@@ -1569,7 +1580,7 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 <h2>Return</h2>
 <p>Return is possible within 14 days.</p>
 
-<hr />
+<hr >
 <p style="text-align:center">
 	My Shop, My Street, 12345 My City, My Country<br>
 	Phone: +xx xxx xxx-xxxx, Fax: +xx xxx xxx-xxxx, WWW: www.myshop.tld, Email: shop@myshop.tld
