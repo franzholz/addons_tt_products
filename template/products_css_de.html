@@ -506,8 +506,11 @@ Sie k&ouml;nnen auch die Kontaktperson/Email an diesem Ort eingeben?
 	            <legend>Allgemeine Gesch&auml;tsbedingungen</legend>
 	            <div class="trading_conditions">
 	             <p>Hiermit best&auml;tige ich, dass ich die <!--###LINK_AGB### -->Allgemeine Gesch&auml;tsbedingungen(AGB)<!--###LINK_AGB###--> und die <!--###LINK_PRIVACY### -->Datenschutzbestimmungen<!--###LINK_PRIVACY### --> gelesen und akzeptiert habe:</p>
-	                <input type="checkbox" name="recs[personinfo][agb]" id="delivery_agb" class="checkbox" ###PERSON_AGB### onchange="document.getElementsByName('products_payment')[0].disabled=!document.getElementsByName('recs[personinfo][agb]')[0].checked;">&nbsp;
-	                    <label for="delivery_agb" class="checkbox"><strong>Ich bin mit den Allgemeinen Gesch&auml;tsbedingungen und den Datenschutzbedingungen einverstanden*</strong></label>
+	                <input type="checkbox" name="recs[personinfo][agb]" id="delivery_agb" class="checkbox" ###PERSON_AGB###>&nbsp;
+	                    <label for="delivery_agb" class="checkbox"><strong>Ich bin mit den Allgemeinen Gesch&auml;tsbedingungen einverstanden*</strong></label>
+	                    <br>
+	                <input type="checkbox" name="recs[personinfo][privacy]" id="delivery_privacy" class="checkbox"  onchange="document.getElementsByName('products_payment')[0].disabled=!document.getElementsByName('recs[personinfo][privacy]')[0].checked;">&nbsp;
+	                    <label for="delivery_agb" class="checkbox"><strong>Ich bin mit den Datenschutzbedingungen einverstanden*</strong></label>
 	            </div>
 	        </fieldset>
 
@@ -700,7 +703,7 @@ Drucken Sie diese Seite am besten aus.</em>
 	    <h2>Bestellinformationen</h2>
         <p>
     Ihre Bestellung ist vom  ###ORDER_DATE###.<br>
-Sie k&ouml;nnen ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TRACKING_NO###</strong> verfolgen. Klicken Sie hier  <a href="index.php?id=###PID_TRACKING###&amp;type=0&amp;tracking=###ORDER_TRACKING_NO##">um den Status zum jetzigen Zeitpunkt zu sehen.</a><br><br>
+Sie k&ouml;nnen ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TRACKING_NO###</strong> verfolgen. Klicken Sie hier  <a href="index.php?id=###PID_TRACKING###&amp;type=0&amp;tracking=###ORDER_TRACKING_NO###">um den Status zum jetzigen Zeitpunkt zu sehen.</a><br><br>
 </p>
 
         <div class="payment_message">
