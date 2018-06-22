@@ -190,6 +190,9 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 		<div id="text_rechnungsanschrift_BASKET_ORDERCONFIRMATION_TEMPLATE3">
 			###BASKET_BILLING_ADDRESS###
 		</div>
+        <div id="PERSON_COMPANY_BASKET_ORDERCONFIRMATION_TEMPLATE3">
+        <strong>###PERSON_COMPANY###</strong>
+        </div>
 		<div id="PERSON_SALUTATION_BASKET_ORDERCONFIRMATION_TEMPLATE3">
 			<strong>###PERSON_SALUTATION###</strong>
 		</div>
@@ -220,6 +223,9 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 		<div id="text_lieferanschrift_BASKET_ORDERCONFIRMATION_TEMPLATE4">
 			###BASKET_DELIVERY_ADDRESS###
 		</div>
+        <div id="DELIVERY_COMPANY_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+        <strong>###DELIVERY_COMPANY###</strong>
+        </div>
 		<div id="DELIVERY_SALUTATION_BASKET_ORDERCONFIRMATION_TEMPLATE4">
 			<strong>###DELIVERY_SALUTATION###</strong>
 		</div>
@@ -365,6 +371,7 @@ First line is used as subject for the mail.
 ###BASKET_HEADER_QUANTITY###: ###FIELD_QTY### (###P_UNIT_PRICE### ###PRODUCT_PRICE### ###P_CURRENCY###) ###BASKET_HEADER_TOTAL### ###PRICE_TOTAL_TAX### ###P_CURRENCY###
 <!-- ###ITEM_SINGLE### end --><!-- ###ITEM_LIST### end --><!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
 2) ###BASKET_BILLING_ADDRESS###:
+###PERSON_COMPANY###
 ###PERSON_SALUTATION###
 ###PERSON_NAME###
 ###PERSON_ADDRESS###
@@ -377,7 +384,7 @@ First line is used as subject for the mail.
 
 <!-- ###MESSAGE_SHIPPING_40### -->###BASKET_VAT_ID### ###PERSON_TT_PRODUCTS_VAT###<!-- ###MESSAGE_SHIPPING_40### -->
 3) ###BASKET_DELIVERY_ADDRESS###:
-
+###DELIVERY_COMPANY###
 ###DELIVERY_SALUTATION###
 ###DELIVERY_NAME###
 ###DELIVERY_ADDRESS###

@@ -1,3 +1,5 @@
+2018-06-22 Franz Holzinger  <franz@ttproducts.de>
+    * bugfix to the responsive templates: no company has been supported in the files info.html, orderconfirmation.html and payment.html
 
 2018-04-24 Franz Holzinger  <franz@ttproducts.de>
     * Add new HTML and markers for the DSGVO / GDPR privacy policy.
