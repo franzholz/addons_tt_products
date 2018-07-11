@@ -1,0 +1,48 @@
+
+div[class^='box_PAYMENT'] {
+  display: flex;
+  background-color: #F3F7FC;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+
+.box_PAYMENT2 {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box_PAYMENT2 .BASKET_COLUMN_ITEM {
+}
+
+.box_PAYMENT2 .BASKET_COLUMN_PRICE {
+  flex: 0 0 80px;
+}
+
+.box_PAYMENT2 .BASKET_COLUMN_QUANTITY {
+  flex: 0 0 40px;
+}
+
+.box_PAYMENT2 .BASKET_COLUMN_TOTAL {
+  flex: 0 0 80px;
+}
+
+
+div[class='box_PAYMENT3'],
+div[class='box_PAYMENT4'],
+div[class='box_PAYMENT7'] {
+  flex-direction: column;
+}
+
+
+.box_PAYMENT3 > div,
+.box_PAYMENT4 > div {
+  display: flex;
+  justify-content: center;
+}
+
+.box_PAYMENT7 > div {
+  display: flex;
+  justify-content: flex-end;
+}
+

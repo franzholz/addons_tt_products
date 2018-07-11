@@ -1,0 +1,66 @@
+.box_MAIN > div {
+  background-color: #f1f1f1;
+  flex-direction: row;
+  margin: 1px;
+  padding: 5px;
+  font-size: 12px;
+  flex: auto;
+}
+
+div[class^='box_BASKET'] {
+  display: flex;
+  background-color: #F3F7FC;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.BASKET_HEADER,
+.box_BASKET2,
+.box_BASKET3,
+.box_BASKET5 {
+  display: flex;
+  flex-direction: column;
+}
+    
+.box_BASKET3,
+.box_BASKET5 {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div[class^='BASKET_COLUMN_ITEM'] {
+  flex: 1;
+}
+
+div[class^='BASKET_COLUMN_PRICE'] {
+  flex: 0 0 80px;
+}
+
+div[class^='BASKET_COLUMN_QUANTITY'] {
+  flex: 0 0 40px;
+}
+
+div[class^='BASKET_COLUMN_TOTAL'] {
+  flex: 0 0 80px;
+}
+
+.MESSAGE_SHIPPING_BASKET4,
+.MESSAGE_PAYMENT_BASKET4,
+.PRICELIST_BASKET5 {
+  display: flex;
+  flex-direction:row;
+  flex: 1;
+  margin:30px;
+  width: 98%;
+  padding:5px;
+}
+
+.MESSAGE_SHIPPING_BASKET4 > div,
+.MESSAGE_PAYMENT_BASKET4 > div,
+.PRICELIST_BASKET5 > div {
+  flex:1 1 auto;
+  text-align:right;
+  margin-right:30px;
+}
+

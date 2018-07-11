@@ -1,3 +1,9 @@
+
+2018-07-11 Franz Holzinger  <franz@ttproducts.de>
+    * replace floatbox_BASKET => box_BASKET
+    * add VARIANTS_BASKET2 to responsive basket
+    * improve the responsive template to support the flexbox. Add css files.
+
 2018-06-22 Franz Holzinger  <franz@ttproducts.de>
     * bugfix to the responsive templates: no company has been supported in the files info.html, orderconfirmation.html and payment.html
 

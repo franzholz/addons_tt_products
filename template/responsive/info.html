@@ -10,6 +10,7 @@ Exact same features as BASKET_TEMPLATE
 -->
 
 <form method="post" action="###FORM_URL###" name="###FORM_NAME###" id="registrationForm">
+  <div class="box_MAIN">
 	<div id="text_rechnungsanschrift_BASKETINFO">
 		###BASKET_BILLING_ADDRESS###:
 	</div>
@@ -18,7 +19,7 @@ Exact same features as BASKET_TEMPLATE
 		###BASKET_BILLING_ADDRESS_INPUT###
 	</div>
 
-	<div id="floatbox_BASKETINFO1">
+	<div class="box_BASKETINFO1">
 		<div id="label_COMPANY">
 			<strong>###BASKET_COMPANY###:</strong>
 		</div>
@@ -93,7 +94,7 @@ Exact same features as BASKET_TEMPLATE
   <!-- ###BILLING_ADDRESS_LOGIN### start
   If this part is not empty then this will be used instead of BILLING_ADDRESS if there is a FE-login user.-->
 
-  <div id="floatbox_BASKETINFO2">
+  <div class="box_BASKETINFO2">
   	<div id="label_COMPANY2">
       <strong>###BASKET_COMPANY###:</strong>
     </div>
@@ -143,7 +144,7 @@ Exact same features as BASKET_TEMPLATE
     <!-- ###BILLING_ADDRESS_LOGIN### end-->
 
 
-  <div id="floatbox_BASKETINFO3">
+  <div class="box_BASKETINFO3">
     <div id="text_DELIVERY_ADDRESS_BASKETINFO">
 		###BASKET_DELIVERY_ADDRESS###:
     </div>
@@ -167,13 +168,13 @@ Exact same features as BASKET_TEMPLATE
        ###DELIVERY_SALUTATION###
     </div>
     <div id="label_DELIVERY_NAME">
-      <strong>###BASKET_NAME###:</strong>
+      <strong>###BASKET_NAME###:<span class="mandatory">*</span></strong>
     </div>
     <div id="field_DELIVERY_NAME">
       <input type="text" name="recs[delivery][name]" size="30" value="###DELIVERY_NAME###">
     </div>
     <div id="label_DELIVERY_ADDRESS">
-      <strong>###BASKET_ADDRESS###:</strong>
+      <strong>###BASKET_ADDRESS###:<span class="mandatory">*</span></strong>
     </div>
 	<div id="field_DELIVERY_ADDRESS">
       <textarea name="recs[delivery][address]" cols="25" rows="5">###DELIVERY_ADDRESS###</textarea>
@@ -191,7 +192,7 @@ Exact same features as BASKET_TEMPLATE
 		<input type="text" name="recs[delivery][city]" size="30" value="###DELIVERY_CITY###">
 	</div>
     <div id="label_DELIVERY_COUNTRY_CODE">
-        <strong>###BASKET_COUNTRY###:<span class="mandatory">* </span></strong>
+        <strong>###BASKET_COUNTRY###:<span class="mandatory">*</span></strong>
     </div>
     <div id="field_DELIVERY_COUNTRY_CODE">
         ###DELIVERY_COUNTRY_CODE###
@@ -203,7 +204,7 @@ Exact same features as BASKET_TEMPLATE
       <input type="text" name="recs[delivery][telephone]" size="30" value="###DELIVERY_TELEPHONE###">
     </div>
     <div id="label_DELIVERY_EMAIL">
-      <strong>###BASKET_EMAIL###:</strong>
+      <strong>###BASKET_EMAIL###:<span class="mandatory">*</span></strong>
     </div>
     <div id="field_DELIVERY_EMAIL">
       <input type="text" name="recs[delivery][email]" size="30" value="###DELIVERY_EMAIL###">
@@ -221,20 +222,25 @@ Exact same features as BASKET_TEMPLATE
     <div id="field_DELIVERY_NOTE">
       <textarea cols="25" rows="5" name="recs[delivery][note]">###DELIVERY_NOTE###</textarea>
     </div>
+   </div>
 
-    <div id="text_agb_BASKETINFO">
+   <div class="box_BASKETINFO4">
+        <div id="text_agb_BASKETINFO">
 
-      ###BASKET_TERMS_ACK###<br><br>
+        ###BASKET_TERMS_ACK###<br><br>
 
-      <input type="checkbox" class="check_agb" name="recs[personinfo][agb]" ###PERSON_AGB###>
+        <input type="checkbox" class="check_agb" name="recs[personinfo][agb]" ###PERSON_AGB###>
 
-      <!--###LINK_AGB###--> ###BASKET_TERMS### <!--###LINK_AGB###--> ###BASKET_TERMS_AND### <!--###LINK_REVOCATION### -->###BASKET_RIGHT_OF_REVOCATION### <!--###LINK_REVOCATION### -->###BASKET_TERMS_READ###
-    
-      <!--###LINK_PRIVACY### -->###BASKET_PRIVACY_POLICY###<!--###LINK_PRIVACY### -->
-      ###BASKET_PRIVACY_POLICY_AGREE_1### ###BASKET_PRIVACY_POLICY_AGREE_2###
-      <input type="checkbox" name="recs[personinfo][privacy]" onchange="document.getElementsByName('tt_products[activity][payment]')[0].disabled=!document.getElementsByName('recs[personinfo][privacy]')[0].checked;">
-      
-      ###BASKET_PRIVACY_POLICY_HINT###: ###BASKET_PRIVACY_POLICY_HINT_1###
+        <!--###LINK_AGB###--> ###BASKET_TERMS### <!--###LINK_AGB###--> ###BASKET_TERMS_AND### <!--###LINK_REVOCATION### -->###BASKET_RIGHT_OF_REVOCATION### <!--###LINK_REVOCATION### -->###BASKET_TERMS_READ###
+        </div>
+
+        <div id="text_privacy_BASKETINFO">
+        <input type="checkbox" name="recs[personinfo][privacy]" onchange="document.getElementsByName('tt_products[activity][payment]')[0].disabled=!document.getElementsByName('recs[personinfo][privacy]')[0].checked;">
+        <!--###LINK_PRIVACY### -->###BASKET_PRIVACY_POLICY###<!--###LINK_PRIVACY### -->
+        ###BASKET_PRIVACY_POLICY_AGREE_1### ###BASKET_PRIVACY_POLICY_AGREE_2###
+        
+        ###BASKET_PRIVACY_POLICY_HINT###: ###BASKET_PRIVACY_POLICY_HINT_1###
+        </div>
     </div>
     
     <div class="button_group">

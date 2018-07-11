@@ -1,0 +1,11 @@
+
+
+div[class^='box_BASKETINFO'] {
+  display: flex;
+  background-color: #F3F7FC;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+

@@ -19,8 +19,8 @@ In addition there's a number of fields used for delivery and payment information
 
   <div class="BASKET_REQUIRED_INFO_MISSING">
   ###GW1B### ###BASKET_REQUIRED_MESSAGE_ERROR###<br><br>
-  ###GW1E###<p>###GW1B### ###BASKET_REQUIRED_MESSAGE_MISSING### <br> ###ERROR_DETAILS###</p><br>
-  <p>###BASKET_REQUIRED_MESSAGE_FIX######GW1E###<br>
+  ###GW1E###<p>###GW1B### ###BASKET_REQUIRED_MESSAGE_MISSING### <br> ###ERROR_DETAILS### ###GW1E###</p><br>
+  <p>###GW1B### ###BASKET_REQUIRED_MESSAGE_FIX### ###GW1E###</p>
 
     <form method="post" action="###FORM_URL###">
     <input type="submit" class="button2_fix" name="products_info" value="###BASKET_REQUIRED_BUTTON_FIX###" onclick="document.forms[0].action='###FORM_URL_INFO###';">
@@ -38,25 +38,28 @@ In addition there's a number of fields used for delivery and payment information
 <div class="basket">
   ###EXTERNAL_COBJECT###
   <form method="post" action="###FORM_URL###">
-    <div class="floatbox_BASKET">
-      <div id="text_Produkt">###BASKET_HEADER_ITEM###</div>
-      <div id="text_Einzelpreis">###BASKET_HEADER_PRICE###</div>
-      <div id="text_Anzahl">###BASKET_HEADER_QUANTITY###</div>
-      <div id="text_Gesamt">###BASKET_HEADER_TOTAL###</div>
+  <div class="box_MAIN">
+    <div class="BASKET_HEADER">
+        <div id="text_Produkt" class="BASKET_COLUMN_ITEM">###BASKET_HEADER_ITEM###</div>
+        <div id="text_Einzelpreis" class="BASKET_COLUMN_PRICE">###BASKET_HEADER_PRICE###</div>
+        <div id="text_Anzahl" class="BASKET_COLUMN_QUANTITY">###BASKET_HEADER_QUANTITY###</div>
+        <div id="text_Gesamt" class="BASKET_COLUMN_TOTAL">###BASKET_HEADER_TOTAL###</div>
     </div>
 
     <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
     <!-- ###ITEM_CATEGORY### begin -->
-    <br>###CATEGORY_TITLE###<br>
-
+  <div class="BASKET_CATEGORY">
+        ###CATEGORY_TITLE###
+  </div>
     <!-- ###ITEM_CATEGORY### end -->
     <!-- ###ITEM_LIST### begin -->
     <!-- ###ITEM_SINGLE### begin-->
-    <div class="floatbox_BASKET2">
+  <div class="box_BASKET2">
+      <div class="BASKET_COLUMN_ITEM">
       <div class="PRODUCT_TITLE_BASKET2">
-
     <!--###LINK_ITEM###-->###PRODUCT_TITLE###<!--###LINK_ITEM###-->
       </div>
+      <div class="VARIANTS_BASKET2">
     <!-- ###display_variant1### --><div class="label-variant1">
             ###P_COLOR### ###ARTICLE_COLOR###
          </div><!-- ###display_variant1### -->
@@ -135,18 +138,19 @@ In addition there's a number of fields used for delivery and payment information
     <!-- ###display_variant27### --><div class="label-variant27">
             ###P_COSTS### ###ARTICLE_COSTS###
          </div><!-- ###display_variant27### -->
+      </div>
+      </div>
 
-      <div class="PRICE_TAX_BASKET2">
+      <div class="PRICE_TAX_BASKET2 BASKET_COLUMN_PRICE">
         ###PRICE_TAX### ###P_CURRENCY###<br>
       </div>
-      <div class="FIELD_QTY_BASKET2">
+      <div class="FIELD_QTY_BASKET2 BASKET_COLUMN_QUANTITY">
         <input size="4" maxlength="4" type="text" name="###FIELD_NAME_BASKET###" value="###FIELD_QTY###">
       </div>
-      <div class="PRICE_TOTAL_TAX_BASKET2">
+      <div class="PRICE_TOTAL_TAX_BASKET2 BASKET_COLUMN_TOTAL">
          ###PRICE_TOTAL_TAX### ###P_CURRENCY###<br>
       </div>
-	</div>
-
+  </div>
 
       <!-- ###ITEM_SINGLE### end -->
       <!-- ###ITEM_LIST### end -->
@@ -154,96 +158,92 @@ In addition there's a number of fields used for delivery and payment information
 
 ###HIDDENFIELDS###
 
-    <div id="text_versand_BASKET2">
+  <div id="text_versand_BASKET2">
       ###BASKET_SHIPPING_HANDLING###
-    </div>
-    <div id="text_pauschale_BASKET2">
-
-    </div>
-
-    <div class="floatbox_BASKET3">
-    <div id="SHIPPING_SELECTOR_BASKET3">
-      ###GW1B######SHIPPING_SELECTOR######GW1E###
-    </div>
-    <div id="PRICE_SHIPPING_TAX_BASKET3">
-     ###PRICE_SHIPPING_TAX### ###P_CURRENCY###
-    </div>
   </div>
-    <div class="MESSAGE_SHIPPING_BASKET4">
+ 
+  <div class="box_BASKET3">
+
+        <div id="SHIPPING_SELECTOR_BASKET3">
+        ###GW1B######SHIPPING_SELECTOR######GW1E###
+        </div>
+        <div id="PRICE_SHIPPING_TAX_BASKET3">
+        ###PRICE_SHIPPING_TAX### ###P_CURRENCY###
+        </div>
+  </div>
+  <div class="MESSAGE_SHIPPING_BASKET4">
       <!-- ###MESSAGE_SHIPPING###
       This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
       -->
 
       <!-- ###MESSAGE_SHIPPING_10### -->
-      <p>###TEXT_MESSAGE_SHIPPING_10###</p>
+      <div>###TEXT_MESSAGE_SHIPPING_10###</div>
       <!-- ###MESSAGE_SHIPPING_10### -->
 
       <!-- ###MESSAGE_SHIPPING_20### -->
-      <p>###TEXT_MESSAGE_SHIPPING_20###</p>
+      <div>###TEXT_MESSAGE_SHIPPING_20###</div>
       <!-- ###MESSAGE_SHIPPING_20### -->
 
-       <!-- ###MESSAGE_SHIPPING_30### -->
-      <p>###TEXT_MESSAGE_SHIPPING_30###</p>
+      <!-- ###MESSAGE_SHIPPING_30### -->
+      <div>###TEXT_MESSAGE_SHIPPING_30###</div>
       <!-- ###MESSAGE_SHIPPING_30### -->
 
-       <!-- ###MESSAGE_SHIPPING_40### -->
-      <p>###TEXT_MESSAGE_SHIPPING_40###</p>
+      <!-- ###MESSAGE_SHIPPING_40### -->
+      <div>###TEXT_MESSAGE_SHIPPING_40###</div>
       <!-- ###MESSAGE_SHIPPING_40### -->
 
       <!-- ###MESSAGE_SHIPPING_50### -->
-      <p>###TEXT_MESSAGE_SHIPPING_50###</p>
+      <div>###TEXT_MESSAGE_SHIPPING_50###</div>
       <!-- ###MESSAGE_SHIPPING_50### -->
 
       <!-- ###MESSAGE_SHIPPING_60### -->
-      <p>###TEXT_MESSAGE_SHIPPING_60###</p>
+      <div>###TEXT_MESSAGE_SHIPPING_60###</div>
       <!-- ###MESSAGE_SHIPPING_60### -->
 
       <!-- ###MESSAGE_SHIPPING_70### -->
-      <p>###TEXT_MESSAGE_SHIPPING_70###</p>
+      <div>###TEXT_MESSAGE_SHIPPING_70###</div>
       <!-- ###MESSAGE_SHIPPING_70### -->
 
       <!-- ###MESSAGE_SHIPPING_80### -->
-      <p>###TEXT_MESSAGE_SHIPPING_80###</p>
+      <div>###TEXT_MESSAGE_SHIPPING_80###</div>
       <!-- ###MESSAGE_SHIPPING_80### -->
 
       <!-- ###MESSAGE_SHIPPING_90### -->
-      <p>###TEXT_MESSAGE_SHIPPING_90###</p>
+      <div>###TEXT_MESSAGE_SHIPPING_90###</div>
       <!-- ###MESSAGE_SHIPPING_90### -->
 
       <!-- ###MESSAGE_SHIPPING_100### -->
-      <p>###TEXT_MESSAGE_SHIPPING_100###</p>
+      <div>###TEXT_MESSAGE_SHIPPING_100###</div>
       <!-- ###MESSAGE_SHIPPING_100### -->
 
       <!-- ###MESSAGE_SHIPPING_110### -->
-      <p>###TEXT_MESSAGE_SHIPPING_110###</p>
+      <div>###TEXT_MESSAGE_SHIPPING_110###</div>
       <!-- ###MESSAGE_SHIPPING_110### -->
 
       <!-- ###MESSAGE_SHIPPING_120### -->
-      <p>###TEXT_MESSAGE_SHIPPING_120###</p>
+      <div>###TEXT_MESSAGE_SHIPPING_120###</div>
       <!-- ###MESSAGE_SHIPPING_120### -->
 
       <!-- ###MESSAGE_SHIPPING_130### -->
-      <p>###TEXT_MESSAGE_SHIPPING_130###</p>
+      <div>###TEXT_MESSAGE_SHIPPING_130###</div>
       <!-- ###MESSAGE_SHIPPING_130### -->
 
       <!-- ###MESSAGE_SHIPPING### -->
-    </div>
+  </div>
 
 
-
-    <div id="text_zahlungsweise_BASKET4">
+  <div id="text_zahlungsweise_BASKET4">
       ###BASKET_PAYMENT###
-    </div>
+  </div>
 
-    <div class="floatbox_BASKET4">
+  <div class="box_BASKET4">
       <div id="PAYMENT_SELECTOR_BASKET4">
         ###PAYMENT_SELECTOR######GW1E###
       </div>
       <div id="TAX_INCL_EXCL_BASKET4">
         ###PRICE_PAYMENT_TAX### ###P_CURRENCY###
-    </div>
-    </div>
-
+      </div>
+  </div>
 
   <div class="MESSAGE_PAYMENT_BASKET4">
         <!-- ###MESSAGE_PAYMENT###
@@ -251,50 +251,47 @@ In addition there's a number of fields used for delivery and payment information
         -->
 
       <!-- ###MESSAGE_PAYMENT_10### -->
-      <p>###TEXT_MESSAGE_PAYMENT_10###</p>
+      <div>###TEXT_MESSAGE_PAYMENT_10###</div>
       <!-- ###MESSAGE_PAYMENT_10### -->
 
       <!-- ###MESSAGE_PAYMENT_20### -->
-      <p>###TEXT_MESSAGE_PAYMENT_20### </p>
+      <div>###TEXT_MESSAGE_PAYMENT_20### </div>
       <!-- ###MESSAGE_PAYMENT_20### -->
 
       <!-- ###MESSAGE_PAYMENT_30### -->
-      <p>###TEXT_MESSAGE_PAYMENT_30###</p>
+      <div>###TEXT_MESSAGE_PAYMENT_30###</div>
       <!-- ###MESSAGE_PAYMENT_30### -->
 
       <!-- ###MESSAGE_PAYMENT_40### -->
-      <p>###TEXT_MESSAGE_PAYMENT_40###</p>
+      <div>###TEXT_MESSAGE_PAYMENT_40###</div>
       <!-- ###MESSAGE_PAYMENT_40### -->
 
       <!-- ###MESSAGE_PAYMENT_50### -->
-      <p>###TEXT_MESSAGE_PAYMENT_50###</p>
+      <div>###TEXT_MESSAGE_PAYMENT_50###</div>
       <!-- ###MESSAGE_PAYMENT_50### -->
 
       <!-- ###MESSAGE_PAYMENT_60### -->
-      <p>###TEXT_MESSAGE_PAYMENT_60###</p>
+      <div>###TEXT_MESSAGE_PAYMENT_60###</div>
       <!-- ###MESSAGE_PAYMENT_60### -->
 
       <!-- ###MESSAGE_PAYMENT_70### -->
-      <p>###TEXT_MESSAGE_PAYMENT_70###</p>
+      <div>###TEXT_MESSAGE_PAYMENT_70###</div>
       <!-- ###MESSAGE_PAYMENT_70### -->
 
       <!-- ###MESSAGE_PAYMENT_80### -->
-      <p>###TEXT_MESSAGE_PAYMENT_80###</p>
+      <div>###TEXT_MESSAGE_PAYMENT_80###</div>
       <!-- ###MESSAGE_PAYMENT_80### -->
 
       <!-- ###MESSAGE_PAYMENT_90### -->
-      <p>###TEXT_MESSAGE_PAYMENT_90###</p>
+      <div>###TEXT_MESSAGE_PAYMENT_90###</div>
       <!-- ###MESSAGE_PAYMENT_90### -->
 
       <!-- ###MESSAGE_PAYMENT_100### -->
-      <p>###TEXT_MESSAGE_PAYMENT_100###</p>
+      <div>###TEXT_MESSAGE_PAYMENT_100###</div>
       <!-- ###MESSAGE_PAYMENT_100### -->
 
-        <!-- ###MESSAGE_PAYMENT### -->
-
-    </div>
-
-    <div class="floatbox_BASKET5">
+      <!-- ###MESSAGE_PAYMENT### -->
+  </div>
 
     <div class="voucher_code">
 
@@ -320,30 +317,34 @@ In addition there's a number of fields used for delivery and payment information
             Sie haben bereits einen Gutschein eingel&ouml;st.
             <!-- ###SUB_VOUCHERCODE### end -->
     </div>
-    <div id="text_gesamt_BASKET5">
-      ###BASKET_HEADER_TOTAL###
-    </div>
-    <div id="TEXT_PRICE_GOODS_TOTAL_BASKET5">
-      ###BASKET_PRICE_GOODS_TOTAL###
-    </div>
-      <div id="PRICE_GOODSTOTAL_BASKET5">
-      ###PRICE_VOUCHERGOODSTOTAL_TAX### ###P_CURRENCY###
-    </div>
-    <div id="TEXT_PRICE_TOTAL_BASKET5">
-      ###BASKET_PRICE_TOTAL###
-    </div>
-    <div id="PRICE_TOTAL_BASKET5">
-      ###PRICE_VOUCHERTOTAL_TAX### ###P_CURRENCY###
-        </div>
-    <div class="price_only_tax">
-      <div id="TEXT_ONLY_TAX_BASKET5">
-        ###VAT###
-      </div>
-      <div id="PRICE_TAX_BASKET5">
-        ###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###
-      </div>
-    </div>
 
+  <div id="text_gesamt_BASKET5">
+    ###BASKET_HEADER_TOTAL###
+  </div>
+
+  <div class="box_BASKET5">
+    <div class="PRICELIST_BASKET5">
+        <div id="TEXT_PRICE_GOODS_TOTAL_BASKET5">
+        ###BASKET_PRICE_GOODS_TOTAL###
+        </div>
+        <div id="PRICE_GOODSTOTAL_BASKET5">
+        ###PRICE_VOUCHERGOODSTOTAL_TAX### ###P_CURRENCY###
+        </div>
+        <div id="TEXT_PRICE_TOTAL_BASKET5">
+        ###BASKET_PRICE_TOTAL###
+        </div>
+        <div id="PRICE_TOTAL_BASKET5">
+        ###PRICE_VOUCHERTOTAL_TAX### ###P_CURRENCY###
+        </div>
+        <div class="price_only_tax">
+            <div id="TEXT_ONLY_TAX_BASKET5">
+                ###VAT###
+            </div>
+            <div id="PRICE_TAX_BASKET5">
+                ###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###
+            </div>
+        </div>
+    </div>
 
     <!--###MESSAGE_MINPRICE_ERROR### begin-->
       <div class="message_minprice_error">###BASKET_MINPRICE_ERROR### </div>
@@ -361,10 +362,8 @@ In addition there's a number of fields used for delivery and payment information
   </div>
 
 
-
+  </div>
   </form>
-
-
 
 
 </div>

@@ -8,7 +8,9 @@
 <!-- ###BASKET_ORDERCONFIRMATION_TEMPLATE### begin
 Subpart used if the order is finalized and this is thus the confirmation shown.-->
 
-<div class="ORDER_CONFIRMATION">###ORDER_CONFIRMATION###</div>
+<div class="box_MAIN">
+
+    <div class="ORDER_CONFIRMATION">###ORDER_CONFIRMATION###</div>
 	<div id="text_dank_BASKET_ORDERCONFIRMATION_TEMPLATE">
 		 ###ORDER_CONFIRMATION_THANKS### <br><br>
 		###ORDER_CONFIRMATION_COMPLETE###
@@ -96,17 +98,20 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 	</div>
 
      ###EXTERNAL_COBJECT###
-	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE1">
-		<div id="text_produkte_BASKET_ORDERCONFIRMATION_TEMPLATE1">
-			###BASKET_HEADER_ITEM###
-		</div>
-		<div id="text_anzahl_BASKET_ORDERCONFIRMATION_TEMPLATE1">
-			###BASKET_HEADER_QUANTITY###
-		</div>
-		<div id="text_gesamt_BASKET_ORDERCONFIRMATION_TEMPLATE1">
-			###BASKET_HEADER_TOTAL###
-		</div>
-	</div>
+    <div class="BASKET_HEADER">
+        <div id="text_Produkt" class="BASKET_COLUMN_ITEM">
+            ###BASKET_HEADER_ITEM###
+        </div>
+        <div id="text_Einzelpreis" class="BASKET_COLUMN_PRICE">
+            ###BASKET_HEADER_PRICE###
+        </div>
+        <div id="text_Anzahl" class="BASKET_COLUMN_QUANTITY">
+            ###BASKET_HEADER_QUANTITY###
+        </div>
+        <div id="text_Gesamt" class="BASKET_COLUMN_TOTAL">
+            ###BASKET_HEADER_TOTAL###
+        </div>
+    </div>
 
     <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
     <!-- ###ITEM_CATEGORY### begin -->
@@ -115,11 +120,14 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
     <!-- ###ITEM_LIST### begin -->
     <!-- ###ITEM_SINGLE### begin -->
 
-	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE2">
-        <div id="produkte_BASKET_ORDERCONFIRMATION_TEMPLATE2">
-
-            ###PRODUCT_TITLE###
-            <!-- ###display_variant1### --><div class="control-label-variant1">
+	<div class="box_ORDERCONFIRMATION2">
+        <div class="BASKET_COLUMN_ITEM">
+            <div class="PRODUCT_TITLE_ORDERCONFIRMATION2">
+                ###PRODUCT_TITLE###
+            </div>
+            <div class="VARIANTS_BASKET2">
+            <!-- ###display_variant1### -->
+            <div class="control-label-variant1">
             ###P_COLOR### ###ARTICLE_COLOR###
          </div><!-- ###display_variant1### -->    <!-- ###display_variant2### --><div class="control-label-variant2">
             ###P_SIZE### ###ARTICLE_SIZE###
@@ -172,12 +180,15 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
          </div><!-- ###display_variant26### -->    <!-- ###display_variant27### --><div class="control-label-variant27">
             ###P_COSTS### ###ARTICLE_COSTS###
          </div><!-- ###display_variant27### -->
-
         </div>
-		<div id="anzahl_BASKET_ORDERCONFIRMATION_TEMPLATE2">
+        </div>
+        <div class="PRICE_TAX_BASKET2 BASKET_COLUMN_PRICE">
+            ###PRODUCT_PRICE_TAX### ###P_CURRENCY###&nbsp;
+        </div>
+        <div class="FIELD_QTY_BASKET2 BASKET_COLUMN_QUANTITY">
 			 ###FIELD_QTY###
 		</div>
-		<div id="gesamt_BASKET_ORDERCONFIRMATION_TEMPLATE2">
+        <div class="PRICE_TOTAL_TAX_BASKET2 BASKET_COLUMN_TOTAL">
 			###PRICE_TOTAL_TAX### ###P_CURRENCY###
 		</div>
 	</div>
@@ -186,7 +197,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
     <!-- ###ITEM_LIST### end -->
     <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
 
-	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE3">
+	<div class="box_ORDERCONFIRMATION3">
 		<div id="text_rechnungsanschrift_BASKET_ORDERCONFIRMATION_TEMPLATE3">
 			###BASKET_BILLING_ADDRESS###
 		</div>
@@ -219,7 +230,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 		</div>
 	</div>
 
-	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+	<div class="box_ORDERCONFIRMATION4">
 		<div id="text_lieferanschrift_BASKET_ORDERCONFIRMATION_TEMPLATE4">
 			###BASKET_DELIVERY_ADDRESS###
 		</div>
@@ -262,7 +273,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 		</div>
 	</div>
 
-	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE5">
+	<div class="box_ORDERCONFIRMATION5">
 		<div id="text_versand_BASKET_ORDERCONFIRMATION_TEMPLATE5">
 			###BASKET_SHIPPING_HANDLING###
 		</div>
@@ -274,7 +285,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 		</div>
 	</div>
 
-	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE6">
+	<div class="box_ORDERCONFIRMATION6">
 		<div id="text_zahlungsweise_BASKET_ORDERCONFIRMATION_TEMPLATE6">
 			###BASKET_PAYMENT###<br>
 		</div>
@@ -286,11 +297,11 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 		</div>
 	</div>
 
-	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE7">
-		<div id="text_PRICE_TOTAL_BASKET_ORDERCONFIRMATION_TEMPLATE7">
+	<div class="box_ORDERCONFIRMATION7">
+		<div id="text_PRICE_TOTAL_BASKET_ORDERCONFIRMATION_TEMPLATE7 BASKET_COLUMN_ITEM">
 			###BASKET_HEADER_TOTAL###
 		</div>
-		<div id="PRICE_TOTAL_BASKET_ORDERCONFIRMATION_TEMPLATE7" style="white-space:nowrap;">
+		<div id="PRICE_TOTAL_BASKET_ORDERCONFIRMATION_TEMPLATE7 BASKET_COLUMN_TOTAL" style="white-space:nowrap;">
 			 ###PRICE_TOTAL_TAX### ###P_CURRENCY###
 		</div>
 		<div class="text_PRICE_ONLY_TAX_BASKET_ORDERCONFIRMATION_TEMPLATE7">
@@ -301,25 +312,25 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 				###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###)
 			</div>
 		</div>
+    </div>
 
-	<div class="text_regards_BASKET_ORDERCONFIRMATION_TEMPLATE">
-		<p> <br>###SELLERS_SALUTATION###</p>
-		<p><b>###SELLERS_COMPANY###</b><br>
-		###SELLERS_NAME###<br>
-		###SELLERS_ADDRESS###<br>
-		###SELLERS_CITY###<br>
-		###SELLERS_COUNTRY###</p>
-		<p>###SELLERS_PHONE###<br>
-		###SELLERS_FAX###<br>
-		###SHOPADMIN_EMAIL###<br>
-		###DOMAIN###</p>
-		<p>###SELLERS_HRB###<br>
-		###SELLERS_EXECUTIVE###<br>
-		###SELLERS_VAT_ID###<br>
-		 </p>
-
-
-	</div>
+    <div class="text_regards_BASKET_ORDERCONFIRMATION_TEMPLATE">
+        <p> <br>###SELLERS_SALUTATION###</p>
+        <p><b>###SELLERS_COMPANY###</b><br>
+        ###SELLERS_NAME###<br>
+        ###SELLERS_ADDRESS###<br>
+        ###SELLERS_CITY###<br>
+        ###SELLERS_COUNTRY###</p>
+        <p>###SELLERS_PHONE###<br>
+        ###SELLERS_FAX###<br>
+        ###SHOPADMIN_EMAIL###<br>
+        ###DOMAIN###</p>
+        <p>###SELLERS_HRB###<br>
+        ###SELLERS_EXECUTIVE###<br>
+        ###SELLERS_VAT_ID###<br>
+        </p>
+    </div>
+</div>
 
 
 <!-- ###BASKET_ORDERCONFIRMATION_TEMPLATE### end -->
@@ -464,4 +475,12 @@ First line is used as subject for the mail.
 
 <!-- ###EMAIL_PLAINTEXT_TEMPLATE### end -->
 
+
+
+
+<h3>BASKET_ORDERTHANKS_TEMPLATE</h3>
+
+<!-- ###BASKET_ORDERTHANKS_TEMPLATE### begin -->
+
+<!-- ###BASKET_ORDERTHANKS_TEMPLATE### end -->
 
