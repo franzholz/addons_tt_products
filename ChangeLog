@@ -1,3 +1,5 @@
+2018-07-16 Franz Holzinger  <franz@ttproducts.de>
+    * move the responsive CSS files into the subfolder template/responsive/css
 
 2018-07-11 Franz Holzinger  <franz@ttproducts.de>
     * replace floatbox_BASKET => box_BASKET
