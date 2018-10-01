@@ -1,3 +1,19 @@
+
+2018-10-01 Franz Holzinger  <franz@ttproducts.de>
+    * move template/responsive/basket.html -> Resources/Private/Extensions/Tt_products/Templates/basket.html
+    * move template/responsive/info.html -> Resources/Private/Extensions/Tt_products/Templates/info.html
+    * move template/responsive/list.html -> Resources/Private/Extensions/Tt_products/Templates/list.html
+    * move template/responsive/orderconfirmation.html -> Resources/Private/Extensions/Tt_products/Templates/orderconfirmation.html
+    * move template/responsive/overview.html -> Resources/Private/Extensions/Tt_products/Templates/overview.html
+    * move template/responsive/payment.html -> Resources/Private/Extensions/Tt_products/Templates/payment.html
+    * move template/responsive/single.html -> Resources/Private/Extensions/Tt_products/Templates/single.html
+    * move template/responsive/css/basket.css -> Resources/Public/Extensions/Tt_products/Css/basket.css
+    * move template/responsive/css/info.css -> Resources/Public/Extensions/Tt_products/Css/info.css
+    * move template/responsive/css/list.css -> Resources/Public/Extensions/Tt_products/Css/list.css
+    * move template/responsive/css/orderconfirmation.css -> Resources/Public/Extensions/Tt_products/Css/orderconfirmation.css
+    * move template/responsive/css/payment.css -> Resources/Public/Extensions/Tt_products/Css/payment.css
+    * modification of composer.json
+
 2018-07-16 Franz Holzinger  <franz@ttproducts.de>
     * move the responsive CSS files into the subfolder template/responsive/css
 
