@@ -1,0 +1,27 @@
+
+
+.boxList1 > div,
+.boxList2 > div,
+.boxList3 > div {
+  flex: 1 1 auto;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  flex-direction: column;
+}
+
+.viewRowImage {
+  width: 20%;
+}
+
+.divValueImage {
+    text-align: left;
+    max-width: 100%;
+    min-width: 150px;
+}
+
+.viewRowNote {
+    text-align: left;
+    width: 100%;
+}
+

@@ -1,0 +1,184 @@
+<!-- ###DOWNLOAD_LIST_TEMPLATE### begin This subpart is used to display the list of downloads coming from the orders. PAGE orders-->
+
+    <!-- ###ADMIN_CONTROL### begin -->
+    <div class="admin_control">
+        <!-- ###ADMIN_CONTROL_OK### begin -->
+        <div class="admin_control_ok">
+            <form method="post" action="###FORM_URL###">
+                <div class="viewInputValue formFeUser">
+                    <div class="viewInput divInputFeUser">
+                        ###FEUSER_SELECT###
+                    </div>
+                </div>
+
+                <div class="viewInput divInputSubmit">
+                    <input type="submit" class="inputSubmit" name="submit" value="###ORDER_PARTY_CHANGE_BUTTON###">
+                    <div class="viewInput divInputHidden">
+                        ###ADMIN_HIDDENFIELDS###
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="admin_control_client">
+            <div class="viewLabelHeader viewHeaderClient">
+                <div class="viewLabel divLabelClient">
+                    Client :
+                </div>
+            </div>
+            <div class="viewLabelValue viewRowName">
+                <div class="viewLabel divLabelName">
+                    ###FEUSER_NAME###
+                </div>
+            </div>
+            <div class="viewLabel divLabelSeparator">
+                n&deg; :
+            </div>
+            <div class="viewLabelValue viewRowNumber">
+                <div class="viewLabel divLabelNumber">
+                    ###FEUSER_NUMBER###
+                </div>
+            </div>
+        </div>
+        <!-- ###ADMIN_CONTROL_OK### end -->
+
+        <!-- ###ADMIN_CONTROL_DENY### begin -->
+        <div class="admin_control_deny">
+            <form method="post" action="###FORM_URL###" >
+                <div class="viewInput divInputHidden">
+                    ###ADMIN_HIDDENFIELDS###
+                </div>
+
+                <div class="viewLabelInput formRowPassword">
+                    <div class="viewLabel divLabelPassword">
+                        <label for="password" class="labelPassword">###TRACKING_STATUS_PASSWORD###</label>
+                    </div>
+                    <div class="viewInput divInputPassword">
+                        <input type="password" class="inputPassword" size=40 name="update_code" value="">
+                    </div>
+                </div>
+                <div class="viewInput divInputHidden">
+                    ###ADMIN_HIDDENFIELDS###
+                    <input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
+                </div>
+                <div class="viewInput divInputSubmit">
+                    <input type="submit" class="inputPassword" name="submit" value="###TRACKING_STATUS_PASSWORD_BUTTON###">
+                </div>
+            </form>
+        </div>
+            <!-- ###ADMIN_CONTROL_DENY### end -->
+    </div>
+    <!-- ###ADMIN_CONTROL### end -->
+
+    <!-- ###ORDER_PRODUCT_LIST### begin -->
+    <div class="order_products_list">
+        <div class="viewLabel divLabelRowProductUid">
+            ###ORDER_PRODUCT_UID###
+        </div>
+    </div>
+	<!-- ###ORDER_PRODUCT_LIST### end -->
+<!-- ###DOWNLOAD_LIST_TEMPLATE### end -->
+
+
+
+<!-- ###ITEM_LIST_DOWNLOADS_TEMPLATE### begin -->
+
+  <div class="pagebrowser_list">
+    <!-- ###LINK_PREV### --><span class="linkPrevious">&laquo; ###LIST_PREV_PAGE###</span><!-- ###LINK_PREV### -->
+    <!-- ###LINK_BROWSE### begin -->[ ###BROWSE_LINKS### ]<!-- ###LINK_BROWSE### end-->
+    <!-- ###LINK_NEXT### --><span class="linkNext">###LIST_NEXT_PAGE###&raquo;</span><!-- ###LINK_NEXT### -->
+  </div>
+
+    <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
+    <!-- ###ITEM_CATEGORY### begin -->
+    <!-- ###ITEM_CATEGORY### end -->
+    <!-- ###ITEM_LIST### begin -->
+    <!-- ###ITEM_SINGLE### begin-->
+
+  <form method="post" action="###FORM_URL###" name="###FORM_NAME###">
+
+
+    <div class="box_LIST">
+        <div class="viewLabelValue viewRowImage">
+            <div class="viewValue divValueImage">
+                ###PRODUCT_IMAGE###
+            </div>
+        </div>
+        <div class="viewLabelValue viewRowTitle">
+            <div class="viewValue divValueTitle">
+                <span class="###PRODUCT_TITLE_ID###">###PRODUCT_TITLE###</span>
+            </div>
+        </div>
+        <div class="box_list2">
+            ###PRODUCT_ALL_DOWNLOAD_UID###
+            <!-- ###DOWNLOAD_SINGLE### begin -->
+            <!-- leer  -->
+            <!-- ###DOWNLOAD_SINGLE### end -->
+        </div>
+    </div>
+  </form>
+
+    <!-- ###ITEM_SINGLE_POST_HTML### -->
+    <!-- ###ITEM_SINGLE### end -->
+    <!-- ###ITEM_LIST### end -->
+    <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
+
+  <div class="pagebrowserbottom_list">
+    <!-- ###LINK_PREV### --><span class="linkPrevious">&laquo; ###LIST_PREV_PAGE###</span><!-- ###LINK_PREV### -->
+    <!-- ###LINK_BROWSE### begin -->[ ###BROWSE_LINKS### ]<!-- ###LINK_BROWSE### end-->
+    <!-- ###LINK_NEXT### --><span class="linkNext">###LIST_NEXT_PAGE###&raquo;</span><!-- ###LINK_NEXT### -->
+  </div>
+
+<!-- ###ITEM_LIST_DOWNLOADS_TEMPLATE### end -->
+
+
+
+
+
+
+
+<!-- ###ITEM_LIST_ALL_DOWNLOAD_TEMPLATE### begin
+    This subpart is used to display the regular list of FAL records
+-->
+<div class="download_all">
+    <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
+        <!-- ###ITEM_CATEGORY### begin -->
+        <!-- ###ITEM_CATEGORY### end -->
+        <!-- ###ITEM_LIST### begin -->
+        <!-- ###ITEM_SINGLE### begin-->
+        <div class="box_LIST">
+            <div class="viewLabelValue viewRowTitle">
+                <div class="viewValue divValueTitle">
+                    ###FAL_TITLE###
+                </div>
+            </div>
+            <div class="viewLabelValue viewRowAuthor">
+                <div class="viewValue divValueAuthor">
+                    ###FAL_AUTHOR###
+                </div>
+            </div>
+            <div class="viewLabelValue viewRowStartEnd">
+                <div class="viewLabel divLabelPages">
+                    Seiten
+                </div>
+                <div class="viewValue divValueStartpoint">
+                    ###FAL_STARTPOINT###
+                </div>
+                <div class="viewLabel divLabelSeparator">
+                &ndash;
+                </div>
+                <div class="viewValue divValueEndpoint">
+                    ###FAL_ENDPOINT###
+                </div>
+            </div>
+            <div class="viewLabelValue viewRowDownloadLink">
+                <div class="viewValue divValueDownloadLink">
+                    ###FAL_DOWNLOAD_LINK###
+                </div>
+            </div>
+        </div>
+        <!-- ###ITEM_SINGLE### end -->
+        <!-- ###ITEM_LIST### end -->
+    <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
+</div>
+<!-- ###ITEM_LIST_ALL_DOWNLOAD_TEMPLATE### end -->
+

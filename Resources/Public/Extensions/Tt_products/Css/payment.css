@@ -1,48 +1,50 @@
 
-div[class^='box_PAYMENT'] {
+div[class^='boxPayment'] {
   display: flex;
   background-color: #F3F7FC;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 
-
-.box_PAYMENT2 {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.box_PAYMENT2 .BASKET_COLUMN_ITEM {
-}
-
-.box_PAYMENT2 .BASKET_COLUMN_PRICE {
-  flex: 0 0 80px;
-}
-
-.box_PAYMENT2 .BASKET_COLUMN_QUANTITY {
-  flex: 0 0 40px;
-}
-
-.box_PAYMENT2 .BASKET_COLUMN_TOTAL {
-  flex: 0 0 80px;
-}
-
-
-div[class='box_PAYMENT3'],
-div[class='box_PAYMENT4'],
-div[class='box_PAYMENT7'] {
+div[class='boxPaymentBilling'],
+div[class='boxPaymentDelivery'] {
   flex-direction: column;
 }
 
 
-.box_PAYMENT3 > div,
-.box_PAYMENT4 > div {
-  display: flex;
+.boxPaymentBilling > div,
+.boxPaymentDelivery > div,
+.boxPaymentScript > div {
   justify-content: center;
 }
 
-.box_PAYMENT7 > div {
+.viewRowShipping,
+.viewRowPayment {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
+}
+
+.viewRowShipping > div,
+.viewRowPayment > div {
+  display: flex;
+}
+
+.boxPayment7 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+.viewRowPaymentPrice > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.boxPaymentSubmit > div {
+  display: flex;
+  justify-content: center;
 }
 

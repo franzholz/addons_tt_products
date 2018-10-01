@@ -1,0 +1,12 @@
+
+div.tt-products span {
+    margin: 0 5px 0 5px;
+}
+
+div.tt-products .divValueTitle > a > span {
+    font-weight: bold;
+}
+
+div.tt-products .divValueNote {
+  padding-right: 30px;
+}

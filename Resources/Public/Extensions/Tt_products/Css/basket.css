@@ -1,13 +1,14 @@
-.box_MAIN > div {
-  background-color: #f1f1f1;
+.boxMain > div {
+  flex: auto;
   flex-direction: row;
+  background-color: #f1f1f1;
   margin: 1px;
   padding: 5px;
   font-size: 12px;
-  flex: auto;
 }
 
-div[class^='box_BASKET'] {
+div[class^='boxBasket'],
+div[class^='boxInfo'] {
   display: flex;
   background-color: #F3F7FC;
   flex-direction: row;
@@ -15,39 +16,44 @@ div[class^='box_BASKET'] {
   justify-content: flex-end;
 }
 
-.BASKET_HEADER,
-.box_BASKET2,
-.box_BASKET3,
-.box_BASKET5 {
+.tableHeaders,
+.boxBasket2,
+.boxShipping,
+.boxPayment {
   display: flex;
   flex-direction: column;
 }
     
-.box_BASKET3,
-.box_BASKET5 {
+.boxBasket3,
+.boxBasket5 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-div[class^='BASKET_COLUMN_ITEM'] {
+.tableHeaders {
+  flex: auto;
+}
+
+div[class^='viewColumnItem'] {
   flex: 1;
 }
 
-div[class^='BASKET_COLUMN_PRICE'] {
+
+div[class^='viewColumnPrice'] {
   flex: 0 0 80px;
 }
 
-div[class^='BASKET_COLUMN_QUANTITY'] {
+div[class^='viewColumnQuantity'] {
   flex: 0 0 40px;
 }
 
-div[class^='BASKET_COLUMN_TOTAL'] {
+div[class^='viewColumnTotal'] {
   flex: 0 0 80px;
 }
 
-.MESSAGE_SHIPPING_BASKET4,
-.MESSAGE_PAYMENT_BASKET4,
-.PRICELIST_BASKET5 {
+.viewShippingValue,
+.viewPaymentValue,
+.viewRowPrice {
   display: flex;
   flex-direction:row;
   flex: 1;
@@ -56,11 +62,17 @@ div[class^='BASKET_COLUMN_TOTAL'] {
   padding:5px;
 }
 
-.MESSAGE_SHIPPING_BASKET4 > div,
-.MESSAGE_PAYMENT_BASKET4 > div,
-.PRICELIST_BASKET5 > div {
-  flex:1 1 auto;
+.viewShippingValue > div,
+.viewPaymentValue > div,
+.viewRowPrice > div {
+  flex: 1 1 auto;
   text-align:right;
   margin-right:30px;
 }
+
+.viewLabelValue {
+  display: flex;
+  flex-direction:column;    
+}
+
 

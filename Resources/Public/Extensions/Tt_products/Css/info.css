@@ -1,6 +1,6 @@
 
 
-div[class^='box_BASKETINFO'] {
+div[class^='boxInfo'] {
   display: flex;
   background-color: #F3F7FC;
   flex-direction: column;

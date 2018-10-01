@@ -1,0 +1,13 @@
+.boxListStartEnd > div {
+  flex: 1 1 auto;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  flex-direction: row;
+}
+
+
+.divLabelPages {
+  margin-right: 5px;
+}
+

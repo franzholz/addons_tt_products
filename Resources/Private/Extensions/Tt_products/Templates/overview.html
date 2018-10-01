@@ -1,13 +1,49 @@
 <!-- ###BASKET_OVERVIEW_TEMPLATE### begin -->
-  <div class="shop_minibasket">
-	<h2 class="basket_mini_header">###BASKET_MINI_HEADER###</h2>
-	<div class="shop_minibasket_image"><!--###LINK_BASKET###-->###IMAGE_BASKET### <!--###LINK_BASKET###--></div>
-    <p>###YOU_HAVE### ###NUMBER_GOODSTOTAL### ###TEXT_PRESENT### (###P_CURRENCY### ###PRICE_GOODSTOTAL_TAX###) ###IN_YOUR_BASKET###.</p>
+  <div class="boxOverview">
+	<div class="viewLink linkBasketImage"><!--###LINK_BASKET###-->###IMAGE_BASKET###<!--###LINK_BASKET###--></div>
+    <div class="viewLabelValue viewCalculatedCount">
+        <div class="viewLabel divLabelCount">
+        Article: 
+        </div>
+        <div class="viewValue divValueCount">
+        ###NUMBER_GOODSTOTAL###
+        </div>
+    </div>
+    <div class="viewLabelValue viewCalculatedPrice">
+        <div class="viewLabel divLabelPrice">
+        Total:
+        </div>
+        <div class="viewValue divValuePrice">
+        (###PRICE_GOODSTOTAL_TAX### ###P_CURRENCY###)
+        </div>
+    </div>
+<!-- ###FEUSER_HAS_PRIVILEGES_EQ_1### begin -->
+    <div class="viewLabelValue viewRowPrivileges">
+        <div class="viewValue divValuePrivileges">
+        ###AUTHOR_DISCOUNT_MESSAGE_MINI###
+        </div>
+    </div>
+<!-- ###FEUSER_HAS_PRIVILEGES_EQ_1### end -->
+    <!--###LINK_BASKET###-->
+        <div class="viewLabelValue viewCalculatedPrice">
+             <div class="viewLabel">###BASKET_MINI_HEADER###
+             </div>
+            <div class="viewValue divValuePrice">
+            ###NUMBER_GOODSTOTAL### ###BASKET_MINI_ITEM### (###PRICE_GOODSTOTAL_TAX### ###P_CURRENCY###)
+            </div>
+        </div>
+    <!--###LINK_BASKET###-->
+  </div>
+
 <!-- ###BASKET_OVERVIEW_TEMPLATE### end -->
 
-
-
 <!-- ###BASKET_OVERVIEW_EMPTY### begin -->
-  <p>###BASKET_MINI_EMPTY###</p>
+    <div class="minibasket">
+        <div class="viewLabelValue viewEmpty">
+            <div class="viewLabel divLabelEmpty">
+            ###BASKET_MINI_EMPTY###
+            </div>
+        </div>
+    </div>
 <!-- ###BASKET_OVERVIEW_EMPTY### end -->
-   </div>
+

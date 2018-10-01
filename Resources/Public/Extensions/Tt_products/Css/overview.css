@@ -1,0 +1,10 @@
+
+
+.boxOverview > div {
+  flex: auto;
+  flex-direction: row;
+  padding: 5px;
+  font-size: 12px;
+}
+
+
