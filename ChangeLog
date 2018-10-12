@@ -1,5 +1,8 @@
+2018-10-12 Franz Holzinger  <franz@ttproducts.de>
+    * modification for TYPO3 9.3
 
 2018-10-01 Franz Holzinger  <franz@ttproducts.de>
+    * new classes and div tags for the responsive template files
     * move template/responsive/basket.html -> Resources/Private/Extensions/Tt_products/Templates/basket.html
     * move template/responsive/info.html -> Resources/Private/Extensions/Tt_products/Templates/info.html
     * move template/responsive/list.html -> Resources/Private/Extensions/Tt_products/Templates/list.html

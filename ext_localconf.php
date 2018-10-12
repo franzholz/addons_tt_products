@@ -4,17 +4,6 @@ if (!defined ('TYPO3_MODE'))	die ('Access denied.');
 
 $emClass = '\\TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility';
 
-if (
-    class_exists($emClass) &&
-    method_exists($emClass, 'extPath')
-) {
-    // nothing
-} else {
-    $emClass = 't3lib_extMgm';
-}
-
-
-
 if (!defined ('ADDONS_TT_PRODUCTS_EXT')) {
     define('ADDONS_TT_PRODUCTS_EXT', $_EXTKEY);
 }
@@ -28,7 +17,7 @@ if (!defined ('PATH_BE_ADDONS_TT_PRODUCTS_REL')) {
 }
 
 if (!defined ('PATH_FE_ADDONS_TT_PRODUCTS_REL')) {
-    define('PATH_FE_ADDONS_TT_PRODUCTS_REL', call_user_func($emClass . '::siteRelPath', $_EXTKEY));
+    define('PATH_FE_ADDONS_TT_PRODUCTS_REL', \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix(PATH_BE_ADDONS_TT_PRODUCTS));
 }
 
 if (!defined ('PATH_FE_ADDONS_TT_PRODUCTS_ICON_REL')) {
@@ -37,9 +26,8 @@ if (!defined ('PATH_FE_ADDONS_TT_PRODUCTS_ICON_REL')) {
 
 
 
+/** deprecated constants: **/
 
-
-// deprecated constants:
 if (!defined ('ADDONS_EXTKEY')) {
     define('ADDONS_EXTKEY', 'addons_tt_products');
 }
@@ -53,7 +41,7 @@ if (!defined ('PATH_BE_ADDONS_REL')) {
 }
 
 if (!defined ('PATH_FE_ADDONS_REL')) {
-    define('PATH_BE_ADDONS_REL', call_user_func($emClass . '::siteRelPath', $_EXTKEY));
+    define('PATH_FE_ADDONS_REL', \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix(PATH_BE_ADDONS_TT_PRODUCTS));
 }
 
 if (!defined ('PATH_FE_ADDONS_ICON_REL')) {
@@ -74,7 +62,7 @@ if (!defined ('PATH_BE_addons_rel')) {
 }
 
 if (!defined ('PATH_FE_addons_rel')) {
-    define('PATH_FE_addons_rel', call_user_func($emClass . '::siteRelPath', $_EXTKEY));
+    define('PATH_FE_addons_rel', \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix(PATH_BE_ADDONS_TT_PRODUCTS));
 }
 
 if (!defined ('PATH_FE_addons_icon_rel')) {
