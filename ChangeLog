@@ -1,3 +1,24 @@
+
+2018-10-13 Franz Holzinger  <franz@ttproducts.de>
+
+    * move Private/Extensions/Tt_products/Templates/basket.html -> Private/Templates/basket.html
+    * move Private/Extensions/Tt_products/Templates/download.html -> Private/Templates/download.html
+    * move Private/Extensions/Tt_products/Templates/info.html -> Private/Templates/info.html
+    * move Private/Extensions/Tt_products/Templates/list.html -> Private/Templates/list.html
+    * move Private/Extensions/Tt_products/Templates/orderconfirmation.html -> Private/Templates/orderconfirmation.html
+    * move Private/Extensions/Tt_products/Templates/overview.html -> Private/Templates/overview.html
+    * move Private/Extensions/Tt_products/Templates/payment.html -> Private/Templates/payment.html
+    * move Private/Extensions/Tt_products/Templates/single.html -> Private/Templates/single.html
+    * move Public/Extensions/Tt_products/Css/basket.css -> Public/Css/basket.css
+    * move Public/Extensions/Tt_products/Css/general.css -> Public/Css/general.css
+    * move Public/Extensions/Tt_products/Css/info.css -> Public/Css/info.css
+    * move Public/Extensions/Tt_products/Css/list.css -> Public/Css/list.css
+    * move Public/Extensions/Tt_products/Css/orderconfirmation.css -> Public/Css/orderconfirmation.css
+    * move Public/Extensions/Tt_products/Css/overview.css -> Public/Css/overview.css
+    * move Public/Extensions/Tt_products/Css/payment.css -> Public/Css/payment.css
+    * move Public/Extensions/Tt_products/Css/single.css -> Public/Css/single.css
+    * move Public/Extensions/Tt_products/Grafics/cart_add.png -> Public/Grafics/cart_add.png
+
 2018-10-12 Franz Holzinger  <franz@ttproducts.de>
     * modification for TYPO3 9.3
 

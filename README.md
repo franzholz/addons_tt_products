@@ -24,6 +24,9 @@ The folder template/typo3webshop contains the files for the book "Der TYPO3-Webs
 
     plugin.tt_products {
       file.templateFile = EXT:addons_tt_products/template/example_template_bill_de.tmpl
+      templatePath = EXT:addons_tt_products/Resources/Private/Templates/
+      oldTemplatePath = EXT:addons_tt_products/template/responsive/
+      cssPath = EXT:addons_tt_products/Resources/Public/Css/
     }
 
 ## Example Setup:
@@ -33,18 +36,19 @@ The folder template/typo3webshop contains the files for the book "Der TYPO3-Webs
     plugin.tt_products.templateFile = fileadmin/typo3webshop/page/html/tt_products/products_css_variants_de.html
 
     plugin.tt_products.templateFile {
-      BASKET =   fileadmin/typo3webshop/page/html/tt_products/basket.html
-      OVERVIEW = fileadmin/typo3webshop/page/html/tt_products/overview.html
-      ERROR =    fileadmin/typo3webshop/page/html/tt_products/errors.html
-      FINALIZE = fileadmin/typo3webshop/page/html/tt_products/orderconfirmation.html
-      INFO =     fileadmin/typo3webshop/page/html/tt_products/info.html
-      LIST =     fileadmin/typo3webshop/page/html/tt_products/list.html
-      PAYMENT =  fileadmin/typo3webshop/page/html/tt_products/payment.html
-      SINGLE =   fileadmin/typo3webshop/page/html/tt_products/single.html
-      TRACKING = fileadmin/typo3webshop/page/html/tt_products/tracking.html
-      MEMO =     fileadmin/typo3webshop/page/html/tt_products/memo.html
+        BASKET   = {$plugin.tt_products.templatePath}basket.html
+        DOWNLOAD = {$plugin.tt_products.templatePath}download.html
+        INFO     = {$plugin.tt_products.templatePath}info.html
+        FINALIZE = {$plugin.tt_products.templatePath}orderconfirmation.html
+        LIST     = {$plugin.tt_products.templatePath}list.html
+        OVERVIEW = {$plugin.tt_products.templatePath}overview.html
+        PAYMENT  = {$plugin.tt_products.templatePath}payment.html
+        SEARCH   = {$plugin.tt_products.templatePath}list.html
+        SINGLE   = {$plugin.tt_products.templatePath}single.html
+        ERROR =    {$plugin.tt_products.oldTemplatePath}errors.html
+        TRACKING = {$plugin.tt_products.oldTemplatePath}tracking.html
+        MEMO =     {$plugin.tt_products.oldTemplatePath}memo.html
     }
-
 
 ## Contributions:
 
