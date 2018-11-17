@@ -1,6 +1,7 @@
+2018-11-17 Franz Holzinger  <franz@ttproducts.de>
+    * remove the deprecated constants: ADDONS_EXTKEY, PATH_BE_ADDONS, PATH_BE_ADDONS_REL, PATH_FE_ADDONS_REL, PATH_FE_ADDONS_ICON_REL, ADDONS_EXTkey, PATH_BE_addons, PATH_BE_addons_rel, PATH_FE_addons_rel, PATH_FE_addons_icon_rel
 
 2018-10-13 Franz Holzinger  <franz@ttproducts.de>
-
     * move Private/Extensions/Tt_products/Templates/basket.html -> Private/Templates/basket.html
     * move Private/Extensions/Tt_products/Templates/download.html -> Private/Templates/download.html
     * move Private/Extensions/Tt_products/Templates/info.html -> Private/Templates/info.html
