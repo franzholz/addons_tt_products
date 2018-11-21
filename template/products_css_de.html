@@ -653,7 +653,7 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 		<li>(enthaltene MwSt: ###PRICE_TOTAL_ONLY_TAX### EUR)</li></ul>
                 <strong>Insgesamt: ###PRICE_TOTAL_TAX### EUR</strong><br>
     <!-- ###SUB_CREDITPOINTS_AMOUNT### begin -->
-                <strong>Rabatt: ###PRICE_TOTUNITS_DISCOUNT### EUR</strong><br>
+                <strong>Rabatt: ###PRICE_DISCOUNT_GOODSTOTAL_TAX### EUR</strong><br>
                 <strong>Zahlungsbetrag: ###PRICE_VOUCHERTOTAL_TAX### EUR</strong><br>
     <!-- ###SUB_CREDITPOINTS_AMOUNT### end -->
 
@@ -835,7 +835,7 @@ Sie k&ouml;nnen ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TR
 		<li>(enthaltene MwSt:###PRICE_TOTAL_ONLY_TAX### EUR)</li>
 
     <!-- ###SUB_CREDITPOINTS_AMOUNT### begin -->
-          <li><strong>Rabatt: ###PRICE_TOTUNITS_DISCOUNT### EUR</strong></li>
+          <li><strong>Rabatt: ###PRICE_DISCOUNT_GOODSTOTAL_TAX### EUR</strong></li>
          <li><strong>Zahlungsbetrag: ###PRICE_VOUCHERTOTAL_TAX### EUR</strong></li>
     <!-- ###SUB_CREDITPOINTS_AMOUNT### end -->
 
@@ -1215,7 +1215,7 @@ Summe ohne MwSt: 	       ###PRICE_TOTAL_NO_TAX### EUR
 Enthaltene MwSt:	       ###PRICE_TOTAL_ONLY_TAX### EUR
 Gesamtsumme dieser Bestellung: ###PRICE_TOTAL_TAX### EUR
 <!-- ###SUB_CREDITPOINTS_AMOUNT### begin -->
-Rabatt: ###PRICE_TOTUNITS_DISCOUNT### EUR
+Rabatt: ###PRICE_DISCOUNT_GOODSTOTAL_TAX### EUR
 Zahlungsbetrag: ###PRICE_VOUCHERTOTAL_TAX### EUR
 <!-- ###SUB_CREDITPOINTS_AMOUNT### end -->
 
@@ -1395,7 +1395,7 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
         </tr>
         <tr>
 			<td colspan="4" style="text-align:right;border-top:2px solid #000"><strong>Rabatt:</strong></td>
-			<td style="border-top:2px solid #000"><strong>EUR ###PRICE_TOTUNITS_DISCOUNT###</strong></td>
+			<td style="border-top:2px solid #000"><strong>EUR ###PRICE_DISCOUNT_GOODSTOTAL_TAX###</strong></td>
         </tr>
         <tr>
 			<td colspan="4" style="text-align:right;border-top:2px solid #000"><strong>Zahlungsbetrag: </strong></td>

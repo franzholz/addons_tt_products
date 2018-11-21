@@ -1,3 +1,7 @@
+
+2018-11-21 Franz Holzinger  <franz@ttproducts.de>
+    * bugfix: replace wrong and outdated marker ###PRICE_TOTUNITS_DISCOUNT### by ###PRICE_DISCOUNT_GOODSTOTAL_TAX###
+
 2018-11-17 Franz Holzinger  <franz@ttproducts.de>
     * remove the deprecated constants: ADDONS_EXTKEY, PATH_BE_ADDONS, PATH_BE_ADDONS_REL, PATH_FE_ADDONS_REL, PATH_FE_ADDONS_ICON_REL, ADDONS_EXTkey, PATH_BE_addons, PATH_BE_addons_rel, PATH_FE_addons_rel, PATH_FE_addons_icon_rel
 
