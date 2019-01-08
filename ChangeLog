@@ -1,4 +1,7 @@
 
+2019-01-08 Franz Holzinger  <franz@ttproducts.de>
+    * compatibility: replace unsupported ###VALUE_GIFTCODE### by ###VALUE_VOUCHERCODE### for voucher extension. Remove everything about GIFT certificates.
+
 2018-11-21 Franz Holzinger  <franz@ttproducts.de>
     * bugfix: replace wrong and outdated marker ###PRICE_TOTUNITS_DISCOUNT### by ###PRICE_DISCOUNT_GOODSTOTAL_TAX###
 

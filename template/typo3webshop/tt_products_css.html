@@ -1143,21 +1143,6 @@ Warenkorbansicht Anfang -->
 <!-- ###MESSAGE_MINPRICE_ERROR### end -->
 
 
-
-  <!--- für Gutschein System --->
-
-  <!-- ###FE_USER_SECTION### begin -->
-  <form method="post" action="###FORM_URL###" name="###FORM_NAME_GIFT_CERTIFICATE###">
-	<p> Code des Geschenkgutscheins: </p>
-		<input size="30" maxlength="30" id="button3" type="text" name="###INSERT_GIFTCODE###">
-		<input type="hidden" name="products_info" value="1">
-		<input type="submit" id="button6" name="products_redeem_gift" value="Gutschein einlösen">&nbsp;&nbsp;
-		<input type="hidden" name="creditpoints_saved" value="###CREDITPOINTS_SAVED###">
-		<input type="hidden" name="creditpoints_spended" value="###CREDITPOINTS_SPENDED###">
-		<input type="hidden" name="creditpoints_gifts" value="###CREDITPOINTS_GIFTS###">
-	</form>
-  <!-- ###FE_USER_SECTION### end -->
-
 </div>
 
 <!-- ###BASKET_TEMPLATE### end -->
@@ -1192,9 +1177,6 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	Exact same features as BASKET_TEMPLATE.
 	-->
     <div class="tt_products_basket_info">
-    <!-- ###SUB_GIFTCODE_DISCOUNTWRONG### begin -->
-    <p>Der Gutschein-Code ist falsch. Gehen Sie wieder zurück und probieren Sie es noch einmal.</p>
-    <!-- ###SUB_GIFTCODE_DISCOUNTWRONG### end -->
 
     	<form method="post" action="###FORM_URL###">
         	<!-- ###BILLING_ADDRESS### start -->
@@ -1623,21 +1605,6 @@ Exact same features as BASKET_TEMPLATE
   <input type="submit" name="products_finalize" value="Bestellung abschließen!" onclick="this.form.action='###FORM_URL_THANKS###'; this.form.target='###FORM_URL_TARGET###';">
 
 
-    <!-- ###SUB_GIFTCODE_DISCOUNTWRONG### begin -->
-    <p>Der Gutschein-Code ist falsch. Probieren Sie es noch einmal.</p>
-    <!-- ###SUB_GIFTCODE_DISCOUNTWRONG### end -->
-
-
-    <!-- ###SUB_GIFTCODE_DISCOUNT### begin -->
-
-    <p>Ihr Gutschein <b>###VALUE_GIFTCODE_USED###</b> wurde in <b>###GIFT_DISCOUNT###</b> <img src="###PATH_FE_REL###res/icons/fe/kurk.gif" width="17" height="17"> umgewandelt.</p>
-
-    <!-- ###SUB_GIFTCODE_DISCOUNT### end -->
-    <!-- ###SUB_GIFTCODE_DISCOUNT_TRUE### begin -->
-    <p>Ihre eingelöste(n) Gutscheinpunkt(e) wurden in <b>###CREDITPOINTS_GIFTS###</b> <img src="###PATH_FE_REL###res/icons/fe/kurk.gif" width="17" height="17"> umgewandelt.</p>
-
-    <!-- ###SUB_GIFTCODE_DISCOUNT_TRUE### end -->
-
     <!-- ###SUB_CREDITPOINTS_AMOUNT_EMPTY### begin -->
 
     <!-- ###SUB_CREDITPOINTS_AMOUNT_EMPTY### end -->
@@ -1678,27 +1645,6 @@ Exact same features as BASKET_TEMPLATE
    <!-- ###SUB_VOUCHERCODE### end -->
 
 </form>
-
-  <!-- ###FE_USER_SECTION### begin -->
-
-     <p>Ihr Vorteil: Bei dieser Bestellung sparen Sie ###PRICE_DISCOUNT_GOODSTOTAL_TAX###</p>
-
-   ###CREDITPOINTS_SAVED###
-    <img src="###PATH_FE_REL###res/icons/fe/kurk.gif" width="17" height="17">
-
-   <input type="hidden" name="creditpoints_saved" value="###CREDITPOINTS_SAVED###">
-   <input type="hidden" name="creditpoints_spended" value="###CREDITPOINTS_SPENDED###">
-   <input type="hidden" name="creditpoints_gifts" value="###CREDITPOINTS_GIFTS###">
-   <input type="hidden" name="recs[personinfo][agb]" value="###PERSON_AGB###" id="checkboxagb">
-
-    <form method="post" action="###FORM_URL###" name="###FORM_NAME_GIFT_CERTIFICATE###">
-    	Anzahl der Gutscheinzertifikate:<br>
-    		<input size="30" maxlength="30" type="text" name="###INSERT_GIFTCODE###">
-    		<input type="hidden" name="products_payment" value="1">
-    		<input type="submit" name="products_redeem_gift" value="Gutschein einlösen">
-   	</form>
-
-    <!-- ###FE_USER_SECTION### end -->
 
   </div>
  </div>
