@@ -33,6 +33,17 @@ The folder template/typo3webshop contains the files for the book "Der TYPO3-Webs
 
 (tt_products 2.12.0 and 3.0.0):
 
+    page.includeCSS {
+        tt_products-basket = {$plugin.tt_products.cssPath}basket.css
+        tt_products-general = {$plugin.tt_products.cssPath}general.css
+        tt_products-info = {$plugin.tt_products.cssPath}info.css
+        tt_products-list = {$plugin.tt_products.cssPath}list.css
+        tt_products-orderconfirmation = {$plugin.tt_products.cssPath}orderconfirmation.css
+        tt_products-overview = {$plugin.tt_products.cssPath}overview.css
+        tt_products-payment = {$plugin.tt_products.cssPath}payment.css
+        tt_products-single = {$plugin.tt_products.cssPath}single.css
+    }
+
     plugin.tt_products.templateFile = fileadmin/typo3webshop/page/html/tt_products/products_css_variants_de.html
 
     plugin.tt_products.templateFile {
