@@ -1,3 +1,6 @@
+2019-03-07 Franz Holzinger  <franz@ttproducts.de>
+    * compatibility to transactor: The ###TRANSACTOR_IMAGE### marker contains the full img HTML tag.
+    * add markers for the rating and commenting system of tt_products. ###RATING### and ###COMMENT###
 
 2019-01-08 Franz Holzinger  <franz@ttproducts.de>
     * compatibility: replace unsupported ###VALUE_GIFTCODE### by ###VALUE_VOUCHERCODE### for voucher extension. Remove everything about GIFT certificates.
