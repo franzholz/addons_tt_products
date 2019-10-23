@@ -17,7 +17,7 @@ pob_ttp_marker_xml.htm: multiple language marker template sponsored by Rainer Li
 products_css_de.html: CSS template by Robert Markula, translated by Masod Mohmand
 
 The folder Resources/Private/Extensions/Tt_products/Templates/ contains responsive template files based on the code of the plugin.
-The folder template/typo3webshop contains the files for the book "Der TYPO3-Webshop" by Andrea Herzog-Kienast.
+The folder template/typo3webshop contains the files for the book "Der TYPO3-Webshop" by Andrea Herzog-Kienast. You can download its ebook version from the internet.
 
 
 ## Example Constants:
@@ -29,9 +29,11 @@ The folder template/typo3webshop contains the files for the book "Der TYPO3-Webs
       cssPath = EXT:addons_tt_products/Resources/Public/Css/
     }
 
+This is the constants definition for your first start with these template files. Later you will copy the example template files into the folder fileadmin/Resources/Private/tt_products of your website. Then you must change the constants and the setup accordingly.
+
 ## Example Setup:
 
-(tt_products 2.12.0 and 3.0.0):
+(tt_products >= 2.9.6):
 
     page.includeCSS {
         tt_products-basket = {$plugin.tt_products.cssPath}basket.css
@@ -44,7 +46,7 @@ The folder template/typo3webshop contains the files for the book "Der TYPO3-Webs
         tt_products-single = {$plugin.tt_products.cssPath}single.css
     }
 
-    plugin.tt_products.templateFile = fileadmin/typo3webshop/page/html/tt_products/products_css_variants_de.html
+    plugin.tt_products.templateFile = fileadmin/Resources/Private/tt_products/products_css_variants_de.html
 
     plugin.tt_products.templateFile {
         BASKET   = {$plugin.tt_products.templatePath}basket.html
