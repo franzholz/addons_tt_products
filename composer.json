@@ -19,7 +19,7 @@
     }
   ],
   "license": [
-    "GPL-2.0+"
+    "GPL-2.0-or-later"
   ],
   "require": {
     "typo3/cms-core": ">=7.6.0,<9.99.99"
@@ -30,7 +30,6 @@
     ]
   },
   "replace": {
-    "addons_tt_products": "self.version",
     "typo3-ter/addons-tt-products": "self.version"
   },
   "extra": {
