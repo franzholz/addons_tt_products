@@ -1,6 +1,8 @@
+2019-11-28 Franz Holzinger <franz@ttproducts.de>
+    * Also TYPO3 9 and 10 will work with these HTML template files
 
 2019-10-23 Franz Holzinger <franz@ttproducts.de>
-    * In order to compatible with https://getcomposer.org/doc/04-schema.md composer.json declarations had to be adjusted and previous replace statements dropped.
+    * composer.json: In order to compatible with https://getcomposer.org/doc/04-schema.md composer.json declarations had to be adjusted and previous replace statements dropped.
 
 2019-03-07 Franz Holzinger  <franz@ttproducts.de>
     * compatibility to transactor: The ###TRANSACTOR_IMAGE### marker contains the full img HTML tag.

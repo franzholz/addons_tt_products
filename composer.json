@@ -22,7 +22,7 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": ">=7.6.0,<9.99.99"
+    "typo3/cms-core": ">=7.6.0,<10.99.99"
   },
   "autoload": {
     "classmap": [
@@ -30,6 +30,7 @@
     ]
   },
   "replace": {
+    "jambagecom/addons-tt-products": "self.version",
     "typo3-ter/addons-tt-products": "self.version"
   },
   "extra": {
