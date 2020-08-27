@@ -759,7 +759,7 @@ Exact same features as BASKET_TEMPLATE
 					<b>Order bekräftelse:</b><br>
 					Tack för att du handlade hos os.<br>
 					Din beställning är avslutat och har numret:<br><br>
-										&nbsp;&nbsp;&nbsp;&nbsp;<B>###ORDER_UID###</B> <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;<B>###ORDER_ORDER_NO###</B> <br>
 								<br>
 								Använd det här numret som referens när du kontaktar oss.<br />
 								Order bekräftelse skickas också med epost till som lämnades vid "Leverans" (###DELIVERY_EMAIL###).
@@ -788,7 +788,7 @@ Exact same features as BASKET_TEMPLATE
 				Du har valt att betala för dina varor via pengatransaktion till vårat bankkonto. Det här är den information du behöver:<br />
 				- Bank:  Superbank Clearingnummer <strong>xxxxx</strong> Kontonummer: <strong>xxxxxx</strong><br />
 				- Check: Skicka checken till vår postadrss. Se botten på den här sidan.<br />
-				Kom ihåg att skriva ordernummret, ###ORDER_UID###, som referens på överföringen.<br />
+				Kom ihåg att skriva ordernummret, ###ORDER_ORDER_NO###, som referens på överföringen.<br />
 						<br>
 						<!-- ###MESSAGE_PAYMENT_40### end -->
 						<!-- ###MESSAGE_PAYMENT_50### begin -->
@@ -1072,7 +1072,7 @@ If payment is initiated but the required information fields are not filled in co
 Displays the view of the order status by tracking codes.
 -->
 ###GW1B###
-<B>Din order (###ORDER_UID###) har följande status:</B><br>
+<B>Din order (###ORDER_ORDER_NO###) har följande status:</B><br>
 (Sista linjen är aktuella statusen)<br>
 <br>
 
@@ -1102,7 +1102,7 @@ Displays the view of the order status by tracking codes.
 <table border=0 cellpadding=1 cellspacing=0 bgcolor="black"><tr><td>
 	<table border=0 cellpadding=10 cellspacing=0 bgcolor="#92AFCB"><tr><td>
 		###GW1B### <strong>Shop ADMIN:</strong><br>
-		Order: ####ORDER_UID###
+		Order: ####ORDER_ORDER_NO###
 		<br>
 		###GW1B###
 
@@ -1237,9 +1237,9 @@ Subpart used as template for the notify emails
 First line is used as subject for the mail.
 -->
 
-Sven Svensson AB orderstatus (####ORDER_UID###)
+Sven Svensson AB orderstatus (####ORDER_ORDER_NO###)
 
-ORDER INFORMATION (####ORDER_UID###):
+ORDER INFORMATION (####ORDER_ORDER_NO###):
 Statusen på din order hos oss har ändrats:
 
 Tidpunkt: ###ORDER_STATUS_TIME###
@@ -1282,10 +1282,10 @@ Mycket vänliga hälsningar
 	First line is used as subject for the mail.
 -->
 
-Sven Svensson AB order ####ORDER_UID###
+Sven Svensson AB order ####ORDER_ORDER_NO###
 
 ORDER BEKRÄFTELSE:
-Din order är komplett och har ordernummer: ###ORDER_UID###.
+Din order är komplett och har ordernummer: ###ORDER_ORDER_NO###.
 Använd det nummret som referens när du kontaktar oss.
 
 SPÅRNING:

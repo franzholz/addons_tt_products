@@ -770,7 +770,7 @@ Exact same features as BASKET_TEMPLATE<br>
 			<b>Tilausvahvistus:</b><br>
 			Kiitos asioinnista kanssamme!<br>
 			Tilauksesi on käsitelty ja sen numero on:<br><br>
-								&nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_UID###</b> <br>
+								&nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_ORDER_NO###</b> <br>
 								<br>
 								Käytä tätä numeroa viittauksena kun otat meihin yhteyttä.<br>
 			Tilausvahvisitus on lähetetty sähköpostilla ilmoittamaasi jakeluosoitteeseen (###DELIVERY_EMAIL###). Mutta sinun tulee joka tapauksessa tulostaa tämä sivu sivu todisteena tilauksestasi.<br>
@@ -792,7 +792,7 @@ Exact same features as BASKET_TEMPLATE<br>
 				Olet valinnut tavaroittesi maksutavaksi tilisiiirron. Siihen tarvitaan seuraavia tietoja:<br>
 				- Pankki: <strong>xxxx</strong> Tili: <strong>xxxxxxxx</strong><br>
 				- Shekki: lähetä shekki postiosoitteeseeemme (katso sivun alalaita).<br>
-				Muista antaa tilausnumero, ###ORDER_UID###!<br>
+				Muista antaa tilausnumero, ###ORDER_ORDER_NO###!<br>
 				<br>
 				<!-- ###MESSAGE_PAYMENT_40### -->
 				<!-- ###MESSAGE_PAYMENT_50### begin
@@ -1079,7 +1079,7 @@ Displays the view of the order status by tracking codes.<br>
 	Displays the view of the order status by tracking codes.
 -->
 ###GW1B###
-<b>Tilauksesi (###ORDER_UID###) tila:</b><br>
+<b>Tilauksesi (###ORDER_ORDER_NO###) tila:</b><br>
 (viimeisellä rivillä on viimeisin muutos)<br>
 <br>
 
@@ -1107,7 +1107,7 @@ Displays the view of the order status by tracking codes.<br>
 <table border=0 cellpadding=1 cellspacing=0 bgcolor="black"><tr><td>
 	<table border=0 cellpadding=10 cellspacing=0 bgcolor="#92AFCB"><tr><td>
 		###GW1B### <strong>Shop ADMIN:</strong><br>
-		Tilaus: ####ORDER_UID###
+		Tilaus: ####ORDER_ORDER_NO###
 		<br>
 		###GW1B###
 
@@ -1284,9 +1284,9 @@ Subpart used as template for the notify emails
 First line is used as subject for the mail.
 -->
 
-Tilauksen tila (####ORDER_UID###)
+Tilauksen tila (####ORDER_ORDER_NO###)
 
-ORDER INFORMATION (####ORDER_UID###):
+ORDER INFORMATION (####ORDER_ORDER_NO###):
 Tilauksesi tila on muuttunut:
 
 Aika: ###ORDER_STATUS_TIME###
@@ -1345,11 +1345,11 @@ First line is used as subject for the mail.<br>
 	Subpart used as template for the order-emails
 	First line is used as subject for the mail.
 -->
-Tilaus ####ORDER_UID###
+Tilaus ####ORDER_ORDER_NO###
 
 
 TILAUSVAHVISTUS:
-Tilaus on suoritettu ja sillä on numero ###ORDER_UID###.
+Tilaus on suoritettu ja sillä on numero ###ORDER_ORDER_NO###.
 Käytä tätä numeroa kun otat meihin yhteyttä.
 
 SEURANTA:

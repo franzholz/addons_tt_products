@@ -616,7 +616,7 @@ Exact same features as BASKET_TEMPLATE.</em></p>
         <div class="order_data">
 	        <dl>
 	            <dt>Your order is complete and has number: </dt>
-	                <dd><strong>###ORDER_UID###</strong></dd>
+	                <dd><strong>###ORDER_ORDER_NO###</strong></dd>
 	            <dt>Order date: </dt>
 	                <dd><strong>###ORDER_DATE###</strong></dd>
 	            <dt>Customer number: </dt>
@@ -658,7 +658,7 @@ Exact same features as BASKET_TEMPLATE.</em></p>
                     	<div>
 	                        <input type="hidden" name="cmd" value="_xclick">
 	                        <input type="hidden" name="business" value="shop@myshop.tld">
-	                        <input type="hidden" name="item_name" value="###ORDER_UID###">
+	                        <input type="hidden" name="item_name" value="###ORDER_ORDER_NO###">
 	                        <input type="hidden" name="amount" value="###PRICE_TOTAL_TAX###">
 	                        <input type="hidden" name="no_note" value="1">
 	                        <input type="hidden" name="currency_code" value="EUR">
@@ -683,7 +683,7 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	                </dl>
                     <h4>Cheque:</h4>
 	                    <p>Send the cheque to our postal address. See bottom of this page.</p>
-	                <p><em>Remember to enter the order-number, ###ORDER_UID###, on the transaction!</em></p>
+	                <p><em>Remember to enter the order-number, ###ORDER_ORDER_NO###, on the transaction!</em></p>
 	            <!-- ###MESSAGE_PAYMENT_40### end -->
 
 	            <!-- ###MESSAGE_PAYMENT_50### begin
@@ -929,7 +929,7 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	-->
     <div class="tt_products_tracking_display_info">
     	<div class="order_status">
-	        <h1>Your order (###ORDER_UID###) has this status:</h1>
+	        <h1>Your order (###ORDER_ORDER_NO###) has this status:</h1>
 	        <p><em>Last line is the latest change.</em></p>
 
 	        <table summary="Order status" class="basket_items">
@@ -960,7 +960,7 @@ Exact same features as BASKET_TEMPLATE.</em></p>
 	    <!-- ###ADMIN_CONTROL### begin -->
         	<div class="admin_control">
 	            <h1>Shop admin</h1>
-	            <h2>Order: ####ORDER_UID###</h2>
+	            <h2>Order: ####ORDER_ORDER_NO###</h2>
 
 	            <!-- ###ADMIN_CONTROL_OK### begin -->
                 	<div class="admin_control_ok">
@@ -1070,13 +1070,13 @@ First line is used as subject for the mail.</em></p>
 	Subpart used as template for the notify emails
 	First line is used as subject for the mail.
 	-->
-My Shop order status (####ORDER_UID###)
+My Shop order status (####ORDER_ORDER_NO###)
 
 ************************************************************************
 * The status of your order has been changed.
 ************************************************************************
 
-ORDER INFORMATION (####ORDER_UID###):
+ORDER INFORMATION (####ORDER_ORDER_NO###):
 ************************************************************************
 
 Time: ###ORDER_STATUS_TIME###
@@ -1159,19 +1159,19 @@ First line is used as subject for the mail.</em></p>
 	Subpart used as template for the order-emails
 	First line is used as subject for the mail.
 	-->
-My Shop order ####ORDER_UID###
+My Shop order ####ORDER_ORDER_NO###
 
 ************************************************************************
 * ORDER CONFIRMATION:
 ************************************************************************
 
-Your order is completed and has number ###ORDER_UID###.
+Your order is completed and has number ###ORDER_ORDER_NO###.
 Use this number as a reference when you contact us.
 
 TRACKING:
 You can follow you order status by using this tracking number: http://###DOMAIN###/index.php?id=###PID_TRACKING###&type=0&tracking=###ORDER_TRACKING_NO###
 
-Order number: ###ORDER_UID###
+Order number: ###ORDER_ORDER_NO###
 Order date: ###ORDER_DATE###
 
 ************************************************************************
@@ -1276,7 +1276,7 @@ Account: xxxxxxxx
 
 CHEQUE:
 Send the cheque to our postal address. See bottom of this page.
-Remember to enter the order-number, ###ORDER_UID###, on the transaction!
+Remember to enter the order-number, ###ORDER_ORDER_NO###, on the transaction!
 
 ************************************************************************
     <!-- ###MESSAGE_PAYMENT_40### end -->
@@ -1430,7 +1430,7 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 </strong></p>
 
 <p style="text-align:right">
-	Order number: ###ORDER_UID###<br>
+	Order number: ###ORDER_ORDER_NO###<br>
     Order date: ###ORDER_DATE###<br>
     Customer number: ###FE_USER_UID###
 </p>
@@ -1543,7 +1543,7 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 </strong></p>
 
 <p style="text-align:right">
-	Order number: ###ORDER_UID###<br>
+	Order number: ###ORDER_ORDER_NO###<br>
     Order date: ###ORDER_DATE###
 </p>
 

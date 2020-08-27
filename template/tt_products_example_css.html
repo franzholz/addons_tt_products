@@ -1243,7 +1243,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
     Ihre Test-Bestellung ist nun abgeschlossen und hat folgende Nummer:
   </div>
   <div id="ORDER_UID_BASKET_ORDERCONFIRMATION_TEMPLATE">
-    ###ORDER_UID###
+    ###ORDER_ORDER_NO###
   </div>
   <div id="text_payment_emailsend_BASKET_ORDERCONFIRMATION_TEMPLATE">
 		Es handelt sich hierbei nur um einen Test.<br>
@@ -1266,7 +1266,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
     Kontonummer: 1111111111<br>
     IBAN: DE11 1111 1111 1111 11111 11<br>
     BIC: BANKTEST<br><br>
-    Betreff: Ihre Bestellnummer ###ORDER_UID### unbedingt angeben! <br>
+    Betreff: Ihre Bestellnummer ###ORDER_ORDER_NO### unbedingt angeben! <br>
 	  <!-- ###MESSAGE_PAYMENT_10### end -->
   </div>
   <div id="header_zahlungsart_selbstabholer_BASKET_ORDERCONFIRMATION_TEMPLATE">
@@ -1297,7 +1297,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
     <input type="hidden" name="cmd" value="_xclick">
     <input type="hidden" name="business" value="info@ttproducts.de">
-    <input type="hidden" name="item_name" value="###ORDER_UID###">
+    <input type="hidden" name="item_name" value="###ORDER_ORDER_NO###">
     <input type="hidden" name="amount" value="###PRICE_TOTAL_TAX###">
     <input type="hidden" name="no_note" value="1">
     <input type="hidden" name="currency_code" value="EUR">
@@ -1604,7 +1604,7 @@ If payment is initiated but the required information fields are not filled in co
 Displays the view of the order status by tracking codes.-->
 
 ###GW1B###
-<strong>Ihre Bestellung (###ORDER_UID###) hat folgenden Status:</strong><br>
+<strong>Ihre Bestellung (###ORDER_ORDER_NO###) hat folgenden Status:</strong><br>
 (siehe letzte Zeile fr aktuellsten Stand)<br>
 <br>
 
@@ -1649,7 +1649,7 @@ This part is repeated for each order status item and finally this part in the te
 <div class="shopadmin">
   ###GW1B###Shop ADMIN:
 </div>
-Order: ####ORDER_UID###<br><br>
+Order: ####ORDER_ORDER_NO###<br><br>
 
 <div id="text_status_codeORDER_TRACKING_NO_BASKET_ORDERCONFIRMATION_TEMPLATE">
   Sie können Ihren Bestellstatus jederzeit mittels Ihres Bestellstatus-Codes
@@ -1808,11 +1808,11 @@ Displays error message if no tracking code.
 <!-- ###TRACKING_EMAILNOTIFY_TEMPLATE### begin
 Subpart used as template for the notify emails. First line is used as subject for the mail.-->
 
-herzogkienast.de Bestellstatus (####ORDER_UID###)
+herzogkienast.de Bestellstatus (####ORDER_ORDER_NO###)
 
 ###PERSON_SALUTATION###
 
-BESTELLINFORMATION (####ORDER_UID###):
+BESTELLINFORMATION (####ORDER_ORDER_NO###):
 Der Status Ihrer Bestellung wurde ge&#65533;dert:
 
 Zeit: ###ORDER_STATUS_TIME###
@@ -1860,12 +1860,12 @@ First line is used as subject for the mail.
 Subpart used as template for the order-emails
 First line is used as subject for the mail.
 -->
-Bestellung ####ORDER_UID###
+Bestellung ####ORDER_ORDER_NO###
 
-Bestellung ####ORDER_UID###
+Bestellung ####ORDER_ORDER_NO###
 
 Bestellbestätigung:
-Ihre Test-Bestellung ist abgeschlossen und hat die Nummer ###ORDER_UID###.
+Ihre Test-Bestellung ist abgeschlossen und hat die Nummer ###ORDER_ORDER_NO###.
 Verweisen Sie bitte bei jedem Kontakt mit uns auf diese Bestellnummer.
 
 BESTELLSTATUS:
@@ -2040,7 +2040,7 @@ Mein TYPO3 Shop
 
 
 
-###GW1B###<p><strong>Rechnung Nr. ###ORDER_UID###:</strong></p>###GW1E###<br>
+###GW1B###<p><strong>Rechnung Nr. ###ORDER_ORDER_NO###:</strong></p>###GW1E###<br>
       <br><p><strong>Es handelt sich um einen Test.</strong></p>
   <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
   <!-- ###ITEM_CATEGORY### begin -->
@@ -2128,7 +2128,7 @@ Mein TYPO3 Shop
 
 ###DELIVERY_COUNTRY###
 
-###GW1B###<p><strong>Lieferschein fr Rechnung Nr. ###ORDER_UID###:</strong></p>###GW1E###<br><br>
+###GW1B###<p><strong>Lieferschein fr Rechnung Nr. ###ORDER_ORDER_NO###:</strong></p>###GW1E###<br><br>
 <br>
 <p><strong>Es handelt sich hierbei nur um einen Test.</strong></p>
 

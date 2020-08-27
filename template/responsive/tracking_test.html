@@ -2,7 +2,7 @@
 Displays the view of the order status by tracking codes.
 -->
 ###GW1B###
-<b>Ihre Bestellung (###ORDER_UID###) hat folgenden Status:</b><br>
+<b>Ihre Bestellung (###ORDER_ORDER_NO###) hat folgenden Status:</b><br>
 (siehe letzte Zeile f&uuml;r aktuellsten Stand)<br>
 <br>
 
@@ -30,7 +30,7 @@ This part is repeated for each order status item and finally this part in the te
 <table border=0 cellpadding=1 cellspacing=0 bgcolor="black"><tr><td>
 <table border=0 cellpadding=10 cellspacing=0 bgcolor="#92AFCB"><tr><td>
 ###GW1B### <strong>Shop ADMIN:</strong><br>
-Order: ####ORDER_UID###
+Order: ####ORDER_ORDER_NO###
 <br>
 ###GW1B###
 
@@ -207,11 +207,11 @@ Subpart used as template for the notify emails
 First line is used as subject for the mail.
 -->
 
-bananaGUARD.de Bestellstatus (####ORDER_UID###)
+bananaGUARD.de Bestellstatus (####ORDER_ORDER_NO###)
 
 ###PERSON_SALUTATION###
 
-BESTELLINFORMATION (####ORDER_UID###):
+BESTELLINFORMATION (####ORDER_ORDER_NO###):
 Der Status Ihrer Bestellung wurde ge&auml;ndert:
 
 Zeit: ###ORDER_STATUS_TIME###

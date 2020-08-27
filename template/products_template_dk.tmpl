@@ -1033,7 +1033,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.
 					<b>Ordre bekræftelse:</b><br>
 					Mange tak fordi du handlede med os.<br>
 					Din ordre er gennemført og har nummer:<br><br>
-										&nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_UID###</b> <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_ORDER_NO###</b> <br>
 										<br>
 										Brug dette nummer som reference ved henvendelse til Inter-Photo.<br>
 					Ordrebekræftelsen er også sendt til email-adressen under "Levering" (###DELIVERY_EMAIL###) såfremt denne er angivet. Du bør dog under alle omstændigheder printe denne page ud som bevis på din bestilling.<br>
@@ -1068,7 +1068,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.
 						- Bank: Unibank. Reg: <strong>1938</strong> Konto: <strong>0381576000</strong><br>
 						- GIRO: 1160036<br>
 						- Check: Send til butikkens address. Ses nederst på denne page.<br>
-						Husk at anfør ordre-nummeret, ###ORDER_UID###, på overførslen.<br>
+						Husk at anfør ordre-nummeret, ###ORDER_ORDER_NO###, på overførslen.<br>
 						<br>
 						<!-- ###MESSAGE_PAYMENT_40### end -->
 						<!-- ###MESSAGE_PAYMENT_50### begin -->
@@ -1384,7 +1384,7 @@ When someone has entere a wrong unique gift number this message will appear
 Displays the view of the order status by tracking codes.
 -->
 ###GW1B###
-<b>your order (###ORDER_UID###) has this status:</b><br>
+<b>your order (###ORDER_ORDER_NO###) has this status:</b><br>
 (Nederste linie er seneste ændring)<br>
 <br>
 
@@ -1414,7 +1414,7 @@ Displays the view of the order status by tracking codes.
 <table border=0 cellpadding=1 cellspacing=0 bgcolor="black"><tr><td>
 	<table border=0 cellpadding=10 cellspacing=0 bgcolor="#92AFCB"><tr><td>
 		###GW1B### <strong>Inter-Photo ADMIN:</strong><br>
-		Ordre: ####ORDER_UID###
+		Ordre: ####ORDER_ORDER_NO###
 		<br>
 		###GW1B###
 
@@ -1551,9 +1551,9 @@ Subpart used as template for the notify emails
 First line is used as subject for the mail.
 -->
 
-Inter-Photo ordre status (###ORDER_UID###)
+Inter-Photo ordre status (###ORDER_ORDER_NO###)
 
-ORDRE INFORMATION (###ORDER_UID###):
+ORDRE INFORMATION (###ORDER_ORDER_NO###):
 Status på din ordre er blevet ændret:
 
 Tid: ###ORDER_STATUS_TIME###
@@ -1623,12 +1623,12 @@ Subpart used as template for the order-emails
 First line is used as subject for the mail.
 
 -->
-Inter-Photo ordre ####ORDER_UID###
+Inter-Photo ordre ####ORDER_ORDER_NO###
 
-Inter-Photo ordre ####ORDER_UID###
+Inter-Photo ordre ####ORDER_ORDER_NO###
 
 ORDRE BEKRÆFTELSE:
-Din ordre er gennemført og har nummer ###ORDER_UID###.
+Din ordre er gennemført og har nummer ###ORDER_ORDER_NO###.
 Brug dette nummer som reference ved henvendelse til Inter-Photo.
 Vi håber, at du har følt dig lige så godt betjent i
 vores Internet-butik, som i vores virkelige forretninger.

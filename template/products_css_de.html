@@ -687,7 +687,7 @@ Exact same features as BASKET_TEMPLATE.</em></p>
         <div class="order_data">
 	        <dl>
 	            <dt>Ihre Bestellung ist abgeschlossen und hat die Nummer:</dt>
-	                <dd><strong>###ORDER_UID###</strong></dd>
+	                <dd><strong>###ORDER_ORDER_NO###</strong></dd>
 	            <dt>Bestelldatum: </dt>
 	                <dd><strong>###ORDER_DATE###</strong></dd>
 	            <!--<dt>Kundennummer: </dt>
@@ -963,7 +963,7 @@ Sie k&ouml;nnen ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TR
 	-->
     <div class="tt_products_tracking_display_info">
     	<div class="order_status">
-	        <h1>Ihre Bestellung (###ORDER_UID###)hat folgenden Status:</h1>
+	        <h1>Ihre Bestellung (###ORDER_ORDER_NO###)hat folgenden Status:</h1>
 	        <p><em>Die letzte Zeile ist die  aktuelle &Auml;nderung</em></p>
 
 	        <table summary="Order status" class="basket_items">
@@ -994,7 +994,7 @@ Sie k&ouml;nnen ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TR
 	    <!-- ###ADMIN_CONTROL### begin -->
         	<div class="admin_control">
 	            <h1>Shop-Administrator( Bestellung/ Versand)</h1>
-	            <h2>Auftragsnummer: ####ORDER_UID###</h2>
+	            <h2>Auftragsnummer: ####ORDER_ORDER_NO###</h2>
 
 	            <!-- ###ADMIN_CONTROL_OK### begin -->
                 	<div class="admin_control_ok">
@@ -1112,7 +1112,7 @@ Bestellung bei der Dunia
 * Der Status ihrer Bestellung ist geändert worden.
 ************************************************************************
 
-aktueller Bestellstatus zu der Bestellung (####ORDER_UID###)
+aktueller Bestellstatus zu der Bestellung (####ORDER_ORDER_NO###)
 
 Zeit: ###ORDER_STATUS_TIME###
 Status: ###ORDER_STATUS_INFO###
@@ -1179,7 +1179,7 @@ Vielen Dank für Ihre Bestellung bei der Dunia .
 Die Einzelheiten dazu sind unten aufgeführt.
 
 Bestelldatum : ###ORDER_DATE###
-Bestellnummer: ###ORDER_UID###
+Bestellnummer: ###ORDER_ORDER_NO###
 
 Bitte benutzen sie diese Nummer als Referenz, wenn sie mit uns Kontakt aufnehmen.
 Sie können Ihre Bestellung jederzeit Überprüfen und den Stand der Bearbeitung verfolgen, wenn Sie die Auftragstatusnummer ###ORDER_TRACKING_NO### auf folgender Seite eingeben:
@@ -1328,7 +1328,7 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 </strong></p>
 
 <p style="text-align:right">
-    Auftragsnummer: ###ORDER_UID###<br>
+    Auftragsnummer: ###ORDER_ORDER_NO###<br>
     Bestelldatum: ###ORDER_DATE###<br>
     Kundennummer: ###FE_USER_UID###
 </p>
@@ -1457,7 +1457,7 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 </strong></p>
 
 <p style="text-align:right">
-	Bestellnummer: ###ORDER_UID###<br>
+	Bestellnummer: ###ORDER_ORDER_NO###<br>
         Bestellstatus: ###ORDER_DATE###
 </p>
 

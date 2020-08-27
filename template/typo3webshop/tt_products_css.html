@@ -660,7 +660,7 @@ This subpart is used to display the regular list of gift products.
    </div>
 
    <div id="SHOPADMIN_EMAIL_SINGLE">
-      <a href="mailto:###SHOPADMIN_EMAIL###?subject=Frage zum Artikel: ###PRODUCT_TITLE###&amp;body=Ich habe folgenden Artikel gesehen: ###PRODUCT_TITLE### %0AMeine Fragen: "><b>Fragen zum Artikel</b></a>  <br>
+      <a href="mailto:###SHOPADMIN_EMAIL###?subject=Frage%20zum%20Artikel:%20###PRODUCT_TITLE###&amp;body=Ich%20habe%20folgenden%20Artikel%20gesehen:%20###PRODUCT_TITLE###%20%0AMeine%20Fragen:%20"><b>Fragen zum Artikel</b></a>  <br>
    </div>
 
  </div>
@@ -1675,7 +1675,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
     Ihre Bestellung ist nun abgeschlossen und hat folgende Nummer:
   </div>
   <div id="ORDER_UID_BASKET_ORDERCONFIRMATION_TEMPLATE">
-    ###ORDER_UID###
+    ###ORDER_ORDER_NO###
   </div>
   <div id="text_payment_emailsend_BASKET_ORDERCONFIRMATION_TEMPLATE">
 		Die Bestellbestätigung wird ebenfalls an die Emailadresse ###CUSTOMER_RECIPIENTS_EMAIL###
@@ -1702,7 +1702,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
     IBAN: <br>
     BIC:   <br><br>
 
-    Betreff: Ihre Bestellnummer ###ORDER_UID### unbedingt angeben! <br>
+    Betreff: Ihre Bestellnummer ###ORDER_ORDER_NO### unbedingt angeben! <br>
 	  <!-- ###MESSAGE_PAYMENT_10### end -->
   </div>
   <!--
@@ -1739,7 +1739,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
 
     <input type="hidden" name="cmd" value="_xclick">
     <input type="hidden" name="business" value="tester_119270464_biz@mytypo3domain.de">
-    <input type="hidden" name="item_name" value="###ORDER_UID###">
+    <input type="hidden" name="item_name" value="###ORDER_ORDER_NO###">
     <input type="hidden" name="amount" value="###PRICE_TOTAL_TAX###">
     <input type="hidden" name="no_note" value="1">
     <input type="hidden" name="currency_code" value="EUR">
@@ -2110,7 +2110,7 @@ When someone has entered a wrong unique gift number this message will appear
 Displays the view of the order status by tracking codes.-->
 
 ###GW1B###
-<b>Ihre Bestellung (###ORDER_UID###) hat folgenden Status:</b><br><br>
+<b>Ihre Bestellung (###ORDER_ORDER_NO###) hat folgenden Status:</b><br><br>
 (siehe letzte Zeile für aktuellsten Stand)<br>
 <br>
 
@@ -2155,7 +2155,7 @@ This part is repeated for each order status item and finally this part in the te
 <div class="shopadmin">
   ###GW1B###Shop ADMIN:<br><br>
 
-  Order: ####ORDER_UID###<br><br>
+  Order: ####ORDER_ORDER_NO###<br><br>
 </div>
 
 
@@ -2305,11 +2305,11 @@ Displays error message if no tracking code.
 !-- ###TRACKING_EMAILNOTIFY_TEMPLATE### begin
 Subpart used as template for the notify emails. First line is used as subject for the mail.-->
 
-Bestellstatus (####ORDER_UID###)
+Bestellstatus (####ORDER_ORDER_NO###)
 
 ###PERSON_SALUTATION###
 
-BESTELLINFORMATION (####ORDER_UID###):
+BESTELLINFORMATION (####ORDER_ORDER_NO###):
 Der Status Ihrer Bestellung wurde geändert:
 
 Zeit: ###ORDER_STATUS_TIME###
@@ -2383,12 +2383,12 @@ First line is used as subject for the mail.
 Subpart used as template for the order-emails
 First line is used as subject for the mail.
 -->
-Bestellung ####ORDER_UID###
+Bestellung ####ORDER_ORDER_NO###
 
-Bestellung ####ORDER_UID###
+Bestellung ####ORDER_ORDER_NO###
 
 Bestellbestätigung:
-Ihre Bestellung ist abgeschlossen und hat die Nummer ###ORDER_UID###.
+Ihre Bestellung ist abgeschlossen und hat die Nummer ###ORDER_ORDER_NO###.
 Verweisen Sie bitte bei jedem Kontakt mit uns auf diese Bestellnummer.
 
 Sie können den Status Ihrer Bestellung an dieser Adresse einsehen:
@@ -2550,7 +2550,7 @@ mytypo3domain.de
 
 
 
-###GW1B###<p><b>Rechnung Nr. ###ORDER_UID###:</b></p>###GW1E###<br>
+###GW1B###<p><b>Rechnung Nr. ###ORDER_ORDER_NO###:</b></p>###GW1E###<br>
       <br><p><strong>Es handelt sich um einen Test.</strong></p>
   <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
   <!-- ###ITEM_CATEGORY### begin -->
@@ -2634,7 +2634,7 @@ mytypo3domain.de
 
 ###DELIVERY_COUNTRY###
 
-###GW1B###<p><b>Lieferschein für Rechnung Nr. ###ORDER_UID###:</b></p>###GW1E###<br><br>
+###GW1B###<p><b>Lieferschein für Rechnung Nr. ###ORDER_ORDER_NO###:</b></p>###GW1E###<br><br>
 <br>
 <p><strong>Es handelt sich hierbei nur um einen Test.</strong></p>
 

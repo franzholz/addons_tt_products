@@ -1,3 +1,9 @@
+2020-08-27 Franz Holzinger <franz@ttproducts.de>
+    * Use the new marker ###ORDER_ORDER_NO### instead of ###ORDER_UID###.
+
+2020-01-20 Franz Holzinger <franz@ttproducts.de>
+    * remove constant PATH_BE_ADDONS_TT_PRODUCTS_REL
+
 2019-11-28 Franz Holzinger <franz@ttproducts.de>
     * Also TYPO3 9 and 10 will work with these HTML template files
 

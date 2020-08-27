@@ -286,7 +286,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 			###LINK_DATASHEET### ###ICON_DATASHEET### ###LINK_DATASHEET### <br>
 
 
-			###GW1B###<a href="mailto:###SHOPADMIN_EMAIL###?subject=Frage zum Artikel: ###PRODUCT_ITEMNUMBER###&body=Ich habe folgenden Artikel gesehen: ###PRODUCT_TITLE### %0AMeine Fragen: "><B>Fragen zum Artikel</B></a>###GW1E###  <br>
+			###GW1B###<a href="mailto:###SHOPADMIN_EMAIL###?subject=Frage%20zum%20Artikel:%20###PRODUCT_ITEMNUMBER###&amp;body=Ich habe%20folgenden%20Artikel%20gesehen:%20###PRODUCT_TITLE###%20%0AMeine%20Fragen:%20"><B>Fragen zum Artikel</B></a>###GW1E###  <br>
 
 
 
@@ -1244,7 +1244,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.
         Vielen Dank f&uuml;r Ihre Bestellung!<br>
         Ihre Bestellung ist nun abgeschlossen und hat folgende Nummer:<br>
         <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<B>###ORDER_UID###</B> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<B>###ORDER_ORDER_NO###</B> <br>
         <br>
 		<br>
         Die Bestellbest&auml;tigung wird auch an die Emailadresse ###CUSTOMER_RECIPIENTS_EMAIL###
@@ -1268,7 +1268,7 @@ Message for payment method 10, Vorkasse
 	<p>
         <br>
         <p><font color=red><br>
-        Betreff: Ihre Bestellnummer ###ORDER_UID### unbedingt angeben! </font></p>
+        Betreff: Ihre Bestellnummer ###ORDER_ORDER_NO### unbedingt angeben! </font></p>
 	<!-- ###MESSAGE_PAYMENT_10### end -->
 
         <!-- ###MESSAGE_PAYMENT_20### begin
@@ -1297,7 +1297,7 @@ Message for payment method 40, Abholung
 		</font><br>
 
 	<p><font color=red><br>
-        Ihre Bestellnummer ###ORDER_UID### unbedingt angeben! </font></p>
+        Ihre Bestellnummer ###ORDER_ORDER_NO### unbedingt angeben! </font></p>
 	<!-- ###MESSAGE_PAYMENT_40### end -->
 
 
@@ -1317,7 +1317,7 @@ Message for payment method 50, nach Absprache
 	<p>&nbsp;<p><br>
 	<br>
 	<p><font color=red><br>
-        Betreff: Ihre Bestellnummer ###ORDER_UID### unbedingt angeben! </font></p>
+        Betreff: Ihre Bestellnummer ###ORDER_ORDER_NO### unbedingt angeben! </font></p>
 	<!-- ###MESSAGE_PAYMENT_50### end -->
 
 
@@ -1612,7 +1612,7 @@ Displays the view of the order status by tracking codes.<br>
 Displays the view of the order status by tracking codes.
 -->
 ###GW1B###
-<B>Ihre Bestellung (###ORDER_UID###) hat folgenden Status:</B><br>
+<B>Ihre Bestellung (###ORDER_ORDER_NO###) hat folgenden Status:</B><br>
 (siehe letzte Zeile f&uuml;r aktuellsten Stand)<br>
 <br>
 
@@ -1818,9 +1818,9 @@ Subpart used as template for the notify emails
 First line is used as subject for the mail.
 -->
 
-ttproducts.de Bestellstatus (####ORDER_UID###)
+ttproducts.de Bestellstatus (####ORDER_ORDER_NO###)
 
-BESTELLINFORMATION (####ORDER_UID###):
+BESTELLINFORMATION (####ORDER_ORDER_NO###):
 Der Status Ihrer Bestellung wurde geändert:
 
 Zeit: ###ORDER_STATUS_TIME###
@@ -1862,12 +1862,12 @@ First line is used as subject for the mail.<br>
 Subpart used as template for the order-emails
 First line is used as subject for the mail.
 -->
-Bestellung ####ORDER_UID###
+Bestellung ####ORDER_ORDER_NO###
 
-Bestellung ####ORDER_UID###
+Bestellung ####ORDER_ORDER_NO###
 
 Bestellbestätigung:
-Ihre Bestellung ist abgeschlossen und hat die Nummer ###ORDER_UID###.
+Ihre Bestellung ist abgeschlossen und hat die Nummer ###ORDER_ORDER_NO###.
 Verweisen Sie bitte bei jedem Kontakt mit uns auf diese Bestellnummer.
 
 BESTELLSTATUS:

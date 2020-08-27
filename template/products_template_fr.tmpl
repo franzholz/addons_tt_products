@@ -856,7 +856,7 @@ Exact same features as BASKET_TEMPLATE<br>
 			<b>Confirmation de commande:</b><br>
 			Merci d'avoir fait affaire avec nous!<br>
 			Votre commande est complète sous le n° :<br><br>
-								&nbsp;&nbsp;&nbsp;&nbsp;<B>###ORDER_UID###</B> <br>
+								&nbsp;&nbsp;&nbsp;&nbsp;<B>###ORDER_ORDER_NO###</B> <br>
 								<br>
 								Utilisez ce n° dans toute correspondance avec nos services.<br>
 			Cette confirmation est également envoyée par mail à l'adresse de livraison saisie :(###DELIVERY_EMAIL###). Vous devez néanmoins dans tous les cas faire une impression de cette commande en cas de litige.<br>
@@ -878,7 +878,7 @@ Exact same features as BASKET_TEMPLATE<br>
 				Vous avez choisi de payer par virement bancaire sur notre compte. Voici nos coordonnées bancaires :<br>
 				- Banque: Superbank Reg: <strong>xxxx</strong> N° de compte: <strong>xxxxxxxx</strong><br>
 				- Cheque: Envoyez votre paiement à l'adresse ci dessous>
-				N'oubliez pas de joindre le n° de commande, ###ORDER_UID###, dans votre correspondance!<br>
+				N'oubliez pas de joindre le n° de commande, ###ORDER_ORDER_NO###, dans votre correspondance!<br>
 				<br>
 				<!-- ###MESSAGE_PAYMENT_40### -->
 				<!-- ###MESSAGE_PAYMENT_50### begin
@@ -1164,7 +1164,7 @@ Displays the view of the order status by tracking codes.<br>
 	Displays the view of the order status by tracking codes.
 -->
 ###GW1B###
-<B>Votre commande n° (###ORDER_UID###) a le statut:</B><br>
+<B>Votre commande n° (###ORDER_ORDER_NO###) a le statut:</B><br>
 (La dernière ligne est le dernier changement)<br>
 <br>
 
@@ -1192,7 +1192,7 @@ Displays the view of the order status by tracking codes.<br>
 <table border=0 cellpadding=1 cellspacing=0 bgcolor="black"><tr><td>
 	<table border=0 cellpadding=10 cellspacing=0 bgcolor="#92AFCB"><tr><td>
 		###GW1B### <strong>Accès administrateur : saisissez le mot de passe pour accéder au suivi des commandes</strong><br>
-		Commande n° : ####ORDER_UID###
+		Commande n° : ####ORDER_ORDER_NO###
 		<br>
 		###GW1B###
 
@@ -1371,7 +1371,7 @@ Subpart used as template for the notify emails
 First line is used as subject for the mail.
 -->
 
-L'etat de votre commande (####ORDER_UID###) a changé :
+L'etat de votre commande (####ORDER_ORDER_NO###) a changé :
 
 Time: ###ORDER_STATUS_TIME###
 Status: ###ORDER_STATUS_INFO###
@@ -1439,11 +1439,11 @@ First line is used as subject for the mail.<br>
 	Subpart used as template for the order-emails
 	First line is used as subject for the mail.
 -->
-Commande Ma Boutique : ####ORDER_UID###
+Commande Ma Boutique : ####ORDER_ORDER_NO###
 
 
 CONFIRMATION DE COMMANDE:
-Votre commande est en cours de traitement sous la référence : ###ORDER_UID###.
+Votre commande est en cours de traitement sous la référence : ###ORDER_ORDER_NO###.
 Utilisez ce n° pour tout contact avec nous.
 
 SUIVI:
@@ -1544,7 +1544,7 @@ Bien cordialement, Ma Boutique
         </tr>
       </table>
   <tr>
-    <td colspan=2> ###GW1B###<b>Facture N°. ###ORDER_UID###:</b>###GW1E###<br>
+    <td colspan=2> ###GW1B###<b>Facture N°. ###ORDER_ORDER_NO###:</b>###GW1E###<br>
       <br> </tr>
   <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
   <!-- ###ITEM_CATEGORY### begin -->
@@ -1661,7 +1661,7 @@ Bien cordialement, Ma Boutique
 
 <tr>
 <td colspan=2>
-###GW1B###<b>Bon de livraison pour la commande n° : ###ORDER_UID###:</b>###GW1E###<br><br>
+###GW1B###<b>Bon de livraison pour la commande n° : ###ORDER_ORDER_NO###:</b>###GW1E###<br><br>
 <br>
 </tr>
 <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->

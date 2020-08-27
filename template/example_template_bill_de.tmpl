@@ -1507,7 +1507,7 @@ Subpart used if the order is finalized and this is thus the confirmation shown.
         Vielen Dank f&uuml;r Ihre Bestellung!<br>
         Ihre Test-Bestellung ist nun abgeschlossen und hat folgende Nummer:<br>
         <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_UID###</b> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_ORDER_NO###</b> <br>
         <br>
 		<font color=red><strong>Es handelt sich hierbei nur um einen Test.</strong></font><br>
         Die Bestellbest&auml;tigung wird auch an die Emailadresse ###CUSTOMER_RECIPIENTS_EMAIL###
@@ -1526,7 +1526,7 @@ Message for payment method 10, Vorkasse
         Kontonummer: 1708150815<br>
         IBAN: DE46 7601 0015 1708 1508 15<br>
         BIC: PBNKTEST<br>
-        Betreff: Ihre Bestellnummer ###ORDER_UID### unbedingt angeben! </font></p>
+        Betreff: Ihre Bestellnummer ###ORDER_ORDER_NO### unbedingt angeben! </font></p>
 	<!-- ###MESSAGE_PAYMENT_10### end -->
         <!-- ###MESSAGE_PAYMENT_30### begin -->
       <p><font color=red><strong>Nachnahme:</strong><br>
@@ -1560,7 +1560,7 @@ Message for payment method 95, Paypal
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_xclick">
 <input type="hidden" name="business" value="info@ttproducts.de">
-<input type="hidden" name="item_name" value="###ORDER_UID###">
+<input type="hidden" name="item_name" value="###ORDER_ORDER_NO###">
 <input type="hidden" name="amount" value="###PRICE_TOTAL_TAX###">
 <input type="hidden" name="no_note" value="1">
 <input type="hidden" name="currency_code" value="EUR">
@@ -1898,7 +1898,7 @@ Displays the view of the order status by tracking codes.<br>
 Displays the view of the order status by tracking codes.
 -->
 ###GW1B###
-<b>Ihre Bestellung (###ORDER_UID###) hat folgenden Status:</b><br>
+<b>Ihre Bestellung (###ORDER_ORDER_NO###) hat folgenden Status:</b><br>
 (siehe letzte Zeile f&uuml;r aktuellsten Stand)<br>
 <br>
 
@@ -1926,7 +1926,7 @@ This part is repeated for each order status item and finally this part in the te
 <table border=0 cellpadding=1 cellspacing=0 bgcolor="black"><tr><td>
 <table border=0 cellpadding=10 cellspacing=0 bgcolor="#92AFCB"><tr><td>
 ###GW1B### <strong>Shop ADMIN:</strong><br>
-Order: ####ORDER_UID###
+Order: ####ORDER_ORDER_NO###
 <br>
 ###GW1B###
 
@@ -2102,11 +2102,11 @@ Subpart used as template for the notify emails
 First line is used as subject for the mail.
 -->
 
-bananaGUARD.de Bestellstatus (####ORDER_UID###)
+bananaGUARD.de Bestellstatus (####ORDER_ORDER_NO###)
 
 ###PERSON_SALUTATION###
 
-BESTELLINFORMATION (####ORDER_UID###):
+BESTELLINFORMATION (####ORDER_ORDER_NO###):
 Der Status Ihrer Bestellung wurde ge&auml;ndert:
 
 Zeit: ###ORDER_STATUS_TIME###
@@ -2150,12 +2150,12 @@ First line is used as subject for the mail.<br>
 Subpart used as template for the order-emails
 First line is used as subject for the mail.
 -->
-Bestellung ####ORDER_UID###
+Bestellung ####ORDER_ORDER_NO###
 
-Bestellung ####ORDER_UID###
+Bestellung ####ORDER_ORDER_NO###
 
 Bestellbest&auml;tigung:
-Ihre Test-Bestellung ist abgeschlossen und hat die Nummer ###ORDER_UID###.
+Ihre Test-Bestellung ist abgeschlossen und hat die Nummer ###ORDER_ORDER_NO###.
 Verweisen Sie bitte bei jedem Kontakt mit uns auf diese Bestellnummer.
 
 BESTELLSTATUS:
@@ -2326,7 +2326,7 @@ This corresponds to the BASKET_TEMPLATE.<br>
         Vielen Dank f&uuml;r Ihre Bestellung!<br>
         Ihre Test-Bestellung ist nun abgeschlossen und hat folgende Nummer:<br>
         <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_UID###</b> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_ORDER_NO###</b> <br>
         <br>
 		<font color=red><strong>Es handelt sich hierbei nur um einen Test.</strong></font><br>
 	</p>
@@ -2344,7 +2344,7 @@ Message for payment method 10, Vorkasse
         Kontonummer: 1708150815<br>
         IBAN: DE46 7601 0015 1708 1508 15<br>
         BIC: PBNKTEST<br>
-        Betreff: Ihre Bestellnummer ###ORDER_UID### unbedingt angeben! </font></p>
+        Betreff: Ihre Bestellnummer ###ORDER_ORDER_NO### unbedingt angeben! </font></p>
 	<!-- ###MESSAGE_PAYMENT_10### end -->
 
         <!-- ###MESSAGE_PAYMENT_30### begin -->
@@ -2363,7 +2363,7 @@ Message for payment method 90, Paypal
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_xclick">
 <input type="hidden" name="business" value="info@ttproducts.de">
-<input type="hidden" name="item_name" value="###ORDER_UID###">
+<input type="hidden" name="item_name" value="###ORDER_ORDER_NO###">
 <input type="hidden" name="amount" value="###PRICE_TOTAL_TAX###">
 <input type="hidden" name="no_note" value="1">
 <input type="hidden" name="currency_code" value="EUR">
@@ -2682,7 +2682,7 @@ If the basket is empty this subpart is displayed
         </tr>
       </table>
   <tr>
-    <td colspan=2> ###GW1B###<b>Rechnung Nr. ###ORDER_UID###:</b>###GW1E###<br>
+    <td colspan=2> ###GW1B###<b>Rechnung Nr. ###ORDER_ORDER_NO###:</b>###GW1E###<br>
       <br><font color=red><strong>Es handelt sich hierbei nur um einen Test.</strong></font> </tr>
   <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
   <!-- ###ITEM_CATEGORY### begin -->
@@ -2806,7 +2806,7 @@ If the basket is empty this subpart is displayed
 
 <tr>
 <td colspan=2>
-###GW1B###<b>Lieferschein f&uuml;r Rechnung Nr. ###ORDER_UID###:</b>###GW1E###<br><br>
+###GW1B###<b>Lieferschein f&uuml;r Rechnung Nr. ###ORDER_ORDER_NO###:</b>###GW1E###<br><br>
 <br>
 <font color=red><strong>Es handelt sich hierbei nur um einen Test.</strong></font>
 </tr>

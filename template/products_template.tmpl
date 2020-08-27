@@ -810,7 +810,7 @@ Exact same features as BASKET_TEMPLATE<br>
 			<b>Order confirmation:</b><br>
 			Thanks for doing business with us!<br>
 			Your order is complete and has number:<br><br>
-								&nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_UID###</b> <br>
+								&nbsp;&nbsp;&nbsp;&nbsp;<b>###ORDER_ORDER_NO###</b> <br>
 								<br>
 								Use this number as a reference when you contact us.<br>
 			The order confirmation is also sent by email to the email address entered at "Delivery" (###DELIVERY_EMAIL###). However you should under all circumstances print out this page as a proff of your order.<br>
@@ -832,7 +832,7 @@ Exact same features as BASKET_TEMPLATE<br>
 				You have chosen to pay for your goods by a money transaction to our bank account. This is the information you need:<br>
 				- Bank: Superbank Reg: <strong>xxxx</strong> Account: <strong>xxxxxxxx</strong><br>
 				- Cheque: Send the cheque to our postal address. See bottom of this page.<br>
-				Remember to enter the order-number, ###ORDER_UID###, on the transaction!<br>
+				Remember to enter the order-number, ###ORDER_ORDER_NO###, on the transaction!<br>
 				<br>
 				<!-- ###MESSAGE_PAYMENT_40### -->
 				<!-- ###MESSAGE_PAYMENT_50### begin
@@ -1118,7 +1118,7 @@ Displays the view of the order status by tracking codes.<br>
 	Displays the view of the order status by tracking codes.
 -->
 ###GW1B###
-<b>Your order (###ORDER_UID###) has this status:</b><br>
+<b>Your order (###ORDER_ORDER_NO###) has this status:</b><br>
 (Last line is the latest change)<br>
 <br>
 
@@ -1146,7 +1146,7 @@ Displays the view of the order status by tracking codes.<br>
 <table border=0 cellpadding=1 cellspacing=0 bgcolor="black"><tr><td>
 	<table border=0 cellpadding=10 cellspacing=0 bgcolor="#92AFCB"><tr><td>
 		###GW1B### <strong>Shop ADMIN:</strong><br>
-		Order: ####ORDER_UID###
+		Order: ####ORDER_ORDER_NO###
 		<br>
 		###GW1B###
 
@@ -1323,9 +1323,9 @@ Subpart used as template for the notify emails
 First line is used as subject for the mail.
 -->
 
-My Shop order status (####ORDER_UID###)
+My Shop order status (####ORDER_ORDER_NO###)
 
-ORDER INFORMATION (####ORDER_UID###):
+ORDER INFORMATION (####ORDER_ORDER_NO###):
 The status of your order has been changed:
 
 Time: ###ORDER_STATUS_TIME###
@@ -1384,11 +1384,11 @@ First line is used as subject for the mail.<br>
 	Subpart used as template for the order-emails
 	First line is used as subject for the mail.
 -->
-My Shop order ####ORDER_UID###
+My Shop order ####ORDER_ORDER_NO###
 
 
 ORDER CONFIRMATION:
-Your order is completed and has number ###ORDER_UID###.
+Your order is completed and has number ###ORDER_ORDER_NO###.
 Use this number as a reference when you contact us.
 
 TRACKING:
