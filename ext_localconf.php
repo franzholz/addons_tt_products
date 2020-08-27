@@ -11,10 +11,6 @@ if (!defined ('PATH_BE_ADDONS_TT_PRODUCTS')) {
     define('PATH_BE_ADDONS_TT_PRODUCTS', call_user_func($emClass . '::extPath', ADDONS_TT_PRODUCTS_EXT));
 }
 
-if (!defined ('PATH_BE_ADDONS_TT_PRODUCTS_REL')) {
-    define('PATH_BE_ADDONS_TT_PRODUCTS_REL', call_user_func($emClass . '::extRelPath', ADDONS_TT_PRODUCTS_EXT));
-}
-
 if (!defined ('PATH_FE_ADDONS_TT_PRODUCTS_REL')) {
     define('PATH_FE_ADDONS_TT_PRODUCTS_REL', \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix(PATH_BE_ADDONS_TT_PRODUCTS));
 }
