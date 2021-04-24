@@ -2,129 +2,213 @@
 Displays the view of the order status by tracking codes.-->
 
 
+<div class="tracking">
+    <div class="boxMain">
+        <div class="shopMessage shopMessageError">
+        <p>###TRACKING_STATUS_ORDER### (###ORDER_ORDER_NO###) ###TRACKING_STATUS_STATUS###</p>
+        <p>###TRACKING_STATUS_STATUS_TEXT###</p>
+            <!-- ###ORDER_ITEM### begin -->
+            <p>###TRACKING_STATUS_BILL### ###ORDER_BILL_NO###</p>
+            <!-- ###ORDER_ITEM### end -->
+        </div>
+    </div>
 
-###TRACKING_STATUS_ORDER### (###ORDER_ORDER_NO###) ###TRACKING_STATUS_STATUS###<br>
-###TRACKING_STATUS_STATUS_TEXT###<br>
-<!-- ###ORDER_ITEM### begin -->
-###TRACKING_STATUS_BILL### ###ORDER_BILL_NO###<br>
-<!-- ###ORDER_ITEM### end -->
-<br>
+    <div class="tableHeaders">
+        <div class="viewColumnStatusDate">
+            <div class="viewLabelHeader viewHeaderStatusDate">
+                <div class="viewLabel divLabelColumnStatusDate">
+                    ###TRACKING_STATUS_DATE###
+                </div>
+            </div>
+        </div>
+        <div class="viewColumnStatusCode">
+            <div class="viewLabelHeader viewHeaderStatusCode">
+                <div class="viewLabel divLabelColumnStatusCode">
+                    ###TRACKING_STATUS_CODE###
+                </div>
+            </div>
+        </div>
+        <div class="viewColumnStatusAction">
+            <div class="viewLabelHeader viewHeaderStatusAction">
+                <div class="viewLabel divLabelColumnStatusAction">
+                    ###TRACKING_STATUS_ACTION###
+                </div>
+            </div>
+        </div>
+        <div class="viewColumnStatusComment">
+            <div class="viewLabelHeader viewHeaderStatusComment">
+                <div class="viewLabel divLabelColumnStatusComment">
+                    ###TRACKING_STATUS_COMMENT###
+                </div>
+            </div>
+        </div>
 
-<div class="floatbox_TRACKING_DISPLAY_INFO1">
-  <div id="text_datum_zeit_TRACKING_DISPLAY_INFO1">
-    ###TRACKING_STATUS_DATE###
-  </div>
-  <div id="text_code_TRACKING_DISPLAY_INFO1">
-    ###TRACKING_STATUS_CODE###
-  </div>
-  <div id="text_aktion_TRACKING_DISPLAY_INFO1">
-    ###TRACKING_STATUS_ACTION###
-  </div>
-  <div id="text_kommentar_TRACKING_DISPLAY_INFO1">
-    ###TRACKING_STATUS_COMMENT###
-  </div>
+    </div>
 </div>
+
+
 <!-- ###STATUS_ITEM### begin
 This part is repeated for each order status item and finally this part in the template code is substituted with the accumulated code for all order status actions.
 -->
 
-<div class="floatbox_TRACKING_DISPLAY_INFO2">
-  <div id="datum_zeit_TRACKING_DISPLAY_INFO2">
-    ###ORDER_STATUS_TIME###
-  </div>
-  <div id="code_TRACKING_DISPLAY_INFO2">
-    ###ORDER_STATUS###
-  </div>
-  <div id="aktion_TRACKING_DISPLAY_INFO2">
-    ###ORDER_STATUS_INFO###
-  </div>
-  <div id="kommentar_TRACKING_DISPLAY_INFO2">
-    ###ORDER_STATUS_COMMENT###
-  </div>
-</div>
+    <div class="boxBasket2">
+    
+
+        <div class="tableHeaders viewColumnStatusDate">
+            <div class="viewColumnHeader viewHeaderStatusDate">
+                ###ORDER_STATUS_TIME###
+            </div>
+        </div>
+        <div class="tableHeaders viewColumnStatusCode">
+            <div class="viewColumnHeader viewHeaderStatusCode">
+                ###ORDER_STATUS###
+            </div>
+        </div>
+        <div class="tableHeaders viewColumnStatusAction">
+            <div class="viewColumnHeader viewHeaderStatusAction">
+               ###ORDER_STATUS_INFO###
+            </div>
+        </div>
+        <div class="tableHeaders viewColumnStatusComment">
+            <div class="viewColumnHeader viewHeaderStatusComment">
+                ###ORDER_STATUS_COMMENT###
+            </div>
+        </div>
+    </div>
+
 
 <!-- ###STATUS_ITEM### end -->
 
-<br>
-
 <!-- ###ADMIN_CONTROL### begin -->
-        	<div class="admin_control">
-
+        <div class="boxAdmin">
 
 	            <!-- ###ADMIN_CONTROL_OK### begin -->
+                    <div class="boxOrderSwitch">
+                        <div class="boxUpdateCode">
+                            <form method="post" action="###FORM_URL###">
+                            <fieldset>
+                                <legend>###TRACKING_STATUS_CHOOSE_ORDER###</legend>
+                                <div class="viewInput divInputSubmit">
+                                    <input type="submit" name="submit" value="###TRACKING_STATUS_CHOOSE_ORDER_BUTTON###">
+                                        ###FIELD_username###
+                                </div>
 
-					<div class="admin_control_switch_order"><b>
-						</b>
-						<form method="post" action="###FORM_URL###">
-						<fieldset>
-							<legend>###TRACKING_STATUS_CHOOSE_ORDER###</legend>
-							<input type="submit" name="submit" value="###TRACKING_STATUS_CHOOSE_ORDER_BUTTON###">
-							<div>
-								<select name="tracking" size="15">###OTHER_ORDERS_OPTIONS###
-	                            </select>
-								<input type="hidden" name="update_code" value="###UPDATE_CODE###">
-							</div>
-						</form>
-
- 					</fieldset>
-
-               			<div class="admin_control_ok">
+                                <div class="viewInput divInputUpdateCode">
+                                    <select name="tracking" size="15">###OTHER_ORDERS_OPTIONS###
+                                    </select>
+                                    <input type="hidden" name="update_code" value="###UPDATE_CODE###">
+                                </div>
+                            </fieldset>
+                            </form>
+						</div>
+    
+                        <div class="boxAdminControlOk">
 							<form method="post" action="###FORM_URL###">
-								<fieldset>
-									<legend>###TRACKING_STATUS_CHANGE###</legend>
-									<align="center">
-									<input type="submit" name="submit" value="###TRACKING_STATUS_CHANGE_BUTTON###">
-									<b>###TRACKING_STATUS_ORDER_COMMENT###</b> <br>
-									<select name="orderRecord[status][]" id="orderRecord_status" size="15" multiple="multiple">###STATUS_OPTIONS###
-									</select>
-									<textarea cols="40" rows="16" id="orderRecord_status_comment"  name="###TRACKING_STATUS_COMMENT_NAME###">###TRACKING_STATUS_COMMENT_VALUE###</textarea><br>&nbsp;</fieldset>
-									<div class="form_control">
+                                <fieldset>
+                                    <legend>###TRACKING_STATUS_CHANGE###</legend>
+                                    <align="center">
+                                    <div class="viewInput divInputSubmit">
+                                        <input type="submit" name="submit" value="###TRACKING_STATUS_CHANGE_BUTTON###">
+                                    </div>
+                                    <div class="viewLabel divLabelComment">
+                                        <label for="divInputOrderStatusCommentId" class="labelOrderStatus"> ###TRACKING_STATUS_ORDER_COMMENT###</label>
+                                    </div>
+                                    
+                                    <div class="viewInput divInputOrderStatus">
+                                        <select name="orderRecord[status][]" size="15" multiple="multiple">###STATUS_OPTIONS###
+                                        </select>
+                                    </div>
+                                    <div class="viewInput divInputOrderStatusComment">
+                                        <textarea cols="40" rows="16"  name="###TRACKING_STATUS_COMMENT_NAME###" id="divInputOrderStatusCommentId">###TRACKING_STATUS_COMMENT_VALUE###</textarea>
+                                    </div>
+
+                                    <div class="form_control">
+                                        <div class="viewLabel divLabelZip">
+                                            <label for="divInputOrderDataId" class="labelOrderData">###LABEL_ZIP### ###REQUIRED_ZIP###</label>
 										###TRACKING_STATUS_DATA###
-										<input name="###TRACKING_DATA_NAME###" value="###TRACKING_DATA_VALUE###">
-										<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
-										<input type="hidden" name="update_code" value="###UPDATE_CODE###">
-									</div>
+										</div>
+                                        <div class="viewInput divInputTrackingData">
+                                            <input name="###TRACKING_DATA_NAME###" value="###TRACKING_DATA_VALUE###" id="divInputTrackingDataId">
+                                        </div>
+                                        <div class="viewInput divInputHidden">
+                                            <input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
+                                            <input type="hidden" name="update_code" value="###UPDATE_CODE###">
+                                        </div>
+                                    </div>
 								</fieldset>
 							</form>
 						</div>
 					</div>
 	            <!-- ###ADMIN_CONTROL_OK### end -->
 	            <!-- ###ADMIN_CONTROL_DENY### begin -->
-                	<div class="admin_control_deny">
+                    <div class="boxAdminControlDeny">
 						<form method="post" action="###FORM_URL###">
-							<div><label for="password"><strong>###TRACKING_STATUS_PASSWORD###
-								</strong></label>
-								<input type="password" size="40" name="update_code" id="password" value="###UPDATE_CODE###">&nbsp;
-	                            <input type="submit" name="submit" value="###TRACKING_STATUS_PASSWORD_BUTTON###">
-								<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
+							<div>
+                                <div class="viewLabel divLabelPassword">
+                                    <label for="password">###TRACKING_STATUS_PASSWORD###
+                                    </label>
+								</div>
+                                <div class="viewInput divInputPassword">
+                                    <input type="password" size="40" name="update_code" id="password" value="###UPDATE_CODE###">
+                                </div>
+                                <div class="viewInput divInputSubmit">
+                                    <input type="submit" name="submit" value="###TRACKING_STATUS_PASSWORD_BUTTON###">
+                                </div>
+                                <div class="viewInput divInputHidden">
+                                    <input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
+                                </div>
 							</div>
-						</form></div>
+						</form>
+                    </div>
 	    <!-- ###ADMIN_CONTROL_DENY### end -->
         </div>
 	    <!-- ###ADMIN_CONTROL### end -->
-		<strong>###TRACKING_STATUS_EMAIL###</strong><br>###TRACKING_STATUS_EMAIL_TEXT###<br>
-<form method="post" action="###FORM_URL###" name="statusInform">
-	<input type="hidden" name="orderRecord[email_notify]" value="0">
-	<input type="checkbox" name="orderRecord[email_notify]" value="1" ###FIELD_EMAIL_NOTIFY###>###TRACKING_STATUS_EMAIL_CHECKBOX###<br>
-	<input type="text" size=40 name="orderRecord[email]" value="###FIELD_EMAIL###">
-	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
-	<input type="Submit" name="submit" value="###TRACKING_STATUS_EMAIL_BUTTON###">
-</form>
+		<h2>###TRACKING_STATUS_EMAIL###</h2>
+            <p>###TRACKING_STATUS_EMAIL_TEXT###</p>
+    <div class="boxStatusEmail">
+    <form method="post" action="###FORM_URL###" name="statusInform">
+        <div class="viewInput divInputHidden">
+            <input type="hidden" name="orderRecord[email_notify]" value="0">
+        </div>
+        <div class="viewInput divInputEmailNotify">
+            <input type="checkbox" name="orderRecord[email_notify]" value="1" ###FIELD_EMAIL_NOTIFY###>###TRACKING_STATUS_EMAIL_CHECKBOX###
+        </div>
+        <div class="viewInput divInputEmail">
+            <input type="text" size=40 name="orderRecord[email]" value="###FIELD_EMAIL###">
+        </div>
+        <div class="viewInput divInputHidden">
+            <input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
+        </div>
+        <div class="viewInput divInputSubmit">
+            <input type="Submit" name="submit" value="###TRACKING_STATUS_EMAIL_BUTTON###">
+        </div>
+    </form>
+    </div>
 <br><br>
-<strong>###TRACKING_STATUS_MESSAGE###</strong><br>###TRACKING_STATUS_MESSAGE_TEXT###
-<form method="post" action="###FORM_URL###"  name="sendNote">
-	<input type="hidden" name="tracking" value="###TRACKING_NUMBER###">###TRACKING_STATUS_MESSAGE_SUBJECT###<br>
-	<select name="orderRecord[status][]" size="1">
-	<option value="50">###TRACKING_STATUS_MESSAGE_50###</option>
-	<option value="51">###TRACKING_STATUS_MESSAGE_51###</option>
-	<option value="52">###TRACKING_STATUS_MESSAGE_52###</option>
-	<option value="53">###TRACKING_STATUS_MESSAGE_53###</option>
-	</select>
-	<br>###TRACKING_STATUS_MESSAGE_SUBJECT_COMMENT###<br>
-	<textarea cols="40" rows="5" name="orderRecord[status_comment]"></textarea><br>
-	<input type="Submit" name="submit" class="wobistdu" value="###TRACKING_STATUS_MESSAGE_BUTTON###">
-</form>
-<br><br><b>###TRACKING_STATUS_ORDER_ORIGINAL###</b><br><br>
+<h2>###TRACKING_STATUS_MESSAGE###</h2>
+            <p>###TRACKING_STATUS_MESSAGE_TEXT###</p>
+    <div class="boxStatusEmail">
+    <form method="post" action="###FORM_URL###"  name="sendNote">
+        <div class="viewInput divInputHidden">
+            <input type="hidden" name="tracking" value="###TRACKING_NUMBER###">###TRACKING_STATUS_MESSAGE_SUBJECT###
+        </div>
+        <div class="viewInput divInputStatus">
+            <select name="orderRecord[status][]" size="1">
+                <option value="50">###TRACKING_STATUS_MESSAGE_50###</option>
+                <option value="51">###TRACKING_STATUS_MESSAGE_51###</option>
+                <option value="52">###TRACKING_STATUS_MESSAGE_52###</option>
+                <option value="53">###TRACKING_STATUS_MESSAGE_53###</option>
+            </select>
+        </div>
+        <p>###TRACKING_STATUS_MESSAGE_SUBJECT_COMMENT###</p>
+        <div class="viewInput divInputStatusComment">
+            <textarea cols="40" rows="5" name="orderRecord[status_comment]"></textarea>
+        </div>
+        <div class="viewInput divInputSubmit">
+            <input type="Submit" name="submit" class="wobistdu" value="###TRACKING_STATUS_MESSAGE_BUTTON###">
+        </div>
+    </form>
+<br><br><h2>###TRACKING_STATUS_ORDER_ORIGINAL###</h2><br><br>
 <hr><br>###ORDER_HTML_OUTPUT###
 <!-- ###TRACKING_DISPLAY_INFO### end -->
 
@@ -136,29 +220,33 @@ This part is repeated for each order status item and finally this part in the te
 Displays form for entering the tracking number.
 -->
 <b>###TRACKING_STATUS_NUMBER###</b><br>
-<form method="post" action="###FORM_URL###">
-	<input type="text" name="tracking" size="20"><br>
-	<input type="Submit" name="submit" value="###TRACKING_STATUS_NUMBER_BUTTON###">
-</form>
+<div class="boxStatusView">
+    <form method="post" action="###FORM_URL###">
+        <div class="viewInput divInputTracking">
+            <input type="text" name="tracking" size="20">
+        </div>
+        <div class="viewInput divInputSubmit">
+            <input type="Submit" name="submit" value="###TRACKING_STATUS_NUMBER_BUTTON###">
+        </div>
+    </form>
+</div>
 
 <!-- ###ADMIN_CONTROL### begin -->
-<table border=0 cellpadding=1 cellspacing=0 bgcolor="black">
-	<tr>
-		<td>
-		<table border=0 cellpadding=10 cellspacing=0 bgcolor="#92AFCB">
-			<tr>
-				<td><strong>Shop ADMIN:</strong><br>
+<div class="boxAdminControl">
+    <h2>Shop ADMIN:</h2>
 <!-- ###ADMIN_CONTROL_DENY### begin -->
-				<form method="post" action="###FORM_URL###">Code:<br>
-					<input type="password" size=40 name="update_code" value="">
-					<input type="Submit" name="submit" value="Code eingeben">
-				</form>
+    <div class="boxAdminControlDeny">
+        <form method="post" action="###FORM_URL###">Code:<br>
+            <div class="viewInput divInputTracking">
+                <input type="password" size=40 name="update_code" value="">
+            </div>
+            <div class="viewInput divInputSubmit">
+                <input type="Submit" name="submit" value="Code eingeben">
+            </div>
+        </form>
+    </div>
 <!-- ###ADMIN_CONTROL_DENY### begin -->
-				</td>
-			</tr>
-		</table></td>
-	</tr>
-</table><br>
+</div>
 <!-- ###ADMIN_CONTROL### end -->
 
 
@@ -176,12 +264,19 @@ Displays form for entering the tracking number.
 <!-- ###TRACKING_WRONG_NUMBER### begin
 Displays error message if no tracking code.
 -->
-<b>###ORDER_STATUS_WRONG_NUMBER###</b><br>
-<form method="post" action="###FORM_URL###">
-	<input type="text" name="tracking" size="20"><br>
-	<input type="Submit" name="submit" value="###ORDER_STATUS_VIEW###">
-</form>
-
+<div class="boxAdminControl">
+    <h2>###ORDER_STATUS_WRONG_NUMBER###</h2>
+    <div class="boxAdminControlDeny">
+        <form method="post" action="###FORM_URL###">
+            <div class="viewInput divInputTracking">
+                <input type="text" name="tracking" size="20">
+            </div>
+            <div class="viewInput divInputSubmit">
+                <input type="Submit" name="submit" value="###ORDER_STATUS_VIEW###">
+            </div>
+        </form>
+    </div>
+</div>
 <!-- ###TRACKING_WRONG_NUMBER### end -->
 
 
@@ -208,7 +303,7 @@ First line is used as subject for the mail.
 ###ORDER_TRACKING_NO###
 
 ###TRACKING_EMAIL_STATUS_VIEW###
-http://###DOMAIN###/index.php?id=###PID_TRACKING###&amp;tracking=###ORDER_TRACKING_NO######LANGPARAM###
+https://###DOMAIN###/index.php?id=###PID_TRACKING###&amp;tracking=###ORDER_TRACKING_NO######LANGPARAM###
 
 ###SELLERS_SALUTATION###
 

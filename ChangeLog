@@ -1,3 +1,6 @@
+2021-04-24 Franz Holzinger <franz@ttproducts.de>
+    * new template for responsive tracking
+
 2020-08-27 Franz Holzinger <franz@ttproducts.de>
     * Use the new marker ###ORDER_ORDER_NO### instead of ###ORDER_UID###.
 
