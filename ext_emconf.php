@@ -4,7 +4,7 @@
 # Extension Manager/Repository config file for ext "addons_tt_products".
 ########################################################################
 
-$EM_CONF[$_EXTKEY] = array(
+$EM_CONF[$_EXTKEY] = [
     'title' => 'Addons to tt_products',
     'description' => 'Many translations of standard texts for shops. Additional example templates and icons for the tt_products shop system version 2.9 and later.',
     'category' => 'templates',
@@ -18,14 +18,14 @@ $EM_CONF[$_EXTKEY] = array(
     'lockType' => '',
     'author_company' => 'jambage.com',
     'version' => '0.7.2',
-    'constraints' => array(
-        'depends' => array(
+    'constraints' => [
+        'depends' => [
             'typo3' => '7.6.0-10.99.99',
-        ),
-        'conflicts' => array(
-        ),
-        'suggests' => array(
-        ),
-    ),
-);
+        ],
+        'conflicts' => [
+        ],
+        'suggests' => [
+        ],
+    ],
+];
 
