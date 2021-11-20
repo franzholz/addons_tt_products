@@ -16,6 +16,6 @@ if (!defined ('PATH_FE_ADDONS_TT_PRODUCTS_REL')) {
 }
 
 if (!defined ('PATH_FE_ADDONS_TT_PRODUCTS_ICON_REL')) {
-    define('PATH_FE_ADDONS_TT_PRODUCTS_ICON_REL', PATH_FE_ADDONS_TT_PRODUCTS_REL . 'res/icons/fe/');
+    define('PATH_FE_ADDONS_TT_PRODUCTS_ICON_REL', PATH_FE_ADDONS_TT_PRODUCTS_REL . 'Resources/Public/Images/');
 }
 
