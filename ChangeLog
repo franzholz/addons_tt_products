@@ -1,3 +1,5 @@
+2021-11-26 Franz Holzinger <franz@ttproducts.de>
+    * Add an example PHP script for the conversion of the realurl speaking urls into the TYPO3 10 routing url slug of the table tt_products.
 
 2021-11-20 Franz Holzinger <franz@ttproducts.de>
     * use new image folder Resources/Public/Images instead of res/icons/fe.
