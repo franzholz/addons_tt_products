@@ -1,3 +1,10 @@
+2022-05-31 Franz Holzinger <franz@ttproducts.de>
+    * TYPO3 Routing: src="clear.gif" must be replaced by src="/clear.gif"
+    * Add a file clear.gif
+
+2021-11-29 Franz Holzinger <franz@ttproducts.de>
+    * Remove the tt_products XML locallang marker files. They have been moved to crowdin.com/project/typo3-extension-ttproducts.
+
 2021-11-26 Franz Holzinger <franz@ttproducts.de>
     * Add an example PHP script for the conversion of the realurl speaking urls into the TYPO3 10 routing url slug of the table tt_products.
 

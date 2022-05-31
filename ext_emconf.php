@@ -17,10 +17,10 @@ $EM_CONF[$_EXTKEY] = [
     'clearCacheOnLoad' => 0,
     'lockType' => '',
     'author_company' => 'jambage.com',
-    'version' => '0.8.1',
+    'version' => '0.9.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '7.6.0-11.99.99',
+            'typo3' => '9.5.0-11.99.99',
         ],
         'conflicts' => [
         ],
