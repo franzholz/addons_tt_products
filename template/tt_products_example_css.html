@@ -139,7 +139,7 @@
 <!-- ###ITEM_LIST_RELATED_ARTICLES_TEMPLATE### begin
 	This subpart is used to display the regular list of products. It's also used by search-results.
 -->
-<table width="100%" border="0" cellspacing="0" cellpadding="0" class="produkt">
+<table width="100%" cellspacing="0" cellpadding="0" class="produkt">
 			  <tr class="head">
 				<th id="td1">Produkt</th>
 				<th id="td2">Artikel-Nr.</th>
@@ -238,7 +238,7 @@
 		<!-- ###ITEM_CATEGORY### end -->
 		<!-- ###ITEM_LIST### begin -->
 
-			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="zubehoer">
+			<table width="100%" cellspacing="0" cellpadding="0" class="zubehoer">
 			  <tr class="head">
 				<th id="td1">Zubeh&ouml;r</th>
 				<th id="td2">Artikel-Nr.</th>
@@ -383,7 +383,7 @@
 <p>&auml;hnliche Produkte oder zugeh&ouml;rige Artikel</p>
 
 
-<table border="0" cellspacing="0" cellpadding="1" width="1">
+<table cellspacing="0" cellpadding="1" width="1">
 	<tr>
 		<!-- ###FE_GROUP_1_TEMPLATE### begin -->
 		<td>Du bist eingeloggt! </td>
@@ -771,46 +771,46 @@ Exact same features as BASKET_TEMPLATE
     <div id="label_PERSON_SALUTATION">
       ###GW1B###<strong>Anrede:</strong>###GW1E###
     </div>
-    <div id="field_PERSON_SALUTATION"></div>
+    <div id="field_PERSON_SALUTATION">
       ###GW1B######PERSON_SALUTATION######GW1E###
     </div>
-    <div id="label_PERSON_NAME###">
+    <div id="label_PERSON_NAME">
       ###GW1B###<strong>Name: </strong>*###GW1E###
     </div>
     <div id="field_PERSON_NAME">
       <input type="text" name="recs[personinfo][name]" size="30" value="###PERSON_NAME###">
     </div>
-    <div id="label_PERSON_ADDRESS##">
+    <div id="label_PERSON_ADDRESS">
       ###GW1B###<strong>Adresse: </strong>*###GW1E###
     </div>
     <div id="field_PERSON_ADDRESS">
-      <textarea cols="30" rows="5" name="recs[personinfo][address]" wrap="off">###PERSON_ADDRESS###</textarea>
+      <textarea cols="30" rows="5" name="recs[personinfo][address]" class="nowrap">###PERSON_ADDRESS###</textarea>
     </div>
-    <div id="label_PERSON_ZIP###">
+    <div id="label_PERSON_ZIP">
       ###GW1B###<strong>PLZ: </strong>*###GW1E###
     </div>
     <div id="field_PERSON_ZIP">
       <input type="text" name="recs[personinfo][zip]" size="10" value="###PERSON_ZIP###">
     </div>
-    <div id="label_PERSON_CITY###">
+    <div id="label_PERSON_CITY">
       ###GW1B###<strong>Stadt: </strong>*###GW1E###
     </div>
     <div id="field_PERSON_CITY">
       <input type="text" name="recs[personinfo][city]" size="30" value="###PERSON_CITY###">
     </div>
-    <div id="label_PERSON_COUNTRY_CODE###">
+    <div id="label_PERSON_COUNTRY_CODE">
       ###GW1B###<strong>Land: </strong>*###GW1E###
     </div>
     <div id="field_PERSON_COUNTRY_CODE">
       ###PERSON_COUNTRY_CODE###
     </div>
-    <div id="label_PERSON_TELEPHONE###">
+    <div id="label_PERSON_TELEPHONE">
       ###GW1B###<strong>Telefon: </strong>*###GW1E###
     </div>
     <div id="field_PERSON_TELEPHONE">
       <input type="text" name="recs[personinfo][telephone]" size="30" value="###PERSON_TELEPHONE###">
     </div>
-    <div id="label_PERSON_EMAIL###">
+    <div id="label_PERSON_EMAIL">
       ###GW1B###<strong>Email: </strong>*###GW1E###
     </div>
     <div id="field_PERSON_EMAIL">
@@ -905,7 +905,7 @@ Exact same features as BASKET_TEMPLATE
       ###GW1B###<strong>Adresse:</strong>###GW1E###
     </div>
     <div id="field_DELIVERY_ADDRESS">
-      <textarea cols=30 rows=5 name="recs[delivery][address]" wrap="off">###DELIVERY_ADDRESS###</textarea>
+      <textarea cols=30 rows=5 name="recs[delivery][address]" class="nowrap">###DELIVERY_ADDRESS###</textarea>
     </div>
     <div id="label_DELIVERY_ZIP">
       ###GW1B###<strong>PLZ:</strong>###GW1E###
@@ -922,7 +922,7 @@ Exact same features as BASKET_TEMPLATE
     <div id="label_DELIVERY_COUNTRY_CODE">
       ###GW1B###<strong>Land: </strong>*###GW1E###
     </div>
-    <div id="field_DELIVERY_NAME">
+    <div id="field_DELIVERY_COUNTRY_CODE">
       ###DELIVERY_COUNTRY_CODE###
     </div>
     <div id="label_DELIVERY_TELEPHONE">
@@ -965,9 +965,12 @@ Exact same features as BASKET_TEMPLATE
       <strong>###BASKET_PRIVACY_POLICY_HINT###:</strong>
        ###GW1B### ###BASKET_PRIVACY_POLICY_HINT_1### ###GW1E###
     </div>
+  </div>
 
     <input type="submit" id="button5" name="products_update" value="zurück zum Warenkorb">
       <input type="submit" id="button4" name="products_payment" disabled value="ABGs akzeptiert" onclick="document.forms['###FORM_NAME###'].action='###FORM_URL_PAYMENT###';">
+</form>
+
 
   <!-- ###BASKET_INFO_TEMPLATE### end -->
 <!----------------------------------------------------------------------------------->
