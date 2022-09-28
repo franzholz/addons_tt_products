@@ -39,44 +39,39 @@
  */
 
 public function user_onlyBulkilyItems ($where) {
-	global $TSFE, $TYPO3_DB;
 
-	include_once (PATH_tslib.'class.tslib_content.php');
+    $cObj = GeneralUtility::makeInstance(\TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer::class)
 
-	$cObj = &t3lib_div::makeInstance('tslib_cObj');
+    $basketExt = $GLOBALS['TSFE']->fe_user->getKey('ses', 'basketExt');
 
-	$basketExt = $TSFE->fe_user->getKey('ses', 'basketExt');
+    if (isset($basketExt) && is_array($basketExt))	{
 
-	if (isset($basketExt) && is_array($basketExt))	{
+        $uidArr = [];
 
-		$uidArr = array();
+        foreach($basketExt as $uidTmp => $tmp)	{
+            if ($uidTmp != 'gift' && !in_array($uidTmp, $uidArr))	{
+                $uidArr[] = intval($uidTmp);
+            }
+        }
 
-		foreach($basketExt as $uidTmp => $tmp)	{
-			if ($uidTmp != 'gift' && !in_array($uidTmp, $uidArr))	{
-				$uidArr[] = intval($uidTmp);
-			}
-		}
+        if (count($uidArr) == 0) {
+            return false;
+        }
+        $where = 'uid IN (' . implode(',', $uidArr) . ')';
+    }
 
-		if (count($uidArr) == 0) {
-			return FALSE;
-		}
-		$where = 'uid IN (' . implode(',', $uidArr) . ')';
-	}
+    $where .= $cObj->enableFields('tt_products');
 
-	$where .= $cObj->enableFields('tt_products');
+    $rcArray = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('*', 'tt_products', $where);
 
-	$rcArray = $TYPO3_DB->exec_SELECTgetRows('*', 'tt_products', $where);
+    $bAllBukily = trze;
+    foreach ($rcArray as $uid => $row)	{
+        if (!$row['special_preparation']) {
+            $bAllBukily = false;
+            break;
+        }
+    }
 
-	$bAllBukily = TRUE;
-	foreach ($rcArray as $uid => $row)	{
-		if (!$row['special_preparation'])	{
-			$bAllBukily = FALSE;
-			break;
-		}
-	}
-
-	return ($bAllBukily);
+    return ($bAllBukily);
 }
 
-
-?>
