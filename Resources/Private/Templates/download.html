@@ -1,3 +1,45 @@
+<br><br><br><br><hr><br><br><br>
+<h3>TRACKING_ENTER_NUMBER</h3><em>Displays form for entering the tracking number.<br>
+</em><br><br><br>
+
+<!-- ###TRACKING_ENTER_NUMBER### begin
+Displays form for entering the tracking number.
+-->
+<b>###TRACKING_STATUS_NUMBER###</b><br>
+<div class="boxStatusView">
+    <form method="post" action="###FORM_URL###">
+        <div class="viewInput divInputTracking">
+            <input type="text" name="tracking" size="20">
+        </div>
+        <div class="viewInput divInputSubmit">
+            <input type="Submit" name="submit" value="###TRACKING_STATUS_NUMBER_BUTTON###">
+        </div>
+    </form>
+</div>
+
+<!-- ###ADMIN_CONTROL### begin -->
+<div class="boxAdminControl">
+    <h2>Shop ADMIN:</h2>
+<!-- ###ADMIN_CONTROL_DENY### begin -->
+    <div class="boxAdminControlDeny">
+        <form method="post" action="###FORM_URL###">Code:<br>
+            <div class="viewInput divInputTracking">
+                <input type="password" size=40 name="update_code" value="">
+            </div>
+            <div class="viewInput divInputSubmit">
+                <input type="Submit" name="submit" value="Code eingeben">
+            </div>
+        </form>
+    </div>
+<!-- ###ADMIN_CONTROL_DENY### begin -->
+</div>
+<!-- ###ADMIN_CONTROL### end -->
+
+<!-- ###TRACKING_ENTER_NUMBER### end -->
+
+
+
+
 <!-- ###DOWNLOAD_LIST_TEMPLATE### begin This subpart is used to display the list of downloads coming from the orders. PAGE orders-->
 
     <!-- ###ADMIN_CONTROL### begin -->
@@ -111,7 +153,13 @@
         <div class="box_list2">
             ###PRODUCT_ALL_DOWNLOAD_UID###
             <!-- ###DOWNLOAD_SINGLE### begin -->
-            <!-- leer  -->
+            <div class="viewLabelValue viewRowTitle">
+                <div class="viewValue divValueTitle">
+                <span class="###DOWNLOAD_TITLE_ID###">###DOWNLOAD_TITLE###:</span>
+				###DOWNLOAD_NOTE###
+				###DOWNLOAD_LINK###
+                </div>
+			</div>
             <!-- ###DOWNLOAD_SINGLE### end -->
         </div>
     </div>
@@ -131,6 +179,11 @@
 <!-- ###ITEM_LIST_DOWNLOADS_TEMPLATE### end -->
 
 
+
+<!-- ###ITEM_LIST_EMPTY###  begin -->
+
+
+<!-- ###ITEM_LIST_EMPTY### end -->
 
 
 
