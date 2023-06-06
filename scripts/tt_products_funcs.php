@@ -64,7 +64,7 @@ public function user_onlyBulkilyItems ($where) {
 
     $rcArray = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('*', 'tt_products', $where);
 
-    $bAllBukily = trze;
+    $bAllBukily = true;
     foreach ($rcArray as $uid => $row)	{
         if (!$row['special_preparation']) {
             $bAllBukily = false;
