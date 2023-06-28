@@ -34,30 +34,32 @@ This subpart is used to display the regular list of products. It's also used by 
 	    <!-- ###ITEM_LIST### begin -->
 	      <!-- ###ITEM_SINGLE### begin-->
 		<form method="post" action="###FORM_URL###">
-	        <div class="listitem">
+        <div class="listitem">
 	        <h3><!--###LINK_ITEM###-->mehr Info zu ###PRODUCT_TITLE###<!--###LINK_ITEM###--></h3>
-	          <p class="listitem_subheader"><em>###PRODUCT_SUBTITLE###</em></p>
+	           <p class="listitem_subheader"><em>###PRODUCT_SUBTITLE###</em></p>
 	                    ###PRODUCT_IMAGE###
 	           <div class="product_note">###PRODUCT_NOTE###</div>
-				<p class="price"> Preis : <strong>###PRICE_TAX### EUR</strong><br>
+               <p class="price"> Preis : <strong>###PRICE_TAX### EUR</strong><br>
 	           (enthaltene MwSt: ###PRICE_ONLY_TAX###.- EUR)
 	           </p>
-				<p class="price"> Punkte : ###PRODUCT_CREDITPOINTS### </p>
-				<p class="price"> Preis ohne Punkte : <strong>###PRICE_IF_DISCOUNTED_BY_CREDITPOINTS_TAX### EUR</strong>
+               <p class="price"> Punkte : ###PRODUCT_CREDITPOINTS### </p>
+               <p class="price"> Preis ohne Punkte : <strong>###PRICE_IF_DISCOUNTED_BY_CREDITPOINTS_TAX### EUR</strong>
 	           </p>
 	      <div class="order_form">
-    	<label for="###FIELD_ID###">Anzahl: </label><input size="3" maxlength="4" type="text"  id="###FIELD_ID###" name="###FIELD_NAME###" value="###FIELD_QTY###">  					</div>
-     <p class="link">[<!--###LINK_ITEM###-->mehr Info zu ###PRODUCT_TITLE###<!--###LINK_ITEM###-->]</p>
-	                    <div class="clear_right"><!-- --></div>
+            <label for="###FIELD_ID###">Anzahl: </label><input size="3" maxlength="4" type="text"  id="###FIELD_ID###" name="###FIELD_NAME###" value="###FIELD_QTY###">
+          </div>
+          <p class="link">[<!--###LINK_ITEM###-->mehr Info zu ###PRODUCT_TITLE###<!--###LINK_ITEM###-->]</p>
+          <div class="clear_right"><!-- --></div>
 		</div>
-<div>
-      <input type="submit" name="order" value="In Warenkorb einf&uuml;gen">
-                </div>
-	    	</form>
-+++++++++++++++++++++++++++++++++++++++++++++
-	            <!-- ###ITEM_SINGLE### end -->
+        <div>
+             <input type="submit" name="order" value="In Warenkorb einf&uuml;gen">
+        </div>
+        </form>
+
+	    	<!-- ###ITEM_SINGLE### end -->
 
 	        <!-- ###ITEM_LIST### end -->
+
 **********************************************
 <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
 
@@ -349,6 +351,7 @@ In addition there's a number of fields used for delivery and payment information
                 	###PAYMENT_SELECTOR######PAYMENT_IMAGE###
                 <p>
                     Bezahlung : <strong>###PAYMENT_TITLE###</strong><br>
+                </p>
 
                 <!-- ###MESSAGE_PAYMENT### begin
                     This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
@@ -376,8 +379,10 @@ In addition there's a number of fields used for delivery and payment information
 
     <!-- ###SUB_CREDITPOINTS_AMOUNT### end -->
 			</div> <br>
-		   <ul><li> (Insgesamt ohne MwSt: ###PRICE_TOTAL_NO_TAX### EUR)</li>
-                    <li>(enthaltene MwSt: ###PRICE_TOTAL_ONLY_TAX### EUR)</li></ul>
+		   <ul>
+		            <li>(Insgesamt ohne MwSt: ###PRICE_TOTAL_NO_TAX### EUR)</li>
+                    <li>(enthaltene MwSt: ###PRICE_TOTAL_ONLY_TAX### EUR)</li>
+            </ul>
 
     <!-- ###SUB_CREDITPOINTS_AMOUNT_EMPTY### begin -->
     <!-- ###SUB_CREDITPOINTS_AMOUNT_EMPTY### end -->
@@ -847,7 +852,7 @@ Sie k&ouml;nnen ihre Bestellung mit der Auftragsstatusnummer:<strong>###ORDER_TR
 
         <div class="shop_address">
 
-
+            <p>
         	<strong>Ihre Ansprechpartnerin </strong><br>
 		 Dunia Dunia <br>
 		 Bestellung / Versand <br>
@@ -1410,16 +1415,16 @@ IMPORTANT: This subpart is rendered as-is, which means it does not contain any h
 <p>Bezahlung sollte innerhalb von 14 Tagen erfolgen.</p>
 
 <hr >
-<p style="text-align:center">
+    <p style="text-align:center">
 Dunia, Adenauerallee 111, 53113 Bonn
 
-	        </p>
-            <p>
+    </p>
+    <p>
 	            Telefon:0228/ 00000,
 	            Fax: 0228/ 0000000,
 	            Email: dunia@aopnews.com
 
-</p>
+    </p>
 
 </body>
 </html>
