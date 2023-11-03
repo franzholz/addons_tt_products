@@ -1,8 +1,8 @@
+2023-11-03 Franz Holzinger  <franz@ttproducts.de>
+    * move template files: ... -> Resources/Public/Templates/...
+
 2023-06-06 Franz Holzinger  <franz@ttproducts.de>
     * deprecate all constants of ADDONS_TT_PRODUCTS
-
-2023-03-10 Franz Holzinger  <franz@ttproducts.de>
-    * move template files: template/... -> Resources/Private/Templates/collection/...
 
 2022-12-01 Franz Holzinger  <franz@ttproducts.de>
     * compatibility: Migrate extension icon to Resources/Public/Icons/Extension.gif
