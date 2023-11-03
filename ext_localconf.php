@@ -3,7 +3,7 @@ defined('TYPO3') || die('Access denied.');
 
 call_user_func(function ()
 {
-    // deprecated constants
+    // All these constants are deprecated!
 
     if (!defined ('ADDONS_TT_PRODUCTS_EXT')) {
         define('ADDONS_TT_PRODUCTS_EXT', 'addons_tt_products');
