@@ -16,16 +16,16 @@ http://ttproducts.de
 pob_ttp_marker_xml.htm: multiple language marker template sponsored by Rainer Lindner (pob.com)
 products_css_de.html: CSS template by Robert Markula, translated by Masod Mohmand
 
-The folder Resources/Public/Templates contains responsive template files based on the code of the plugin.
-The folder Resources/Public/Templates/collection/typo3webshop contains the files for the book "Der TYPO3-Webshop" by Andrea Herzog-Kienast. You can download its ebook version from the internet.
+The folder Resources/Private/Templates contains responsive template files based on the code of the plugin.
+The folder Resources/Private/Templates/collection/typo3webshop contains the files for the book "Der TYPO3-Webshop" by Andrea Herzog-Kienast. You can download its ebook version from the internet.
 
 
 ## Example Constants:
 
     plugin.tt_products {
-      file.templateFile = EXT:addons_tt_products/Resources/Public/Templates/example_template_bill_de.tmpl
-      templatePath = EXT:addons_tt_products/Resources/Public/Templates/
-      oldTemplatePath = EXT:addons_tt_products/Resources/Public/Templates/collection/responsive/
+      file.templateFile = EXT:addons_tt_products/Resources/Private/Templates/example_template_bill_de.tmpl
+      templatePath = EXT:addons_tt_products/Resources/Private/Templates/
+      oldTemplatePath = EXT:addons_tt_products/Resources/Private/Templates/collection/responsive/
       cssPath = EXT:addons_tt_products/Resources/Public/Css/
     }
 
