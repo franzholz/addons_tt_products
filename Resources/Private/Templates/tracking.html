@@ -52,7 +52,7 @@ This part is repeated for each order status item and finally this part in the te
 -->
 
     <div class="boxBasket2">
-    
+
 
         <div class="tableHeaders viewColumnStatusDate">
             <div class="viewColumnHeader viewHeaderStatusDate">
@@ -100,7 +100,7 @@ This part is repeated for each order status item and finally this part in the te
                             </fieldset>
                             </form>
 						</div>
-    
+
                         <div class="boxAdminControlOk">
 							<form method="post" action="###FORM_URL###">
                                 <fieldset>
@@ -112,7 +112,7 @@ This part is repeated for each order status item and finally this part in the te
                                     <div class="viewLabel divLabelComment">
                                         <label for="divInputOrderStatusCommentId" class="labelOrderStatus"> ###TRACKING_STATUS_ORDER_COMMENT###</label>
                                     </div>
-                                    
+
                                     <div class="viewInput divInputOrderStatus">
                                         <select name="orderRecord[status][]" size="15" multiple="multiple">###STATUS_OPTIONS###
                                         </select>
@@ -175,6 +175,9 @@ This part is repeated for each order status item and finally this part in the te
             <input type="text" size=40 name="orderRecord[email]" value="###FIELD_EMAIL###">
         </div>
         <div class="viewInput divInputHidden">
+            <!-- ###ADMIN_CONTROL### begin -->
+            <input type="hidden" size="40" name="update_code" id="password" value="###UPDATE_CODE###">
+            <!-- ###ADMIN_CONTROL### end -->
             <input type="hidden" name="tracking" value="###TRACKING_NUMBER###">
         </div>
         <div class="viewInput divInputSubmit">
@@ -203,7 +206,7 @@ This part is repeated for each order status item and finally this part in the te
             <textarea cols="40" rows="5" name="orderRecord[status_comment]"></textarea>
         </div>
         <div class="viewInput divInputSubmit">
-            <input type="Submit" name="submit" class="wobistdu" value="###TRACKING_STATUS_MESSAGE_BUTTON###">
+            <input type="Submit" name="submit" value="###TRACKING_STATUS_MESSAGE_BUTTON###">
         </div>
     </form>
 <br><br><h2>###TRACKING_STATUS_ORDER_ORIGINAL###</h2><br><br>
