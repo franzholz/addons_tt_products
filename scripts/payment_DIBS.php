@@ -25,7 +25,7 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 /**
- * payment_DIBS.php
+ * deprecated example payment script
  *
  * This script handles payment via the danish payment gateway, DIBS.
  * Support: DIBS premium with Credit-cards  and Unibank Solo-E
@@ -42,8 +42,10 @@
  *
  */
 
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-if (!is_object($pibase) || !is_object($this->cObj)  || !is_object($this->basket))	die('tt_products: $pibase and $pibase->cObj must be objects!');
+
+if (!is_object($pibase) || !is_object($this->cObj)  || !is_object($this->basket))	die('tt_products: $pibase and $this->cObj and $this->basket must be objects!');
 
 
 // $lConf = $this->basketExtra["payment."]["handleScript."];
@@ -54,19 +56,19 @@ $lConf = $confScript;
 $localTemplateCode = $this->cObj->fileResource($lConf['templateFile'] ? $lConf['templateFile'] : 'EXT:tt_products/template/payment_DIBS_template.tmpl');		// Fetches the DIBS template file
 if (!is_object($basketView))	{
 	$error_code = '';
-	$basketView = &t3lib_div::getUserObj('tx_ttproducts_basket_view',1);
-	$basketView->init ($pibase, array(), FALSE, $this->templateCode, $error_code);
+	$basketView = GeneralUtility::makeInstance('tx_ttproducts_basket_view');
+	$basketView->init ($pibase, [], false, $this->templateCode, $error_code);
 }
-$markerObj = &t3lib_div::getUserObj('&tx_ttproducts_marker');
+$markerObj = &GeneralUtility::makeInstance('tx_ttproducts_marker');
 $localTemplateCode = $this->cObj->substituteMarkerArrayCached($localTemplateCode, $markerObj->getGlobalMarkerArray());
 $calculatedArray = $this->basket->getCalculatedArray();
 
-$tablesObj = &t3lib_div::getUserObj('&tx_ttproducts_tables');
-$order = &$tablesObj->get('sys_products_orders');
+$tablesObj = GeneralUtility::makeInstance('tx_ttproducts_tables');
+$order = $tablesObj->get('sys_products_orders');
 
 $orderUid = $order->getBlankUid();	// Gets an order number, creates a new order if no order is associated with the current session
 
-$param = '&FE_SESSION_KEY='.rawurlencode(
+$param = '&FE_SESSION_KEY=' . rawurlencode(
 $GLOBALS['TSFE']->fe_user->id.'-'.
 	md5(
 	$GLOBALS['TSFE']->fe_user->id.'/'.
@@ -75,22 +77,22 @@ $GLOBALS['TSFE']->fe_user->id.'-'.
 );
 
 $products_cmd = $pibase->piVars['products_cmd'];
-$products_cmd = ($products_cmd ? $products_cmd : t3lib_div::_GP('products_cmd'));
+$products_cmd = ($products_cmd ? $products_cmd : GeneralUtility::_GP('products_cmd'));
 switch($products_cmd)	{
 	case 'cardno':
 		$tSubpart = $lConf['soloe'] ? 'DIBS_SOLOE_TEMPLATE' : 'DIBS_CARDNO_TEMPLATE';		// If solo-e is selected, use different subpart from template
 		$tSubpart = $lConf['direct'] ? 'DIBS_DIRECT_TEMPLATE' : $tSubpart;		// If direct is selected, use different subpart from template
-		$content=$basketView->getView(
+		$content = $basketView->getView(
 			$localTemplateCode,
 			'PAYMENT',
 			$infoViewObj,
-			FALSE,
-			FALSE,
+			false,
+			false,
 			$this->basket->getCalculatedArray(),
-			TRUE,
+			true,
 			$tSubpart
 		);		// This not only gets the output but also calculates the basket total, so it's NECESSARY!
-		$markerArray=array();
+		$markerArray = [];
 		$markerArray['###HIDDENFIELDS###'] =
 ' <input type="hidden" name="merchant"
 value="'.$lConf['merchant'].'">
@@ -105,9 +107,9 @@ value="'.$this->order->getNumber($orderUid).'">
 <!--Butikkens ordrenummer der skal knyttes til denne transaktion-->
 <input type="hidden" name="uniqueoid" value="1">
 <input type="hidden" name="accepturl"
-value="https://payment.architrade.com/cgi-ssl/relay.cgi/'.$lConf['relayURL'].'&products_cmd=accept&products_finalize=1'.$param.'">
+value="https://payment.architrade.com/cgi-ssl/relay.cgi/'.$lConf['relayURL'].'&products_cmd=accept&products_finalize=1' . $param . '">
 <input type="hidden" name="declineurl"
-value="https://payment.architrade.com/cgi-ssl/relay.cgi/'.$lConf['relayURL'].'&products_cmd=decline&products_finalize=1'.$param.'">';
+value="https://payment.architrade.com/cgi-ssl/relay.cgi/'.$lConf['relayURL'].'&products_cmd=decline&products_finalize=1' . $param . '">';
 
 		if ($lConf['soloe'] || $lConf['direct'])	{
 		$markerArray['###HIDDENFIELDS###'].= '
@@ -118,13 +120,13 @@ value="https://payment.architrade.com/cgi-ssl/relay.cgi/'.$lConf['relayURL'].'&p
 			$markerArray['###HIDDENFIELDS###'].= '<input
 type="hidden" name="opener" value="">' .
 					'<input type="hidden" name="callbackurl"
-value="https://payment.architrade.com/cgi-ssl/relay.cgi/'.$lConf['relayURL'].'&products_cmd=accept&products_finalize=1'.$param.'">';
+value="https://payment.architrade.com/cgi-ssl/relay.cgi/' . $lConf['relayURL'] . '&products_cmd=accept&products_finalize=1' . $param.'">';
 			$markerArray['###WINDOW_OPENER###'] = 'onsubmit="return
 doPopup(this);" target="Betaling"'; // if this is empty then no popup window will be opened
 		}
 
 		if ($lConf['test']) {
-			$markerArray['###HIDDENFIELDS###'].= '
+			$markerArray['###HIDDENFIELDS###'] .= '
 				<input type="hidden" name="test" value="foo">
 			';
 		}
@@ -140,20 +142,20 @@ doPopup(this);" target="Betaling"'; // if this is empty then no popup window wil
 					DIN		 Diners Club, international
 				*/
 
-			$markerArray['###HIDDENFIELDS###'].= '
-				<input type="hidden" name="cardtype" value="'.$lConf['cardType'].'">
+			$markerArray['###HIDDENFIELDS###'] .= '
+				<input type="hidden" name="cardtype" value="' . $lConf['cardType'] . '">
 			';
 		}
 		if ($lConf['account'])  {		// DIBS account feature
-			$markerArray['###HIDDENFIELDS###'].= '
-				<input type="hidden" name="account" value="'.$lConf['account'].'">
+			$markerArray['###HIDDENFIELDS###'] .= '
+				<input type="hidden" name="account" value="' . $lConf['account'] . '">
 			';
 		}
 
 
 				// Adds order info to hiddenfields.
 		if ($lConf['addOrderInfo']) {
-			$theFields="";
+			$theFields = '';
 				// Delivery info
 			reset($this->address->infoArray['delivery']);
 			$cc=0;
@@ -161,57 +163,57 @@ doPopup(this);" target="Betaling"'; // if this is empty then no popup window wil
 				$value = trim($value);
 				if ($value) {
 					$cc++;
-					$theFields.=chr(10).'<input type="hidden" name="delivery'.$cc.'.'.$field.'" value="'.htmlspecialchars($value).'">';
+					$theFields.=chr(10).'<input type="hidden" name="delivery' . $cc . '.' . $field . '" value="' . htmlspecialchars($value) . '">';
 				}
 			}
 
 				// Order items
 			reset($this->basket->itemArray);
-			$theFields.='
+			$theFields .= '
 <input type="hidden" name="ordline1-1" value="Varenummer">
 <input type="hidden" name="ordline1-2" value="Beskrivelse">
 <input type="hidden" name="ordline1-3" value="Antal">
 <input type="hidden" name="ordline1-4" value="Pris">
 ';
-			$cc=1;
-			$priceViewObj = &t3lib_div::getUserObj('&tx_ttproducts_field_price_view');
+			$cc = 1;
+			$priceViewObj = GeneralUtility::makeInstance('tx_ttproducts_field_price_view');
 			// loop over all items in the basket indexed by a sorting text
-			foreach ($this->basket->itemArray as $sort=>$actItemArray) {
-				foreach ($actItemArray as $k1=>$actItem) {
+			foreach ($this->basket->itemArray as $sort => $actItemArray) {
+				foreach ($actItemArray as $k1 => $actItem) {
 					$cc++;
-					$theFields.='
-	<input type="hidden" name="ordline'.$cc.'-1" value="'.htmlspecialchars($actItem['rec']['itemnumber']).'">
-	<input type="hidden" name="ordline'.$cc.'-2" value="'.htmlspecialchars($actItem['rec']['title']).'">
-	<input type="hidden" name="ordline'.$cc.'-3" value="'.$actItem['count'].'">
-	<input type="hidden" name="ordline'.$cc.'-4" value="'.$priceViewObj->priceFormat($actItem['totalTax']).'">';
+					$theFields .= '
+	<input type="hidden" name="ordline' . $cc . '-1" value="' . htmlspecialchars($actItem['rec']['itemnumber']) . '">
+	<input type="hidden" name="ordline' . $cc . '-2" value="' . htmlspecialchars($actItem['rec']['title']) . '">
+	<input type="hidden" name="ordline' . $cc . '-3" value="' . $actItem['count'] . '">
+	<input type="hidden" name="ordline' . $cc . '-4" value="' . $priceViewObj->priceFormat($actItem['totalTax']).'">';
 				}
 			}
 
 			$theFields.='
 <input type="hidden" name="priceinfo1.Shipping"
-value="'.$priceViewObj->priceFormat($calculatedArray['shipping']['priceTax']).'">';
+value="'.$priceViewObj->priceFormat($calculatedArray['shipping']['priceTax']) . '">';
 			$theFields.='
 <input type="hidden" name="priceinfo2.Payment"
-value="'.$priceViewObj->priceFormat($calculatedArray['payment']['priceTax']).'">';
+value="'.$priceViewObj->priceFormat($calculatedArray['payment']['priceTax']) . '">';
 			$theFields.='
 <input type="hidden" name="priceinfo3.Tax"
-value="'.$priceViewObj->priceFormat($calculatedArray['priceTax']['total'] - $calculatedArray['priceNoTax']['total']).'">';
-			$markerArray['###HIDDENFIELDS###'].=$theFields;
+value="'.$priceViewObj->priceFormat($calculatedArray['priceTax']['total'] - $calculatedArray['priceNoTax']['total']) . '">';
+			$markerArray['###HIDDENFIELDS###'] .= $theFields;
 		}
 		$content= $pibase->cObj->substituteMarkerArrayCached($content, $markerArray);
 	break;
 	case 'decline':
-		$markerArray=array();
-		$markerArray['###REASON_CODE###'] = t3lib_div::_GP('reason');
+		$markerArray=[];
+		$markerArray['###REASON_CODE###'] = GeneralUtility::_GP('reason');
 		$content =
 			$basketView->getView(
 				$localTemplateCode,
 				'PAYMENT',
 				$infoViewObj,
-				FALSE,
-				FALSE,
+				false,
+				false,
 				$this->basket->getCalculatedArray(),
-				TRUE,
+				true,
 				'DIBS_DECLINE_TEMPLATE',
 				$markerArray
 			);	  // This not only gets the output but also calculates the basket total, so it's NECESSARY!
@@ -222,10 +224,10 @@ value="'.$priceViewObj->priceFormat($calculatedArray['priceTax']['total'] - $cal
 				$localTemplateCode,
 				'PAYMENT',
 				$infoViewObj,
-				FALSE,
-				FALSE,
+				false,
+				false,
 				$this->basket->getCalculatedArray(),
-				TRUE,
+				true,
 				'DIBS_SOLOE_CANCEL_TEMPLATE',
 				$markerArray
 			);	 // This not only gets the output but also calculates the basket total, so it's NECESSARY!
@@ -236,10 +238,10 @@ value="'.$priceViewObj->priceFormat($calculatedArray['priceTax']['total'] - $cal
 				$localTemplateCode,
 				'PAYMENT',
 				$infoViewObj,
-				FALSE,
-				FALSE,
+				false,
+				false,
 				$this->basket->getCalculatedArray(),
-				TRUE,
+				true,
 				'DIBS_ACCEPT_TEMPLATE'
 			);
 	// This is just done to calculate stuff
@@ -251,45 +253,45 @@ value="'.$priceViewObj->priceFormat($calculatedArray['priceTax']['total'] - $cal
 			// Checking transaction
 		$amount=round($calculatedArray['priceTax']['total'] *100);
 		$currency='208';
-		$transact=t3lib_div::_GP('transact');
+		$transact = GeneralUtility::_GP('transact');
 		$md5key= md5($k2.md5($k1.'transact='.$transact.'&amount='.$amount.'&currency='.$currency));
-		$authkey=t3lib_div::_GP('authkey');
+		$authkey = GeneralUtility::_GP('authkey');
 		if ($md5key != $authkey)	{
 			$content =
 				$basketView->getView(
 					$localTemplateCode,
 					'PAYMENT',
 					$infoViewObj,
-					FALSE,
-					FALSE,
+					false,
+					false,
 					$this->basket->getCalculatedArray(),
-					TRUE,
+					true,
 					'DIBS_DECLINE_MD5_TEMPLATE'
 				);		// This not only gets the output but also calculates the basket total, so it's NECESSARY!
-		} elseif (t3lib_div::_GP('orderid')!=$order->getNumber($orderUid)) {
+		} elseif (GeneralUtility::_GP('orderid') != $order->getNumber($orderUid)) {
 			$content =
 				$basketView->getView(
 					$localTemplateCode,
 					'PAYMENT',
 					$infoViewObj,
-					FALSE,
-					FALSE,
-					TRUE,
+					false,
+					false,
+					true,
 					'DIBS_DECLINE_ORDERID_TEMPLATE'
 				);		// This not only gets the output but also calculates the basket total, so it's NECESSARY!
 		} else {
-			$markerArray=array();
-			$markerArray['###TRANSACT_CODE###'] = t3lib_div::_GP('transact');
+			$markerArray=[];
+			$markerArray['###TRANSACT_CODE###'] = GeneralUtility::_GP('transact');
 
 			$content =
 				$basketView->getView(
 					$tmp='',
 					'PAYMENT',
 					$infoViewObj,
-					FALSE,
-					FALSE,
+					false,
+					false,
 					$this->basket->getCalculatedArray(),
-					TRUE,
+					true,
 					'BASKET_ORDERCONFIRMATION_TEMPLATE',
 					$markerArray
 				);
@@ -299,17 +301,17 @@ value="'.$priceViewObj->priceFormat($calculatedArray['priceTax']['total'] - $cal
 	break;
 	default:
 		if ($lConf['relayURL']) {
-			$markerArray=array();
+			$markerArray=[];
 			$markerArray['###REDIRECT_URL###'] = 'https://payment.architrade.com/cgi-ssl/relay.cgi/'.$lConf['relayURL'].'&products_cmd=cardno&products_finalize=1'.$param;
 			$content =
 				$basketView->getView(
 					$localTemplateCode,
 					'PAYMENT',
 					$infoViewObj,
-					FALSE,
-					FALSE,
+					false,
+					false,
 					$this->basket->getCalculatedArray(),
-					TRUE,
+					true,
 					'DIBS_REDIRECT_TEMPLATE',
 					$markerArray
 				);
@@ -318,4 +320,4 @@ value="'.$priceViewObj->priceFormat($calculatedArray['priceTax']['total'] - $cal
 		}
 	break;
 }
-?>
+
