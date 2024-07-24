@@ -1,8 +1,11 @@
+[![TYPO3](https://img.shields.io/badge/TYPO3-Extension-orange?logo=TYPO3)](https://extensions.typo3.org/extension/addons_tt_products)
+[![Monthly Downloads](https://poser.pugx.org/jambagecom/addons-tt-products/d/monthly)](https://packagist.org/packages/jambagecom/addons-tt-products)
+
 # TYPO3 extension addons_tt_products
 
 ## What is does
 
-This extension provides many example shop template files for tt_products. 
+This extension provides many example shop template files for tt_products.
 Use these templates for starting with the shop system tt_products.
 
 Use the forum at https://www.jambage.com to ask questions and find answers.
@@ -11,7 +14,7 @@ A documentation manual.sxw is available in the doc folder.
 You can use these example templates and icons in tt_products 2.8.1 or higher.
 
 Get the next versions of tt_products from this online shop:
-http://ttproducts.de
+https://ttproducts.de
 
 pob_ttp_marker_xml.htm: multiple language marker template sponsored by Rainer Lindner (pob.com)
 products_css_de.html: CSS template by Robert Markula, translated by Masod Mohmand
@@ -65,7 +68,7 @@ This is the constants definition for your first start with these template files.
 
 ## Contributions:
 
-Please join the team to further develop these templates at https://github.com/franzholz/addons_tt_products .
+You can join the team to further develop these templates at https://github.com/franzholz/addons_tt_products .
 Send us your shop templates and icons to collect them here.
 
 
