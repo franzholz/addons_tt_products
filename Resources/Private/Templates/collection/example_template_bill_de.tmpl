@@ -92,6 +92,10 @@ Weiterentwicklungen zum Shop k&ouml;nnen Sie unter <a href="http://ttproducts.de
 		  ###GW2B### Gr&ouml;&szlig;e: ###GW2E### <select id="###PRODUCT_SIZE_ID###" style="font-size: 10px"
 		  name="###FIELD_SIZE_NAME###" rows="1">###PRODUCT_SIZE###</select><br>
 		  <!-- ###display_variant2### -->
+		  <!-- ###display_variant3### -->
+		  ###GW2B### Beschreibung: ###GW2E### <select id="###PRODUCT_DESCRIPTION_ID###" style="font-size: 10px"
+		  name="###FIELD_DESCRIPTION_NAME###" rows="1">###PRODUCT_DESCRIPTION###</select><br>
+		  <!-- ###display_variant3### -->
 
 		<!-- ###PRODUCT_ITEMNUMBER_FN_NOT_EMPTY### begin -->
 			Dieses Produkt hat eine Artikelnummer.
@@ -207,9 +211,16 @@ Weiterentwicklungen zum Shop k&ouml;nnen Sie unter <a href="http://ttproducts.de
             <!--###LINK_ITEM###-->
             <br>
             ###ARTICLE_IMAGE### <br>
+		  <!-- ###display_variant1### -->
+		  ###GW2B### Farbe: ###GW2E### ###ARTICLE_COLOR###<br>
+		  <!-- ###display_variant1### -->
 		  <!-- ###display_variant2### -->
-		  ###GW2B### Size: ###GW2E### ###ARTICLE_SIZE###<br>
+		  ###GW2B### Gr&ouml;&szlig;e: ###GW2E### ###ARTICLE_SIZE###<br>
 		  <!-- ###display_variant2### -->
+		  <!-- ###display_variant3### -->
+		  ###GW2B### Beschreibung: ###GW2E### ###ARTICLE_DESCRIPTION###<br>
+		  <!-- ###display_variant3### -->
+
 			###ITEM_SINGLE_POST_HTML###
           <!-- ###ITEM_SINGLE### end -->
         </table>
@@ -297,7 +308,7 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
             <br>
             ###PRODUCT_IMAGE1### <br>
 		  <!-- ###display_variant2### -->
-		  ###GW2B### Size: ###GW2E### <select id="###PRODUCT_SIZE_ID###" style="font-size: 10px"
+		  ###GW2B### Gr&ouml;&szlig;e: ###GW2E### <select id="###PRODUCT_SIZE_ID###" style="font-size: 10px"
 		  name="###FIELD_SIZE_NAME###" rows="1">###PRODUCT_SIZE###</select><br>
 		  <!-- ###display_variant2### -->
             <!-- ###display_variant5_isSingle### -->
@@ -403,13 +414,18 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 <form method="post" name="###FORM_NAME###" action="###FORM_URL###">
 
 		  <!-- ###display_variant1### -->
-		  ###GW2B### Color: ###GW2E### <select id="###PRODUCT_COLOR_ID###" onchange=" ###PRODUCT_COLOR_FUNCTION1###" style="font-size: 10px"
+		  ###GW2B### Farbe: ###GW2E### <select id="###PRODUCT_COLOR_ID###" onchange=" ###PRODUCT_COLOR_FUNCTION1###" style="font-size: 10px"
 		  name="###FIELD_COLOR_NAME###" rows="1">###PRODUCT_COLOR###</select><br>
 		  <!-- ###display_variant1### -->
 			<!-- ###display_variant2### -->
-		    ###GW2B### Size: ###GW2E### <select id="###PRODUCT_SIZE_ID###" onchange="###PRODUCT_SIZE_FUNCTION1###" style="font-size: 10px"
+		    ###GW2B### Gr&ouml;&szlig;e: ###GW2E### <select id="###PRODUCT_SIZE_ID###" onchange="###PRODUCT_SIZE_FUNCTION1###" style="font-size: 10px"
 		    name="###FIELD_SIZE_NAME###" rows="1">###PRODUCT_SIZE###</select><br>
 			<!-- ###display_variant2### -->
+			<!-- ###display_variant3### -->
+		    ###GW2B### Beschreibung: ###GW2E### <select id="###PRODUCT_DESCRIPTION_ID###" onchange="###PRODUCT_DESCRIPTION_FUNCTION1###" style="font-size: 10px"
+		    name="###FIELD_DESCRIPTION_NAME###" rows="1">###PRODUCT_DESCRIPTION###</select><br>
+			<!-- ###display_variant3### -->
+
 			<nobr>###GW2B### Preis: ###GW2E### ###GW1B###<strong id="###PRICE_TAX_ID###">###PRICE_TAX###</strong> &euro;###GW1E###<br></nobr>
 				<nobr>###GW2B### Menge: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
 				<input id="###BASKET_INTO_ID###" type="submit" ###DISABLED### name="order" value="###BASKET_INTO###" onClick="if(!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
@@ -496,12 +512,23 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
             <!--###LINK_ITEM###-->
             <br>
             ###PRODUCT_IMAGE1### <br>
+		  <!-- ###display_variant1### -->
+		  ###GW2B### Farbe: ###GW2E### <select id="###PRODUCT_COLOR_ID###" style="font-size: 10px"
+		  name="###FIELD_COLOR_NAME###" rows="1">###PRODUCT_COLOR###</select><br>
+		  <!-- ###display_variant1### -->
 		  <!-- ###display_variant2### -->
-		  ###GW2B### Size: ###GW2E### <select style="font-size: 10px"
+		  ###GW2B### Gr&ouml;&szlig;e: ###GW2E### <select id="###PRODUCT_SIZE_ID###" style="font-size: 10px"
 		  name="###FIELD_SIZE_NAME###" rows="1">###PRODUCT_SIZE###</select><br>
 		  <!-- ###display_variant2### -->
+		  <!-- ###display_variant3### -->
+		  ###GW2B### Beschreibung: ###GW2E### <select id="###PRODUCT_DESCRIPTION_ID###" style="font-size: 10px"
+		  name="###FIELD_DESCRIPTION_NAME###" rows="1">###PRODUCT_DESCRIPTION###</select><br>
+		  <!-- ###display_variant3### -->
+
           ###ITEM_SINGLE_POST_HTML###
           <!-- ###ITEM_SINGLE### end -->
+
+
           <tr>
             <td colspan="3" align="CENTER"> <input type="Submit" name="order2" value="###BASKET_INTO###"></td>
           </tr>
@@ -566,12 +593,15 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
                                 <td style="border-top: 1px dotted #3F4F73;">
                                         <!--###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###<!--###LINK_ITEM###--><br>###GW2B######PRODUCT_SUBTITLE######GW2E###<br>
                                         ###PRODUCT_NOTE###<br>
-                                        <!-- ###display_variant2### -->
-                                        <select name="###FIELD_SIZE_NAME###" rows="1">###PRODUCT_SIZE###</select>
-                                        <!-- ###display_variant2### -->
                                         <!-- ###display_variant1### -->
                                         <select name="###FIELD_COLOR_NAME###" rows="1">###PRODUCT_COLOR###</select>
                                         <!-- ###display_variant1### -->
+                                        <!-- ###display_variant2### -->
+                                        <select name="###FIELD_SIZE_NAME###" rows="1">###PRODUCT_SIZE###</select>
+                                        <!-- ###display_variant2### -->
+                                        <!-- ###display_variant3### -->
+                                        <select name="###FIELD_DESCRIPTION_NAME###" rows="1">###PRODUCT_DESCRIPTION##</select>
+                                        <!-- ###display_variant3### -->
                                 </td>
                                 <td style="border-top: 1px dotted #3F4F73;">
                                         ###GW1B###<strong>###PRICE_TAX### &euro;###GW1E###<br>
@@ -731,9 +761,15 @@ In addition there's a number of fields used for delivery and payment information
 <!--###LINK_ITEM###-->###GW1B###<b>###PRODUCT_TITLE###&nbsp;<!-- ###PRODUCT_OFFER_EQ_1### begin -->*** AKTION ***<!-- ###PRODUCT_OFFER_EQ_1### end --></b>###GW1E###<!--###LINK_ITEM###-->
 
 </td>
+<td>	  <!-- ###display_variant1### -->
+		  ###PRODUCT_COLOR###
+		  <!-- ###display_variant1### --></td>
 <td>	  <!-- ###display_variant2### -->
 		  ###PRODUCT_SIZE###
 		  <!-- ###display_variant2### --></td>
+<td>	  <!-- ###display_variant3### -->
+		  ###PRODUCT_DESCRIPTION###
+		  <!-- ###display_variant3### --></td>
 <td>Bild: ###PRODUCT_IMAGE### </td>
 <td valign=top>###GW1B### ###PRICE_TAX### (Steuer: ###PRICE_ONLY_TAX###) EUR ###GW1E###</td>
 <td valign=top> <input size="2" maxlength="4" type="text" name="###FIELD_NAME_BASKET###" value="###FIELD_QTY###"> </td>
@@ -1617,7 +1653,18 @@ Message for payment method 95, Paypal
 <td valign=top>
 ###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
 
+		  <!-- ###display_variant1### -->
+		  ###GW2B### Farbe: ###GW2E### ###PRODUCT_COLOR###
+		  <!-- ###display_variant1### -->
+		  <!-- ###display_variant2### -->
+		  ###GW2B### Gr&ouml;&szlig;e: ###GW2E### ###PRODUCT_SIZE###
+		  <!-- ###display_variant2### -->
+		  <!-- ###display_variant3### -->
+		  ###GW2B### Beschreibung ###GW2E### ###PRODUCT_DESCRIPTION###
+		  <!-- ###display_variant3### -->
+
 </td>
+
 <td valign=top>###GW1B### ###PRICE_TAX### ###GW1E###</td>
 <td valign=top>###GW1B### ###FIELD_QTY### ###GW1E###</td>
 <td valign=top align=right>###GW1B### <b>###PRICE_TOTAL_TAX###</b><br>(###PRICE_TOTAL_NO_TAX###) ###GW1E###</td>
@@ -2701,9 +2748,15 @@ If the basket is empty this subpart is displayed
   </tr>
   <tr>
     <td valign="top" colspan="2">
+		  <!-- ###display_variant1### -->
+		  ###GW2B### Size: ###GW2E### ###PRODUCT_COLOR###<br>
+		  <!-- ###display_variant1### -->
 		  <!-- ###display_variant2### -->
 		  ###GW2B### Size: ###GW2E### ###PRODUCT_SIZE###<br>
 		  <!-- ###display_variant2### -->
+		  <!-- ###display_variant3### -->
+		  ###GW2B### Size: ###GW2E### ###PRODUCT_DESCRIPTION###<br>
+		  <!-- ###display_variant3### -->
           ###FIELD_QTY###x ###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
     </td>
   </tr>
@@ -2936,12 +2989,19 @@ If the basket is empty this subpart is displayed
   </tr>
   <tr>
     <td valign="top" colspan="2">
+		  <!-- ###display_variant1### -->
+		  ###GW2B### Farbe: ###GW2E### ###PRODUCT_COLOR###<br>
+		  <!-- ###display_variant1### -->
 		  <!-- ###display_variant2### -->
-		  ###GW2B### Size: ###GW2E### ###PRODUCT_SIZE###<br>
+		  ###GW2B### Gr&ouml;&szlig;e: ###GW2E### ###PRODUCT_SIZE###<br>
 		  <!-- ###display_variant2### -->
+		  <!-- ###display_variant3### -->
+		  ###GW2B### Beschreibung: ###GW2E### ###PRODUCT_DESCRIPTION##<br>
+		  <!-- ###display_variant3### -->
           ###FIELD_QTY###x ###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
     </td>
   </tr>
+
   <!-- ###ITEM_SINGLE### end -->
   <!-- ###ITEM_LIST### end -->
   <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
