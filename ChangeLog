@@ -1,3 +1,7 @@
+
+2025-10-13 Franz Holzinger  <franz@ttproducts.de>
+    * rename ITEM_DAMCATLIST_TEMPLATE into ITEM_FALCATLIST_TEMPLATE
+
 2023-11-03 Franz Holzinger  <franz@ttproducts.de>
     * move template files: ... -> Resources/Public/Templates/...
 
