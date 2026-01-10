@@ -449,15 +449,16 @@ Exact same features as BASKET_TEMPLATE
             ###BASKET_HEADER_TOTAL###
         </div>
         <div class="viewValue divValuePrice">
-            ###PRICE_TOTAL_TAX### ###P_CURRENCY###
+            ###PRICE_VOUCHERTOTAL_TAX### ###P_CURRENCY###
         </div>
     </div>
     <div class="viewLabelValue viewRowPrice">
         <div class="viewComment divCommentPricePart1">
-            (###INCLUDES### ###VAT###
+            (###NO_VAT###: ###PRICE_VOUCHERTOTAL_NO_TAX###)
         </div>
         <div class="viewComment divCommentPricePart2">
-            ###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###)
+            (###VAT### ###PRICE_VOUCHERTOTAL_ONLY_TAX###
+ ###P_CURRENCY###)
         </div>
     </div>
 

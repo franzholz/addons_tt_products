@@ -510,13 +510,13 @@ Subpart used if the order is finalized and this is thus the confirmation shown.-
                 ###BASKET_HEADER_TOTAL###
             </div>
             <div class="viewValue divValuePrice">
-                ###PRICE_TOTAL_TAX### ###P_CURRENCY###
+                ###PRICE_VOUCHERTOTAL_TAX### ###P_CURRENCY###
             </div>
             <div class="formComment divCommentPricePart1">
-                (###INCLUDES### ###VAT###
+                (###VAT### ###PRICE_VOUCHERTOTAL_ONLY_TAX### ###P_CURRENCY###)
             </div>
             <div class="formComment divCommentPricePart2">
-                ###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###)
+                (###NO_VAT### ###PRICE_VOUCHERTOTAL_NO_TAX### ###P_CURRENCY###)
             </div>
         </div>
     </div>
@@ -613,6 +613,9 @@ First line is used as subject for the mail.
 <!-- ###display_variant27### -->
 ###BASKET_HEADER_QUANTITY###: ###FIELD_QTY### (###P_UNIT_PRICE### ###PRICE_TAX### ###P_CURRENCY###)
 
+(###NO_VAT###:&nbsp;###PRICE_TOTAL_NO_TAX### ###P_CURRENCY###)
+(###VAT### ###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###)
+
 ###BASKET_HEADER_TOTAL### ###PRICE_TOTAL_TAX### ###P_CURRENCY###
 
 <!-- ###ITEM_SINGLE### end --><!-- ###ITEM_LIST### end --><!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
@@ -657,7 +660,10 @@ First line is used as subject for the mail.
 ###PAYMENT_TITLE###
 ###LIST_ITEM_PRICE### ###PRICE_PAYMENT_TAX### ###P_CURRENCY###
 
-###BASKET_PAYMENT_TOTAL### ________________________  (###INCLUDES### ###VAT### ###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###) ###PRICE_TOTAL_TAX### ###P_CURRENCY###
+###BASKET_PAYMENT_TOTAL### ________________________  ###PRICE_VOUCHERTOTAL_TAX### ###P_CURRENCY###
+
+(###NO_VAT###: ###PRICE_VOUCHERTOTAL_NO_TAX### ###P_CURRENCY###)
+(###VAT### ###PRICE_VOUCHERTOTAL_ONLY_TAX### ###P_CURRENCY###)
 
 <!-- ###MESSAGE_PAYMENT_20### begin -->
 
