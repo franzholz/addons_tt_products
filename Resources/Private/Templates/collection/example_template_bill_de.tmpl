@@ -426,11 +426,12 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 		    name="###FIELD_DESCRIPTION_NAME###" rows="1">###PRODUCT_DESCRIPTION###</select><br>
 			<!-- ###display_variant3### -->
 
-			<nobr>###GW2B### Preis: ###GW2E### ###GW1B###<strong id="###PRICE_TAX_ID###">###PRICE_TAX###</strong> &euro;###GW1E###<br></nobr>
+			<nobr>###GW2B### Preis: ###GW2E### <strong id="###PRICE_TAX_ID###">###PRICE_TAX###</strong> &euro;<br></nobr>
 				<nobr>###GW2B### Menge: ###GW2E###<input size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
 				<input id="###BASKET_INTO_ID###" type="submit" ###DISABLED### name="order" value="###BASKET_INTO###" onClick="if(!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};">
-				</nobr>
+            </nobr>
 </form>
+
 			<p id="###IN_STOCK_ID###">###BASKET_IN_STOCK###</p>
 				<br>
 			 <br> <p> ###PRODUCT_TEXT_TEXT1### </p>
@@ -460,10 +461,6 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 <br>
 <br>
 
-
-<!-- ###ITEM_LIST_RELATED_ARTICLES_TEMPLATE### begin
-	This subpart is used to display the regular list of products. It's also used by search-results.
--->
 <!-- ###ITEM_LIST_RELATED_TEMPLATE### begin
 	This subpart is used to display the regular list of products. It's also used by search-results.
 -->
@@ -558,7 +555,90 @@ auf <a href="http://jambage.com/index.php?id=170">tt_products - Open Source Shop
 </table>
 <br>
 <!-- ###ITEM_LIST_RELATED_TEMPLATE### end -->
+
+
+
+<br><br><br><br><hr><br><br><br>
+<h3>ITEM_LIST_RELATED_ARTICLES_TEMPLATE#</h3>
+<em>This subpart is used to display the regular list of related articles. to the one product in the single view.</em><br>
+<br>
+<br>
+
+<!-- ###ITEM_LIST_RELATED_ARTICLES_TEMPLATE### begin
+	This subpart is used to display the regular list of products. It's also used by search-results.
+-->
+<br>
+<h3>&auml;hnliche Produkte oder zugeh&ouml;rige Artikel</h3>
+
+
+<table border="0" cellspacing="0" cellpadding="1" width=1>
+	<tr>
+		<td><!--###LINK_PREV###-->###GW2B###<div align="left"><b>vorherige Seite</b></div>###GW2E###<!--###LINK_PREV###--></td>
+		<td><!-- ###LINK_BROWSE### begin -->
+			[ ###BROWSE_LINKS### ]
+			<!-- ###LINK_BROWSE### end-->
+		</td>
+		<td><!--###LINK_NEXT###-->###GW2B###<div align="right"><b>n&auml;chste Seite</b></div>###GW2E###<!--###LINK_NEXT###--></td>
+	</tr>
+	<tr>
+		<td colspan="3" align="center" bgcolor="###GC2###">###GW2B###<b>Artikel - Liste:</b>###GW2E###</td>
+	</tr>
+	<!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
+		<!-- ###ITEM_CATEGORY### begin -->
+		<!-- ###ITEM_CATEGORY### end -->
+		<!-- ###ITEM_LIST### begin -->
+			<tr><td colspan="3">
+
+        <table bordercolor="#003399" cellspacing="1" border="1">
+          <tr>
+            <td><img src="/clear.gif" width="150" height="1"></td>
+            <td><img src="/clear.gif" width="150" height="1"></td>
+            <td><img src="/clear.gif" width="150" height="1"></td>
+          </tr>
+          <!-- ###ITEM_SINGLE### begin-->
+          ###ITEM_SINGLE_PRE_HTML###
+          <td height="150" bgcolor="###GC1###" valign="bottom" align="center">
+            <!--###LINK_ITEM###-->
+            ###GW1B###<b>###ARTICLE_TITLE###</b>###GW1E###
+            <!--###LINK_ITEM###-->
+            <br>
+            ###ARTICLE_IMAGE1### <br>
+		  ###GW2B### Farbe: ###GW2E### ###ARTICLE_COLOR###<br>
+		  ###GW2B### Gr&ouml;&szlig;e: ###ARTICLE_SIZE###<br>
+		  ###GW2B### Beschreibung: ###GW2E### ###ARTICLE_DESCRIPTION###<br>
+
+          ###ITEM_SINGLE_POST_HTML###
+          <!-- ###ITEM_SINGLE### end -->
+
+          <tr>
+            <td colspan="3" align="CENTER"> </td>
+          </tr>
+          <tr>
+            <td colspan="3" align="CENTER"></td>
+          </tr>
+        </table>
+			</form>
+			</td></tr>
+		<!-- ###ITEM_LIST### end -->
+	<!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
+	<tr>
+		<td><!--###LINK_PREV###-->###GW2B###<div align="left"><b>vorherige Seite</b></div>###GW2E###<!--###LINK_PREV###--></td>
+		<td></td>
+		<td></td>
+		<td><!--###LINK_NEXT###-->###GW2B###<div align="right"><b>n&auml;chste Seite</b></div>###GW2E###<!--###LINK_NEXT###--></td>
+	</tr>
+</table>
+###GW1B###In Ihrem Browser sollten Cookies zugelassen sein.<br>Sollte die Bef&uuml;llung des Warenkorbs nach mehreren Versuchen nicht funktionieren, bestellen Sie bitte &uuml;ber den Link Kontakt/Bestellung per Email. Viel Spa&szlig; beim Einkaufen! ###GW1E###
+
+<br>
+<table width="163">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<br>
 <!-- ###ITEM_LIST_RELATED_ARTICLES_TEMPLATE### end -->
+
 
 
 
