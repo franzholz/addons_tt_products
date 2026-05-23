@@ -2352,6 +2352,96 @@ Email: info@ttproducts.de
 
 
 
+
+<br><br><br><br><hr><br><br><br>
+<h3>WITHDRAWAL_TEMPLATE</h3>
+<br>
+<br>
+<pre>
+<!-- ###WITHDRAWAL_TEMPLATE### begin -->
+
+<p>###WITHDRAWAL_START###</p>
+
+
+<form method="post" action="###FORM_URL###">
+
+<input type="Submit" name="products_withdrawal" value="###YOU_CAN_WITHDRAW_ORDER###" onclick="this.form.action='###FORM_URL###';">
+</form>
+
+
+<!-- ###WITHDRAWAL_TEMPLATE### end -->
+</pre>
+
+
+
+<br><br><br><br><hr><br><br><br>
+<h3>WITHDRAWA_CONFIRMATION_TEMPLATE</h3>
+<br>
+<br>
+<pre>
+<!-- ###WITHDRAWAL_CONFIRMATION_TEMPLATE### begin -->
+
+<form method="post" action="###FORM_URL###">
+
+<table>
+<tr>
+<td>###GW1B###<strong>###ENTER_TRACKING_NAME###</strong>*###GW1E###</td>
+</tr>
+<tr>
+<td><input type="text" name="tracking_name" size="30" value="###TRACKING_NAME###"></td>
+</tr>
+<tr>
+<td>###GW1B###<strong>###ENTER_TRACKING_EMAIL###</strong>*###GW1E###</td>
+</tr>
+<tr>
+<td><input type="text" name="tracking_email" size="30" value="###TRACKING_EMAIL###"></td>
+</tr>
+<tr>
+<td>
+###GW1B###<b>###ENTER_TRACKING_CODE###</b>###GW1E###<br>
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" name="tracking" value="###TRACKING_NUMBER###"><br>
+</td>
+</tr>
+<tr>
+<td><label for="tracking_comment">###ENTER_TRACKING_COMMENT###</label></td>
+</tr>
+<tr>
+<td><textarea name="tracking_comment"  rows="5" cols="80" value="###TRACKING_COMMENT###"></textarea></td>
+</tr>
+<tr>
+<td>
+
+<input type="Submit" name="products_withdrawal_confirmation" value="###WITHDRAWAL_CONFIRMATION### onclick="this.form.action='###FORM_URL###';">
+
+</td>
+</table>
+</form>
+
+
+<!-- ###WITHDRAWAL_CONFIRMATION_TEMPLATE### end -->
+</pre>
+
+
+<br><br><br><br><hr><br><br><br>
+<h3>WITHDRAWAL_PROCESSING_TEMPLATE</h3>
+<br>
+<br>
+<pre>
+<!-- ###WITHDRAWAL_PROCESSING_TEMPLATE### begin -->
+
+
+<p> ###WITHDRAWAL_PROCESSING### </p>
+
+<!-- ###WITHDRAWAL_PROCESSING_TEMPLATE### end -->
+</pre>
+
+
+
+
 <br><br><br><br><hr><br><br><br>
 <h3>EMAIL_NEWUSER_TEMPLATE</h3>
 <br>
