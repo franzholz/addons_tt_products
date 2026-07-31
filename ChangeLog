@@ -1,3 +1,6 @@
+2026-07-31 Franz Holzinger  <franz@ttproducts.de>
+    * remove all constants of ADDONS_TT_PRODUCTS
+
 2026-05-23 Franz Holzinger  <franz@ttproducts.de>
     * support for TYPO3 14
 
