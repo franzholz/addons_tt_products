@@ -25,6 +25,8 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
+use TYPO3\CMS\Frontend\Authentication\FrontendUserAuthentication;
+
 
 /**
  * Part of the addons_tt_products (Addons to the Shop System) extension.
@@ -38,11 +40,17 @@
  *
  */
 
-public function user_onlyBulkilyItems ($where) {
+public function user_onlyBulkilyItems ($request, $where) {
 
     $cObj = GeneralUtility::makeInstance(\TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer::class)
 
-    $basketExt = $GLOBALS['TSFE']->fe_user->getKey('ses', 'basketExt');
+
+    /** @var FrontendUserAuthentication|null $feUser */
+    $feUser = $request->getAttribute('frontend.user');
+
+    // Daten aus der 'ses' (Session) mit dem Key 'basketExt' auslesen
+    $basketExt = $feUser?->getKey('ses', 'basketExt');
+
 
     if (isset($basketExt) && is_array($basketExt))	{
 

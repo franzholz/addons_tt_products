@@ -43,6 +43,8 @@
  */
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Resource\ResourceFactory;
+use TYPO3\CMS\Frontend\Authentication\FrontendUserAuthentication;
 
 
 if (!is_object($pibase) || !is_object($this->cObj)  || !is_object($this->basket))	die('tt_products: $pibase and $this->cObj and $this->basket must be objects!');
@@ -53,14 +55,37 @@ if (!is_object($pibase) || !is_object($this->cObj)  || !is_object($this->basket)
 $lConf = $confScript;
 
 
-$localTemplateCode = $this->cObj->fileResource($lConf['templateFile'] ? $lConf['templateFile'] : 'EXT:tt_products/template/payment_DIBS_template.tmpl');		// Fetches the DIBS template file
+// 1. Pfad ermitteln (Ternärer Operator gekürzt via Elvis-Operator ?:)
+$templatePath = $lConf['templateFile'] ?: 'EXT:tt_products/template/payment_DIBS_template.tmpl';
+
+// 2. Absoluten Systempfad auflösen (falls EXT:-Präfix genutzt wird)
+$resolvedPath = GeneralUtility::getFileAbsFileName($templatePath);
+
+// 3. Dateiinhalt auslesen
+$localTemplateCode = '';
+
+if ($resolvedPath && is_file($resolvedPath)) {
+	$localTemplateCode = file_get_contents($resolvedPath);
+}
+
+
 if (!is_object($basketView))	{
 	$error_code = '';
 	$basketView = GeneralUtility::makeInstance('tx_ttproducts_basket_view');
 	$basketView->init ($pibase, [], false, $this->templateCode, $error_code);
 }
-$markerObj = &GeneralUtility::makeInstance('tx_ttproducts_marker');
-$localTemplateCode = $this->cObj->substituteMarkerArrayCached($localTemplateCode, $markerObj->getGlobalMarkerArray());
+$markerObj = GeneralUtility::makeInstance('tx_ttproducts_marker');
+$markerArray = $markerObj->getGlobalMarkerArray();
+
+if (is_array($markerArray) && !empty($markerArray)) {
+	// Ersetzt alle Keys durch die entsprechenden Values im Template-String
+	$localTemplateCode = str_replace(
+		array_keys($markerArray),
+		array_values($markerArray),
+		$localTemplateCode
+	);
+}
+
 $calculatedArray = $this->basket->getCalculatedArray();
 
 $tablesObj = GeneralUtility::makeInstance('tx_ttproducts_tables');
@@ -68,16 +93,28 @@ $order = $tablesObj->get('sys_products_orders');
 
 $orderUid = $order->getBlankUid();	// Gets an order number, creates a new order if no order is associated with the current session
 
-$param = '&FE_SESSION_KEY=' . rawurlencode(
-$GLOBALS['TSFE']->fe_user->id.'-'.
-	md5(
-	$GLOBALS['TSFE']->fe_user->id.'/'.
-	$GLOBALS['TYPO3_CONF_VARS']['SYS']['encryptionKey']
-	)
-);
 
-$products_cmd = $pibase->piVars['products_cmd'];
-$products_cmd = ($products_cmd ? $products_cmd : GeneralUtility::_GP('products_cmd'));
+$request = $this->cObj->getRequest();
+
+// 1. Hol dir das Frontend-User-Objekt aus dem Request-Attribut
+/** @var FrontendUserAuthentication $frontendUser */
+$frontendUser = $request->getAttribute('frontend.user');
+
+// 2. Hole die echte, sichere Session-ID
+$sessionId = $frontendUser?->id ?? '';
+
+// 3. Parameter für die URL generieren
+$param = '';
+if (!empty($sessionId)) {
+    $param = '&FE_SESSION_KEY=' . rawurlencode($sessionId);
+}
+
+$queryParams = $request->getQueryParams();
+$parsedBody = $request->getParsedBody();
+
+// Nimmt den bestehenden Wert, falls gefüllt, andernfalls POST, andernfalls GET
+$products_cmd = $products_cmd ?: ($parsedBody['products_cmd'] ?? $queryParams['products_cmd'] ?? '');
+
 switch($products_cmd)	{
 	case 'cardno':
 		$tSubpart = $lConf['soloe'] ? 'DIBS_SOLOE_TEMPLATE' : 'DIBS_CARDNO_TEMPLATE';		// If solo-e is selected, use different subpart from template
@@ -200,11 +237,18 @@ value="'.$priceViewObj->priceFormat($calculatedArray['payment']['priceTax']) . '
 value="'.$priceViewObj->priceFormat($calculatedArray['priceTax']['total'] - $calculatedArray['priceNoTax']['total']) . '">';
 			$markerArray['###HIDDENFIELDS###'] .= $theFields;
 		}
-		$content= $pibase->cObj->substituteMarkerArrayCached($content, $markerArray);
+
+		if (is_array($markerArray) && !empty($markerArray)) {
+			$content = str_replace(array_keys($markerArray), array_values($markerArray), $content);
+		}
 	break;
 	case 'decline':
 		$markerArray=[];
-		$markerArray['###REASON_CODE###'] = GeneralUtility::_GP('reason');
+		// Holt den Wert prioritär aus POST, andernfalls aus GET (entspricht dem alten _GP)
+		$reason = $parsedBody['reason'] ?? $queryParams['reason'] ?? '';
+
+		$markerArray['###REASON_CODE###'] = $reason;
+
 		$content =
 			$basketView->getView(
 				$localTemplateCode,
@@ -253,50 +297,69 @@ value="'.$priceViewObj->priceFormat($calculatedArray['priceTax']['total'] - $cal
 			// Checking transaction
 		$amount=round($calculatedArray['priceTax']['total'] *100);
 		$currency='208';
-		$transact = GeneralUtility::_GP('transact');
+		$transact = $parsedBody['transact'] ?? $queryParams['transact'] ?? '';
 		$md5key= md5($k2.md5($k1.'transact='.$transact.'&amount='.$amount.'&currency='.$currency));
-		$authkey = GeneralUtility::_GP('authkey');
-		if ($md5key != $authkey)	{
-			$content =
-				$basketView->getView(
-					$localTemplateCode,
-					'PAYMENT',
-					$infoViewObj,
-					false,
-					false,
-					$this->basket->getCalculatedArray(),
-					true,
-					'DIBS_DECLINE_MD5_TEMPLATE'
-				);		// This not only gets the output but also calculates the basket total, so it's NECESSARY!
-		} elseif (GeneralUtility::_GP('orderid') != $order->getNumber($orderUid)) {
-			$content =
-				$basketView->getView(
-					$localTemplateCode,
-					'PAYMENT',
-					$infoViewObj,
-					false,
-					false,
-					true,
-					'DIBS_DECLINE_ORDERID_TEMPLATE'
-				);		// This not only gets the output but also calculates the basket total, so it's NECESSARY!
-		} else {
-			$markerArray=[];
-			$markerArray['###TRANSACT_CODE###'] = GeneralUtility::_GP('transact');
+		$authkey = $parsedBody['authkey'] ?? $queryParams['authkey'] ?? '';
+		$orderid = $parsedBody['orderid'] ?? $queryParams['orderid'] ?? '';
+		$transact = $parsedBody['transact'] ?? $queryParams['transact'] ?? '';
 
-			$content =
-				$basketView->getView(
-					$tmp='',
-					'PAYMENT',
-					$infoViewObj,
-					false,
-					false,
-					$this->basket->getCalculatedArray(),
-					true,
-					'BASKET_ORDERCONFIRMATION_TEMPLATE',
-					$markerArray
-				);
-			$error=''; // TODO
-			$this->order->finalize($basketView->templateCode, $basketView, $this->basket->tt_products /* TODO */,$this->basket->tt_products_cat, $this->basket->price, $orderUid,$content,$error);  // Important: $oder->finalize MUST come after the call of prodObj->getBasket, because this function, getBasket, calculates the order! And that information is used in the finalize-function
+		// 2. Validierung & Template-Ausgabe
+		if ($md5key !== $authkey) {
+			// Ungültiger MD5-Key (Abbruch)
+			$content = $basketView->getView(
+				$localTemplateCode,
+				'PAYMENT',
+				$infoViewObj,
+				false,
+				false,
+				$this->basket->getCalculatedArray(),
+				true,
+				'DIBS_DECLINE_MD5_TEMPLATE'
+			);
+		} elseif ($orderid != $order->getNumber($orderUid)) {
+			// Ungültige Order-ID (Abbruch)
+			// HINWEIS: Fehlende Parameter im Original-Code wurden korrigiert ($this->basket->getCalculatedArray())
+			$content = $basketView->getView(
+				$localTemplateCode,
+				'PAYMENT',
+				$infoViewObj,
+				false,
+				false,
+				$this->basket->getCalculatedArray(),
+				true,
+				'DIBS_DECLINE_ORDERID_TEMPLATE'
+			);
+		} else {
+			// Daten sind valide -> Bestellung abschließen
+			$markerArray = [];
+			$markerArray['###TRANSACT_CODE###'] = $transact;
+
+			$tmp = '';
+			$content = $basketView->getView(
+				$tmp,
+				'PAYMENT',
+				$infoViewObj,
+				false,
+				false,
+				$this->basket->getCalculatedArray(),
+				true,
+				'BASKET_ORDERCONFIRMATION_TEMPLATE',
+				$markerArray
+			);
+
+			$error = '';
+
+			// Bestellung in tt_products finalisieren
+			$this->order->finalize(
+				$basketView->templateCode,
+				$basketView,
+				$this->basket->tt_products,
+				$this->basket->tt_products_cat,
+				$this->basket->price,
+				$orderUid,
+				$content,
+				$error
+			);
 		}
 	break;
 	default:
